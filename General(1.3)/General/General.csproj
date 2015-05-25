@@ -1,0 +1,509 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FF07D3AB-0029-4439-8861-65FFE0F0BDA6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>General</RootNamespace>
+    <AssemblyName>General</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Marcony\Desktop\Sistema\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>C355B212A99DDDBEADE87E7DD43EFDC91B69302B</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>General_ClaveTemporal.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AsignacionesClases.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsignacionesClases.Designer.cs">
+      <DependentUpon>AsignacionesClases.cs</DependentUpon>
+    </Compile>
+    <Compile Include="buscarmaestro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="buscarmaestro.Designer.cs">
+      <DependentUpon>buscarmaestro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Carnet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Carnet.Designer.cs">
+      <DependentUpon>Carnet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetmoises.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetmoises.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="desarrolloDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>desarrolloDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="desarrolloDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>desarrolloDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="desarrolloDataSetBaque.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>desarrolloDataSetBaque.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="desarrolloDataSetElia.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>desarrolloDataSetElia.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="desarrolloDataSetmcha.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>desarrolloDataSetmcha.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="desarrolloDataSetRobertson.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>desarrolloDataSetRobertson.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="desarrolloDataSetWilmer.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>desarrolloDataSetWilmer.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FichaMatricula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FichaMatricula.Designer.cs">
+      <DependentUpon>FichaMatricula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGeneral Vista Secretaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGeneral Vista Secretaria.Designer.cs">
+      <DependentUpon>FormGeneral Vista Secretaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertarMaestro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertarMaestro.Designer.cs">
+      <DependentUpon>InsertarMaestro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instituto_Procedencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instituto_Procedencia.Designer.cs">
+      <DependentUpon>Instituto_Procedencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogIn Bloqueado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogIn Bloqueado.Designer.cs">
+      <DependentUpon>LogIn Bloqueado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogIn.Designer.cs">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarAlumno.Designer.cs">
+      <DependentUpon>ModificarAlumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modificarcontrasena.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modificarcontrasena.Designer.cs">
+      <DependentUpon>modificarcontrasena.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modificarmaestro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modificarmaestro.Designer.cs">
+      <DependentUpon>modificarmaestro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nacionalidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nacionalidad.Designer.cs">
+      <DependentUpon>Nacionalidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ocupacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ocupacion.Designer.cs">
+      <DependentUpon>Ocupacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parentesco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parentesco.Designer.cs">
+      <DependentUpon>Parentesco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReporteAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteAlumno.Designer.cs">
+      <DependentUpon>ReporteAlumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteClasesXCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteClasesXCurso.Designer.cs">
+      <DependentUpon>ReporteClasesXCurso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteComprobante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteComprobante.Designer.cs">
+      <DependentUpon>ReporteComprobante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteHorarioMaestro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteHorarioMaestro.Designer.cs">
+      <DependentUpon>ReporteHorarioMaestro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteNotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteNotas.Designer.cs">
+      <DependentUpon>ReporteNotas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteReprobados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteReprobados.Designer.cs">
+      <DependentUpon>ReporteReprobados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReprobadosParcial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReprobadosParcial.Designer.cs">
+      <DependentUpon>ReprobadosParcial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="SubirNotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubirNotas.Designer.cs">
+      <DependentUpon>SubirNotas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telefono.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telefono.Designer.cs">
+      <DependentUpon>Telefono.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventana General Vista Maestro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventana General Vista Maestro.Designer.cs">
+      <DependentUpon>Ventana General Vista Maestro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VerAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerAlumno.Designer.cs">
+      <DependentUpon>VerAlumno.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AsignacionesClases.resx">
+      <DependentUpon>AsignacionesClases.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="buscarmaestro.resx">
+      <DependentUpon>buscarmaestro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Carnet.resx">
+      <DependentUpon>Carnet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FichaMatricula.resx">
+      <DependentUpon>FichaMatricula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGeneral Vista Secretaria.resx">
+      <DependentUpon>FormGeneral Vista Secretaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertarMaestro.resx">
+      <DependentUpon>InsertarMaestro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instituto_Procedencia.resx">
+      <DependentUpon>Instituto_Procedencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogIn Bloqueado.resx">
+      <DependentUpon>LogIn Bloqueado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogIn.resx">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarAlumno.resx">
+      <DependentUpon>ModificarAlumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modificarcontrasena.resx">
+      <DependentUpon>modificarcontrasena.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modificarmaestro.resx">
+      <DependentUpon>modificarmaestro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nacionalidad.resx">
+      <DependentUpon>Nacionalidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ocupacion.resx">
+      <DependentUpon>Ocupacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parentesco.resx">
+      <DependentUpon>Parentesco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report3.rdlc" />
+    <EmbeddedResource Include="Report4.rdlc" />
+    <EmbeddedResource Include="Report5.rdlc" />
+    <EmbeddedResource Include="Report6.rdlc" />
+    <EmbeddedResource Include="Report7.rdlc" />
+    <EmbeddedResource Include="Report8.rdlc" />
+    <EmbeddedResource Include="Reportcarnet.rdlc" />
+    <EmbeddedResource Include="ReporteAlumno.resx">
+      <DependentUpon>ReporteAlumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteClasesXCurso.resx">
+      <DependentUpon>ReporteClasesXCurso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteComprobante.resx">
+      <DependentUpon>ReporteComprobante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteHorarioMaestro.resx">
+      <DependentUpon>ReporteHorarioMaestro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteNotas.resx">
+      <DependentUpon>ReporteNotas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteReprobados.resx">
+      <DependentUpon>ReporteReprobados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReprobadosParcial.resx">
+      <DependentUpon>ReprobadosParcial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubirNotas.resx">
+      <DependentUpon>SubirNotas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telefono.resx">
+      <DependentUpon>Telefono.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventana General Vista Maestro.resx">
+      <DependentUpon>Ventana General Vista Maestro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerAlumno.resx">
+      <DependentUpon>VerAlumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataSetmoises.xsc">
+      <DependentUpon>DataSetmoises.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetmoises.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetmoises.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetmoises.xss">
+      <DependentUpon>DataSetmoises.xsd</DependentUpon>
+    </None>
+    <None Include="desarrolloDataSet.xsc">
+      <DependentUpon>desarrolloDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="desarrolloDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>desarrolloDataSet2.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="desarrolloDataSet.xss">
+      <DependentUpon>desarrolloDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="desarrolloDataSet1.xsc">
+      <DependentUpon>desarrolloDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="desarrolloDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>desarrolloDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="desarrolloDataSet1.xss">
+      <DependentUpon>desarrolloDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="desarrolloDataSetBaque.xsc">
+      <DependentUpon>desarrolloDataSetBaque.xsd</DependentUpon>
+    </None>
+    <None Include="desarrolloDataSetBaque.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>desarrolloDataSetBaque.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="desarrolloDataSetBaque.xss">
+      <DependentUpon>desarrolloDataSetBaque.xsd</DependentUpon>
+    </None>
+    <None Include="desarrolloDataSetElia.xsc">
+      <DependentUpon>desarrolloDataSetElia.xsd</DependentUpon>
+    </None>
+    <None Include="desarrolloDataSetElia.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>desarrolloDataSetElia.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="desarrolloDataSetElia.xss">
+      <DependentUpon>desarrolloDataSetElia.xsd</DependentUpon>
+    </None>
+    <None Include="desarrolloDataSetmcha.xsc">
+      <DependentUpon>desarrolloDataSetmcha.xsd</DependentUpon>
+    </None>
+    <None Include="desarrolloDataSetmcha.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>desarrolloDataSetmcha.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="desarrolloDataSetmcha.xss">
+      <DependentUpon>desarrolloDataSetmcha.xsd</DependentUpon>
+    </None>
+    <None Include="desarrolloDataSetRobertson.xsc">
+      <DependentUpon>desarrolloDataSetRobertson.xsd</DependentUpon>
+    </None>
+    <None Include="desarrolloDataSetRobertson.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>desarrolloDataSetRobertson.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="desarrolloDataSetRobertson.xss">
+      <DependentUpon>desarrolloDataSetRobertson.xsd</DependentUpon>
+    </None>
+    <None Include="desarrolloDataSetWilmer.xsc">
+      <DependentUpon>desarrolloDataSetWilmer.xsd</DependentUpon>
+    </None>
+    <None Include="desarrolloDataSetWilmer.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>desarrolloDataSetWilmer.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="desarrolloDataSetWilmer.xss">
+      <DependentUpon>desarrolloDataSetWilmer.xsd</DependentUpon>
+    </None>
+    <None Include="General_ClaveTemporal.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="fondo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="fondo-01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Screenshot_2015-04-09-13-46-13.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
