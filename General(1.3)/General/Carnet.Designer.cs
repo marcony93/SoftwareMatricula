@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Carnet));
             this.spcarnetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.desarrolloDataSetRobertson = new General.desarrolloDataSetRobertson();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -127,7 +128,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(228, 22);
             this.label6.TabIndex = 30;
-            this.label6.Text = "Instituto Francisco Morazan";
+            this.label6.Text = "Instituto Francisco Morazán";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // pictureBox3
@@ -176,6 +177,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Carnet";
             this.Text = "Carnet";

@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReporteNotas));
             this.uspReporteNotasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.desarrolloDataSetBaque = new General.desarrolloDataSetBaque();
             this.label1 = new System.Windows.Forms.Label();
@@ -164,6 +165,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ReporteNotas";
             this.Text = "ReporteNotas";
             this.Load += new System.EventHandler(this.ReporteNotas_Load);

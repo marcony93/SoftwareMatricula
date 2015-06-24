@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(buscarmaestro));
             this.desarrolloDataSetmcha = new General.desarrolloDataSetmcha();
             this.buscarmaestroBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.buscarmaestroTableAdapter = new General.desarrolloDataSetmchaTableAdapters.buscarmaestroTableAdapter();
@@ -138,82 +139,82 @@
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "MstroId";
-            this.dataGridViewTextBoxColumn1.HeaderText = "MstroId";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Maestro Id";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.DataPropertyName = "MstroNombre1";
-            this.dataGridViewTextBoxColumn2.HeaderText = "MstroNombre1";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Primer Nombre";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.DataPropertyName = "MstroNombre2";
-            this.dataGridViewTextBoxColumn3.HeaderText = "MstroNombre2";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Segundo Nombre";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.DataPropertyName = "MstroApellido1";
-            this.dataGridViewTextBoxColumn4.HeaderText = "MstroApellido1";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Primer Apellido";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
             // dataGridViewTextBoxColumn5
             // 
             this.dataGridViewTextBoxColumn5.DataPropertyName = "MstroApellido2";
-            this.dataGridViewTextBoxColumn5.HeaderText = "MstroApellido2";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Segundo Apellido";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             // 
             // dataGridViewTextBoxColumn6
             // 
             this.dataGridViewTextBoxColumn6.DataPropertyName = "MstroFechaNac";
-            this.dataGridViewTextBoxColumn6.HeaderText = "MstroFechaNac";
+            this.dataGridViewTextBoxColumn6.HeaderText = "FechaNacimiento";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             // 
             // dataGridViewTextBoxColumn7
             // 
             this.dataGridViewTextBoxColumn7.DataPropertyName = "MstroEmail";
-            this.dataGridViewTextBoxColumn7.HeaderText = "MstroEmail";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Email";
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             // 
             // dataGridViewTextBoxColumn8
             // 
             this.dataGridViewTextBoxColumn8.DataPropertyName = "MstroDireccion";
-            this.dataGridViewTextBoxColumn8.HeaderText = "MstroDireccion";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Dirección";
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             // 
             // dataGridViewTextBoxColumn9
             // 
             this.dataGridViewTextBoxColumn9.DataPropertyName = "Sexo_SexId";
-            this.dataGridViewTextBoxColumn9.HeaderText = "Sexo_SexId";
+            this.dataGridViewTextBoxColumn9.HeaderText = "Sexo";
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
             // 
             // dataGridViewTextBoxColumn10
             // 
             this.dataGridViewTextBoxColumn10.DataPropertyName = "MstroUsu";
-            this.dataGridViewTextBoxColumn10.HeaderText = "MstroUsu";
+            this.dataGridViewTextBoxColumn10.HeaderText = "Usuario";
             this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
             // 
             // dataGridViewTextBoxColumn12
             // 
             this.dataGridViewTextBoxColumn12.DataPropertyName = "MstroTipo";
-            this.dataGridViewTextBoxColumn12.HeaderText = "MstroTipo";
+            this.dataGridViewTextBoxColumn12.HeaderText = "Tipo Cargo";
             this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
             // 
             // dataGridViewTextBoxColumn13
             // 
             this.dataGridViewTextBoxColumn13.DataPropertyName = "MstroBloc";
-            this.dataGridViewTextBoxColumn13.HeaderText = "MstroBloc";
+            this.dataGridViewTextBoxColumn13.HeaderText = "Maestro Bloqueado";
             this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
             // 
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(102, 142);
+            this.textBox1.Location = new System.Drawing.Point(129, 144);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.Size = new System.Drawing.Size(105, 20);
             this.textBox1.TabIndex = 3;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -221,7 +222,7 @@
             // 
             this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(342, 139);
+            this.textBox2.Location = new System.Drawing.Point(341, 139);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 4;
@@ -234,7 +235,7 @@
             this.comboBox1.Items.AddRange(new object[] {
             "Buscar por id",
             "Buscar por nombre"});
-            this.comboBox1.Location = new System.Drawing.Point(97, 97);
+            this.comboBox1.Location = new System.Drawing.Point(129, 99);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(105, 21);
             this.comboBox1.TabIndex = 5;
@@ -244,19 +245,21 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(9, 100);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 13);
+            this.label1.Size = new System.Drawing.Size(77, 15);
             this.label1.TabIndex = 7;
-            this.label1.Text = "buscar por";
+            this.label1.Text = "Buscar Por";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(9, 145);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 13);
+            this.label2.Size = new System.Drawing.Size(114, 15);
             this.label2.TabIndex = 8;
             this.label2.Text = "Nombre Maestro";
             // 
@@ -264,9 +267,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(257, 142);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 13);
+            this.label3.Size = new System.Drawing.Size(75, 15);
             this.label3.TabIndex = 9;
             this.label3.Text = "Id Maestro";
             // 
@@ -276,7 +280,7 @@
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox3.Location = new System.Drawing.Point(3, 74);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(525, 107);
+            this.pictureBox3.Size = new System.Drawing.Size(774, 107);
             this.pictureBox3.TabIndex = 37;
             this.pictureBox3.TabStop = false;
             // 
@@ -300,7 +304,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(228, 22);
             this.label5.TabIndex = 41;
-            this.label5.Text = "Instituto Francisco Morazan";
+            this.label5.Text = "Instituto Francisco Morazán";
             // 
             // pictureBox4
             // 
@@ -342,8 +346,10 @@
             this.Controls.Add(this.buscarmaestroDataGridView);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "buscarmaestro";
-            this.Text = "buscarmaestro";
+            this.Text = "Buscar Maestro";
             ((System.ComponentModel.ISupportInitialize)(this.desarrolloDataSetmcha)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.buscarmaestroBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.buscarmaestroDataGridView)).EndInit();

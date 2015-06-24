@@ -29,7 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReprobadosParcial));
             this.ReprobadosPorParcialBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.desarrolloDataSetElia = new General.desarrolloDataSetElia();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
@@ -91,9 +92,9 @@
             // 
             // reportViewer1
             // 
-            reportDataSource2.Name = "desarrolloDataSetElia";
-            reportDataSource2.Value = this.ReprobadosPorParcialBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
+            reportDataSource1.Name = "desarrolloDataSetElia";
+            reportDataSource1.Value = this.ReprobadosPorParcialBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "General.Report5.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(12, 147);
             this.reportViewer1.Name = "reportViewer1";
@@ -123,7 +124,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 15);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Seccion";
+            this.label2.Text = "Sección";
             // 
             // label1
             // 
@@ -142,11 +143,11 @@
             this.button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.HotTrack;
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(488, 111);
+            this.button1.Location = new System.Drawing.Point(457, 111);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(106, 23);
             this.button1.TabIndex = 16;
-            this.button1.Text = "Reporte";
+            this.button1.Text = "Generar Reporte";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -282,7 +283,7 @@
             this.sPMateriaBComboBox.FormattingEnabled = true;
             this.sPMateriaBComboBox.Location = new System.Drawing.Point(215, 78);
             this.sPMateriaBComboBox.Name = "sPMateriaBComboBox";
-            this.sPMateriaBComboBox.Size = new System.Drawing.Size(74, 21);
+            this.sPMateriaBComboBox.Size = new System.Drawing.Size(131, 21);
             this.sPMateriaBComboBox.TabIndex = 17;
             this.sPMateriaBComboBox.ValueMember = "NombreMateria";
             // 
@@ -399,7 +400,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(228, 22);
             this.label6.TabIndex = 27;
-            this.label6.Text = "Instituto Francisco Morazan";
+            this.label6.Text = "Instituto Francisco Morazán";
             // 
             // pictureBox3
             // 
@@ -448,6 +449,7 @@
             this.Controls.Add(this.reportViewer1);
             this.Controls.Add(this.cursoIdTextBox);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "ReprobadosParcial";
             this.Text = "ReprobadosParcial";

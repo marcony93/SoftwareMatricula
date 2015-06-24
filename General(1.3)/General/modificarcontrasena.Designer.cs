@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(modificarcontrasena));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -54,9 +55,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(34, 83);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 15);
+            this.label1.Size = new System.Drawing.Size(57, 15);
             this.label1.TabIndex = 0;
-            this.label1.Text = "usuario";
+            this.label1.Text = "Usuario";
             // 
             // label2
             // 
@@ -65,9 +66,9 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(34, 116);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 15);
+            this.label2.Size = new System.Drawing.Size(80, 15);
             this.label2.TabIndex = 1;
-            this.label2.Text = "contraseña";
+            this.label2.Text = "Contraseña";
             // 
             // label3
             // 
@@ -76,9 +77,9 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(34, 151);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(120, 15);
+            this.label3.Size = new System.Drawing.Size(124, 15);
             this.label3.TabIndex = 2;
-            this.label3.Text = "nueva contraseña";
+            this.label3.Text = "Nueva Contraseña";
             // 
             // textBox1
             // 
@@ -135,7 +136,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(228, 22);
             this.label4.TabIndex = 19;
-            this.label4.Text = "Instituto Francisco Morazan";
+            this.label4.Text = "Instituto Francisco Morazán";
             // 
             // pictureBox3
             // 
@@ -184,9 +185,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "modificarcontrasena";
-            this.Text = "modificarcontrasena";
+            this.Text = "Modificar Contraseña";
             this.Load += new System.EventHandler(this.modificarcontrasena_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VentanaGeneralVistaSecretaria));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fichaMatriculaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fichaMatriculaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -67,14 +68,14 @@
             this.fichaMatriculaToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.fichaMatriculaToolStripMenuItem.Name = "fichaMatriculaToolStripMenuItem";
             this.fichaMatriculaToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
-            this.fichaMatriculaToolStripMenuItem.Text = "Matricula";
+            this.fichaMatriculaToolStripMenuItem.Text = "Matrícula";
             // 
             // fichaMatriculaToolStripMenuItem1
             // 
             this.fichaMatriculaToolStripMenuItem1.BackColor = System.Drawing.SystemColors.Control;
             this.fichaMatriculaToolStripMenuItem1.Name = "fichaMatriculaToolStripMenuItem1";
             this.fichaMatriculaToolStripMenuItem1.Size = new System.Drawing.Size(155, 22);
-            this.fichaMatriculaToolStripMenuItem1.Text = "Ficha Matricula";
+            this.fichaMatriculaToolStripMenuItem1.Text = "Ficha Matrícula";
             this.fichaMatriculaToolStripMenuItem1.Click += new System.EventHandler(this.fichaMatriculaToolStripMenuItem1_Click);
             // 
             // verAlumnoToolStripMenuItem
@@ -144,21 +145,21 @@
             // alumnosToolStripMenuItem
             // 
             this.alumnosToolStripMenuItem.Name = "alumnosToolStripMenuItem";
-            this.alumnosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.alumnosToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.alumnosToolStripMenuItem.Text = "Alumnos";
             this.alumnosToolStripMenuItem.Click += new System.EventHandler(this.alumnosToolStripMenuItem_Click);
             // 
             // notasToolStripMenuItem1
             // 
             this.notasToolStripMenuItem1.Name = "notasToolStripMenuItem1";
-            this.notasToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.notasToolStripMenuItem1.Size = new System.Drawing.Size(148, 22);
             this.notasToolStripMenuItem1.Text = "Notas";
             this.notasToolStripMenuItem1.Click += new System.EventHandler(this.notasToolStripMenuItem1_Click);
             // 
             // comprobanteToolStripMenuItem
             // 
             this.comprobanteToolStripMenuItem.Name = "comprobanteToolStripMenuItem";
-            this.comprobanteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.comprobanteToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.comprobanteToolStripMenuItem.Text = "Comprobante";
             this.comprobanteToolStripMenuItem.Click += new System.EventHandler(this.comprobanteToolStripMenuItem_Click);
             // 
@@ -170,6 +171,7 @@
             this.ClientSize = new System.Drawing.Size(731, 632);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;

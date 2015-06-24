@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReporteHorarioMaestro));
             this.sprephorariomaestroBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.desarrolloDataSetBaque = new General.desarrolloDataSetBaque();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
@@ -343,6 +344,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.reportViewer1);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "ReporteHorarioMaestro";
             this.Text = "ReporteHorarioMaestro";

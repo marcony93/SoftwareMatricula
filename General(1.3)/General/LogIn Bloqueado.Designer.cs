@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LogIn_Bloqueado));
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -187,7 +188,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(228, 22);
             this.label4.TabIndex = 22;
-            this.label4.Text = "Instituto Francisco Morazan";
+            this.label4.Text = "Instituto Francisco Morazán";
             // 
             // pictureBox3
             // 
@@ -236,6 +237,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.mstroTipoLabel1);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "LogIn_Bloqueado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

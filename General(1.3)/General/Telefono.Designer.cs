@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Telefono));
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -38,6 +39,9 @@
             this.spTelefonosTableAdapter = new General.desarrolloDataSet1TableAdapters.spTelefonosTableAdapter();
             this.tableAdapterManager = new General.desarrolloDataSet1TableAdapters.TableAdapterManager();
             this.spTelefonosDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.eliminas = new System.Windows.Forms.DataGridViewButtonColumn();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -45,9 +49,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.eliminas = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.desarrolloDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spTelefonosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spTelefonosDataGridView)).BeginInit();
@@ -62,11 +63,12 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(12, 87);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 85);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 13);
+            this.label1.Size = new System.Drawing.Size(138, 15);
             this.label1.TabIndex = 9;
-            this.label1.Text = "Numero de telefono";
+            this.label1.Text = "Número de Télefono";
             // 
             // button1
             // 
@@ -74,6 +76,7 @@
             this.button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.HotTrack;
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(323, 104);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
@@ -85,16 +88,16 @@
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox1.Location = new System.Drawing.Point(139, 84);
+            this.textBox1.Location = new System.Drawing.Point(156, 84);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(166, 20);
+            this.textBox1.Size = new System.Drawing.Size(160, 20);
             this.textBox1.TabIndex = 7;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(154, 84);
+            this.label2.Location = new System.Drawing.Point(178, 84);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 10;
@@ -162,6 +165,29 @@
             this.spTelefonosDataGridView.TabIndex = 12;
             this.spTelefonosDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.spTelefonosDataGridView_CellContentClick);
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "TelNumero";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Numero";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Alumno_AlumId";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Alumno";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // eliminas
+            // 
+            this.eliminas.HeaderText = "Eliminar";
+            this.eliminas.Name = "eliminas";
+            this.eliminas.ReadOnly = true;
+            this.eliminas.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.eliminas.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
@@ -186,7 +212,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(228, 22);
             this.label5.TabIndex = 33;
-            this.label5.Text = "Instituto Francisco Morazan";
+            this.label5.Text = "Instituto Francisco Morazán";
             // 
             // pictureBox4
             // 
@@ -230,29 +256,6 @@
             this.pictureBox3.TabIndex = 35;
             this.pictureBox3.TabStop = false;
             // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "TelNumero";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Numero";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Alumno_AlumId";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Alumno";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // eliminas
-            // 
-            this.eliminas.HeaderText = "Eliminar";
-            this.eliminas.Name = "eliminas";
-            this.eliminas.ReadOnly = true;
-            this.eliminas.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.eliminas.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
             // Telefono
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -270,8 +273,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox3);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Telefono";
-            this.Text = "Telefono";
+            this.Text = "Teléfono";
             this.Load += new System.EventHandler(this.Telefono_Load);
             ((System.ComponentModel.ISupportInitialize)(this.desarrolloDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spTelefonosBindingSource)).EndInit();

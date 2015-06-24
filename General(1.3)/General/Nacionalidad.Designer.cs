@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Nacionalidad));
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.desarrolloDataSet = new General.desarrolloDataSet();
@@ -44,9 +45,9 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.spNacionalidadDataGridView = new System.Windows.Forms.DataGridView();
-            this.eliminars = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.eliminars = new System.Windows.Forms.DataGridViewButtonColumn();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -134,9 +135,10 @@
             this.button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.HotTrack;
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(320, 99);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(310, 84);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(85, 39);
             this.button1.TabIndex = 5;
             this.button1.Text = "Guardar";
             this.button1.UseVisualStyleBackColor = false;
@@ -229,13 +231,13 @@
             this.spNacionalidadDataGridView.TabIndex = 5;
             this.spNacionalidadDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.spNacionalidadDataGridView_CellContentClick_1);
             // 
-            // eliminars
+            // dataGridViewTextBoxColumn1
             // 
-            this.eliminars.HeaderText = "Eliminar";
-            this.eliminars.Name = "eliminars";
-            this.eliminars.ReadOnly = true;
-            this.eliminars.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.eliminars.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "NacId";
+            this.dataGridViewTextBoxColumn1.HeaderText = "";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 5;
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -244,13 +246,13 @@
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
-            // dataGridViewTextBoxColumn1
+            // eliminars
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "NacId";
-            this.dataGridViewTextBoxColumn1.HeaderText = "";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 5;
+            this.eliminars.HeaderText = "Eliminar";
+            this.eliminars.Name = "eliminars";
+            this.eliminars.ReadOnly = true;
+            this.eliminars.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.eliminars.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // pictureBox3
             // 
@@ -283,7 +285,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(228, 22);
             this.label5.TabIndex = 27;
-            this.label5.Text = "Instituto Francisco Morazan";
+            this.label5.Text = "Instituto Francisco Morazán";
             // 
             // Nacionalidad
             // 
@@ -300,6 +302,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox3);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Nacionalidad";

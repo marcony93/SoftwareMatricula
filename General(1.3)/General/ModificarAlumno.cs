@@ -675,6 +675,21 @@ namespace General
             Form Telefono = new Telefono();
             Telefono.Show();
         }
+
+        private void alumFechaNacLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nacionalidad_NacIdLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cursoLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
       
        
         

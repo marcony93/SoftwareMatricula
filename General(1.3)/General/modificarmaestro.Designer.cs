@@ -39,6 +39,7 @@
             System.Windows.Forms.Label mstroDireccionLabel;
             System.Windows.Forms.Label sexNombreLabel;
             System.Windows.Forms.Label mstroUsuLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(modificarmaestro));
             this.desarrolloDataSetmcha = new General.desarrolloDataSetmcha();
             this.selectProfesorBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.selectProfesorTableAdapter = new General.desarrolloDataSetmchaTableAdapters.SelectProfesorTableAdapter();
@@ -82,9 +83,10 @@
             // 
             mstroIdLabel.AutoSize = true;
             mstroIdLabel.BackColor = System.Drawing.Color.White;
-            mstroIdLabel.Location = new System.Drawing.Point(98, 89);
+            mstroIdLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            mstroIdLabel.Location = new System.Drawing.Point(61, 86);
             mstroIdLabel.Name = "mstroIdLabel";
-            mstroIdLabel.Size = new System.Drawing.Size(57, 13);
+            mstroIdLabel.Size = new System.Drawing.Size(75, 15);
             mstroIdLabel.TabIndex = 22;
             mstroIdLabel.Text = "Maestro Id";
             // 
@@ -92,9 +94,10 @@
             // 
             mstroNombre1Label.AutoSize = true;
             mstroNombre1Label.BackColor = System.Drawing.Color.White;
-            mstroNombre1Label.Location = new System.Drawing.Point(84, 146);
+            mstroNombre1Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            mstroNombre1Label.Location = new System.Drawing.Point(61, 143);
             mstroNombre1Label.Name = "mstroNombre1Label";
-            mstroNombre1Label.Size = new System.Drawing.Size(76, 13);
+            mstroNombre1Label.Size = new System.Drawing.Size(105, 15);
             mstroNombre1Label.TabIndex = 23;
             mstroNombre1Label.Text = "Primer Nombre";
             // 
@@ -102,9 +105,10 @@
             // 
             mstroNombre2Label.AutoSize = true;
             mstroNombre2Label.BackColor = System.Drawing.Color.White;
-            mstroNombre2Label.Location = new System.Drawing.Point(74, 196);
+            mstroNombre2Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            mstroNombre2Label.Location = new System.Drawing.Point(61, 196);
             mstroNombre2Label.Name = "mstroNombre2Label";
-            mstroNombre2Label.Size = new System.Drawing.Size(90, 13);
+            mstroNombre2Label.Size = new System.Drawing.Size(119, 15);
             mstroNombre2Label.TabIndex = 24;
             mstroNombre2Label.Text = "Segundo Nombre";
             // 
@@ -112,9 +116,10 @@
             // 
             mstroApellido2Label.AutoSize = true;
             mstroApellido2Label.BackColor = System.Drawing.Color.White;
-            mstroApellido2Label.Location = new System.Drawing.Point(76, 324);
+            mstroApellido2Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            mstroApellido2Label.Location = new System.Drawing.Point(61, 322);
             mstroApellido2Label.Name = "mstroApellido2Label";
-            mstroApellido2Label.Size = new System.Drawing.Size(90, 13);
+            mstroApellido2Label.Size = new System.Drawing.Size(120, 15);
             mstroApellido2Label.TabIndex = 25;
             mstroApellido2Label.Text = "Segundo Apellido";
             // 
@@ -122,9 +127,10 @@
             // 
             mstroApellido1Label.AutoSize = true;
             mstroApellido1Label.BackColor = System.Drawing.Color.White;
-            mstroApellido1Label.Location = new System.Drawing.Point(84, 263);
+            mstroApellido1Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            mstroApellido1Label.Location = new System.Drawing.Point(61, 263);
             mstroApellido1Label.Name = "mstroApellido1Label";
-            mstroApellido1Label.Size = new System.Drawing.Size(76, 13);
+            mstroApellido1Label.Size = new System.Drawing.Size(106, 15);
             mstroApellido1Label.TabIndex = 26;
             mstroApellido1Label.Text = "Primer Apellido";
             // 
@@ -132,9 +138,10 @@
             // 
             mstroFechaNacLabel.AutoSize = true;
             mstroFechaNacLabel.BackColor = System.Drawing.Color.White;
-            mstroFechaNacLabel.Location = new System.Drawing.Point(74, 390);
+            mstroFechaNacLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            mstroFechaNacLabel.Location = new System.Drawing.Point(58, 386);
             mstroFechaNacLabel.Name = "mstroFechaNacLabel";
-            mstroFechaNacLabel.Size = new System.Drawing.Size(93, 13);
+            mstroFechaNacLabel.Size = new System.Drawing.Size(123, 15);
             mstroFechaNacLabel.TabIndex = 27;
             mstroFechaNacLabel.Text = "Fecha Nacimiento";
             // 
@@ -142,9 +149,10 @@
             // 
             mstroEmailLabel.AutoSize = true;
             mstroEmailLabel.BackColor = System.Drawing.Color.White;
-            mstroEmailLabel.Location = new System.Drawing.Point(360, 92);
+            mstroEmailLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            mstroEmailLabel.Location = new System.Drawing.Point(349, 90);
             mstroEmailLabel.Name = "mstroEmailLabel";
-            mstroEmailLabel.Size = new System.Drawing.Size(32, 13);
+            mstroEmailLabel.Size = new System.Drawing.Size(44, 15);
             mstroEmailLabel.TabIndex = 28;
             mstroEmailLabel.Text = "Email";
             // 
@@ -152,19 +160,21 @@
             // 
             mstroDireccionLabel.AutoSize = true;
             mstroDireccionLabel.BackColor = System.Drawing.Color.White;
-            mstroDireccionLabel.Location = new System.Drawing.Point(340, 161);
+            mstroDireccionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            mstroDireccionLabel.Location = new System.Drawing.Point(349, 159);
             mstroDireccionLabel.Name = "mstroDireccionLabel";
-            mstroDireccionLabel.Size = new System.Drawing.Size(52, 13);
+            mstroDireccionLabel.Size = new System.Drawing.Size(68, 15);
             mstroDireccionLabel.TabIndex = 29;
-            mstroDireccionLabel.Text = "Direccion";
+            mstroDireccionLabel.Text = "Dirección";
             // 
             // sexNombreLabel
             // 
             sexNombreLabel.AutoSize = true;
             sexNombreLabel.BackColor = System.Drawing.Color.White;
-            sexNombreLabel.Location = new System.Drawing.Point(356, 214);
+            sexNombreLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            sexNombreLabel.Location = new System.Drawing.Point(349, 214);
             sexNombreLabel.Name = "sexNombreLabel";
-            sexNombreLabel.Size = new System.Drawing.Size(31, 13);
+            sexNombreLabel.Size = new System.Drawing.Size(39, 15);
             sexNombreLabel.TabIndex = 30;
             sexNombreLabel.Text = "Sexo";
             // 
@@ -172,9 +182,10 @@
             // 
             mstroUsuLabel.AutoSize = true;
             mstroUsuLabel.BackColor = System.Drawing.Color.White;
-            mstroUsuLabel.Location = new System.Drawing.Point(349, 293);
+            mstroUsuLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            mstroUsuLabel.Location = new System.Drawing.Point(349, 291);
             mstroUsuLabel.Name = "mstroUsuLabel";
-            mstroUsuLabel.Size = new System.Drawing.Size(43, 13);
+            mstroUsuLabel.Size = new System.Drawing.Size(57, 15);
             mstroUsuLabel.TabIndex = 31;
             mstroUsuLabel.Text = "Usuario";
             // 
@@ -227,6 +238,7 @@
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(563, 428);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(110, 42);
@@ -240,7 +252,7 @@
             this.mstroIdTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.mstroIdTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.selectProfesorBindingSource, "MstroId", true));
             this.mstroIdTextBox.Enabled = false;
-            this.mstroIdTextBox.Location = new System.Drawing.Point(172, 86);
+            this.mstroIdTextBox.Location = new System.Drawing.Point(186, 85);
             this.mstroIdTextBox.Name = "mstroIdTextBox";
             this.mstroIdTextBox.Size = new System.Drawing.Size(100, 20);
             this.mstroIdTextBox.TabIndex = 23;
@@ -250,7 +262,7 @@
             this.mstroNombre1TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.mstroNombre1TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.selectProfesorBindingSource, "MstroNombre1", true));
             this.mstroNombre1TextBox.Enabled = false;
-            this.mstroNombre1TextBox.Location = new System.Drawing.Point(172, 143);
+            this.mstroNombre1TextBox.Location = new System.Drawing.Point(186, 143);
             this.mstroNombre1TextBox.Name = "mstroNombre1TextBox";
             this.mstroNombre1TextBox.Size = new System.Drawing.Size(100, 20);
             this.mstroNombre1TextBox.TabIndex = 24;
@@ -260,7 +272,7 @@
             this.mstroNombre2TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.mstroNombre2TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.selectProfesorBindingSource, "MstroNombre2", true));
             this.mstroNombre2TextBox.Enabled = false;
-            this.mstroNombre2TextBox.Location = new System.Drawing.Point(172, 196);
+            this.mstroNombre2TextBox.Location = new System.Drawing.Point(186, 196);
             this.mstroNombre2TextBox.Name = "mstroNombre2TextBox";
             this.mstroNombre2TextBox.Size = new System.Drawing.Size(100, 20);
             this.mstroNombre2TextBox.TabIndex = 25;
@@ -270,7 +282,7 @@
             this.mstroApellido2TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.mstroApellido2TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.selectProfesorBindingSource, "MstroApellido2", true));
             this.mstroApellido2TextBox.Enabled = false;
-            this.mstroApellido2TextBox.Location = new System.Drawing.Point(172, 321);
+            this.mstroApellido2TextBox.Location = new System.Drawing.Point(186, 317);
             this.mstroApellido2TextBox.Name = "mstroApellido2TextBox";
             this.mstroApellido2TextBox.Size = new System.Drawing.Size(100, 20);
             this.mstroApellido2TextBox.TabIndex = 26;
@@ -280,7 +292,7 @@
             this.mstroApellido1TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.mstroApellido1TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.selectProfesorBindingSource, "MstroApellido1", true));
             this.mstroApellido1TextBox.Enabled = false;
-            this.mstroApellido1TextBox.Location = new System.Drawing.Point(172, 263);
+            this.mstroApellido1TextBox.Location = new System.Drawing.Point(186, 262);
             this.mstroApellido1TextBox.Name = "mstroApellido1TextBox";
             this.mstroApellido1TextBox.Size = new System.Drawing.Size(100, 20);
             this.mstroApellido1TextBox.TabIndex = 27;
@@ -289,7 +301,7 @@
             // 
             this.mstroFechaNacDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.selectProfesorBindingSource, "MstroFechaNac", true));
             this.mstroFechaNacDateTimePicker.Enabled = false;
-            this.mstroFechaNacDateTimePicker.Location = new System.Drawing.Point(172, 386);
+            this.mstroFechaNacDateTimePicker.Location = new System.Drawing.Point(186, 386);
             this.mstroFechaNacDateTimePicker.Name = "mstroFechaNacDateTimePicker";
             this.mstroFechaNacDateTimePicker.Size = new System.Drawing.Size(200, 20);
             this.mstroFechaNacDateTimePicker.TabIndex = 28;
@@ -348,6 +360,7 @@
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button2.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(443, 430);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(114, 40);
@@ -377,7 +390,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(228, 22);
             this.label5.TabIndex = 61;
-            this.label5.Text = "Instituto Francisco Morazan";
+            this.label5.Text = "Instituto Francisco Morazán";
             // 
             // pictureBox2
             // 
@@ -432,6 +445,7 @@
             this.Controls.Add(this.mstroIdTextBox);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "modificarmaestro";
             this.Text = "Actualizar Maestro";
             this.Load += new System.EventHandler(this.modificarmaestro_Load);

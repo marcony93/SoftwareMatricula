@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AsignacionesClases));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -64,6 +65,11 @@
             this.spmostrarplanillaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.spmostrarplanillaTableAdapter = new General.desarrolloDataSetWilmerTableAdapters.spmostrarplanillaTableAdapter();
             this.spmostrarplanillaDataGridView = new System.Windows.Forms.DataGridView();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -72,11 +78,6 @@
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.desarrolloDataSetWilmer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spMaestroBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spModalidadBindingSource)).BeginInit();
@@ -135,7 +136,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(58, 15);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Seccion";
+            this.label4.Text = "Sección";
             // 
             // label5
             // 
@@ -168,7 +169,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(29, 15);
             this.label7.TabIndex = 6;
-            this.label7.Text = "Dia";
+            this.label7.Text = "Día";
             // 
             // button1
             // 
@@ -411,62 +412,6 @@
             this.spmostrarplanillaDataGridView.Size = new System.Drawing.Size(541, 156);
             this.spmostrarplanillaDataGridView.TabIndex = 16;
             // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Hora_Hora";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Hora_Hora";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "PlanillaAnio";
-            this.dataGridViewTextBoxColumn2.HeaderText = "PlanillaAnio";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Nombre Maestro";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Nombre Maestro";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Curso Nombre";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Curso Nombre";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Modalidad Nombre";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Modalidad Nombre";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "PlaMateria";
-            this.dataGridViewTextBoxColumn6.HeaderText = "PlaMateria";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "Seccion";
-            this.dataGridViewTextBoxColumn7.HeaderText = "Seccion";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "Dia_Dia";
-            this.dataGridViewTextBoxColumn8.HeaderText = "Dia_Dia";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.ReadOnly = true;
-            // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::General.Properties.Resources.Screenshot_2015_04_09_13_46_13;
@@ -499,7 +444,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(228, 22);
             this.label8.TabIndex = 21;
-            this.label8.Text = "Instituto Francisco Morazan";
+            this.label8.Text = "Instituto Francisco Morazán";
             // 
             // pictureBox1
             // 
@@ -520,6 +465,62 @@
             this.pictureBox4.Size = new System.Drawing.Size(574, 189);
             this.pictureBox4.TabIndex = 23;
             this.pictureBox4.TabStop = false;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Hora_Hora";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Hora";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "PlanillaAnio";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Año";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Nombre Maestro";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Nombre Maestro";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Curso Nombre";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Curso";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Modalidad Nombre";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Modalidad";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "PlaMateria";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Materia";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Seccion";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Seccion";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "Dia_Dia";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Día";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
             // 
             // AsignacionesClases
             // 
@@ -549,9 +550,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "AsignacionesClases";
-            this.Text = "Asignacion Clases";
+            this.Text = "Asignación Clases";
             this.Load += new System.EventHandler(this.AsignacionesClases_Load);
             ((System.ComponentModel.ISupportInitialize)(this.desarrolloDataSetWilmer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spMaestroBindingSource)).EndInit();
@@ -609,6 +611,11 @@
         private System.Windows.Forms.BindingSource spmostrarplanillaBindingSource;
         private desarrolloDataSetWilmerTableAdapters.spmostrarplanillaTableAdapter spmostrarplanillaTableAdapter;
         private System.Windows.Forms.DataGridView spmostrarplanillaDataGridView;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
@@ -617,10 +624,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }

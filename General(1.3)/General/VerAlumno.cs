@@ -53,6 +53,8 @@ namespace General
                     textBox1.Enabled = false;
                     textBox2.Enabled = true;
                 }
+            textBox1.Clear();
+            textBox2.Clear();
         }
 
         private void spVerAlumnoDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -69,6 +71,16 @@ namespace General
                 Form ModificarAlumno = new ModificarAlumno();
                 ModificarAlumno.Show();
             }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            LogIn.SoloLetrasConMensaje(textBox1, errorProvider1);
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            LogIn.solo13Numeros(textBox2);
         }
     }
 }

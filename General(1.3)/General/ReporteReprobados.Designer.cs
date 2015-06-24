@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReporteReprobados));
             this.ReprobadosPorClaseGeneralBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.desarrolloDataSetElia = new General.desarrolloDataSetElia();
             this.SPExamenPorPArcialBBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -135,7 +136,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 15);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Seccion";
+            this.label2.Text = "Sección";
             // 
             // label3
             // 
@@ -311,7 +312,7 @@
             this.sPMateriaBComboBox.FormattingEnabled = true;
             this.sPMateriaBComboBox.Location = new System.Drawing.Point(220, 70);
             this.sPMateriaBComboBox.Name = "sPMateriaBComboBox";
-            this.sPMateriaBComboBox.Size = new System.Drawing.Size(58, 21);
+            this.sPMateriaBComboBox.Size = new System.Drawing.Size(150, 21);
             this.sPMateriaBComboBox.TabIndex = 9;
             this.sPMateriaBComboBox.ValueMember = "NombreMateria";
             this.sPMateriaBComboBox.SelectedIndexChanged += new System.EventHandler(this.sPMateriaBComboBox_SelectedIndexChanged);
@@ -337,11 +338,11 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(484, 97);
+            this.button1.Location = new System.Drawing.Point(433, 97);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(126, 23);
             this.button1.TabIndex = 12;
-            this.button1.Text = "Reporte";
+            this.button1.Text = "Generar Reporte";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -359,7 +360,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(228, 22);
             this.label5.TabIndex = 22;
-            this.label5.Text = "Instituto Francisco Morazan";
+            this.label5.Text = "Instituto Francisco Morazán";
             // 
             // pictureBox3
             // 
@@ -416,6 +417,7 @@
             this.Controls.Add(this.reportViewer1);
             this.Controls.Add(this.cursoIdTextBox);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ReporteReprobados";
             this.Text = "ReporteReprobados";
             this.Load += new System.EventHandler(this.ReporteReprobados_Load);
