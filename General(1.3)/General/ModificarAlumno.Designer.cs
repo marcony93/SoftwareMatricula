@@ -353,7 +353,7 @@
             // 
             parentesco_ParenIdLabel.AutoSize = true;
             parentesco_ParenIdLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            parentesco_ParenIdLabel.Location = new System.Drawing.Point(259, 151);
+            parentesco_ParenIdLabel.Location = new System.Drawing.Point(285, 151);
             parentesco_ParenIdLabel.Name = "parentesco_ParenIdLabel";
             parentesco_ParenIdLabel.Size = new System.Drawing.Size(56, 15);
             parentesco_ParenIdLabel.TabIndex = 13;
@@ -1120,7 +1120,7 @@
             this.spRelacionComboBox.DisplayMember = "ParenNombre";
             this.spRelacionComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.spRelacionComboBox.FormattingEnabled = true;
-            this.spRelacionComboBox.Location = new System.Drawing.Point(262, 169);
+            this.spRelacionComboBox.Location = new System.Drawing.Point(285, 169);
             this.spRelacionComboBox.Name = "spRelacionComboBox";
             this.spRelacionComboBox.Size = new System.Drawing.Size(116, 23);
             this.spRelacionComboBox.TabIndex = 16;
@@ -1140,7 +1140,7 @@
             this.spOcupacionComboBox.FormattingEnabled = true;
             this.spOcupacionComboBox.Location = new System.Drawing.Point(136, 169);
             this.spOcupacionComboBox.Name = "spOcupacionComboBox";
-            this.spOcupacionComboBox.Size = new System.Drawing.Size(116, 23);
+            this.spOcupacionComboBox.Size = new System.Drawing.Size(135, 23);
             this.spOcupacionComboBox.TabIndex = 15;
             this.spOcupacionComboBox.ValueMember = "OcupId";
             this.spOcupacionComboBox.SelectedIndexChanged += new System.EventHandler(this.spOcupacionComboBox_SelectedIndexChanged);
