@@ -106,9 +106,9 @@
             reportDataSource1.Value = this.ReprobadosPorClaseGeneralBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "General.Report4.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(11, 143);
+            this.reportViewer1.Location = new System.Drawing.Point(11, 192);
             this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(561, 319);
+            this.reportViewer1.Size = new System.Drawing.Size(561, 270);
             this.reportViewer1.TabIndex = 0;
             this.reportViewer1.Load += new System.EventHandler(this.reportViewer1_Load);
             // 
@@ -132,7 +132,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(16, 107);
+            this.label2.Location = new System.Drawing.Point(16, 119);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 15);
             this.label2.TabIndex = 2;
@@ -143,7 +143,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(158, 74);
+            this.label3.Location = new System.Drawing.Point(18, 155);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(56, 15);
             this.label3.TabIndex = 3;
@@ -194,9 +194,9 @@
             this.sPCursoBComboBox.DisplayMember = "Curso Nombre";
             this.sPCursoBComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.sPCursoBComboBox.FormattingEnabled = true;
-            this.sPCursoBComboBox.Location = new System.Drawing.Point(68, 70);
+            this.sPCursoBComboBox.Location = new System.Drawing.Point(93, 74);
             this.sPCursoBComboBox.Name = "sPCursoBComboBox";
-            this.sPCursoBComboBox.Size = new System.Drawing.Size(74, 21);
+            this.sPCursoBComboBox.Size = new System.Drawing.Size(150, 21);
             this.sPCursoBComboBox.TabIndex = 4;
             this.sPCursoBComboBox.ValueMember = "CursoId";
             this.sPCursoBComboBox.SelectedIndexChanged += new System.EventHandler(this.sPCursoBComboBox_SelectedIndexChanged);
@@ -204,7 +204,7 @@
             // cursoIdTextBox
             // 
             this.cursoIdTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.sPCursoBBindingSource, "CursoId", true));
-            this.cursoIdTextBox.Location = new System.Drawing.Point(85, 71);
+            this.cursoIdTextBox.Location = new System.Drawing.Point(135, 76);
             this.cursoIdTextBox.Name = "cursoIdTextBox";
             this.cursoIdTextBox.Size = new System.Drawing.Size(36, 20);
             this.cursoIdTextBox.TabIndex = 6;
@@ -257,9 +257,9 @@
             this.sPSeccionBComboBox.DisplayMember = "SecNombre";
             this.sPSeccionBComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.sPSeccionBComboBox.FormattingEnabled = true;
-            this.sPSeccionBComboBox.Location = new System.Drawing.Point(85, 99);
+            this.sPSeccionBComboBox.Location = new System.Drawing.Point(93, 113);
             this.sPSeccionBComboBox.Name = "sPSeccionBComboBox";
-            this.sPSeccionBComboBox.Size = new System.Drawing.Size(57, 21);
+            this.sPSeccionBComboBox.Size = new System.Drawing.Size(150, 21);
             this.sPSeccionBComboBox.TabIndex = 7;
             this.sPSeccionBComboBox.ValueMember = "SecNombre";
             // 
@@ -310,7 +310,7 @@
             this.sPMateriaBComboBox.DisplayMember = "NombreMateria";
             this.sPMateriaBComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.sPMateriaBComboBox.FormattingEnabled = true;
-            this.sPMateriaBComboBox.Location = new System.Drawing.Point(220, 70);
+            this.sPMateriaBComboBox.Location = new System.Drawing.Point(93, 149);
             this.sPMateriaBComboBox.Name = "sPMateriaBComboBox";
             this.sPMateriaBComboBox.Size = new System.Drawing.Size(150, 21);
             this.sPMateriaBComboBox.TabIndex = 9;
@@ -319,7 +319,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(484, 71);
+            this.textBox1.Location = new System.Drawing.Point(496, 75);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(58, 20);
             this.textBox1.TabIndex = 10;
@@ -330,7 +330,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.White;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(430, 74);
+            this.label4.Location = new System.Drawing.Point(428, 81);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(49, 15);
             this.label4.TabIndex = 11;
@@ -338,12 +338,17 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(433, 97);
+            this.button1.BackColor = System.Drawing.Color.Azure;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.HotTrack;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(469, 118);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(126, 23);
+            this.button1.Size = new System.Drawing.Size(85, 52);
             this.button1.TabIndex = 12;
             this.button1.Text = "Generar Reporte";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // errorProvider1
@@ -388,9 +393,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(11, 63);
+            this.pictureBox1.Location = new System.Drawing.Point(11, 60);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(561, 74);
+            this.pictureBox1.Size = new System.Drawing.Size(561, 126);
             this.pictureBox1.TabIndex = 23;
             this.pictureBox1.TabStop = false;
             // 
@@ -399,7 +404,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(587, 474);
+            this.ClientSize = new System.Drawing.Size(586, 474);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);

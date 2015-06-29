@@ -82,5 +82,15 @@ namespace General
         {
             LogIn.solo13Numeros(textBox2);
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -79,8 +79,13 @@ namespace General
 
         private void verAlumnoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form vent = new VerAlumno();
-            vent.Show();
+            //Form vent = new VerAlumno();
+           // vent.Show();
+            Form FichaMatricula = new VerAlumno();
+            FichaMatricula.Show();
+            FichaMatricula.MdiParent = this;
+            FichaMatricula.WindowState = FormWindowState.Maximized;
+            FichaMatricula.BringToFront();
         }
 
         private void modificarCarnetToolStripMenuItem_Click(object sender, EventArgs e)

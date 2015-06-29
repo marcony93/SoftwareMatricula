@@ -49,6 +49,13 @@
             System.Windows.Forms.Label modalidad_ModIdLabel;
             System.Windows.Forms.Label cursoLabel;
             System.Windows.Forms.Label seccionLabel;
+            System.Windows.Forms.Label label4;
+            System.Windows.Forms.Label label6;
+            System.Windows.Forms.Label label7;
+            System.Windows.Forms.Label label8;
+            System.Windows.Forms.Label label9;
+            System.Windows.Forms.Label label12;
+            System.Windows.Forms.Label label13;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ModificarAlumno));
             this.desarrolloDataSet1 = new General.desarrolloDataSet1();
             this.spModificar_DatosPersonalesBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -122,8 +129,8 @@
             this.encdoFechaNacDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.encdoIdTextBox = new System.Windows.Forms.TextBox();
             this.encdoApellido2TextBox = new System.Windows.Forms.TextBox();
-            this.encdoApellido1TextBox = new System.Windows.Forms.TextBox();
             this.encdoNombre2TextBox = new System.Windows.Forms.TextBox();
+            this.encdoApellido1TextBox = new System.Windows.Forms.TextBox();
             this.encdoNombre1TextBox = new System.Windows.Forms.TextBox();
             this.spSexoBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.spRelacionBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -166,6 +173,13 @@
             modalidad_ModIdLabel = new System.Windows.Forms.Label();
             cursoLabel = new System.Windows.Forms.Label();
             seccionLabel = new System.Windows.Forms.Label();
+            label4 = new System.Windows.Forms.Label();
+            label6 = new System.Windows.Forms.Label();
+            label7 = new System.Windows.Forms.Label();
+            label8 = new System.Windows.Forms.Label();
+            label9 = new System.Windows.Forms.Label();
+            label12 = new System.Windows.Forms.Label();
+            label13 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.desarrolloDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spModificar_DatosPersonalesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spDepartamentosBindingSource)).BeginInit();
@@ -200,25 +214,25 @@
             alumNombre1Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             alumNombre1Label.Location = new System.Drawing.Point(16, 16);
             alumNombre1Label.Name = "alumNombre1Label";
-            alumNombre1Label.Size = new System.Drawing.Size(58, 15);
+            alumNombre1Label.Size = new System.Drawing.Size(105, 15);
             alumNombre1Label.TabIndex = 2;
-            alumNombre1Label.Text = "Nombre";
+            alumNombre1Label.Text = "Primer Nombre";
             // 
             // alumIdLabel
             // 
             alumIdLabel.AutoSize = true;
             alumIdLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            alumIdLabel.Location = new System.Drawing.Point(16, 58);
+            alumIdLabel.Location = new System.Drawing.Point(9, 61);
             alumIdLabel.Name = "alumIdLabel";
-            alumIdLabel.Size = new System.Drawing.Size(95, 15);
+            alumIdLabel.Size = new System.Drawing.Size(142, 15);
             alumIdLabel.TabIndex = 10;
-            alumIdLabel.Text = "Id del Alumno";
+            alumIdLabel.Text = "Numero de Identidad";
             // 
             // alumFechaNacLabel
             // 
             alumFechaNacLabel.AutoSize = true;
             alumFechaNacLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            alumFechaNacLabel.Location = new System.Drawing.Point(16, 136);
+            alumFechaNacLabel.Location = new System.Drawing.Point(301, 61);
             alumFechaNacLabel.Name = "alumFechaNacLabel";
             alumFechaNacLabel.Size = new System.Drawing.Size(145, 15);
             alumFechaNacLabel.TabIndex = 12;
@@ -229,7 +243,7 @@
             // 
             nacionalidad_NacIdLabel.AutoSize = true;
             nacionalidad_NacIdLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            nacionalidad_NacIdLabel.Location = new System.Drawing.Point(16, 99);
+            nacionalidad_NacIdLabel.Location = new System.Drawing.Point(154, 61);
             nacionalidad_NacIdLabel.Name = "nacionalidad_NacIdLabel";
             nacionalidad_NacIdLabel.Size = new System.Drawing.Size(133, 15);
             nacionalidad_NacIdLabel.TabIndex = 14;
@@ -239,7 +253,7 @@
             // 
             alumDireccionLabel.AutoSize = true;
             alumDireccionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            alumDireccionLabel.Location = new System.Drawing.Point(16, 373);
+            alumDireccionLabel.Location = new System.Drawing.Point(19, 333);
             alumDireccionLabel.Name = "alumDireccionLabel";
             alumDireccionLabel.Size = new System.Drawing.Size(73, 15);
             alumDireccionLabel.TabIndex = 20;
@@ -249,7 +263,7 @@
             // 
             sexo_SexIdLabel1.AutoSize = true;
             sexo_SexIdLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            sexo_SexIdLabel1.Location = new System.Drawing.Point(16, 192);
+            sexo_SexIdLabel1.Location = new System.Drawing.Point(19, 146);
             sexo_SexIdLabel1.Name = "sexo_SexIdLabel1";
             sexo_SexIdLabel1.Size = new System.Drawing.Size(39, 15);
             sexo_SexIdLabel1.TabIndex = 27;
@@ -259,7 +273,7 @@
             // 
             tipoSangre_TipSangreIdLabel.AutoSize = true;
             tipoSangre_TipSangreIdLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            tipoSangre_TipSangreIdLabel.Location = new System.Drawing.Point(16, 233);
+            tipoSangre_TipSangreIdLabel.Location = new System.Drawing.Point(156, 146);
             tipoSangre_TipSangreIdLabel.Name = "tipoSangre_TipSangreIdLabel";
             tipoSangre_TipSangreIdLabel.Size = new System.Drawing.Size(105, 15);
             tipoSangre_TipSangreIdLabel.TabIndex = 28;
@@ -269,7 +283,7 @@
             // 
             estadoCivil_EdoCivilIdLabel.AutoSize = true;
             estadoCivil_EdoCivilIdLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            estadoCivil_EdoCivilIdLabel.Location = new System.Drawing.Point(16, 282);
+            estadoCivil_EdoCivilIdLabel.Location = new System.Drawing.Point(301, 146);
             estadoCivil_EdoCivilIdLabel.Name = "estadoCivil_EdoCivilIdLabel";
             estadoCivil_EdoCivilIdLabel.Size = new System.Drawing.Size(82, 15);
             estadoCivil_EdoCivilIdLabel.TabIndex = 30;
@@ -279,7 +293,7 @@
             // 
             nacionalidad_NacIdLabel1.AutoSize = true;
             nacionalidad_NacIdLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            nacionalidad_NacIdLabel1.Location = new System.Drawing.Point(16, 330);
+            nacionalidad_NacIdLabel1.Location = new System.Drawing.Point(446, 146);
             nacionalidad_NacIdLabel1.Name = "nacionalidad_NacIdLabel1";
             nacionalidad_NacIdLabel1.Size = new System.Drawing.Size(92, 15);
             nacionalidad_NacIdLabel1.TabIndex = 31;
@@ -289,28 +303,27 @@
             // 
             encdoNombre1Label.AutoSize = true;
             encdoNombre1Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            encdoNombre1Label.Location = new System.Drawing.Point(6, 19);
+            encdoNombre1Label.Location = new System.Drawing.Point(6, 31);
             encdoNombre1Label.Name = "encdoNombre1Label";
-            encdoNombre1Label.Size = new System.Drawing.Size(157, 15);
+            encdoNombre1Label.Size = new System.Drawing.Size(0, 15);
             encdoNombre1Label.TabIndex = 0;
-            encdoNombre1Label.Text = "Nombre Del Encargado";
             // 
             // encdoIdLabel
             // 
             encdoIdLabel.AutoSize = true;
             encdoIdLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            encdoIdLabel.Location = new System.Drawing.Point(6, 58);
+            encdoIdLabel.Location = new System.Drawing.Point(6, 93);
             encdoIdLabel.Name = "encdoIdLabel";
-            encdoIdLabel.Size = new System.Drawing.Size(92, 15);
+            encdoIdLabel.Size = new System.Drawing.Size(142, 15);
             encdoIdLabel.TabIndex = 5;
-            encdoIdLabel.Text = "Encargado Id";
+            encdoIdLabel.Text = "Numero de Identidad";
             encdoIdLabel.Click += new System.EventHandler(this.encdoIdLabel_Click);
             // 
             // encdoFechaNacLabel
             // 
             encdoFechaNacLabel.AutoSize = true;
             encdoFechaNacLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            encdoFechaNacLabel.Location = new System.Drawing.Point(6, 93);
+            encdoFechaNacLabel.Location = new System.Drawing.Point(158, 93);
             encdoFechaNacLabel.Name = "encdoFechaNacLabel";
             encdoFechaNacLabel.Size = new System.Drawing.Size(123, 15);
             encdoFechaNacLabel.TabIndex = 7;
@@ -320,7 +333,7 @@
             // 
             sexo_SexIdLabel.AutoSize = true;
             sexo_SexIdLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            sexo_SexIdLabel.Location = new System.Drawing.Point(10, 128);
+            sexo_SexIdLabel.Location = new System.Drawing.Point(10, 151);
             sexo_SexIdLabel.Name = "sexo_SexIdLabel";
             sexo_SexIdLabel.Size = new System.Drawing.Size(39, 15);
             sexo_SexIdLabel.TabIndex = 9;
@@ -330,7 +343,7 @@
             // 
             ocupacion_OcupIdLabel.AutoSize = true;
             ocupacion_OcupIdLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            ocupacion_OcupIdLabel.Location = new System.Drawing.Point(10, 155);
+            ocupacion_OcupIdLabel.Location = new System.Drawing.Point(171, 151);
             ocupacion_OcupIdLabel.Name = "ocupacion_OcupIdLabel";
             ocupacion_OcupIdLabel.Size = new System.Drawing.Size(75, 15);
             ocupacion_OcupIdLabel.TabIndex = 11;
@@ -340,7 +353,7 @@
             // 
             parentesco_ParenIdLabel.AutoSize = true;
             parentesco_ParenIdLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            parentesco_ParenIdLabel.Location = new System.Drawing.Point(10, 200);
+            parentesco_ParenIdLabel.Location = new System.Drawing.Point(376, 151);
             parentesco_ParenIdLabel.Name = "parentesco_ParenIdLabel";
             parentesco_ParenIdLabel.Size = new System.Drawing.Size(64, 15);
             parentesco_ParenIdLabel.TabIndex = 13;
@@ -349,7 +362,7 @@
             // estadoMatricula_EstdoMatriIdLabel
             // 
             estadoMatricula_EstdoMatriIdLabel.AutoSize = true;
-            estadoMatricula_EstdoMatriIdLabel.Location = new System.Drawing.Point(16, 25);
+            estadoMatricula_EstdoMatriIdLabel.Location = new System.Drawing.Point(6, 37);
             estadoMatricula_EstdoMatriIdLabel.Name = "estadoMatricula_EstdoMatriIdLabel";
             estadoMatricula_EstdoMatriIdLabel.Size = new System.Drawing.Size(115, 15);
             estadoMatricula_EstdoMatriIdLabel.TabIndex = 0;
@@ -358,7 +371,7 @@
             // instituto_InstoIdLabel
             // 
             instituto_InstoIdLabel.AutoSize = true;
-            instituto_InstoIdLabel.Location = new System.Drawing.Point(252, 20);
+            instituto_InstoIdLabel.Location = new System.Drawing.Point(153, 37);
             instituto_InstoIdLabel.Name = "instituto_InstoIdLabel";
             instituto_InstoIdLabel.Size = new System.Drawing.Size(162, 15);
             instituto_InstoIdLabel.TabIndex = 2;
@@ -367,7 +380,7 @@
             // modalidad_ModIdLabel
             // 
             modalidad_ModIdLabel.AutoSize = true;
-            modalidad_ModIdLabel.Location = new System.Drawing.Point(16, 58);
+            modalidad_ModIdLabel.Location = new System.Drawing.Point(10, 108);
             modalidad_ModIdLabel.Name = "modalidad_ModIdLabel";
             modalidad_ModIdLabel.Size = new System.Drawing.Size(75, 15);
             modalidad_ModIdLabel.TabIndex = 4;
@@ -376,7 +389,7 @@
             // cursoLabel
             // 
             cursoLabel.AutoSize = true;
-            cursoLabel.Location = new System.Drawing.Point(365, 67);
+            cursoLabel.Location = new System.Drawing.Point(158, 113);
             cursoLabel.Name = "cursoLabel";
             cursoLabel.Size = new System.Drawing.Size(48, 15);
             cursoLabel.TabIndex = 6;
@@ -385,7 +398,7 @@
             // seccionLabel
             // 
             seccionLabel.AutoSize = true;
-            seccionLabel.Location = new System.Drawing.Point(355, 116);
+            seccionLabel.Location = new System.Drawing.Point(364, 37);
             seccionLabel.Name = "seccionLabel";
             seccionLabel.Size = new System.Drawing.Size(58, 15);
             seccionLabel.TabIndex = 8;
@@ -439,10 +452,10 @@
             // 
             this.alumNombre1TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.alumNombre1TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spModificar_DatosPersonalesBindingSource, "AlumNombre1", true));
-            this.alumNombre1TextBox.Location = new System.Drawing.Point(156, 15);
+            this.alumNombre1TextBox.Location = new System.Drawing.Point(19, 34);
             this.alumNombre1TextBox.Name = "alumNombre1TextBox";
             this.alumNombre1TextBox.ShortcutsEnabled = false;
-            this.alumNombre1TextBox.Size = new System.Drawing.Size(100, 21);
+            this.alumNombre1TextBox.Size = new System.Drawing.Size(102, 21);
             this.alumNombre1TextBox.TabIndex = 3;
             this.alumNombre1TextBox.TextChanged += new System.EventHandler(this.alumNombre1TextBox_TextChanged);
             this.alumNombre1TextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.alumNombre1TextBox_KeyPress);
@@ -451,10 +464,10 @@
             // 
             this.alumNombre2TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.alumNombre2TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spModificar_DatosPersonalesBindingSource, "AlumNombre2", true));
-            this.alumNombre2TextBox.Location = new System.Drawing.Point(262, 15);
+            this.alumNombre2TextBox.Location = new System.Drawing.Point(135, 34);
             this.alumNombre2TextBox.Name = "alumNombre2TextBox";
             this.alumNombre2TextBox.ShortcutsEnabled = false;
-            this.alumNombre2TextBox.Size = new System.Drawing.Size(100, 21);
+            this.alumNombre2TextBox.Size = new System.Drawing.Size(111, 21);
             this.alumNombre2TextBox.TabIndex = 5;
             this.alumNombre2TextBox.TextChanged += new System.EventHandler(this.alumNombre2TextBox_TextChanged);
             this.alumNombre2TextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.alumNombre2TextBox_KeyPress);
@@ -463,7 +476,7 @@
             // 
             this.alumApellido1TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.alumApellido1TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spModificar_DatosPersonalesBindingSource, "AlumApellido1", true));
-            this.alumApellido1TextBox.Location = new System.Drawing.Point(368, 15);
+            this.alumApellido1TextBox.Location = new System.Drawing.Point(263, 34);
             this.alumApellido1TextBox.Name = "alumApellido1TextBox";
             this.alumApellido1TextBox.ShortcutsEnabled = false;
             this.alumApellido1TextBox.Size = new System.Drawing.Size(100, 21);
@@ -475,7 +488,7 @@
             // 
             this.alumApellido2TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.alumApellido2TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spModificar_DatosPersonalesBindingSource, "AlumApellido2", true));
-            this.alumApellido2TextBox.Location = new System.Drawing.Point(476, 15);
+            this.alumApellido2TextBox.Location = new System.Drawing.Point(397, 34);
             this.alumApellido2TextBox.Name = "alumApellido2TextBox";
             this.alumApellido2TextBox.ShortcutsEnabled = false;
             this.alumApellido2TextBox.Size = new System.Drawing.Size(100, 21);
@@ -487,7 +500,7 @@
             // 
             this.alumIdTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.alumIdTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spModificar_DatosPersonalesBindingSource, "AlumId", true));
-            this.alumIdTextBox.Location = new System.Drawing.Point(158, 55);
+            this.alumIdTextBox.Location = new System.Drawing.Point(19, 89);
             this.alumIdTextBox.Name = "alumIdTextBox";
             this.alumIdTextBox.ShortcutsEnabled = false;
             this.alumIdTextBox.Size = new System.Drawing.Size(128, 21);
@@ -497,7 +510,7 @@
             // alumFechaNacDateTimePicker
             // 
             this.alumFechaNacDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.spModificar_DatosPersonalesBindingSource, "AlumFechaNac", true));
-            this.alumFechaNacDateTimePicker.Location = new System.Drawing.Point(157, 132);
+            this.alumFechaNacDateTimePicker.Location = new System.Drawing.Point(311, 90);
             this.alumFechaNacDateTimePicker.Name = "alumFechaNacDateTimePicker";
             this.alumFechaNacDateTimePicker.Size = new System.Drawing.Size(287, 21);
             this.alumFechaNacDateTimePicker.TabIndex = 13;
@@ -507,10 +520,10 @@
             // 
             this.alumDireccionTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.alumDireccionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spModificar_DatosPersonalesBindingSource, "AlumDireccion", true));
-            this.alumDireccionTextBox.Location = new System.Drawing.Point(158, 372);
+            this.alumDireccionTextBox.Location = new System.Drawing.Point(12, 371);
             this.alumDireccionTextBox.Multiline = true;
             this.alumDireccionTextBox.Name = "alumDireccionTextBox";
-            this.alumDireccionTextBox.Size = new System.Drawing.Size(100, 48);
+            this.alumDireccionTextBox.Size = new System.Drawing.Size(434, 67);
             this.alumDireccionTextBox.TabIndex = 21;
             this.alumDireccionTextBox.TextChanged += new System.EventHandler(this.alumDireccionTextBox_TextChanged);
             // 
@@ -518,9 +531,9 @@
             // 
             this.textbox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.textbox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spModificar_DatosPersonalesBindingSource, "AlumLugarTrabajo", true));
-            this.textbox1.Location = new System.Drawing.Point(459, 186);
+            this.textbox1.Location = new System.Drawing.Point(157, 277);
             this.textbox1.Name = "textbox1";
-            this.textbox1.Size = new System.Drawing.Size(100, 21);
+            this.textbox1.Size = new System.Drawing.Size(130, 21);
             this.textbox1.TabIndex = 23;
             this.textbox1.TextChanged += new System.EventHandler(this.textbox1_TextChanged);
             // 
@@ -539,9 +552,9 @@
             this.spDepartamentosComboBox.DisplayMember = "DeptoNombre";
             this.spDepartamentosComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.spDepartamentosComboBox.FormattingEnabled = true;
-            this.spDepartamentosComboBox.Location = new System.Drawing.Point(156, 95);
+            this.spDepartamentosComboBox.Location = new System.Drawing.Point(159, 89);
             this.spDepartamentosComboBox.Name = "spDepartamentosComboBox";
-            this.spDepartamentosComboBox.Size = new System.Drawing.Size(101, 23);
+            this.spDepartamentosComboBox.Size = new System.Drawing.Size(129, 23);
             this.spDepartamentosComboBox.TabIndex = 26;
             this.spDepartamentosComboBox.ValueMember = "DeptoId";
             this.spDepartamentosComboBox.SelectedIndexChanged += new System.EventHandler(this.spDepartamentosComboBox_SelectedIndexChanged);
@@ -549,7 +562,7 @@
             // sexo_SexIdLabel2
             // 
             this.sexo_SexIdLabel2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spModificar_DatosPersonalesBindingSource, "Sexo_SexId", true));
-            this.sexo_SexIdLabel2.Location = new System.Drawing.Point(158, 190);
+            this.sexo_SexIdLabel2.Location = new System.Drawing.Point(74, 175);
             this.sexo_SexIdLabel2.Name = "sexo_SexIdLabel2";
             this.sexo_SexIdLabel2.Size = new System.Drawing.Size(100, 23);
             this.sexo_SexIdLabel2.TabIndex = 28;
@@ -558,7 +571,7 @@
             // tipoSangre_TipSangreIdLabel1
             // 
             this.tipoSangre_TipSangreIdLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spModificar_DatosPersonalesBindingSource, "TipoSangre_TipSangreId", true));
-            this.tipoSangre_TipSangreIdLabel1.Location = new System.Drawing.Point(157, 233);
+            this.tipoSangre_TipSangreIdLabel1.Location = new System.Drawing.Point(187, 175);
             this.tipoSangre_TipSangreIdLabel1.Name = "tipoSangre_TipSangreIdLabel1";
             this.tipoSangre_TipSangreIdLabel1.Size = new System.Drawing.Size(100, 23);
             this.tipoSangre_TipSangreIdLabel1.TabIndex = 29;
@@ -579,9 +592,9 @@
             this.spSexoComboBox.DisplayMember = "SexNombre";
             this.spSexoComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.spSexoComboBox.FormattingEnabled = true;
-            this.spSexoComboBox.Location = new System.Drawing.Point(157, 186);
+            this.spSexoComboBox.Location = new System.Drawing.Point(12, 167);
             this.spSexoComboBox.Name = "spSexoComboBox";
-            this.spSexoComboBox.Size = new System.Drawing.Size(100, 23);
+            this.spSexoComboBox.Size = new System.Drawing.Size(128, 23);
             this.spSexoComboBox.TabIndex = 29;
             this.spSexoComboBox.ValueMember = "SexId";
             this.spSexoComboBox.SelectedIndexChanged += new System.EventHandler(this.spSexoComboBox_SelectedIndexChanged);
@@ -601,9 +614,9 @@
             this.tipoSangreComboBox.DisplayMember = "TipSangreNombre";
             this.tipoSangreComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.tipoSangreComboBox.FormattingEnabled = true;
-            this.tipoSangreComboBox.Location = new System.Drawing.Point(156, 230);
+            this.tipoSangreComboBox.Location = new System.Drawing.Point(157, 167);
             this.tipoSangreComboBox.Name = "tipoSangreComboBox";
-            this.tipoSangreComboBox.Size = new System.Drawing.Size(101, 23);
+            this.tipoSangreComboBox.Size = new System.Drawing.Size(129, 23);
             this.tipoSangreComboBox.TabIndex = 29;
             this.tipoSangreComboBox.ValueMember = "TipSangreId";
             this.tipoSangreComboBox.SelectedIndexChanged += new System.EventHandler(this.tipoSangreComboBox_SelectedIndexChanged);
@@ -611,7 +624,7 @@
             // departamento_DeptoIdLabel1
             // 
             this.departamento_DeptoIdLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spModificar_DatosPersonalesBindingSource, "Departamento_DeptoId", true));
-            this.departamento_DeptoIdLabel1.Location = new System.Drawing.Point(158, 93);
+            this.departamento_DeptoIdLabel1.Location = new System.Drawing.Point(168, 95);
             this.departamento_DeptoIdLabel1.Name = "departamento_DeptoIdLabel1";
             this.departamento_DeptoIdLabel1.Size = new System.Drawing.Size(100, 23);
             this.departamento_DeptoIdLabel1.TabIndex = 30;
@@ -620,7 +633,7 @@
             // estadoCivil_EdoCivilIdLabel1
             // 
             this.estadoCivil_EdoCivilIdLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spModificar_DatosPersonalesBindingSource, "EstadoCivil_EdoCivilId", true));
-            this.estadoCivil_EdoCivilIdLabel1.Location = new System.Drawing.Point(158, 282);
+            this.estadoCivil_EdoCivilIdLabel1.Location = new System.Drawing.Point(333, 167);
             this.estadoCivil_EdoCivilIdLabel1.Name = "estadoCivil_EdoCivilIdLabel1";
             this.estadoCivil_EdoCivilIdLabel1.Size = new System.Drawing.Size(100, 23);
             this.estadoCivil_EdoCivilIdLabel1.TabIndex = 31;
@@ -641,9 +654,9 @@
             this.spEstadoCivilComboBox.DisplayMember = "EdoCivilNombre";
             this.spEstadoCivilComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.spEstadoCivilComboBox.FormattingEnabled = true;
-            this.spEstadoCivilComboBox.Location = new System.Drawing.Point(156, 284);
+            this.spEstadoCivilComboBox.Location = new System.Drawing.Point(304, 167);
             this.spEstadoCivilComboBox.Name = "spEstadoCivilComboBox";
-            this.spEstadoCivilComboBox.Size = new System.Drawing.Size(101, 23);
+            this.spEstadoCivilComboBox.Size = new System.Drawing.Size(129, 23);
             this.spEstadoCivilComboBox.TabIndex = 31;
             this.spEstadoCivilComboBox.ValueMember = "EdoCivilId";
             this.spEstadoCivilComboBox.SelectedIndexChanged += new System.EventHandler(this.spEstadoCivilComboBox_SelectedIndexChanged);
@@ -663,9 +676,9 @@
             this.spNacionalidadComboBox.DisplayMember = "NacNombre";
             this.spNacionalidadComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.spNacionalidadComboBox.FormattingEnabled = true;
-            this.spNacionalidadComboBox.Location = new System.Drawing.Point(156, 324);
+            this.spNacionalidadComboBox.Location = new System.Drawing.Point(449, 167);
             this.spNacionalidadComboBox.Name = "spNacionalidadComboBox";
-            this.spNacionalidadComboBox.Size = new System.Drawing.Size(102, 23);
+            this.spNacionalidadComboBox.Size = new System.Drawing.Size(130, 23);
             this.spNacionalidadComboBox.TabIndex = 31;
             this.spNacionalidadComboBox.ValueMember = "NacId";
             this.spNacionalidadComboBox.SelectedIndexChanged += new System.EventHandler(this.spNacionalidadComboBox_SelectedIndexChanged);
@@ -673,7 +686,7 @@
             // nacionalidad_NacIdLabel2
             // 
             this.nacionalidad_NacIdLabel2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spModificar_DatosPersonalesBindingSource, "Nacionalidad_NacId", true));
-            this.nacionalidad_NacIdLabel2.Location = new System.Drawing.Point(157, 330);
+            this.nacionalidad_NacIdLabel2.Location = new System.Drawing.Point(470, 167);
             this.nacionalidad_NacIdLabel2.Name = "nacionalidad_NacIdLabel2";
             this.nacionalidad_NacIdLabel2.Size = new System.Drawing.Size(100, 23);
             this.nacionalidad_NacIdLabel2.TabIndex = 32;
@@ -683,7 +696,7 @@
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(219, 430);
+            this.label23.Location = new System.Drawing.Point(83, 280);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(25, 15);
             this.label23.TabIndex = 45;
@@ -692,7 +705,7 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(158, 430);
+            this.label22.Location = new System.Drawing.Point(19, 280);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(20, 15);
             this.label22.TabIndex = 44;
@@ -702,7 +715,7 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(204, 428);
+            this.radioButton2.Location = new System.Drawing.Point(68, 278);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(33, 19);
             this.radioButton2.TabIndex = 43;
@@ -715,7 +728,7 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(143, 428);
+            this.radioButton1.Location = new System.Drawing.Point(6, 280);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(33, 19);
             this.radioButton1.TabIndex = 42;
@@ -728,16 +741,17 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(16, 428);
+            this.label10.Location = new System.Drawing.Point(9, 249);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(56, 15);
             this.label10.TabIndex = 41;
             this.label10.Text = "Trabaja";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(16, 471);
+            this.label11.Location = new System.Drawing.Point(19, 450);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(63, 15);
             this.label11.TabIndex = 46;
@@ -745,7 +759,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(143, 467);
+            this.button5.Location = new System.Drawing.Point(27, 480);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(31, 21);
             this.button5.TabIndex = 47;
@@ -757,7 +771,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(327, 191);
+            this.label1.Location = new System.Drawing.Point(154, 249);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(117, 15);
             this.label1.TabIndex = 48;
@@ -767,7 +781,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(327, 241);
+            this.label2.Location = new System.Drawing.Point(301, 249);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(130, 15);
             this.label2.TabIndex = 49;
@@ -776,6 +790,9 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
+            this.groupBox1.Controls.Add(label7);
+            this.groupBox1.Controls.Add(label6);
+            this.groupBox1.Controls.Add(label4);
             this.groupBox1.Controls.Add(this.comboBox2);
             this.groupBox1.Controls.Add(alumNombre1Label);
             this.groupBox1.Controls.Add(this.label11);
@@ -815,9 +832,9 @@
             this.groupBox1.Controls.Add(this.nacionalidad_NacIdLabel2);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 77);
+            this.groupBox1.Location = new System.Drawing.Point(12, 66);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(576, 496);
+            this.groupBox1.Size = new System.Drawing.Size(598, 507);
             this.groupBox1.TabIndex = 50;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Personales";
@@ -829,16 +846,16 @@
             this.comboBox2.Items.AddRange(new object[] {
             "8-12",
             "1-6"});
-            this.comboBox2.Location = new System.Drawing.Point(459, 235);
+            this.comboBox2.Location = new System.Drawing.Point(316, 275);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(101, 23);
+            this.comboBox2.Size = new System.Drawing.Size(130, 23);
             this.comboBox2.TabIndex = 51;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(157, 58);
+            this.label3.Location = new System.Drawing.Point(74, 95);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(47, 15);
             this.label3.TabIndex = 50;
@@ -850,9 +867,9 @@
             this.spCursoModalidad2ComboBox.DisplayMember = "Curso Nombre";
             this.spCursoModalidad2ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.spCursoModalidad2ComboBox.FormattingEnabled = true;
-            this.spCursoModalidad2ComboBox.Location = new System.Drawing.Point(423, 58);
+            this.spCursoModalidad2ComboBox.Location = new System.Drawing.Point(156, 140);
             this.spCursoModalidad2ComboBox.Name = "spCursoModalidad2ComboBox";
-            this.spCursoModalidad2ComboBox.Size = new System.Drawing.Size(101, 23);
+            this.spCursoModalidad2ComboBox.Size = new System.Drawing.Size(116, 23);
             this.spCursoModalidad2ComboBox.TabIndex = 13;
             this.spCursoModalidad2ComboBox.ValueMember = "CursoId";
             this.spCursoModalidad2ComboBox.SelectedIndexChanged += new System.EventHandler(this.spCursoModalidad2ComboBox_SelectedIndexChanged);
@@ -868,9 +885,9 @@
             this.spModalidadesComboBox.DisplayMember = "Modalidad Nombre";
             this.spModalidadesComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.spModalidadesComboBox.FormattingEnabled = true;
-            this.spModalidadesComboBox.Location = new System.Drawing.Point(146, 55);
+            this.spModalidadesComboBox.Location = new System.Drawing.Point(13, 140);
             this.spModalidadesComboBox.Name = "spModalidadesComboBox";
-            this.spModalidadesComboBox.Size = new System.Drawing.Size(101, 23);
+            this.spModalidadesComboBox.Size = new System.Drawing.Size(116, 23);
             this.spModalidadesComboBox.TabIndex = 12;
             this.spModalidadesComboBox.ValueMember = "ModId";
             this.spModalidadesComboBox.SelectedIndexChanged += new System.EventHandler(this.spModalidadesComboBox_SelectedIndexChanged);
@@ -886,9 +903,9 @@
             this.spMostrarInstituto2ComboBox.DisplayMember = "InstoNombre";
             this.spMostrarInstituto2ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.spMostrarInstituto2ComboBox.FormattingEnabled = true;
-            this.spMostrarInstituto2ComboBox.Location = new System.Drawing.Point(423, 17);
+            this.spMostrarInstituto2ComboBox.Location = new System.Drawing.Point(161, 67);
             this.spMostrarInstituto2ComboBox.Name = "spMostrarInstituto2ComboBox";
-            this.spMostrarInstituto2ComboBox.Size = new System.Drawing.Size(100, 23);
+            this.spMostrarInstituto2ComboBox.Size = new System.Drawing.Size(159, 23);
             this.spMostrarInstituto2ComboBox.TabIndex = 11;
             this.spMostrarInstituto2ComboBox.ValueMember = "InstoId";
             this.spMostrarInstituto2ComboBox.SelectedIndexChanged += new System.EventHandler(this.spMostrarInstituto2ComboBox_SelectedIndexChanged);
@@ -904,9 +921,9 @@
             this.spEstadoMatriculaComboBox.DisplayMember = "EstdoMatriDescripcion";
             this.spEstadoMatriculaComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.spEstadoMatriculaComboBox.FormattingEnabled = true;
-            this.spEstadoMatriculaComboBox.Location = new System.Drawing.Point(146, 17);
+            this.spEstadoMatriculaComboBox.Location = new System.Drawing.Point(13, 67);
             this.spEstadoMatriculaComboBox.Name = "spEstadoMatriculaComboBox";
-            this.spEstadoMatriculaComboBox.Size = new System.Drawing.Size(101, 23);
+            this.spEstadoMatriculaComboBox.Size = new System.Drawing.Size(116, 23);
             this.spEstadoMatriculaComboBox.TabIndex = 10;
             this.spEstadoMatriculaComboBox.ValueMember = "EstdoMatriId";
             this.spEstadoMatriculaComboBox.SelectedIndexChanged += new System.EventHandler(this.spEstadoMatriculaComboBox_SelectedIndexChanged);
@@ -919,7 +936,7 @@
             // seccionLabel1
             // 
             this.seccionLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spModifica_DatosAcademicosBindingSource, "Seccion", true));
-            this.seccionLabel1.Location = new System.Drawing.Point(424, 55);
+            this.seccionLabel1.Location = new System.Drawing.Point(209, 140);
             this.seccionLabel1.Name = "seccionLabel1";
             this.seccionLabel1.Size = new System.Drawing.Size(100, 23);
             this.seccionLabel1.TabIndex = 9;
@@ -933,7 +950,7 @@
             // cursoLabel1
             // 
             this.cursoLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spModifica_DatosAcademicosBindingSource, "Curso", true));
-            this.cursoLabel1.Location = new System.Drawing.Point(424, 58);
+            this.cursoLabel1.Location = new System.Drawing.Point(171, 143);
             this.cursoLabel1.Name = "cursoLabel1";
             this.cursoLabel1.Size = new System.Drawing.Size(100, 23);
             this.cursoLabel1.TabIndex = 7;
@@ -943,7 +960,7 @@
             // modalidad_ModIdLabel1
             // 
             this.modalidad_ModIdLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spModifica_DatosAcademicosBindingSource, "Modalidad_ModId", true));
-            this.modalidad_ModIdLabel1.Location = new System.Drawing.Point(146, 55);
+            this.modalidad_ModIdLabel1.Location = new System.Drawing.Point(48, 140);
             this.modalidad_ModIdLabel1.Name = "modalidad_ModIdLabel1";
             this.modalidad_ModIdLabel1.Size = new System.Drawing.Size(100, 23);
             this.modalidad_ModIdLabel1.TabIndex = 5;
@@ -952,7 +969,7 @@
             // instituto_InstoIdLabel1
             // 
             this.instituto_InstoIdLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spModifica_DatosAcademicosBindingSource, "Instituto_InstoId", true));
-            this.instituto_InstoIdLabel1.Location = new System.Drawing.Point(420, 20);
+            this.instituto_InstoIdLabel1.Location = new System.Drawing.Point(209, 70);
             this.instituto_InstoIdLabel1.Name = "instituto_InstoIdLabel1";
             this.instituto_InstoIdLabel1.Size = new System.Drawing.Size(100, 23);
             this.instituto_InstoIdLabel1.TabIndex = 3;
@@ -961,7 +978,7 @@
             // estadoMatricula_EstdoMatriIdLabel1
             // 
             this.estadoMatricula_EstdoMatriIdLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spModifica_DatosAcademicosBindingSource, "EstadoMatricula_EstdoMatriId", true));
-            this.estadoMatricula_EstdoMatriIdLabel1.Location = new System.Drawing.Point(146, 17);
+            this.estadoMatricula_EstdoMatriIdLabel1.Location = new System.Drawing.Point(29, 72);
             this.estadoMatricula_EstdoMatriIdLabel1.Name = "estadoMatricula_EstdoMatriIdLabel1";
             this.estadoMatricula_EstdoMatriIdLabel1.Size = new System.Drawing.Size(100, 23);
             this.estadoMatricula_EstdoMatriIdLabel1.TabIndex = 1;
@@ -970,6 +987,10 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.White;
+            this.groupBox2.Controls.Add(label8);
+            this.groupBox2.Controls.Add(label9);
+            this.groupBox2.Controls.Add(label12);
+            this.groupBox2.Controls.Add(label13);
             this.groupBox2.Controls.Add(this.spSexoComboBox1);
             this.groupBox2.Controls.Add(this.spRelacionComboBox);
             this.groupBox2.Controls.Add(this.spOcupacionComboBox);
@@ -984,14 +1005,14 @@
             this.groupBox2.Controls.Add(encdoIdLabel);
             this.groupBox2.Controls.Add(this.encdoIdTextBox);
             this.groupBox2.Controls.Add(this.encdoApellido2TextBox);
-            this.groupBox2.Controls.Add(this.encdoApellido1TextBox);
             this.groupBox2.Controls.Add(this.encdoNombre2TextBox);
             this.groupBox2.Controls.Add(encdoNombre1Label);
+            this.groupBox2.Controls.Add(this.encdoApellido1TextBox);
             this.groupBox2.Controls.Add(this.encdoNombre1TextBox);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(594, 77);
+            this.groupBox2.Location = new System.Drawing.Point(616, 67);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(561, 241);
+            this.groupBox2.Size = new System.Drawing.Size(604, 251);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos Encargado";
@@ -1002,9 +1023,9 @@
             this.spSexoComboBox1.DisplayMember = "SexNombre";
             this.spSexoComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.spSexoComboBox1.FormattingEnabled = true;
-            this.spSexoComboBox1.Location = new System.Drawing.Point(130, 120);
+            this.spSexoComboBox1.Location = new System.Drawing.Point(9, 169);
             this.spSexoComboBox1.Name = "spSexoComboBox1";
-            this.spSexoComboBox1.Size = new System.Drawing.Size(100, 23);
+            this.spSexoComboBox1.Size = new System.Drawing.Size(116, 23);
             this.spSexoComboBox1.TabIndex = 17;
             this.spSexoComboBox1.ValueMember = "SexId";
             this.spSexoComboBox1.SelectedIndexChanged += new System.EventHandler(this.spSexoComboBox1_SelectedIndexChanged);
@@ -1020,9 +1041,9 @@
             this.spRelacionComboBox.DisplayMember = "ParenNombre";
             this.spRelacionComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.spRelacionComboBox.FormattingEnabled = true;
-            this.spRelacionComboBox.Location = new System.Drawing.Point(130, 192);
+            this.spRelacionComboBox.Location = new System.Drawing.Point(379, 172);
             this.spRelacionComboBox.Name = "spRelacionComboBox";
-            this.spRelacionComboBox.Size = new System.Drawing.Size(100, 23);
+            this.spRelacionComboBox.Size = new System.Drawing.Size(116, 23);
             this.spRelacionComboBox.TabIndex = 16;
             this.spRelacionComboBox.ValueMember = "ParenId";
             this.spRelacionComboBox.SelectedIndexChanged += new System.EventHandler(this.spRelacionComboBox_SelectedIndexChanged);
@@ -1038,9 +1059,9 @@
             this.spOcupacionComboBox.DisplayMember = "OcupNombre";
             this.spOcupacionComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.spOcupacionComboBox.FormattingEnabled = true;
-            this.spOcupacionComboBox.Location = new System.Drawing.Point(130, 157);
+            this.spOcupacionComboBox.Location = new System.Drawing.Point(174, 172);
             this.spOcupacionComboBox.Name = "spOcupacionComboBox";
-            this.spOcupacionComboBox.Size = new System.Drawing.Size(100, 23);
+            this.spOcupacionComboBox.Size = new System.Drawing.Size(116, 23);
             this.spOcupacionComboBox.TabIndex = 15;
             this.spOcupacionComboBox.ValueMember = "OcupId";
             this.spOcupacionComboBox.SelectedIndexChanged += new System.EventHandler(this.spOcupacionComboBox_SelectedIndexChanged);
@@ -1053,7 +1074,7 @@
             // parentesco_ParenIdLabel1
             // 
             this.parentesco_ParenIdLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spModificar_DatosEncargadoBindingSource, "Parentesco_ParenId", true));
-            this.parentesco_ParenIdLabel1.Location = new System.Drawing.Point(130, 200);
+            this.parentesco_ParenIdLabel1.Location = new System.Drawing.Point(376, 172);
             this.parentesco_ParenIdLabel1.Name = "parentesco_ParenIdLabel1";
             this.parentesco_ParenIdLabel1.Size = new System.Drawing.Size(100, 23);
             this.parentesco_ParenIdLabel1.TabIndex = 14;
@@ -1067,7 +1088,7 @@
             // ocupacion_OcupIdLabel1
             // 
             this.ocupacion_OcupIdLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spModificar_DatosEncargadoBindingSource, "Ocupacion_OcupId", true));
-            this.ocupacion_OcupIdLabel1.Location = new System.Drawing.Point(130, 155);
+            this.ocupacion_OcupIdLabel1.Location = new System.Drawing.Point(171, 172);
             this.ocupacion_OcupIdLabel1.Name = "ocupacion_OcupIdLabel1";
             this.ocupacion_OcupIdLabel1.Size = new System.Drawing.Size(100, 23);
             this.ocupacion_OcupIdLabel1.TabIndex = 12;
@@ -1076,7 +1097,7 @@
             // sexo_SexIdLabel3
             // 
             this.sexo_SexIdLabel3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spModificar_DatosEncargadoBindingSource, "Sexo_SexId", true));
-            this.sexo_SexIdLabel3.Location = new System.Drawing.Point(130, 128);
+            this.sexo_SexIdLabel3.Location = new System.Drawing.Point(25, 172);
             this.sexo_SexIdLabel3.Name = "sexo_SexIdLabel3";
             this.sexo_SexIdLabel3.Size = new System.Drawing.Size(100, 23);
             this.sexo_SexIdLabel3.TabIndex = 10;
@@ -1085,7 +1106,7 @@
             // encdoFechaNacDateTimePicker
             // 
             this.encdoFechaNacDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.spModificar_DatosEncargadoBindingSource, "EncdoFechaNac", true));
-            this.encdoFechaNacDateTimePicker.Location = new System.Drawing.Point(130, 87);
+            this.encdoFechaNacDateTimePicker.Location = new System.Drawing.Point(156, 111);
             this.encdoFechaNacDateTimePicker.Name = "encdoFechaNacDateTimePicker";
             this.encdoFechaNacDateTimePicker.Size = new System.Drawing.Size(292, 21);
             this.encdoFechaNacDateTimePicker.TabIndex = 8;
@@ -1095,7 +1116,7 @@
             // 
             this.encdoIdTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.encdoIdTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spModificar_DatosEncargadoBindingSource, "EncdoId", true));
-            this.encdoIdTextBox.Location = new System.Drawing.Point(130, 55);
+            this.encdoIdTextBox.Location = new System.Drawing.Point(13, 113);
             this.encdoIdTextBox.Name = "encdoIdTextBox";
             this.encdoIdTextBox.ShortcutsEnabled = false;
             this.encdoIdTextBox.Size = new System.Drawing.Size(116, 21);
@@ -1106,46 +1127,46 @@
             // 
             this.encdoApellido2TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.encdoApellido2TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spModificar_DatosEncargadoBindingSource, "EncdoApellido2", true));
-            this.encdoApellido2TextBox.Location = new System.Drawing.Point(462, 16);
+            this.encdoApellido2TextBox.Location = new System.Drawing.Point(383, 55);
             this.encdoApellido2TextBox.Name = "encdoApellido2TextBox";
             this.encdoApellido2TextBox.ShortcutsEnabled = false;
-            this.encdoApellido2TextBox.Size = new System.Drawing.Size(86, 21);
+            this.encdoApellido2TextBox.Size = new System.Drawing.Size(100, 21);
             this.encdoApellido2TextBox.TabIndex = 5;
             this.encdoApellido2TextBox.TextChanged += new System.EventHandler(this.encdoApellido2TextBox_TextChanged);
             this.encdoApellido2TextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.encdoApellido2TextBox_KeyPress);
-            // 
-            // encdoApellido1TextBox
-            // 
-            this.encdoApellido1TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.encdoApellido1TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spModificar_DatosEncargadoBindingSource, "EncdoApellido1", true));
-            this.encdoApellido1TextBox.Location = new System.Drawing.Point(368, 17);
-            this.encdoApellido1TextBox.Name = "encdoApellido1TextBox";
-            this.encdoApellido1TextBox.ShortcutsEnabled = false;
-            this.encdoApellido1TextBox.Size = new System.Drawing.Size(88, 21);
-            this.encdoApellido1TextBox.TabIndex = 4;
-            this.encdoApellido1TextBox.TextChanged += new System.EventHandler(this.encdoApellido1TextBox_TextChanged);
-            this.encdoApellido1TextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.encdoApellido1TextBox_KeyPress);
             // 
             // encdoNombre2TextBox
             // 
             this.encdoNombre2TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.encdoNombre2TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spModificar_DatosEncargadoBindingSource, "EncdoNombre2", true));
-            this.encdoNombre2TextBox.Location = new System.Drawing.Point(277, 17);
+            this.encdoNombre2TextBox.Location = new System.Drawing.Point(134, 55);
             this.encdoNombre2TextBox.Name = "encdoNombre2TextBox";
             this.encdoNombre2TextBox.ShortcutsEnabled = false;
-            this.encdoNombre2TextBox.Size = new System.Drawing.Size(81, 21);
+            this.encdoNombre2TextBox.Size = new System.Drawing.Size(100, 21);
             this.encdoNombre2TextBox.TabIndex = 3;
             this.encdoNombre2TextBox.TextChanged += new System.EventHandler(this.encdoNombre2TextBox_TextChanged);
             this.encdoNombre2TextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.encdoNombre2TextBox_KeyPress);
+            // 
+            // encdoApellido1TextBox
+            // 
+            this.encdoApellido1TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.encdoApellido1TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spModificar_DatosEncargadoBindingSource, "EncdoApellido1", true));
+            this.encdoApellido1TextBox.Location = new System.Drawing.Point(13, 54);
+            this.encdoApellido1TextBox.Name = "encdoApellido1TextBox";
+            this.encdoApellido1TextBox.ShortcutsEnabled = false;
+            this.encdoApellido1TextBox.Size = new System.Drawing.Size(100, 21);
+            this.encdoApellido1TextBox.TabIndex = 4;
+            this.encdoApellido1TextBox.TextChanged += new System.EventHandler(this.encdoApellido1TextBox_TextChanged);
+            this.encdoApellido1TextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.encdoApellido1TextBox_KeyPress);
             // 
             // encdoNombre1TextBox
             // 
             this.encdoNombre1TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.encdoNombre1TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spModificar_DatosEncargadoBindingSource, "EncdoNombre1", true));
-            this.encdoNombre1TextBox.Location = new System.Drawing.Point(169, 18);
+            this.encdoNombre1TextBox.Location = new System.Drawing.Point(254, 55);
             this.encdoNombre1TextBox.Name = "encdoNombre1TextBox";
             this.encdoNombre1TextBox.ShortcutsEnabled = false;
-            this.encdoNombre1TextBox.Size = new System.Drawing.Size(91, 21);
+            this.encdoNombre1TextBox.Size = new System.Drawing.Size(100, 21);
             this.encdoNombre1TextBox.TabIndex = 1;
             this.encdoNombre1TextBox.TextChanged += new System.EventHandler(this.encdoNombre1TextBox_TextChanged);
             this.encdoNombre1TextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.encdoNombre1TextBox_KeyPress);
@@ -1225,9 +1246,9 @@
             this.groupBox3.Controls.Add(this.instituto_InstoIdLabel1);
             this.groupBox3.Controls.Add(this.modalidad_ModIdLabel1);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(594, 334);
+            this.groupBox3.Location = new System.Drawing.Point(616, 324);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(561, 239);
+            this.groupBox3.Size = new System.Drawing.Size(604, 249);
             this.groupBox3.TabIndex = 51;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Datos Académicos";
@@ -1239,9 +1260,9 @@
             this.comboBox1.Items.AddRange(new object[] {
             "A",
             "B"});
-            this.comboBox1.Location = new System.Drawing.Point(421, 108);
+            this.comboBox1.Location = new System.Drawing.Point(367, 67);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(102, 23);
+            this.comboBox1.Size = new System.Drawing.Size(116, 23);
             this.comboBox1.TabIndex = 14;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -1251,9 +1272,10 @@
             this.button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.HotTrack;
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(1003, 579);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(1045, 579);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(85, 52);
             this.button1.TabIndex = 52;
             this.button1.Text = "Modificar";
             this.button1.UseVisualStyleBackColor = false;
@@ -1265,9 +1287,10 @@
             this.button2.FlatAppearance.BorderColor = System.Drawing.SystemColors.HotTrack;
             this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(1084, 579);
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(1136, 579);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(85, 52);
             this.button2.TabIndex = 53;
             this.button2.Text = "Guardar";
             this.button2.UseVisualStyleBackColor = false;
@@ -1280,7 +1303,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::General.Properties.Resources.Screenshot_2015_04_09_13_46_13;
-            this.pictureBox3.Location = new System.Drawing.Point(1095, 11);
+            this.pictureBox3.Location = new System.Drawing.Point(1160, 10);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(60, 50);
@@ -1311,12 +1334,82 @@
             this.pictureBox2.TabIndex = 56;
             this.pictureBox2.TabStop = false;
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label4.Location = new System.Drawing.Point(127, 16);
+            label4.Name = "label4";
+            label4.Size = new System.Drawing.Size(105, 15);
+            label4.TabIndex = 52;
+            label4.Text = "Segundo Nombre";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label6.Location = new System.Drawing.Point(260, 16);
+            label6.Name = "label6";
+            label6.Size = new System.Drawing.Size(91, 15);
+            label6.TabIndex = 53;
+            label6.Text = "Primer Apellido";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label7.Location = new System.Drawing.Point(394, 16);
+            label7.Name = "label7";
+            label7.Size = new System.Drawing.Size(120, 15);
+            label7.TabIndex = 54;
+            label7.Text = "Segundo Apellido";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label8.Location = new System.Drawing.Point(382, 31);
+            label8.Name = "label8";
+            label8.Size = new System.Drawing.Size(120, 15);
+            label8.TabIndex = 58;
+            label8.Text = "Segundo Apellido";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label9.Location = new System.Drawing.Point(248, 31);
+            label9.Name = "label9";
+            label9.Size = new System.Drawing.Size(106, 15);
+            label9.TabIndex = 57;
+            label9.Text = "Primer Apellido";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label12.Location = new System.Drawing.Point(115, 31);
+            label12.Name = "label12";
+            label12.Size = new System.Drawing.Size(119, 15);
+            label12.TabIndex = 56;
+            label12.Text = "Segundo Nombre";
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label13.Location = new System.Drawing.Point(10, 36);
+            label13.Name = "label13";
+            label13.Size = new System.Drawing.Size(105, 15);
+            label13.TabIndex = 55;
+            label13.Text = "Primer Nombre";
+            // 
             // ModificarAlumno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(1161, 603);
+            this.ClientSize = new System.Drawing.Size(1233, 641);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.pictureBox2);

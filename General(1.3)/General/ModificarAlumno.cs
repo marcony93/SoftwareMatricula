@@ -690,6 +690,11 @@ namespace General
         {
 
         }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
       
        
         
