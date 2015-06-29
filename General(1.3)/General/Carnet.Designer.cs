@@ -61,9 +61,9 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(178, 99);
+            this.textBox1.Location = new System.Drawing.Point(33, 108);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.Size = new System.Drawing.Size(141, 20);
             this.textBox1.TabIndex = 0;
             // 
             // button1
@@ -73,9 +73,9 @@
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(309, 82);
+            this.button1.Location = new System.Drawing.Point(647, 534);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(85, 52);
+            this.button1.Size = new System.Drawing.Size(75, 45);
             this.button1.TabIndex = 2;
             this.button1.Text = "Buscar";
             this.button1.UseVisualStyleBackColor = false;
@@ -86,7 +86,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(28, 99);
+            this.label1.Location = new System.Drawing.Point(32, 87);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(144, 15);
             this.label1.TabIndex = 3;
@@ -111,7 +111,7 @@
             this.reportViewer1.ShowPromptAreaButton = false;
             this.reportViewer1.ShowStopButton = false;
             this.reportViewer1.ShowZoomControl = false;
-            this.reportViewer1.Size = new System.Drawing.Size(526, 222);
+            this.reportViewer1.Size = new System.Drawing.Size(710, 371);
             this.reportViewer1.TabIndex = 4;
             // 
             // spcarnetTableAdapter
@@ -134,10 +134,10 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::General.Properties.Resources.Screenshot_2015_04_09_13_46_13;
-            this.pictureBox3.Location = new System.Drawing.Point(477, 11);
+            this.pictureBox3.Location = new System.Drawing.Point(661, 12);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(60, 50);
+            this.pictureBox3.Size = new System.Drawing.Size(60, 49);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 29;
             this.pictureBox3.TabStop = false;
@@ -149,7 +149,7 @@
             this.pictureBox2.Location = new System.Drawing.Point(13, 12);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(524, 49);
+            this.pictureBox2.Size = new System.Drawing.Size(648, 49);
             this.pictureBox2.TabIndex = 28;
             this.pictureBox2.TabStop = false;
             // 
@@ -159,7 +159,7 @@
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Location = new System.Drawing.Point(13, 71);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(525, 74);
+            this.pictureBox1.Size = new System.Drawing.Size(709, 74);
             this.pictureBox1.TabIndex = 31;
             this.pictureBox1.TabStop = false;
             // 
@@ -168,7 +168,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(550, 391);
+            this.ClientSize = new System.Drawing.Size(734, 612);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
@@ -179,6 +179,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Carnet";
             this.Text = "Carnet";
             this.Load += new System.EventHandler(this.Carnet_Load);

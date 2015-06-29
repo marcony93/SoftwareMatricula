@@ -69,7 +69,7 @@
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(69, 80);
+            this.label1.Location = new System.Drawing.Point(69, 77);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(50, 15);
             this.label1.TabIndex = 0;
@@ -78,7 +78,7 @@
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox1.Location = new System.Drawing.Point(72, 103);
+            this.textBox1.Location = new System.Drawing.Point(72, 100);
             this.textBox1.MaxLength = 5000;
             this.textBox1.Name = "textBox1";
             this.textBox1.ShortcutsEnabled = false;
@@ -91,7 +91,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(69, 144);
+            this.label2.Location = new System.Drawing.Point(69, 127);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(70, 15);
             this.label2.TabIndex = 3;
@@ -100,7 +100,7 @@
             // textBox2
             // 
             this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox2.Location = new System.Drawing.Point(72, 167);
+            this.textBox2.Location = new System.Drawing.Point(72, 150);
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '*';
             this.textBox2.ShortcutsEnabled = false;
@@ -126,7 +126,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(237, 204);
+            this.button1.Location = new System.Drawing.Point(255, 202);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 45);
             this.button1.TabIndex = 8;
@@ -185,7 +185,7 @@
             // mstroTipoLabel1
             // 
             this.mstroTipoLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.autentificacionBindingSource2, "MstroTipo", true));
-            this.mstroTipoLabel1.Location = new System.Drawing.Point(246, 222);
+            this.mstroTipoLabel1.Location = new System.Drawing.Point(266, 219);
             this.mstroTipoLabel1.Name = "mstroTipoLabel1";
             this.mstroTipoLabel1.Size = new System.Drawing.Size(50, 23);
             this.mstroTipoLabel1.TabIndex = 10;
@@ -203,7 +203,7 @@
             // mstroBlocLabel1
             // 
             this.mstroBlocLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usuarioBloqueadoBindingSource, "MstroBloc", true));
-            this.mstroBlocLabel1.Location = new System.Drawing.Point(246, 213);
+            this.mstroBlocLabel1.Location = new System.Drawing.Point(266, 219);
             this.mstroBlocLabel1.Name = "mstroBlocLabel1";
             this.mstroBlocLabel1.Size = new System.Drawing.Size(64, 23);
             this.mstroBlocLabel1.TabIndex = 12;
@@ -233,9 +233,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 56);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 72);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(318, 202);
+            this.pictureBox1.Size = new System.Drawing.Size(318, 124);
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
             // 
@@ -261,7 +261,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Silver;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(345, 265);
+            this.ClientSize = new System.Drawing.Size(345, 264);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);

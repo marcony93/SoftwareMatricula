@@ -65,11 +65,6 @@
             this.spmostrarplanillaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.spmostrarplanillaTableAdapter = new General.desarrolloDataSetWilmerTableAdapters.spmostrarplanillaTableAdapter();
             this.spmostrarplanillaDataGridView = new System.Windows.Forms.DataGridView();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -78,6 +73,11 @@
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.desarrolloDataSetWilmer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spMaestroBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spModalidadBindingSource)).BeginInit();
@@ -98,10 +98,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(26, 86);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(26, 99);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 15);
+            this.label1.Size = new System.Drawing.Size(52, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "Maestro";
             // 
@@ -109,10 +109,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(26, 123);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(512, 99);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 15);
+            this.label2.Size = new System.Drawing.Size(66, 15);
             this.label2.TabIndex = 1;
             this.label2.Text = "Modalidad";
             // 
@@ -120,10 +120,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(26, 164);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(359, 99);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 15);
+            this.label3.Size = new System.Drawing.Size(39, 15);
             this.label3.TabIndex = 2;
             this.label3.Text = "Curso";
             // 
@@ -131,10 +131,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(26, 203);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(26, 154);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 15);
+            this.label4.Size = new System.Drawing.Size(51, 15);
             this.label4.TabIndex = 3;
             this.label4.Text = "Sección";
             // 
@@ -142,10 +142,10 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.White;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(254, 123);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(198, 154);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(43, 15);
+            this.label5.Size = new System.Drawing.Size(38, 15);
             this.label5.TabIndex = 4;
             this.label5.Text = "Clase";
             // 
@@ -153,10 +153,10 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.White;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(254, 159);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(359, 154);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(38, 15);
+            this.label6.Size = new System.Drawing.Size(34, 15);
             this.label6.TabIndex = 5;
             this.label6.Text = "Hora";
             // 
@@ -164,10 +164,10 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.White;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(254, 201);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(512, 154);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(29, 15);
+            this.label7.Size = new System.Drawing.Size(26, 15);
             this.label7.TabIndex = 6;
             this.label7.Text = "Día";
             // 
@@ -178,8 +178,8 @@
             this.button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.HotTrack;
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(467, 142);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(625, 525);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(85, 52);
             this.button1.TabIndex = 7;
@@ -192,7 +192,7 @@
             this.lblanio.AutoSize = true;
             this.lblanio.BackColor = System.Drawing.Color.White;
             this.lblanio.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblanio.Location = new System.Drawing.Point(474, 86);
+            this.lblanio.Location = new System.Drawing.Point(633, 89);
             this.lblanio.Name = "lblanio";
             this.lblanio.Size = new System.Drawing.Size(53, 25);
             this.lblanio.TabIndex = 8;
@@ -248,7 +248,7 @@
             this.spMaestroComboBox.DisplayMember = "Nombre_Maestro";
             this.spMaestroComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.spMaestroComboBox.FormattingEnabled = true;
-            this.spMaestroComboBox.Location = new System.Drawing.Point(107, 86);
+            this.spMaestroComboBox.Location = new System.Drawing.Point(26, 119);
             this.spMaestroComboBox.Name = "spMaestroComboBox";
             this.spMaestroComboBox.Size = new System.Drawing.Size(300, 21);
             this.spMaestroComboBox.TabIndex = 10;
@@ -269,7 +269,7 @@
             this.spModalidadComboBox.DisplayMember = "Modalidad Nombre";
             this.spModalidadComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.spModalidadComboBox.FormattingEnabled = true;
-            this.spModalidadComboBox.Location = new System.Drawing.Point(107, 123);
+            this.spModalidadComboBox.Location = new System.Drawing.Point(512, 119);
             this.spModalidadComboBox.Name = "spModalidadComboBox";
             this.spModalidadComboBox.Size = new System.Drawing.Size(128, 21);
             this.spModalidadComboBox.TabIndex = 10;
@@ -291,7 +291,7 @@
             this.spCursoComboBox.DisplayMember = "Curso Nombre";
             this.spCursoComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.spCursoComboBox.FormattingEnabled = true;
-            this.spCursoComboBox.Location = new System.Drawing.Point(107, 163);
+            this.spCursoComboBox.Location = new System.Drawing.Point(359, 119);
             this.spCursoComboBox.Name = "spCursoComboBox";
             this.spCursoComboBox.Size = new System.Drawing.Size(128, 21);
             this.spCursoComboBox.TabIndex = 12;
@@ -313,7 +313,7 @@
             this.spSeccionesComboBox.DisplayMember = "SecNombre";
             this.spSeccionesComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.spSeccionesComboBox.FormattingEnabled = true;
-            this.spSeccionesComboBox.Location = new System.Drawing.Point(107, 200);
+            this.spSeccionesComboBox.Location = new System.Drawing.Point(26, 175);
             this.spSeccionesComboBox.Name = "spSeccionesComboBox";
             this.spSeccionesComboBox.Size = new System.Drawing.Size(128, 21);
             this.spSeccionesComboBox.TabIndex = 13;
@@ -334,9 +334,9 @@
             this.spMateriaComboBox.DisplayMember = "NombreMateria";
             this.spMateriaComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.spMateriaComboBox.FormattingEnabled = true;
-            this.spMateriaComboBox.Location = new System.Drawing.Point(303, 117);
+            this.spMateriaComboBox.Location = new System.Drawing.Point(198, 175);
             this.spMateriaComboBox.Name = "spMateriaComboBox";
-            this.spMateriaComboBox.Size = new System.Drawing.Size(106, 21);
+            this.spMateriaComboBox.Size = new System.Drawing.Size(128, 21);
             this.spMateriaComboBox.TabIndex = 14;
             this.spMateriaComboBox.ValueMember = "NombreMateria";
             // 
@@ -355,7 +355,7 @@
             this.spHoraComboBox.DisplayMember = "Hora";
             this.spHoraComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.spHoraComboBox.FormattingEnabled = true;
-            this.spHoraComboBox.Location = new System.Drawing.Point(303, 158);
+            this.spHoraComboBox.Location = new System.Drawing.Point(359, 177);
             this.spHoraComboBox.Name = "spHoraComboBox";
             this.spHoraComboBox.Size = new System.Drawing.Size(106, 21);
             this.spHoraComboBox.TabIndex = 14;
@@ -376,7 +376,7 @@
             this.spDiaComboBox.DisplayMember = "Dia";
             this.spDiaComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.spDiaComboBox.FormattingEnabled = true;
-            this.spDiaComboBox.Location = new System.Drawing.Point(303, 200);
+            this.spDiaComboBox.Location = new System.Drawing.Point(512, 177);
             this.spDiaComboBox.Name = "spDiaComboBox";
             this.spDiaComboBox.Size = new System.Drawing.Size(106, 21);
             this.spDiaComboBox.TabIndex = 15;
@@ -406,65 +406,11 @@
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewTextBoxColumn8});
             this.spmostrarplanillaDataGridView.DataSource = this.spmostrarplanillaBindingSource;
-            this.spmostrarplanillaDataGridView.Location = new System.Drawing.Point(29, 258);
+            this.spmostrarplanillaDataGridView.Location = new System.Drawing.Point(20, 257);
             this.spmostrarplanillaDataGridView.Name = "spmostrarplanillaDataGridView";
             this.spmostrarplanillaDataGridView.ReadOnly = true;
-            this.spmostrarplanillaDataGridView.Size = new System.Drawing.Size(541, 156);
+            this.spmostrarplanillaDataGridView.Size = new System.Drawing.Size(680, 252);
             this.spmostrarplanillaDataGridView.TabIndex = 16;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::General.Properties.Resources.Screenshot_2015_04_09_13_46_13;
-            this.pictureBox3.Location = new System.Drawing.Point(526, 11);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(60, 50);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 20;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.DodgerBlue;
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(574, 49);
-            this.pictureBox2.TabIndex = 19;
-            this.pictureBox2.TabStop = false;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.DodgerBlue;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(156, 25);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(228, 22);
-            this.label8.TabIndex = 21;
-            this.label8.Text = "Instituto Francisco Morazán";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 67);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(574, 173);
-            this.pictureBox1.TabIndex = 22;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.White;
-            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox4.Location = new System.Drawing.Point(12, 246);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(574, 189);
-            this.pictureBox4.TabIndex = 23;
-            this.pictureBox4.TabStop = false;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -522,12 +468,66 @@
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             this.dataGridViewTextBoxColumn8.ReadOnly = true;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::General.Properties.Resources.Screenshot_2015_04_09_13_46_13;
+            this.pictureBox3.Location = new System.Drawing.Point(650, 11);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(60, 50);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 20;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.DodgerBlue;
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox2.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(642, 49);
+            this.pictureBox2.TabIndex = 19;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.DodgerBlue;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(234, 25);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(228, 22);
+            this.label8.TabIndex = 21;
+            this.label8.Text = "Instituto Francisco Morazán";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 80);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(698, 153);
+            this.pictureBox1.TabIndex = 22;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.White;
+            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox4.Location = new System.Drawing.Point(12, 239);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(698, 283);
+            this.pictureBox4.TabIndex = 23;
+            this.pictureBox4.TabStop = false;
+            // 
             // AsignacionesClases
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(600, 447);
+            this.ClientSize = new System.Drawing.Size(734, 612);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
@@ -552,6 +552,7 @@
             this.Controls.Add(this.pictureBox4);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "AsignacionesClases";
             this.Text = "Asignación Clases";
             this.Load += new System.EventHandler(this.AsignacionesClases_Load);

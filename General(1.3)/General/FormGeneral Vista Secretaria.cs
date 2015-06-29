@@ -67,8 +67,13 @@ namespace General
 
         private void asignacionesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form ventana = new AsignacionesClases();
-            ventana.Show();
+           // Form ventana = new AsignacionesClases();
+           // ventana.Show();
+            Form AsignacionesClases = new AsignacionesClases();
+            AsignacionesClases.Show();
+            AsignacionesClases.MdiParent = this;
+            AsignacionesClases.WindowState = FormWindowState.Maximized;
+            AsignacionesClases.BringToFront();
         }
 
         private void notasToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -90,8 +95,13 @@ namespace General
 
         private void modificarCarnetToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form vent = new Carnet();
-            vent.Show();
+            //Form vent = new Carnet();
+           // vent.Show();
+            Form Carnet = new Carnet();
+            Carnet.Show();
+            Carnet.MdiParent = this;
+            Carnet.WindowState = FormWindowState.Maximized;
+            Carnet.BringToFront();
         }
 
         private void actualizarMaestroToolStripMenuItem_Click(object sender, EventArgs e)
