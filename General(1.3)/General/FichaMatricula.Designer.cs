@@ -235,6 +235,7 @@
             // label21
             // 
             this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.Transparent;
             this.label21.Location = new System.Drawing.Point(543, 6);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(41, 13);
@@ -243,6 +244,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label33);
             this.groupBox1.Controls.Add(this.label28);
@@ -734,6 +736,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.White;
             this.groupBox2.Controls.Add(this.label13);
             this.groupBox2.Controls.Add(this.label34);
             this.groupBox2.Controls.Add(this.label37);
@@ -1015,6 +1018,7 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.BackColor = System.Drawing.Color.White;
             this.groupBox4.Controls.Add(this.comboBox2);
             this.groupBox4.Controls.Add(this.label25);
             this.groupBox4.Controls.Add(this.spCursoModalidad2ComboBox);
@@ -1190,6 +1194,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.BackColor = System.Drawing.Color.White;
             this.groupBox3.Controls.Add(this.documentosDataGridView);
             this.groupBox3.Controls.Add(this.textBox15);
             this.groupBox3.Controls.Add(this.label19);
@@ -1243,7 +1248,7 @@
             // textBox15
             // 
             this.textBox15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox15.Location = new System.Drawing.Point(75, 56);
+            this.textBox15.Location = new System.Drawing.Point(75, 81);
             this.textBox15.Name = "textBox15";
             this.textBox15.Size = new System.Drawing.Size(150, 20);
             this.textBox15.TabIndex = 21;
@@ -1253,7 +1258,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(72, 32);
+            this.label19.Location = new System.Drawing.Point(72, 59);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(97, 13);
             this.label19.TabIndex = 20;
@@ -1261,12 +1266,16 @@
             // 
             // button7
             // 
+            this.button7.BackColor = System.Drawing.Color.Azure;
+            this.button7.FlatAppearance.BorderColor = System.Drawing.SystemColors.HotTrack;
+            this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Location = new System.Drawing.Point(344, 56);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(75, 45);
             this.button7.TabIndex = 19;
             this.button7.Text = "Guardar";
-            this.button7.UseVisualStyleBackColor = true;
+            this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // spDocumentosDataGridView
@@ -1279,9 +1288,9 @@
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewCheckBoxColumn1});
             this.spDocumentosDataGridView.DataSource = this.spDocumentosBindingSource;
-            this.spDocumentosDataGridView.Location = new System.Drawing.Point(35, 350);
+            this.spDocumentosDataGridView.Location = new System.Drawing.Point(75, 350);
             this.spDocumentosDataGridView.Name = "spDocumentosDataGridView";
-            this.spDocumentosDataGridView.Size = new System.Drawing.Size(395, 38);
+            this.spDocumentosDataGridView.Size = new System.Drawing.Size(344, 38);
             this.spDocumentosDataGridView.TabIndex = 21;
             this.spDocumentosDataGridView.Visible = false;
             this.spDocumentosDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.spDocumentosDataGridView_CellContentClick);
@@ -1297,6 +1306,7 @@
             this.dataGridViewCheckBoxColumn1.DataPropertyName = "DocEstado";
             this.dataGridViewCheckBoxColumn1.HeaderText = "DocumentoEstado";
             this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
+            this.dataGridViewCheckBoxColumn1.Width = 200;
             // 
             // spDocumentosBindingSource
             // 
@@ -1687,8 +1697,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label28;
@@ -1698,6 +1706,8 @@
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
 
     }
 }
