@@ -34,6 +34,11 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label21 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
             this.tipoSangreComboBox = new System.Windows.Forms.ComboBox();
             this.tipoSangreBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.desarrolloDataSet1 = new General.desarrolloDataSet1();
@@ -77,6 +82,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
             this.spOcupacionComboBox = new System.Windows.Forms.ComboBox();
             this.spOcupacionBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.spSexoComboBox = new System.Windows.Forms.ComboBox();
@@ -159,15 +168,6 @@
             this.spCursoModalidad2BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.spCursoModalidad2TableAdapter = new General.desarrolloDataSet1TableAdapters.spCursoModalidad2TableAdapter();
             this.documentosTableAdapter = new General.desarrolloDataSet1TableAdapters.DocumentosTableAdapter();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -235,7 +235,7 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(578, 6);
+            this.label21.Location = new System.Drawing.Point(543, 6);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(41, 13);
             this.label21.TabIndex = 1;
@@ -284,11 +284,56 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(3, 6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(693, 494);
+            this.groupBox1.Size = new System.Drawing.Size(693, 489);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos personales";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(536, 34);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(106, 13);
+            this.label1.TabIndex = 46;
+            this.label1.Text = "Numero de Identidad";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(260, 34);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(76, 13);
+            this.label33.TabIndex = 45;
+            this.label33.Text = "Primer Apellido";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(381, 34);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(90, 13);
+            this.label28.TabIndex = 44;
+            this.label28.Text = "Segundo Apellido";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(18, 34);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(76, 13);
+            this.label27.TabIndex = 43;
+            this.label27.Text = "Primer Nombre";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(139, 34);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(90, 13);
+            this.label26.TabIndex = 42;
+            this.label26.Text = "Segundo Nombre";
             // 
             // tipoSangreComboBox
             // 
@@ -514,7 +559,7 @@
             // textBox7
             // 
             this.textBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox7.Location = new System.Drawing.Point(21, 458);
+            this.textBox7.Location = new System.Drawing.Point(21, 449);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(100, 20);
             this.textBox7.TabIndex = 17;
@@ -588,7 +633,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(18, 437);
+            this.label11.Location = new System.Drawing.Point(18, 429);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(49, 13);
             this.label11.TabIndex = 10;
@@ -717,6 +762,42 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos Encargado";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(263, 39);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(76, 13);
+            this.label13.TabIndex = 49;
+            this.label13.Text = "Primer Apellido";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(384, 39);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(90, 13);
+            this.label34.TabIndex = 48;
+            this.label34.Text = "Segundo Apellido";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(21, 39);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(76, 13);
+            this.label37.TabIndex = 47;
+            this.label37.Text = "Primer Nombre";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(142, 39);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(90, 13);
+            this.label38.TabIndex = 46;
+            this.label38.Text = "Segundo Nombre";
             // 
             // spOcupacionComboBox
             // 
@@ -1412,87 +1493,6 @@
             // documentosTableAdapter
             // 
             this.documentosTableAdapter.ClearBeforeFill = true;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(139, 34);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(90, 13);
-            this.label26.TabIndex = 42;
-            this.label26.Text = "Segundo Nombre";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(18, 34);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(76, 13);
-            this.label27.TabIndex = 43;
-            this.label27.Text = "Primer Nombre";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(381, 34);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(90, 13);
-            this.label28.TabIndex = 44;
-            this.label28.Text = "Segundo Apellido";
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(260, 34);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(76, 13);
-            this.label33.TabIndex = 45;
-            this.label33.Text = "Primer Apellido";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(536, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 13);
-            this.label1.TabIndex = 46;
-            this.label1.Text = "Numero de Identidad";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(263, 39);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(76, 13);
-            this.label13.TabIndex = 49;
-            this.label13.Text = "Primer Apellido";
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(384, 39);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(90, 13);
-            this.label34.TabIndex = 48;
-            this.label34.Text = "Segundo Apellido";
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(21, 39);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(76, 13);
-            this.label37.TabIndex = 47;
-            this.label37.Text = "Primer Nombre";
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(142, 39);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(90, 13);
-            this.label38.TabIndex = 46;
-            this.label38.Text = "Segundo Nombre";
             // 
             // FichaMatricula
             // 
