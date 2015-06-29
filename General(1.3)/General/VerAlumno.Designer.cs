@@ -124,9 +124,9 @@
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "Buscar Todos los Alumnos",
-            "Buscar Por Nombre",
-            "Buscar Por Id"});
+            "Buscar todos los alumnos",
+            "Buscar por nombre",
+            "Buscar por numero de identidad"});
             this.comboBox1.Location = new System.Drawing.Point(280, 94);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(167, 21);
