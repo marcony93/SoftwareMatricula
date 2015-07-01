@@ -47,6 +47,10 @@
             this.sPAlumnosXClaseBBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sPAlumnosXClaseBTableAdapter = new General.desarrolloDataSetEliaTableAdapters.SPAlumnosXClaseBTableAdapter();
             this.sPAlumnosXClaseBDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button2 = new System.Windows.Forms.Button();
             this.sPCursoBBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sPCursoBTableAdapter = new General.desarrolloDataSetEliaTableAdapters.SPCursoBTableAdapter();
@@ -57,10 +61,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NA = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.desarrolloDataSetElia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sPSeccionBBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sPMateriaBBindingSource)).BeginInit();
@@ -230,6 +230,7 @@
             this.button1.TabIndex = 10;
             this.button1.Text = "Buscar";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Visible = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // sPAlumnosXClaseBBindingSource
@@ -259,6 +260,36 @@
             this.sPAlumnosXClaseBDataGridView.TabIndex = 11;
             this.sPAlumnosXClaseBDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.sPAlumnosXClaseBDataGridView_CellContentClick);
             this.sPAlumnosXClaseBDataGridView.Leave += new System.EventHandler(this.sPAlumnosXClaseBDataGridView_Leave);
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Alumno_AlumId";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Identidad";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 170;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Column1";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Nombre del Alumno";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 370;
+            // 
+            // NA
+            // 
+            this.NA.HeaderText = "Nota Acumilativo";
+            this.NA.MaxInputLength = 2;
+            this.NA.Name = "NA";
+            this.NA.Width = 110;
+            // 
+            // NE
+            // 
+            this.NE.HeaderText = "Nota Examen";
+            this.NE.MaxInputLength = 2;
+            this.NE.Name = "NE";
+            this.NE.Width = 110;
             // 
             // button2
             // 
@@ -362,36 +393,6 @@
             this.pictureBox4.Size = new System.Drawing.Size(832, 368);
             this.pictureBox4.TabIndex = 21;
             this.pictureBox4.TabStop = false;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Alumno_AlumId";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Identidad";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 170;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Column1";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Nombre del Alumno";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Width = 370;
-            // 
-            // NA
-            // 
-            this.NA.HeaderText = "Nota Acumilativo";
-            this.NA.MaxInputLength = 2;
-            this.NA.Name = "NA";
-            this.NA.Width = 110;
-            // 
-            // NE
-            // 
-            this.NE.HeaderText = "Nota Examen";
-            this.NE.MaxInputLength = 2;
-            this.NE.Name = "NE";
-            this.NE.Width = 110;
             // 
             // SubirNotas
             // 
