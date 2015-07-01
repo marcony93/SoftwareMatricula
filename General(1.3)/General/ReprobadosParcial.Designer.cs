@@ -96,7 +96,7 @@
             reportDataSource1.Value = this.ReprobadosPorParcialBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "General.Report5.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(12, 147);
+            this.reportViewer1.Location = new System.Drawing.Point(12, 173);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ShowBackButton = false;
             this.reportViewer1.ShowContextMenu = false;
@@ -108,7 +108,7 @@
             this.reportViewer1.ShowPromptAreaButton = false;
             this.reportViewer1.ShowStopButton = false;
             this.reportViewer1.ShowZoomControl = false;
-            this.reportViewer1.Size = new System.Drawing.Size(563, 315);
+            this.reportViewer1.Size = new System.Drawing.Size(1135, 414);
             this.reportViewer1.TabIndex = 0;
             // 
             // ReprobadosPorParcialTableAdapter
@@ -119,10 +119,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(26, 114);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(425, 93);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 15);
+            this.label2.Size = new System.Drawing.Size(51, 15);
             this.label2.TabIndex = 4;
             this.label2.Text = "Sección";
             // 
@@ -130,10 +130,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(26, 83);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(246, 93);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 15);
+            this.label1.Size = new System.Drawing.Size(39, 15);
             this.label1.TabIndex = 3;
             this.label1.Text = "Curso";
             // 
@@ -143,11 +143,11 @@
             this.button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.HotTrack;
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(457, 111);
+            this.button1.Location = new System.Drawing.Point(1016, 90);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 23);
+            this.button1.Size = new System.Drawing.Size(85, 52);
             this.button1.TabIndex = 16;
-            this.button1.Text = "Generar Reporte";
+            this.button1.Text = "Generar reporte";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -155,17 +155,17 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(438, 79);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(783, 93);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 15);
+            this.label4.Size = new System.Drawing.Size(44, 15);
             this.label4.TabIndex = 15;
             this.label4.Text = "Rango";
             // 
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox1.Location = new System.Drawing.Point(505, 76);
+            this.textBox1.Location = new System.Drawing.Point(783, 112);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(58, 20);
             this.textBox1.TabIndex = 14;
@@ -175,10 +175,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(153, 83);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(51, 93);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 15);
+            this.label3.Size = new System.Drawing.Size(49, 15);
             this.label3.TabIndex = 13;
             this.label3.Text = "Materia";
             // 
@@ -227,9 +227,9 @@
             this.sPCursoBComboBox.DisplayMember = "Curso Nombre";
             this.sPCursoBComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.sPCursoBComboBox.FormattingEnabled = true;
-            this.sPCursoBComboBox.Location = new System.Drawing.Point(78, 78);
+            this.sPCursoBComboBox.Location = new System.Drawing.Point(246, 111);
             this.sPCursoBComboBox.Name = "sPCursoBComboBox";
-            this.sPCursoBComboBox.Size = new System.Drawing.Size(61, 21);
+            this.sPCursoBComboBox.Size = new System.Drawing.Size(115, 21);
             this.sPCursoBComboBox.TabIndex = 16;
             this.sPCursoBComboBox.ValueMember = "CursoId";
             this.sPCursoBComboBox.SelectedIndexChanged += new System.EventHandler(this.sPCursoBComboBox_SelectedIndexChanged);
@@ -281,7 +281,7 @@
             this.sPMateriaBComboBox.DisplayMember = "NombreMateria";
             this.sPMateriaBComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.sPMateriaBComboBox.FormattingEnabled = true;
-            this.sPMateriaBComboBox.Location = new System.Drawing.Point(215, 78);
+            this.sPMateriaBComboBox.Location = new System.Drawing.Point(51, 111);
             this.sPMateriaBComboBox.Name = "sPMateriaBComboBox";
             this.sPMateriaBComboBox.Size = new System.Drawing.Size(131, 21);
             this.sPMateriaBComboBox.TabIndex = 17;
@@ -335,16 +335,16 @@
             this.sPSeccionBComboBox.DisplayMember = "SecNombre";
             this.sPSeccionBComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.sPSeccionBComboBox.FormattingEnabled = true;
-            this.sPSeccionBComboBox.Location = new System.Drawing.Point(90, 111);
+            this.sPSeccionBComboBox.Location = new System.Drawing.Point(425, 111);
             this.sPSeccionBComboBox.Name = "sPSeccionBComboBox";
-            this.sPSeccionBComboBox.Size = new System.Drawing.Size(49, 21);
+            this.sPSeccionBComboBox.Size = new System.Drawing.Size(115, 21);
             this.sPSeccionBComboBox.TabIndex = 18;
             this.sPSeccionBComboBox.ValueMember = "SecNombre";
             // 
             // cursoIdTextBox
             // 
             this.cursoIdTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.sPCursoBBindingSource, "CursoId", true));
-            this.cursoIdTextBox.Location = new System.Drawing.Point(78, 78);
+            this.cursoIdTextBox.Location = new System.Drawing.Point(284, 112);
             this.cursoIdTextBox.Name = "cursoIdTextBox";
             this.cursoIdTextBox.Size = new System.Drawing.Size(32, 20);
             this.cursoIdTextBox.TabIndex = 19;
@@ -354,10 +354,10 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.White;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(153, 114);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(604, 93);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 15);
+            this.label5.Size = new System.Drawing.Size(45, 15);
             this.label5.TabIndex = 20;
             this.label5.Text = "Parcial";
             // 
@@ -370,9 +370,9 @@
             "II",
             "III",
             "IV"});
-            this.comboBox1.Location = new System.Drawing.Point(242, 111);
+            this.comboBox1.Location = new System.Drawing.Point(604, 111);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(47, 21);
+            this.comboBox1.Size = new System.Drawing.Size(115, 21);
             this.comboBox1.TabIndex = 21;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -384,9 +384,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 67);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 70);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(561, 74);
+            this.pictureBox1.Size = new System.Drawing.Size(1134, 94);
             this.pictureBox1.TabIndex = 24;
             this.pictureBox1.TabStop = false;
             // 
@@ -395,7 +395,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.DodgerBlue;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(191, 27);
+            this.label6.Location = new System.Drawing.Point(435, 26);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(228, 22);
@@ -405,7 +405,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::General.Properties.Resources.Screenshot_2015_04_09_13_46_13;
-            this.pictureBox3.Location = new System.Drawing.Point(513, 12);
+            this.pictureBox3.Location = new System.Drawing.Point(1086, 12);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(60, 50);
@@ -420,7 +420,7 @@
             this.pictureBox2.Location = new System.Drawing.Point(12, 12);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(561, 49);
+            this.pictureBox2.Size = new System.Drawing.Size(1075, 50);
             this.pictureBox2.TabIndex = 25;
             this.pictureBox2.TabStop = false;
             // 
@@ -429,7 +429,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(587, 474);
+            this.ClientSize = new System.Drawing.Size(1159, 599);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
@@ -449,10 +449,13 @@
             this.Controls.Add(this.reportViewer1);
             this.Controls.Add(this.cursoIdTextBox);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "ReprobadosParcial";
-            this.Text = "ReprobadosParcial";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Reprobados por parcial";
             this.Load += new System.EventHandler(this.ReprobadosParcial_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ReprobadosPorParcialBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.desarrolloDataSetElia)).EndInit();

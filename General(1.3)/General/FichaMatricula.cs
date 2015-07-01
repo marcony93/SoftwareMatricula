@@ -103,8 +103,7 @@ namespace General
             tabControl1.TabPages[2].Text = "Datos Academicos";
             tabControl1.TabPages[3].Text = "Documentos";
             button4.Enabled = true;
-            label21.Text = DateTime.Now.ToString();
-            
+
             
 
         }
@@ -734,6 +733,11 @@ namespace General
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lax_Click(object sender, EventArgs e)
         {
 
         }

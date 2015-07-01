@@ -214,9 +214,9 @@
             alumNombre1Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             alumNombre1Label.Location = new System.Drawing.Point(19, 33);
             alumNombre1Label.Name = "alumNombre1Label";
-            alumNombre1Label.Size = new System.Drawing.Size(92, 15);
+            alumNombre1Label.Size = new System.Drawing.Size(90, 15);
             alumNombre1Label.TabIndex = 2;
-            alumNombre1Label.Text = "Primer Nombre";
+            alumNombre1Label.Text = "Primer nombre";
             // 
             // alumIdLabel
             // 
@@ -226,7 +226,7 @@
             alumIdLabel.Name = "alumIdLabel";
             alumIdLabel.Size = new System.Drawing.Size(123, 15);
             alumIdLabel.TabIndex = 10;
-            alumIdLabel.Text = "Numero de Identidad";
+            alumIdLabel.Text = "Numero de identidad";
             // 
             // alumFechaNacLabel
             // 
@@ -234,9 +234,9 @@
             alumFechaNacLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             alumFechaNacLabel.Location = new System.Drawing.Point(313, 104);
             alumFechaNacLabel.Name = "alumFechaNacLabel";
-            alumFechaNacLabel.Size = new System.Drawing.Size(126, 15);
+            alumFechaNacLabel.Size = new System.Drawing.Size(122, 15);
             alumFechaNacLabel.TabIndex = 12;
-            alumFechaNacLabel.Text = "Fecha De Nacimiento";
+            alumFechaNacLabel.Text = "Fecha de nacimiento";
             alumFechaNacLabel.Click += new System.EventHandler(this.alumFechaNacLabel_Click);
             // 
             // nacionalidad_NacIdLabel
@@ -245,9 +245,9 @@
             nacionalidad_NacIdLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             nacionalidad_NacIdLabel.Location = new System.Drawing.Point(163, 104);
             nacionalidad_NacIdLabel.Name = "nacionalidad_NacIdLabel";
-            nacionalidad_NacIdLabel.Size = new System.Drawing.Size(115, 15);
+            nacionalidad_NacIdLabel.Size = new System.Drawing.Size(113, 15);
             nacionalidad_NacIdLabel.TabIndex = 14;
-            nacionalidad_NacIdLabel.Text = "Lugar de Nacimieto";
+            nacionalidad_NacIdLabel.Text = "Lugar de nacimieto";
             // 
             // alumDireccionLabel
             // 
@@ -275,9 +275,9 @@
             tipoSangre_TipSangreIdLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             tipoSangre_TipSangreIdLabel.Location = new System.Drawing.Point(163, 181);
             tipoSangre_TipSangreIdLabel.Name = "tipoSangre_TipSangreIdLabel";
-            tipoSangre_TipSangreIdLabel.Size = new System.Drawing.Size(91, 15);
+            tipoSangre_TipSangreIdLabel.Size = new System.Drawing.Size(89, 15);
             tipoSangre_TipSangreIdLabel.TabIndex = 28;
-            tipoSangre_TipSangreIdLabel.Text = "Tipo de Sangre";
+            tipoSangre_TipSangreIdLabel.Text = "Tipo de sangre";
             // 
             // estadoCivil_EdoCivilIdLabel
             // 
@@ -316,7 +316,7 @@
             encdoIdLabel.Name = "encdoIdLabel";
             encdoIdLabel.Size = new System.Drawing.Size(123, 15);
             encdoIdLabel.TabIndex = 5;
-            encdoIdLabel.Text = "Numero de Identidad";
+            encdoIdLabel.Text = "Numero de identidad";
             encdoIdLabel.Click += new System.EventHandler(this.encdoIdLabel_Click);
             // 
             // encdoFechaNacLabel
@@ -325,9 +325,9 @@
             encdoFechaNacLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             encdoFechaNacLabel.Location = new System.Drawing.Point(158, 93);
             encdoFechaNacLabel.Name = "encdoFechaNacLabel";
-            encdoFechaNacLabel.Size = new System.Drawing.Size(107, 15);
+            encdoFechaNacLabel.Size = new System.Drawing.Size(105, 15);
             encdoFechaNacLabel.TabIndex = 7;
-            encdoFechaNacLabel.Text = "Fecha Nacimiento";
+            encdoFechaNacLabel.Text = "Fecha nacimiento";
             // 
             // sexo_SexIdLabel
             // 
@@ -365,19 +365,19 @@
             estadoMatricula_EstdoMatriIdLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             estadoMatricula_EstdoMatriIdLabel.Location = new System.Drawing.Point(13, 37);
             estadoMatricula_EstdoMatriIdLabel.Name = "estadoMatricula_EstdoMatriIdLabel";
-            estadoMatricula_EstdoMatriIdLabel.Size = new System.Drawing.Size(99, 15);
+            estadoMatricula_EstdoMatriIdLabel.Size = new System.Drawing.Size(129, 15);
             estadoMatricula_EstdoMatriIdLabel.TabIndex = 0;
-            estadoMatricula_EstdoMatriIdLabel.Text = "Estado Matrícula";
+            estadoMatricula_EstdoMatriIdLabel.Text = "Estado de la matrícula";
             // 
             // instituto_InstoIdLabel
             // 
             instituto_InstoIdLabel.AutoSize = true;
             instituto_InstoIdLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            instituto_InstoIdLabel.Location = new System.Drawing.Point(136, 37);
+            instituto_InstoIdLabel.Location = new System.Drawing.Point(168, 37);
             instituto_InstoIdLabel.Name = "instituto_InstoIdLabel";
-            instituto_InstoIdLabel.Size = new System.Drawing.Size(138, 15);
+            instituto_InstoIdLabel.Size = new System.Drawing.Size(137, 15);
             instituto_InstoIdLabel.TabIndex = 2;
-            instituto_InstoIdLabel.Text = "Instituto de Procedencia";
+            instituto_InstoIdLabel.Text = "Instituto de procedencia";
             // 
             // modalidad_ModIdLabel
             // 
@@ -403,7 +403,7 @@
             // 
             seccionLabel.AutoSize = true;
             seccionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            seccionLabel.Location = new System.Drawing.Point(312, 37);
+            seccionLabel.Location = new System.Drawing.Point(354, 37);
             seccionLabel.Name = "seccionLabel";
             seccionLabel.Size = new System.Drawing.Size(51, 15);
             seccionLabel.TabIndex = 8;
@@ -415,9 +415,9 @@
             label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             label4.Location = new System.Drawing.Point(145, 33);
             label4.Name = "label4";
-            label4.Size = new System.Drawing.Size(105, 15);
+            label4.Size = new System.Drawing.Size(103, 15);
             label4.TabIndex = 52;
-            label4.Text = "Segundo Nombre";
+            label4.Text = "Segundo nombre";
             // 
             // label6
             // 
@@ -427,7 +427,7 @@
             label6.Name = "label6";
             label6.Size = new System.Drawing.Size(91, 15);
             label6.TabIndex = 53;
-            label6.Text = "Primer Apellido";
+            label6.Text = "Primer apellido";
             // 
             // label7
             // 
@@ -437,7 +437,7 @@
             label7.Name = "label7";
             label7.Size = new System.Drawing.Size(104, 15);
             label7.TabIndex = 54;
-            label7.Text = "Segundo Apellido";
+            label7.Text = "Segundo apellido";
             // 
             // label8
             // 
@@ -447,7 +447,7 @@
             label8.Name = "label8";
             label8.Size = new System.Drawing.Size(104, 15);
             label8.TabIndex = 58;
-            label8.Text = "Segundo Apellido";
+            label8.Text = "Segundo apellido";
             // 
             // label9
             // 
@@ -457,7 +457,7 @@
             label9.Name = "label9";
             label9.Size = new System.Drawing.Size(91, 15);
             label9.TabIndex = 57;
-            label9.Text = "Primer Apellido";
+            label9.Text = "Primer apellido";
             // 
             // label12
             // 
@@ -465,9 +465,9 @@
             label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             label12.Location = new System.Drawing.Point(136, 28);
             label12.Name = "label12";
-            label12.Size = new System.Drawing.Size(105, 15);
+            label12.Size = new System.Drawing.Size(103, 15);
             label12.TabIndex = 56;
-            label12.Text = "Segundo Nombre";
+            label12.Text = "Segundo nombre";
             // 
             // label13
             // 
@@ -475,9 +475,9 @@
             label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             label13.Location = new System.Drawing.Point(13, 28);
             label13.Name = "label13";
-            label13.Size = new System.Drawing.Size(92, 15);
+            label13.Size = new System.Drawing.Size(90, 15);
             label13.TabIndex = 55;
-            label13.Text = "Primer Nombre";
+            label13.Text = "Primer nombre";
             // 
             // desarrolloDataSet1
             // 
@@ -852,9 +852,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(145, 277);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 15);
+            this.label1.Size = new System.Drawing.Size(97, 15);
             this.label1.TabIndex = 48;
-            this.label1.Text = "Lugar de Trabajo";
+            this.label1.Text = "Lugar de trabajo";
             // 
             // label2
             // 
@@ -862,9 +862,9 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(280, 277);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 15);
+            this.label2.Size = new System.Drawing.Size(106, 15);
             this.label2.TabIndex = 49;
-            this.label2.Text = "Horario De Trabajo";
+            this.label2.Text = "Horario de trabajo";
             // 
             // groupBox1
             // 
@@ -911,12 +911,12 @@
             this.groupBox1.Controls.Add(this.nacionalidad_NacIdLabel2);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 66);
+            this.groupBox1.Location = new System.Drawing.Point(12, 68);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(598, 507);
             this.groupBox1.TabIndex = 50;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Datos Personales";
+            this.groupBox1.Text = "Datos personales";
             // 
             // comboBox2
             // 
@@ -982,7 +982,7 @@
             this.spMostrarInstituto2ComboBox.DisplayMember = "InstoNombre";
             this.spMostrarInstituto2ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.spMostrarInstituto2ComboBox.FormattingEnabled = true;
-            this.spMostrarInstituto2ComboBox.Location = new System.Drawing.Point(136, 67);
+            this.spMostrarInstituto2ComboBox.Location = new System.Drawing.Point(168, 67);
             this.spMostrarInstituto2ComboBox.Name = "spMostrarInstituto2ComboBox";
             this.spMostrarInstituto2ComboBox.Size = new System.Drawing.Size(159, 23);
             this.spMostrarInstituto2ComboBox.TabIndex = 11;
@@ -1089,12 +1089,12 @@
             this.groupBox2.Controls.Add(this.encdoApellido1TextBox);
             this.groupBox2.Controls.Add(this.encdoNombre1TextBox);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(616, 67);
+            this.groupBox2.Location = new System.Drawing.Point(616, 68);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(501, 251);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Datos Encargado";
+            this.groupBox2.Text = "Datos del Encargado";
             // 
             // spSexoComboBox1
             // 
@@ -1230,7 +1230,7 @@
             // 
             this.encdoApellido1TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.encdoApellido1TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spModificar_DatosEncargadoBindingSource, "EncdoApellido1", true));
-            this.encdoApellido1TextBox.Location = new System.Drawing.Point(13, 48);
+            this.encdoApellido1TextBox.Location = new System.Drawing.Point(259, 49);
             this.encdoApellido1TextBox.Name = "encdoApellido1TextBox";
             this.encdoApellido1TextBox.ShortcutsEnabled = false;
             this.encdoApellido1TextBox.Size = new System.Drawing.Size(100, 21);
@@ -1242,7 +1242,7 @@
             // 
             this.encdoNombre1TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.encdoNombre1TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spModificar_DatosEncargadoBindingSource, "EncdoNombre1", true));
-            this.encdoNombre1TextBox.Location = new System.Drawing.Point(259, 49);
+            this.encdoNombre1TextBox.Location = new System.Drawing.Point(13, 49);
             this.encdoNombre1TextBox.Name = "encdoNombre1TextBox";
             this.encdoNombre1TextBox.ShortcutsEnabled = false;
             this.encdoNombre1TextBox.Size = new System.Drawing.Size(100, 21);
@@ -1327,10 +1327,10 @@
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(616, 324);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(501, 249);
+            this.groupBox3.Size = new System.Drawing.Size(501, 251);
             this.groupBox3.TabIndex = 51;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Datos Académicos";
+            this.groupBox3.Text = "Datos académicos";
             // 
             // comboBox1
             // 
@@ -1339,7 +1339,7 @@
             this.comboBox1.Items.AddRange(new object[] {
             "A",
             "B"});
-            this.comboBox1.Location = new System.Drawing.Point(312, 67);
+            this.comboBox1.Location = new System.Drawing.Point(354, 67);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(116, 23);
             this.comboBox1.TabIndex = 14;
@@ -1351,8 +1351,8 @@
             this.button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.HotTrack;
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(943, 579);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(943, 581);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(85, 52);
             this.button1.TabIndex = 52;
@@ -1366,8 +1366,8 @@
             this.button2.FlatAppearance.BorderColor = System.Drawing.SystemColors.HotTrack;
             this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(1032, 579);
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(1032, 581);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(85, 52);
             this.button2.TabIndex = 53;
@@ -1382,7 +1382,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::General.Properties.Resources.Screenshot_2015_04_09_13_46_13;
-            this.pictureBox3.Location = new System.Drawing.Point(1057, 10);
+            this.pictureBox3.Location = new System.Drawing.Point(1057, 12);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(60, 50);
@@ -1395,7 +1395,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.DodgerBlue;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(441, 24);
+            this.label5.Location = new System.Drawing.Point(424, 25);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(228, 22);
@@ -1406,10 +1406,10 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.DodgerBlue;
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 11);
+            this.pictureBox2.Location = new System.Drawing.Point(12, 12);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1052, 49);
+            this.pictureBox2.Size = new System.Drawing.Size(1052, 50);
             this.pictureBox2.TabIndex = 56;
             this.pictureBox2.TabStop = false;
             // 

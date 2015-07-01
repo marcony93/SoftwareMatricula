@@ -12,6 +12,7 @@ namespace General
 {
     public partial class VentanaGeneralVistaSecretaria : Form
     {
+        
         public static VentanaGeneralVistaSecretaria VentanaSecretaria = new VentanaGeneralVistaSecretaria();
         
         public VentanaGeneralVistaSecretaria()
@@ -21,7 +22,7 @@ namespace General
 
         private void FormGeneral_Load(object sender, EventArgs e)
         {
-            
+              
         }
 
         private void crearCuentaToolStripMenuItem_Click(object sender, EventArgs e)

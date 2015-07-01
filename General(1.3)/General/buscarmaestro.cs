@@ -77,10 +77,20 @@ namespace General
             {
                 
                 Idmaestro = buscarmaestroDataGridView.Rows[e.RowIndex].Cells[0].Value.ToString();
+                //Form modificarmaestro = new modificarmaestro();
+               // modificarmaestro.Show();
+                //this.Hide();
                 Form modificarmaestro = new modificarmaestro();
                 modificarmaestro.Show();
-                this.Hide();
+                modificarmaestro.MdiParent = VentanaGeneralVistaSecretaria.VentanaSecretaria;
+                modificarmaestro.WindowState = FormWindowState.Maximized;
+                modificarmaestro.BringToFront();
             }
+        }
+
+        private void buscarmaestro_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

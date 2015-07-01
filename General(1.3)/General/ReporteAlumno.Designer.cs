@@ -124,7 +124,7 @@
             this.uspSelectModalidadComboBox.DisplayMember = "Modalidad Nombre";
             this.uspSelectModalidadComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.uspSelectModalidadComboBox.FormattingEnabled = true;
-            this.uspSelectModalidadComboBox.Location = new System.Drawing.Point(134, 68);
+            this.uspSelectModalidadComboBox.Location = new System.Drawing.Point(51, 111);
             this.uspSelectModalidadComboBox.Name = "uspSelectModalidadComboBox";
             this.uspSelectModalidadComboBox.Size = new System.Drawing.Size(115, 21);
             this.uspSelectModalidadComboBox.TabIndex = 1;
@@ -135,12 +135,12 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(39, 74);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(51, 93);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 15);
+            this.label1.Size = new System.Drawing.Size(66, 15);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Modalidad:";
+            this.label1.Text = "Modalidad";
             // 
             // label2
             // 
@@ -163,12 +163,12 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(39, 111);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(284, 92);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(48, 15);
+            this.label3.Size = new System.Drawing.Size(39, 15);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Curso:";
+            this.label3.Text = "Curso";
             // 
             // uspSeccionxCursoBindingSource
             // 
@@ -185,7 +185,7 @@
             this.uspSeccionxCursoComboBox.DisplayMember = "SecNombre";
             this.uspSeccionxCursoComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.uspSeccionxCursoComboBox.FormattingEnabled = true;
-            this.uspSeccionxCursoComboBox.Location = new System.Drawing.Point(134, 141);
+            this.uspSeccionxCursoComboBox.Location = new System.Drawing.Point(517, 110);
             this.uspSeccionxCursoComboBox.Name = "uspSeccionxCursoComboBox";
             this.uspSeccionxCursoComboBox.Size = new System.Drawing.Size(115, 21);
             this.uspSeccionxCursoComboBox.TabIndex = 6;
@@ -196,12 +196,12 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(39, 148);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(517, 92);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 15);
+            this.label4.Size = new System.Drawing.Size(51, 15);
             this.label4.TabIndex = 7;
-            this.label4.Text = "Sección:";
+            this.label4.Text = "Sección";
             // 
             // uspModalidadBindingSource1
             // 
@@ -214,7 +214,7 @@
             this.uspModalidadComboBox.DisplayMember = "Curso Nombre";
             this.uspModalidadComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.uspModalidadComboBox.FormattingEnabled = true;
-            this.uspModalidadComboBox.Location = new System.Drawing.Point(134, 105);
+            this.uspModalidadComboBox.Location = new System.Drawing.Point(284, 110);
             this.uspModalidadComboBox.Name = "uspModalidadComboBox";
             this.uspModalidadComboBox.Size = new System.Drawing.Size(115, 21);
             this.uspModalidadComboBox.TabIndex = 7;
@@ -228,12 +228,12 @@
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(264, 111);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(814, 90);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(85, 52);
             this.button1.TabIndex = 9;
-            this.button1.Text = "Generar Reporte";
+            this.button1.Text = "Generar reporte";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -243,9 +243,9 @@
             reportDataSource1.Value = this.uspAlumnosxCursoBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "General.Report1.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(12, 190);
+            this.reportViewer1.Location = new System.Drawing.Point(12, 173);
             this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(920, 241);
+            this.reportViewer1.Size = new System.Drawing.Size(1135, 414);
             this.reportViewer1.TabIndex = 10;
             // 
             // uspAlumnosxCursoTableAdapter
@@ -255,7 +255,7 @@
             // secNombreTextBox
             // 
             this.secNombreTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.uspSeccionxCursoBindingSource, "SecNombre", true));
-            this.secNombreTextBox.Location = new System.Drawing.Point(162, 142);
+            this.secNombreTextBox.Location = new System.Drawing.Point(585, 111);
             this.secNombreTextBox.Name = "secNombreTextBox";
             this.secNombreTextBox.Size = new System.Drawing.Size(25, 20);
             this.secNombreTextBox.TabIndex = 11;
@@ -267,12 +267,12 @@
             this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(366, 111);
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(916, 90);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(85, 52);
             this.button2.TabIndex = 12;
-            this.button2.Text = "Ordenar por Cuenta";
+            this.button2.Text = "Ordenar por cuenta";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -283,12 +283,12 @@
             this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(466, 111);
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(1016, 90);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(85, 52);
             this.button3.TabIndex = 13;
-            this.button3.Text = "Ordenar por Nombre";
+            this.button3.Text = "Ordenar por nombre";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -296,10 +296,10 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.DodgerBlue;
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2.Location = new System.Drawing.Point(12, -1);
+            this.pictureBox2.Location = new System.Drawing.Point(12, 12);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(920, 49);
+            this.pictureBox2.Size = new System.Drawing.Size(1075, 50);
             this.pictureBox2.TabIndex = 27;
             this.pictureBox2.TabStop = false;
             // 
@@ -307,9 +307,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 54);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 70);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(920, 130);
+            this.pictureBox1.Size = new System.Drawing.Size(1134, 94);
             this.pictureBox1.TabIndex = 30;
             this.pictureBox1.TabStop = false;
             // 
@@ -318,7 +318,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.DodgerBlue;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(332, 9);
+            this.label5.Location = new System.Drawing.Point(435, 26);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(228, 22);
@@ -328,7 +328,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::General.Properties.Resources.Screenshot_2015_04_09_13_46_13;
-            this.pictureBox3.Location = new System.Drawing.Point(872, -2);
+            this.pictureBox3.Location = new System.Drawing.Point(1086, 12);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(60, 50);
@@ -341,7 +341,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(944, 443);
+            this.ClientSize = new System.Drawing.Size(1159, 599);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button3);
@@ -358,9 +358,13 @@
             this.Controls.Add(this.reportViewer1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "ReporteAlumno";
-            this.Text = "ReporteAlumno";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Reporte del Alumno";
             this.Load += new System.EventHandler(this.ReporteAlumno_Load);
             ((System.ComponentModel.ISupportInitialize)(this.uspAlumnosxCursoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.desarrolloDataSetBaque)).EndInit();

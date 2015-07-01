@@ -94,8 +94,14 @@ namespace General
 
         private void button2_Click(object sender, EventArgs e)
         {
-            new buscarmaestro().Show();
-            this.Hide();
+            //Form general = new VentanaGeneralVistaSecretaria();
+            //new buscarmaestro().Show();
+            //this.Hide();
+            Form buscarmaestro = new buscarmaestro();
+            buscarmaestro.Show();
+            buscarmaestro.MdiParent = VentanaGeneralVistaSecretaria.VentanaSecretaria;
+            buscarmaestro.WindowState = FormWindowState.Maximized;
+            buscarmaestro.BringToFront();
         }
     }
 }

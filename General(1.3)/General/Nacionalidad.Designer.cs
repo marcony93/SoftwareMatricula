@@ -67,17 +67,17 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 84);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(41, 74);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 18);
+            this.label2.Size = new System.Drawing.Size(62, 18);
             this.label2.TabIndex = 1;
             this.label2.Text = "Nombre";
             // 
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox1.Location = new System.Drawing.Point(94, 84);
+            this.textBox1.Location = new System.Drawing.Point(44, 95);
             this.textBox1.Name = "textBox1";
             this.textBox1.ShortcutsEnabled = false;
             this.textBox1.Size = new System.Drawing.Size(167, 20);
@@ -135,10 +135,10 @@
             this.button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.HotTrack;
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(310, 84);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(324, 77);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(85, 39);
+            this.button1.Size = new System.Drawing.Size(75, 45);
             this.button1.TabIndex = 5;
             this.button1.Text = "Guardar";
             this.button1.UseVisualStyleBackColor = false;
@@ -196,10 +196,10 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.DodgerBlue;
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2.Location = new System.Drawing.Point(5, 9);
+            this.pictureBox2.Location = new System.Drawing.Point(12, 9);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(402, 49);
+            this.pictureBox2.Size = new System.Drawing.Size(395, 49);
             this.pictureBox2.TabIndex = 21;
             this.pictureBox2.TabStop = false;
             // 
@@ -207,9 +207,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(5, 67);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 67);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(403, 65);
+            this.pictureBox1.Size = new System.Drawing.Size(396, 65);
             this.pictureBox1.TabIndex = 24;
             this.pictureBox1.TabStop = false;
             // 
@@ -224,20 +224,20 @@
             this.dataGridViewTextBoxColumn2,
             this.eliminars});
             this.spNacionalidadDataGridView.DataSource = this.spNacionalidadBindingSource1;
-            this.spNacionalidadDataGridView.Location = new System.Drawing.Point(15, 147);
+            this.spNacionalidadDataGridView.Location = new System.Drawing.Point(27, 147);
             this.spNacionalidadDataGridView.Name = "spNacionalidadDataGridView";
             this.spNacionalidadDataGridView.ReadOnly = true;
-            this.spNacionalidadDataGridView.Size = new System.Drawing.Size(380, 207);
+            this.spNacionalidadDataGridView.Size = new System.Drawing.Size(368, 207);
             this.spNacionalidadDataGridView.TabIndex = 5;
             this.spNacionalidadDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.spNacionalidadDataGridView_CellContentClick_1);
             // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "NacId";
-            this.dataGridViewTextBoxColumn1.HeaderText = "";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Numero";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 5;
+            this.dataGridViewTextBoxColumn1.Width = 75;
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -245,6 +245,7 @@
             this.dataGridViewTextBoxColumn2.HeaderText = "Nombre";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 200;
             // 
             // eliminars
             // 
@@ -253,14 +254,15 @@
             this.eliminars.ReadOnly = true;
             this.eliminars.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.eliminars.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.eliminars.Width = 50;
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.White;
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox3.Location = new System.Drawing.Point(5, 138);
+            this.pictureBox3.Location = new System.Drawing.Point(12, 138);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(403, 225);
+            this.pictureBox3.Size = new System.Drawing.Size(396, 225);
             this.pictureBox3.TabIndex = 25;
             this.pictureBox3.TabStop = false;
             // 
@@ -302,10 +304,12 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Nacionalidad";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nacionalidad";
             this.Load += new System.EventHandler(this.Nacionalidad_Load);
             ((System.ComponentModel.ISupportInitialize)(this.desarrolloDataSet)).EndInit();
@@ -340,11 +344,11 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DataGridView spNacionalidadDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewButtonColumn eliminars;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewButtonColumn eliminars;
     }
 }

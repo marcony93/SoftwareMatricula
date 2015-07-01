@@ -130,9 +130,9 @@
             this.dataGridViewTextBoxColumn12,
             this.dataGridViewTextBoxColumn13});
             this.buscarmaestroDataGridView.DataSource = this.buscarmaestroBindingSource;
-            this.buscarmaestroDataGridView.Location = new System.Drawing.Point(12, 202);
+            this.buscarmaestroDataGridView.Location = new System.Drawing.Point(25, 245);
             this.buscarmaestroDataGridView.Name = "buscarmaestroDataGridView";
-            this.buscarmaestroDataGridView.Size = new System.Drawing.Size(750, 220);
+            this.buscarmaestroDataGridView.Size = new System.Drawing.Size(686, 316);
             this.buscarmaestroDataGridView.TabIndex = 2;
             this.buscarmaestroDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.buscarmaestroDataGridView_CellContentClick);
             // 
@@ -212,9 +212,9 @@
             // 
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(129, 144);
+            this.textBox1.Location = new System.Drawing.Point(113, 177);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(105, 20);
+            this.textBox1.Size = new System.Drawing.Size(152, 20);
             this.textBox1.TabIndex = 3;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -222,22 +222,23 @@
             // 
             this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(341, 139);
+            this.textBox2.Location = new System.Drawing.Point(459, 177);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.Size = new System.Drawing.Size(139, 20);
             this.textBox2.TabIndex = 4;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // comboBox1
             // 
             this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Buscar por id",
             "Buscar por nombre"});
-            this.comboBox1.Location = new System.Drawing.Point(129, 99);
+            this.comboBox1.Location = new System.Drawing.Point(266, 106);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(105, 21);
+            this.comboBox1.Size = new System.Drawing.Size(178, 21);
             this.comboBox1.TabIndex = 5;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -245,42 +246,42 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(9, 100);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(316, 84);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 15);
+            this.label1.Size = new System.Drawing.Size(66, 15);
             this.label1.TabIndex = 7;
-            this.label1.Text = "Buscar Por";
+            this.label1.Text = "Buscar por";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(9, 145);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(113, 153);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(114, 15);
+            this.label2.Size = new System.Drawing.Size(120, 15);
             this.label2.TabIndex = 8;
-            this.label2.Text = "Nombre Maestro";
+            this.label2.Text = "Nombre del maestro";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(257, 142);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(456, 153);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 15);
+            this.label3.Size = new System.Drawing.Size(123, 15);
             this.label3.TabIndex = 9;
-            this.label3.Text = "Id Maestro";
+            this.label3.Text = "Numero de identidad";
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.White;
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox3.Location = new System.Drawing.Point(3, 74);
+            this.pictureBox3.Location = new System.Drawing.Point(13, 74);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(774, 107);
+            this.pictureBox3.Size = new System.Drawing.Size(713, 148);
             this.pictureBox3.TabIndex = 37;
             this.pictureBox3.TabStop = false;
             // 
@@ -288,9 +289,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(1, 194);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 228);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(776, 241);
+            this.pictureBox1.Size = new System.Drawing.Size(713, 354);
             this.pictureBox1.TabIndex = 38;
             this.pictureBox1.TabStop = false;
             // 
@@ -299,7 +300,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.DodgerBlue;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(265, 29);
+            this.label5.Location = new System.Drawing.Point(244, 27);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(228, 22);
@@ -309,10 +310,10 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::General.Properties.Resources.Screenshot_2015_04_09_13_46_13;
-            this.pictureBox4.Location = new System.Drawing.Point(732, 13);
+            this.pictureBox4.Location = new System.Drawing.Point(666, 13);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(45, 50);
+            this.pictureBox4.Size = new System.Drawing.Size(60, 50);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 40;
             this.pictureBox4.TabStop = false;
@@ -321,10 +322,10 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.DodgerBlue;
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2.Location = new System.Drawing.Point(2, 13);
+            this.pictureBox2.Location = new System.Drawing.Point(13, 13);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(775, 50);
+            this.pictureBox2.Size = new System.Drawing.Size(653, 50);
             this.pictureBox2.TabIndex = 39;
             this.pictureBox2.TabStop = false;
             // 
@@ -333,7 +334,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(788, 440);
+            this.ClientSize = new System.Drawing.Size(734, 612);
+            this.ControlBox = false;
             this.Controls.Add(this.label5);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox2);
@@ -348,8 +350,10 @@
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "buscarmaestro";
             this.Text = "Buscar Maestro";
+            this.Load += new System.EventHandler(this.buscarmaestro_Load);
             ((System.ComponentModel.ISupportInitialize)(this.desarrolloDataSetmcha)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.buscarmaestroBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.buscarmaestroDataGridView)).EndInit();

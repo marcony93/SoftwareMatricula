@@ -39,9 +39,6 @@
             this.spTelefonosTableAdapter = new General.desarrolloDataSet1TableAdapters.spTelefonosTableAdapter();
             this.tableAdapterManager = new General.desarrolloDataSet1TableAdapters.TableAdapterManager();
             this.spTelefonosDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.eliminas = new System.Windows.Forms.DataGridViewButtonColumn();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -49,6 +46,9 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.eliminas = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.desarrolloDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spTelefonosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spTelefonosDataGridView)).BeginInit();
@@ -63,12 +63,12 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 85);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(41, 74);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(138, 15);
+            this.label1.Size = new System.Drawing.Size(116, 15);
             this.label1.TabIndex = 9;
-            this.label1.Text = "Número de Télefono";
+            this.label1.Text = "Número de télefono";
             // 
             // button1
             // 
@@ -76,10 +76,10 @@
             this.button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.HotTrack;
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(323, 104);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(324, 77);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(75, 45);
             this.button1.TabIndex = 8;
             this.button1.Text = "Guardar";
             this.button1.UseVisualStyleBackColor = false;
@@ -88,7 +88,7 @@
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox1.Location = new System.Drawing.Point(156, 84);
+            this.textBox1.Location = new System.Drawing.Point(44, 95);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(160, 20);
             this.textBox1.TabIndex = 7;
@@ -97,7 +97,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(178, 84);
+            this.label2.Location = new System.Drawing.Point(9, 21);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 10;
@@ -158,35 +158,12 @@
             this.dataGridViewTextBoxColumn2,
             this.eliminas});
             this.spTelefonosDataGridView.DataSource = this.spTelefonosBindingSource;
-            this.spTelefonosDataGridView.Location = new System.Drawing.Point(15, 164);
+            this.spTelefonosDataGridView.Location = new System.Drawing.Point(27, 147);
             this.spTelefonosDataGridView.Name = "spTelefonosDataGridView";
             this.spTelefonosDataGridView.ReadOnly = true;
-            this.spTelefonosDataGridView.Size = new System.Drawing.Size(383, 190);
+            this.spTelefonosDataGridView.Size = new System.Drawing.Size(368, 207);
             this.spTelefonosDataGridView.TabIndex = 12;
             this.spTelefonosDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.spTelefonosDataGridView_CellContentClick);
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "TelNumero";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Numero";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Alumno_AlumId";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Alumno";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // eliminas
-            // 
-            this.eliminas.HeaderText = "Eliminar";
-            this.eliminas.Name = "eliminas";
-            this.eliminas.ReadOnly = true;
-            this.eliminas.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.eliminas.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // errorProvider1
             // 
@@ -207,7 +184,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.DodgerBlue;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(77, 25);
+            this.label5.Location = new System.Drawing.Point(68, 20);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(228, 22);
@@ -217,7 +194,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::General.Properties.Resources.Screenshot_2015_04_09_13_46_13;
-            this.pictureBox4.Location = new System.Drawing.Point(348, 9);
+            this.pictureBox4.Location = new System.Drawing.Point(347, 8);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(60, 50);
@@ -232,7 +209,7 @@
             this.pictureBox2.Location = new System.Drawing.Point(6, 9);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(402, 50);
+            this.pictureBox2.Size = new System.Drawing.Size(395, 49);
             this.pictureBox2.TabIndex = 31;
             this.pictureBox2.TabStop = false;
             // 
@@ -240,9 +217,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(6, 71);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 67);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(403, 65);
+            this.pictureBox1.Size = new System.Drawing.Size(396, 65);
             this.pictureBox1.TabIndex = 34;
             this.pictureBox1.TabStop = false;
             // 
@@ -250,11 +227,36 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.White;
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox3.Location = new System.Drawing.Point(6, 142);
+            this.pictureBox3.Location = new System.Drawing.Point(12, 138);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(402, 222);
+            this.pictureBox3.Size = new System.Drawing.Size(396, 225);
             this.pictureBox3.TabIndex = 35;
             this.pictureBox3.TabStop = false;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "TelNumero";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Numero";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 75;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Alumno_AlumId";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Alumno";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 200;
+            // 
+            // eliminas
+            // 
+            this.eliminas.HeaderText = "Eliminar";
+            this.eliminas.Name = "eliminas";
+            this.eliminas.ReadOnly = true;
+            this.eliminas.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.eliminas.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.eliminas.Width = 50;
             // 
             // Telefono
             // 
@@ -273,8 +275,12 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Telefono";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Teléfono";
             this.Load += new System.EventHandler(this.Telefono_Load);
             ((System.ComponentModel.ISupportInitialize)(this.desarrolloDataSet1)).EndInit();

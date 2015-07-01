@@ -47,10 +47,6 @@
             this.sPAlumnosXClaseBBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sPAlumnosXClaseBTableAdapter = new General.desarrolloDataSetEliaTableAdapters.SPAlumnosXClaseBTableAdapter();
             this.sPAlumnosXClaseBDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NA = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button2 = new System.Windows.Forms.Button();
             this.sPCursoBBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sPCursoBTableAdapter = new General.desarrolloDataSetEliaTableAdapters.SPCursoBTableAdapter();
@@ -61,6 +57,10 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.desarrolloDataSetElia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sPSeccionBBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sPMateriaBBindingSource)).BeginInit();
@@ -77,11 +77,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(26, 77);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(29, 83);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 15);
+            this.label1.Size = new System.Drawing.Size(39, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "Curso";
             // 
@@ -89,11 +89,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(26, 104);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(252, 83);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 15);
+            this.label2.Size = new System.Drawing.Size(51, 15);
             this.label2.TabIndex = 1;
             this.label2.Text = "Sección";
             // 
@@ -101,11 +101,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(258, 71);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(675, 83);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 15);
+            this.label3.Size = new System.Drawing.Size(49, 15);
             this.label3.TabIndex = 2;
             this.label3.Text = "Materia";
             // 
@@ -113,11 +113,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(258, 104);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(475, 83);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(52, 15);
+            this.label4.Size = new System.Drawing.Size(45, 15);
             this.label4.TabIndex = 3;
             this.label4.Text = "Parcial";
             // 
@@ -130,10 +130,10 @@
             "II",
             "III",
             "IV"});
-            this.comboBox1.Location = new System.Drawing.Point(322, 96);
+            this.comboBox1.Location = new System.Drawing.Point(475, 106);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(63, 23);
+            this.comboBox1.Size = new System.Drawing.Size(143, 23);
             this.comboBox1.TabIndex = 4;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -187,10 +187,10 @@
             this.sPSeccionBComboBox.DisplayMember = "SecNombre";
             this.sPSeccionBComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.sPSeccionBComboBox.FormattingEnabled = true;
-            this.sPSeccionBComboBox.Location = new System.Drawing.Point(93, 102);
+            this.sPSeccionBComboBox.Location = new System.Drawing.Point(252, 106);
             this.sPSeccionBComboBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.sPSeccionBComboBox.Name = "sPSeccionBComboBox";
-            this.sPSeccionBComboBox.Size = new System.Drawing.Size(101, 23);
+            this.sPSeccionBComboBox.Size = new System.Drawing.Size(143, 23);
             this.sPSeccionBComboBox.TabIndex = 8;
             this.sPSeccionBComboBox.ValueMember = "SecNombre";
             // 
@@ -209,10 +209,10 @@
             this.sPMateriaBComboBox.DisplayMember = "NombreMateria";
             this.sPMateriaBComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.sPMateriaBComboBox.FormattingEnabled = true;
-            this.sPMateriaBComboBox.Location = new System.Drawing.Point(322, 69);
+            this.sPMateriaBComboBox.Location = new System.Drawing.Point(678, 106);
             this.sPMateriaBComboBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.sPMateriaBComboBox.Name = "sPMateriaBComboBox";
-            this.sPMateriaBComboBox.Size = new System.Drawing.Size(152, 23);
+            this.sPMateriaBComboBox.Size = new System.Drawing.Size(143, 23);
             this.sPMateriaBComboBox.TabIndex = 9;
             this.sPMateriaBComboBox.ValueMember = "NombreMateria";
             // 
@@ -222,10 +222,11 @@
             this.button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.HotTrack;
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(469, 98);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(679, 536);
             this.button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 27);
+            this.button1.Size = new System.Drawing.Size(75, 45);
             this.button1.TabIndex = 10;
             this.button1.Text = "Buscar";
             this.button1.UseVisualStyleBackColor = false;
@@ -251,43 +252,13 @@
             this.NA,
             this.NE});
             this.sPAlumnosXClaseBDataGridView.DataSource = this.sPAlumnosXClaseBBindingSource;
-            this.sPAlumnosXClaseBDataGridView.Location = new System.Drawing.Point(29, 160);
+            this.sPAlumnosXClaseBDataGridView.Location = new System.Drawing.Point(25, 172);
             this.sPAlumnosXClaseBDataGridView.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.sPAlumnosXClaseBDataGridView.Name = "sPAlumnosXClaseBDataGridView";
-            this.sPAlumnosXClaseBDataGridView.Size = new System.Drawing.Size(526, 269);
+            this.sPAlumnosXClaseBDataGridView.Size = new System.Drawing.Size(803, 344);
             this.sPAlumnosXClaseBDataGridView.TabIndex = 11;
             this.sPAlumnosXClaseBDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.sPAlumnosXClaseBDataGridView_CellContentClick);
             this.sPAlumnosXClaseBDataGridView.Leave += new System.EventHandler(this.sPAlumnosXClaseBDataGridView_Leave);
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Alumno_AlumId";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Identidad";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Column1";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Nombre del Alumno";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Width = 250;
-            // 
-            // NA
-            // 
-            this.NA.HeaderText = "NA";
-            this.NA.MaxInputLength = 2;
-            this.NA.Name = "NA";
-            this.NA.Width = 30;
-            // 
-            // NE
-            // 
-            this.NE.HeaderText = "NE";
-            this.NE.MaxInputLength = 2;
-            this.NE.Name = "NE";
-            this.NE.Width = 30;
             // 
             // button2
             // 
@@ -295,10 +266,11 @@
             this.button2.FlatAppearance.BorderColor = System.Drawing.SystemColors.HotTrack;
             this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(469, 435);
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(762, 536);
             this.button2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(86, 27);
+            this.button2.Size = new System.Drawing.Size(75, 45);
             this.button2.TabIndex = 12;
             this.button2.Text = "Guardar";
             this.button2.UseVisualStyleBackColor = false;
@@ -319,7 +291,7 @@
             this.sPCursoBComboBox.DisplayMember = "Curso Nombre";
             this.sPCursoBComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.sPCursoBComboBox.FormattingEnabled = true;
-            this.sPCursoBComboBox.Location = new System.Drawing.Point(93, 71);
+            this.sPCursoBComboBox.Location = new System.Drawing.Point(29, 106);
             this.sPCursoBComboBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.sPCursoBComboBox.Name = "sPCursoBComboBox";
             this.sPCursoBComboBox.Size = new System.Drawing.Size(143, 23);
@@ -330,7 +302,7 @@
             // cursoIdTextBox
             // 
             this.cursoIdTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.sPCursoBBindingSource, "CursoId", true));
-            this.cursoIdTextBox.Location = new System.Drawing.Point(93, 71);
+            this.cursoIdTextBox.Location = new System.Drawing.Point(37, 107);
             this.cursoIdTextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cursoIdTextBox.Name = "cursoIdTextBox";
             this.cursoIdTextBox.Size = new System.Drawing.Size(132, 21);
@@ -342,7 +314,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.DodgerBlue;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(185, 20);
+            this.label5.Location = new System.Drawing.Point(294, 26);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(228, 22);
@@ -352,7 +324,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::General.Properties.Resources.Screenshot_2015_04_09_13_46_13;
-            this.pictureBox3.Location = new System.Drawing.Point(521, 5);
+            this.pictureBox3.Location = new System.Drawing.Point(781, 12);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(60, 50);
@@ -364,10 +336,10 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.DodgerBlue;
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2.Location = new System.Drawing.Point(7, 5);
+            this.pictureBox2.Location = new System.Drawing.Point(12, 12);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(574, 49);
+            this.pictureBox2.Size = new System.Drawing.Size(792, 50);
             this.pictureBox2.TabIndex = 17;
             this.pictureBox2.TabStop = false;
             // 
@@ -375,9 +347,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(7, 60);
+            this.pictureBox1.Location = new System.Drawing.Point(9, 68);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(574, 77);
+            this.pictureBox1.Size = new System.Drawing.Size(832, 88);
             this.pictureBox1.TabIndex = 20;
             this.pictureBox1.TabStop = false;
             // 
@@ -385,18 +357,49 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.White;
             this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox4.Location = new System.Drawing.Point(7, 143);
+            this.pictureBox4.Location = new System.Drawing.Point(9, 162);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(574, 324);
+            this.pictureBox4.Size = new System.Drawing.Size(832, 368);
             this.pictureBox4.TabIndex = 21;
             this.pictureBox4.TabStop = false;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Alumno_AlumId";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Identidad";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 170;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Column1";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Nombre del Alumno";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 370;
+            // 
+            // NA
+            // 
+            this.NA.HeaderText = "Nota Acumilativo";
+            this.NA.MaxInputLength = 2;
+            this.NA.Name = "NA";
+            this.NA.Width = 110;
+            // 
+            // NE
+            // 
+            this.NE.HeaderText = "Nota Examen";
+            this.NE.MaxInputLength = 2;
+            this.NE.Name = "NE";
+            this.NE.Width = 110;
             // 
             // SubirNotas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(587, 474);
+            this.ClientSize = new System.Drawing.Size(848, 630);
+            this.ControlBox = false;
             this.Controls.Add(this.label5);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
@@ -417,6 +420,8 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "SubirNotas";
             this.Text = "Subir Notas";
             this.Load += new System.EventHandler(this.SubirNotas_Load);
@@ -454,10 +459,6 @@
         private System.Windows.Forms.BindingSource sPAlumnosXClaseBBindingSource;
         private desarrolloDataSetEliaTableAdapters.SPAlumnosXClaseBTableAdapter sPAlumnosXClaseBTableAdapter;
         private System.Windows.Forms.DataGridView sPAlumnosXClaseBDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NA;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NE;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.BindingSource sPCursoBBindingSource;
         private desarrolloDataSetEliaTableAdapters.SPCursoBTableAdapter sPCursoBTableAdapter;
@@ -468,5 +469,9 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NA;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NE;
     }
 }

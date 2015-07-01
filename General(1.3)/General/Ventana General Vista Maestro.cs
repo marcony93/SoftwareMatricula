@@ -39,8 +39,13 @@ namespace General
 
         private void cambiarMiContraseñaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form vent = new modificarcontrasena();
-            vent.Show();
+            //Form vent = new modificarcontrasena();
+           // vent.Show();
+            Form modificarcontrasena = new modificarcontrasena();
+            modificarcontrasena.Show();
+            modificarcontrasena.MdiParent = this;
+            modificarcontrasena.WindowState = FormWindowState.Maximized;
+            modificarcontrasena.BringToFront();
         }
 
         private void reprobadosPorParcialToolStripMenuItem_Click(object sender, EventArgs e)
