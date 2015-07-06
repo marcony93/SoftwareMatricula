@@ -37,7 +37,9 @@
             this.reprobadosPorParcialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reprobadosGeneralToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteHorarioMaestroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -66,7 +68,7 @@
             // subirNotasToolStripMenuItem
             // 
             this.subirNotasToolStripMenuItem.Name = "subirNotasToolStripMenuItem";
-            this.subirNotasToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.subirNotasToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.subirNotasToolStripMenuItem.Text = "Subir Notas";
             this.subirNotasToolStripMenuItem.Click += new System.EventHandler(this.subirNotasToolStripMenuItem_Click);
             // 
@@ -110,12 +112,23 @@
             this.reporteHorarioMaestroToolStripMenuItem.Text = "Reporte de horario del maestro";
             this.reporteHorarioMaestroToolStripMenuItem.Click += new System.EventHandler(this.reporteHorarioMaestroToolStripMenuItem_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::General.Properties.Resources.fondo_01;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 27);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(856, 681);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
             // Ventana_General_Vista_Maestro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Yellow;
             this.ClientSize = new System.Drawing.Size(856, 705);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -129,6 +142,7 @@
             this.Load += new System.EventHandler(this.Ventana_General_Vista_Maestro_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -144,5 +158,6 @@
         private System.Windows.Forms.ToolStripMenuItem reprobadosPorParcialToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reprobadosGeneralToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reporteHorarioMaestroToolStripMenuItem;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

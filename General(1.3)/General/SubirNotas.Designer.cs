@@ -47,10 +47,6 @@
             this.sPAlumnosXClaseBBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sPAlumnosXClaseBTableAdapter = new General.desarrolloDataSetEliaTableAdapters.SPAlumnosXClaseBTableAdapter();
             this.sPAlumnosXClaseBDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NA = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button2 = new System.Windows.Forms.Button();
             this.sPCursoBBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sPCursoBTableAdapter = new General.desarrolloDataSetEliaTableAdapters.SPCursoBTableAdapter();
@@ -61,6 +57,10 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.desarrolloDataSetElia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sPSeccionBBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sPMateriaBBindingSource)).BeginInit();
@@ -124,6 +124,7 @@
             // comboBox1
             // 
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "I",
@@ -186,6 +187,7 @@
             this.sPSeccionBComboBox.DataSource = this.sPSeccionBBindingSource;
             this.sPSeccionBComboBox.DisplayMember = "SecNombre";
             this.sPSeccionBComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.sPSeccionBComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sPSeccionBComboBox.FormattingEnabled = true;
             this.sPSeccionBComboBox.Location = new System.Drawing.Point(252, 106);
             this.sPSeccionBComboBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -208,6 +210,7 @@
             this.sPMateriaBComboBox.DataSource = this.sPMateriaBBindingSource;
             this.sPMateriaBComboBox.DisplayMember = "NombreMateria";
             this.sPMateriaBComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.sPMateriaBComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sPMateriaBComboBox.FormattingEnabled = true;
             this.sPMateriaBComboBox.Location = new System.Drawing.Point(678, 106);
             this.sPMateriaBComboBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -261,36 +264,6 @@
             this.sPAlumnosXClaseBDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.sPAlumnosXClaseBDataGridView_CellContentClick);
             this.sPAlumnosXClaseBDataGridView.Leave += new System.EventHandler(this.sPAlumnosXClaseBDataGridView_Leave);
             // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Alumno_AlumId";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Identidad";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 170;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Column1";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Nombre del Alumno";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Width = 370;
-            // 
-            // NA
-            // 
-            this.NA.HeaderText = "Nota Acumilativo";
-            this.NA.MaxInputLength = 2;
-            this.NA.Name = "NA";
-            this.NA.Width = 110;
-            // 
-            // NE
-            // 
-            this.NE.HeaderText = "Nota Examen";
-            this.NE.MaxInputLength = 2;
-            this.NE.Name = "NE";
-            this.NE.Width = 110;
-            // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Azure;
@@ -321,6 +294,7 @@
             this.sPCursoBComboBox.DataSource = this.sPCursoBBindingSource;
             this.sPCursoBComboBox.DisplayMember = "Curso Nombre";
             this.sPCursoBComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.sPCursoBComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sPCursoBComboBox.FormattingEnabled = true;
             this.sPCursoBComboBox.Location = new System.Drawing.Point(29, 106);
             this.sPCursoBComboBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -393,6 +367,36 @@
             this.pictureBox4.Size = new System.Drawing.Size(832, 368);
             this.pictureBox4.TabIndex = 21;
             this.pictureBox4.TabStop = false;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Alumno_AlumId";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Identidad";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 170;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Column1";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Nombre del Alumno";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 370;
+            // 
+            // NA
+            // 
+            this.NA.HeaderText = "Nota Acumulativo";
+            this.NA.MaxInputLength = 2;
+            this.NA.Name = "NA";
+            this.NA.Width = 110;
+            // 
+            // NE
+            // 
+            this.NE.HeaderText = "Nota Examen";
+            this.NE.MaxInputLength = 2;
+            this.NE.Name = "NE";
+            this.NE.Width = 110;
             // 
             // SubirNotas
             // 

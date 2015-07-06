@@ -50,11 +50,8 @@ namespace General
 
         private void reprobadosPorParcialToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form Reprobados = new ReprobadosParcial();
-            Reprobados.Show();
-            Reprobados.MdiParent = this;
-            Reprobados.WindowState = FormWindowState.Maximized;
-            Reprobados.BringToFront();
+            new ReprobadosParcial().Show();
+
         }
 
         private void reprobadosGeneralToolStripMenuItem_Click(object sender, EventArgs e)

@@ -83,6 +83,16 @@ namespace General.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap github___arc___wallpaper_by_cracksoldier_d6se2bp {
+            get {
+                object obj = ResourceManager.GetObject("github___arc___wallpaper_by_cracksoldier-d6se2bp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Screenshot_2015_04_09_13_46_13 {
             get {
                 object obj = ResourceManager.GetObject("Screenshot_2015-04-09-13-46-13", resourceCulture);

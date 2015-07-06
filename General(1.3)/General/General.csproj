@@ -498,6 +498,9 @@
   <ItemGroup>
     <None Include="Screenshot_2015-04-09-13-46-13.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\github___arc___wallpaper_by_cracksoldier-d6se2bp.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
