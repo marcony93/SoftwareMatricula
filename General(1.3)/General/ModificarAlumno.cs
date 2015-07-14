@@ -85,7 +85,7 @@ namespace General
                 this.spModificar_DatosEncargadoTableAdapter.Fill(this.desarrolloDataSet1.spModificar_DatosEncargado, label3.Text);
                 this.spModificar_DatosPersonalesTableAdapter.Fill(this.desarrolloDataSet1.SpModificar_DatosPersonales, label3.Text);
                 this.spModifica_DatosAcademicosTableAdapter.Fill(this.desarrolloDataSet1.SpModifica_DatosAcademicos, label3.Text);
-
+                this.spMostrarTelefonoAlumnosTableAdapter.Fill(this.desarrolloDataSet1.SpMostrarTelefonoAlumnos, label3.Text);
                 spDepartamentosComboBox.SelectedValue = departamento_DeptoIdLabel1.Text;
                 tipoSangreComboBox.SelectedValue = tipoSangre_TipSangreIdLabel1.Text;
                 spSexoComboBox.SelectedValue = sexo_SexIdLabel2.Text;
@@ -645,6 +645,19 @@ namespace General
 
         private void label10_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void fillToolStripButton_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                this.spMostrarTelefonoAlumnosTableAdapter.Fill(this.desarrolloDataSet1.SpMostrarTelefonoAlumnos, label3.Text);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
 
         }
       

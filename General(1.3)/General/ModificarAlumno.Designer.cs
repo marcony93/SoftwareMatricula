@@ -153,6 +153,13 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.spMostrarTelefonoAlumnosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.spMostrarTelefonoAlumnosTableAdapter = new General.desarrolloDataSet1TableAdapters.SpMostrarTelefonoAlumnosTableAdapter();
+            this.fillToolStrip = new System.Windows.Forms.ToolStrip();
+            this.idToolStripLabel = new System.Windows.Forms.ToolStripLabel();
+            this.idToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
+            this.fillToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.telNumeroTextBox = new System.Windows.Forms.TextBox();
             alumNombre1Label = new System.Windows.Forms.Label();
             alumIdLabel = new System.Windows.Forms.Label();
             alumFechaNacLabel = new System.Windows.Forms.Label();
@@ -206,6 +213,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spMostrarTelefonoAlumnosBindingSource)).BeginInit();
+            this.fillToolStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // alumNombre1Label
@@ -869,6 +878,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
+            this.groupBox1.Controls.Add(this.telNumeroTextBox);
             this.groupBox1.Controls.Add(label7);
             this.groupBox1.Controls.Add(label6);
             this.groupBox1.Controls.Add(label4);
@@ -913,7 +923,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 68);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(598, 507);
+            this.groupBox1.Size = new System.Drawing.Size(600, 521);
             this.groupBox1.TabIndex = 50;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos personales";
@@ -1413,12 +1423,61 @@
             this.pictureBox2.TabIndex = 56;
             this.pictureBox2.TabStop = false;
             // 
+            // spMostrarTelefonoAlumnosBindingSource
+            // 
+            this.spMostrarTelefonoAlumnosBindingSource.DataMember = "SpMostrarTelefonoAlumnos";
+            this.spMostrarTelefonoAlumnosBindingSource.DataSource = this.desarrolloDataSet1;
+            // 
+            // spMostrarTelefonoAlumnosTableAdapter
+            // 
+            this.spMostrarTelefonoAlumnosTableAdapter.ClearBeforeFill = true;
+            // 
+            // fillToolStrip
+            // 
+            this.fillToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.idToolStripLabel,
+            this.idToolStripTextBox,
+            this.fillToolStripButton});
+            this.fillToolStrip.Location = new System.Drawing.Point(0, 0);
+            this.fillToolStrip.Name = "fillToolStrip";
+            this.fillToolStrip.Size = new System.Drawing.Size(1132, 25);
+            this.fillToolStrip.TabIndex = 59;
+            this.fillToolStrip.Text = "fillToolStrip";
+            // 
+            // idToolStripLabel
+            // 
+            this.idToolStripLabel.Name = "idToolStripLabel";
+            this.idToolStripLabel.Size = new System.Drawing.Size(20, 22);
+            this.idToolStripLabel.Text = "id:";
+            // 
+            // idToolStripTextBox
+            // 
+            this.idToolStripTextBox.Name = "idToolStripTextBox";
+            this.idToolStripTextBox.Size = new System.Drawing.Size(100, 25);
+            // 
+            // fillToolStripButton
+            // 
+            this.fillToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.fillToolStripButton.Name = "fillToolStripButton";
+            this.fillToolStripButton.Size = new System.Drawing.Size(26, 22);
+            this.fillToolStripButton.Text = "Fill";
+            this.fillToolStripButton.Click += new System.EventHandler(this.fillToolStripButton_Click_1);
+            // 
+            // telNumeroTextBox
+            // 
+            this.telNumeroTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spMostrarTelefonoAlumnosBindingSource, "TelNumero", true));
+            this.telNumeroTextBox.Location = new System.Drawing.Point(233, 470);
+            this.telNumeroTextBox.Name = "telNumeroTextBox";
+            this.telNumeroTextBox.Size = new System.Drawing.Size(100, 21);
+            this.telNumeroTextBox.TabIndex = 55;
+            // 
             // ModificarAlumno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(1132, 641);
+            this.Controls.Add(this.fillToolStrip);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.pictureBox2);
@@ -1463,6 +1522,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spMostrarTelefonoAlumnosBindingSource)).EndInit();
+            this.fillToolStrip.ResumeLayout(false);
+            this.fillToolStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1566,6 +1628,13 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.ToolStrip fillToolStrip;
+        private System.Windows.Forms.ToolStripLabel idToolStripLabel;
+        private System.Windows.Forms.ToolStripTextBox idToolStripTextBox;
+        private System.Windows.Forms.ToolStripButton fillToolStripButton;
+        private System.Windows.Forms.BindingSource spMostrarTelefonoAlumnosBindingSource;
+        private desarrolloDataSet1TableAdapters.SpMostrarTelefonoAlumnosTableAdapter spMostrarTelefonoAlumnosTableAdapter;
+        private System.Windows.Forms.TextBox telNumeroTextBox;
 
 
     }
