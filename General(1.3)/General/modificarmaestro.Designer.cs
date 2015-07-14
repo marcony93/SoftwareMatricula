@@ -88,7 +88,7 @@
             mstroIdLabel.Name = "mstroIdLabel";
             mstroIdLabel.Size = new System.Drawing.Size(123, 15);
             mstroIdLabel.TabIndex = 22;
-            mstroIdLabel.Text = "Numero de identidad";
+            mstroIdLabel.Text = "Número de identidad";
             // 
             // mstroNombre1Label
             // 
@@ -172,7 +172,7 @@
             sexNombreLabel.AutoSize = true;
             sexNombreLabel.BackColor = System.Drawing.Color.White;
             sexNombreLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            sexNombreLabel.Location = new System.Drawing.Point(303, 153);
+            sexNombreLabel.Location = new System.Drawing.Point(431, 153);
             sexNombreLabel.Name = "sexNombreLabel";
             sexNombreLabel.Size = new System.Drawing.Size(35, 15);
             sexNombreLabel.TabIndex = 30;
@@ -183,7 +183,7 @@
             mstroUsuLabel.AutoSize = true;
             mstroUsuLabel.BackColor = System.Drawing.Color.White;
             mstroUsuLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            mstroUsuLabel.Location = new System.Drawing.Point(431, 153);
+            mstroUsuLabel.Location = new System.Drawing.Point(574, 153);
             mstroUsuLabel.Name = "mstroUsuLabel";
             mstroUsuLabel.Size = new System.Drawing.Size(50, 15);
             mstroUsuLabel.TabIndex = 31;
@@ -314,7 +314,7 @@
             this.mstroEmailTextBox.Location = new System.Drawing.Point(47, 171);
             this.mstroEmailTextBox.MaxLength = 50;
             this.mstroEmailTextBox.Name = "mstroEmailTextBox";
-            this.mstroEmailTextBox.Size = new System.Drawing.Size(228, 20);
+            this.mstroEmailTextBox.Size = new System.Drawing.Size(356, 20);
             this.mstroEmailTextBox.TabIndex = 29;
             // 
             // mstroDireccionTextBox
@@ -335,7 +335,7 @@
             this.sexNombreComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.selectProfesorBindingSource, "SexNombre", true));
             this.sexNombreComboBox.Enabled = false;
             this.sexNombreComboBox.FormattingEnabled = true;
-            this.sexNombreComboBox.Location = new System.Drawing.Point(303, 171);
+            this.sexNombreComboBox.Location = new System.Drawing.Point(431, 171);
             this.sexNombreComboBox.Name = "sexNombreComboBox";
             this.sexNombreComboBox.Size = new System.Drawing.Size(100, 21);
             this.sexNombreComboBox.TabIndex = 31;
@@ -345,7 +345,7 @@
             this.mstroUsuTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.mstroUsuTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.selectProfesorBindingSource, "MstroUsu", true));
             this.mstroUsuTextBox.Enabled = false;
-            this.mstroUsuTextBox.Location = new System.Drawing.Point(431, 171);
+            this.mstroUsuTextBox.Location = new System.Drawing.Point(574, 171);
             this.mstroUsuTextBox.MaxLength = 25;
             this.mstroUsuTextBox.Name = "mstroUsuTextBox";
             this.mstroUsuTextBox.Size = new System.Drawing.Size(100, 20);

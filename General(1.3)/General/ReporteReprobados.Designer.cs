@@ -108,7 +108,7 @@
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "General.Report4.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(12, 173);
             this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(1135, 414);
+            this.reportViewer1.Size = new System.Drawing.Size(1135, 347);
             this.reportViewer1.TabIndex = 0;
             this.reportViewer1.Load += new System.EventHandler(this.reportViewer1_Load);
             // 
@@ -121,7 +121,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(51, 93);
+            this.label1.Location = new System.Drawing.Point(313, 92);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(39, 15);
             this.label1.TabIndex = 1;
@@ -132,7 +132,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(284, 93);
+            this.label2.Location = new System.Drawing.Point(492, 93);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 15);
             this.label2.TabIndex = 2;
@@ -143,7 +143,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(517, 93);
+            this.label3.Location = new System.Drawing.Point(671, 93);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 15);
             this.label3.TabIndex = 3;
@@ -194,7 +194,7 @@
             this.sPCursoBComboBox.DisplayMember = "Curso Nombre";
             this.sPCursoBComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.sPCursoBComboBox.FormattingEnabled = true;
-            this.sPCursoBComboBox.Location = new System.Drawing.Point(51, 111);
+            this.sPCursoBComboBox.Location = new System.Drawing.Point(313, 110);
             this.sPCursoBComboBox.Name = "sPCursoBComboBox";
             this.sPCursoBComboBox.Size = new System.Drawing.Size(115, 21);
             this.sPCursoBComboBox.TabIndex = 4;
@@ -204,7 +204,7 @@
             // cursoIdTextBox
             // 
             this.cursoIdTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.sPCursoBBindingSource, "CursoId", true));
-            this.cursoIdTextBox.Location = new System.Drawing.Point(100, 112);
+            this.cursoIdTextBox.Location = new System.Drawing.Point(316, 112);
             this.cursoIdTextBox.Name = "cursoIdTextBox";
             this.cursoIdTextBox.Size = new System.Drawing.Size(36, 20);
             this.cursoIdTextBox.TabIndex = 6;
@@ -257,7 +257,7 @@
             this.sPSeccionBComboBox.DisplayMember = "SecNombre";
             this.sPSeccionBComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.sPSeccionBComboBox.FormattingEnabled = true;
-            this.sPSeccionBComboBox.Location = new System.Drawing.Point(284, 110);
+            this.sPSeccionBComboBox.Location = new System.Drawing.Point(492, 110);
             this.sPSeccionBComboBox.Name = "sPSeccionBComboBox";
             this.sPSeccionBComboBox.Size = new System.Drawing.Size(115, 21);
             this.sPSeccionBComboBox.TabIndex = 7;
@@ -310,7 +310,7 @@
             this.sPMateriaBComboBox.DisplayMember = "NombreMateria";
             this.sPMateriaBComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.sPMateriaBComboBox.FormattingEnabled = true;
-            this.sPMateriaBComboBox.Location = new System.Drawing.Point(517, 110);
+            this.sPMateriaBComboBox.Location = new System.Drawing.Point(671, 110);
             this.sPMateriaBComboBox.Name = "sPMateriaBComboBox";
             this.sPMateriaBComboBox.Size = new System.Drawing.Size(115, 21);
             this.sPMateriaBComboBox.TabIndex = 9;
@@ -319,7 +319,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(779, 112);
+            this.textBox1.Location = new System.Drawing.Point(849, 111);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(58, 20);
             this.textBox1.TabIndex = 10;
@@ -330,7 +330,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.White;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(776, 93);
+            this.label4.Location = new System.Drawing.Point(849, 92);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(44, 15);
             this.label4.TabIndex = 11;
@@ -343,7 +343,7 @@
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(1016, 90);
+            this.button1.Location = new System.Drawing.Point(1062, 526);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(85, 52);
             this.button1.TabIndex = 12;

@@ -108,7 +108,7 @@
             this.reportViewer1.ShowPromptAreaButton = false;
             this.reportViewer1.ShowStopButton = false;
             this.reportViewer1.ShowZoomControl = false;
-            this.reportViewer1.Size = new System.Drawing.Size(1135, 414);
+            this.reportViewer1.Size = new System.Drawing.Size(1135, 356);
             this.reportViewer1.TabIndex = 0;
             // 
             // ReprobadosPorParcialTableAdapter
@@ -120,7 +120,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(425, 93);
+            this.label2.Location = new System.Drawing.Point(605, 94);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 15);
             this.label2.TabIndex = 4;
@@ -131,7 +131,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(246, 93);
+            this.label1.Location = new System.Drawing.Point(460, 94);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(39, 15);
             this.label1.TabIndex = 3;
@@ -143,7 +143,7 @@
             this.button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.HotTrack;
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(1016, 90);
+            this.button1.Location = new System.Drawing.Point(1062, 535);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(85, 52);
             this.button1.TabIndex = 16;
@@ -156,7 +156,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.White;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(783, 93);
+            this.label4.Location = new System.Drawing.Point(895, 92);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(44, 15);
             this.label4.TabIndex = 15;
@@ -165,7 +165,7 @@
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox1.Location = new System.Drawing.Point(783, 112);
+            this.textBox1.Location = new System.Drawing.Point(895, 111);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(58, 20);
             this.textBox1.TabIndex = 14;
@@ -176,7 +176,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(51, 93);
+            this.label3.Location = new System.Drawing.Point(299, 95);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 15);
             this.label3.TabIndex = 13;
@@ -227,7 +227,7 @@
             this.sPCursoBComboBox.DisplayMember = "Curso Nombre";
             this.sPCursoBComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.sPCursoBComboBox.FormattingEnabled = true;
-            this.sPCursoBComboBox.Location = new System.Drawing.Point(246, 111);
+            this.sPCursoBComboBox.Location = new System.Drawing.Point(460, 112);
             this.sPCursoBComboBox.Name = "sPCursoBComboBox";
             this.sPCursoBComboBox.Size = new System.Drawing.Size(115, 21);
             this.sPCursoBComboBox.TabIndex = 16;
@@ -281,7 +281,7 @@
             this.sPMateriaBComboBox.DisplayMember = "NombreMateria";
             this.sPMateriaBComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.sPMateriaBComboBox.FormattingEnabled = true;
-            this.sPMateriaBComboBox.Location = new System.Drawing.Point(51, 111);
+            this.sPMateriaBComboBox.Location = new System.Drawing.Point(299, 113);
             this.sPMateriaBComboBox.Name = "sPMateriaBComboBox";
             this.sPMateriaBComboBox.Size = new System.Drawing.Size(131, 21);
             this.sPMateriaBComboBox.TabIndex = 17;
@@ -335,7 +335,7 @@
             this.sPSeccionBComboBox.DisplayMember = "SecNombre";
             this.sPSeccionBComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.sPSeccionBComboBox.FormattingEnabled = true;
-            this.sPSeccionBComboBox.Location = new System.Drawing.Point(425, 111);
+            this.sPSeccionBComboBox.Location = new System.Drawing.Point(605, 112);
             this.sPSeccionBComboBox.Name = "sPSeccionBComboBox";
             this.sPSeccionBComboBox.Size = new System.Drawing.Size(115, 21);
             this.sPSeccionBComboBox.TabIndex = 18;
@@ -344,7 +344,7 @@
             // cursoIdTextBox
             // 
             this.cursoIdTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.sPCursoBBindingSource, "CursoId", true));
-            this.cursoIdTextBox.Location = new System.Drawing.Point(284, 112);
+            this.cursoIdTextBox.Location = new System.Drawing.Point(469, 113);
             this.cursoIdTextBox.Name = "cursoIdTextBox";
             this.cursoIdTextBox.Size = new System.Drawing.Size(32, 20);
             this.cursoIdTextBox.TabIndex = 19;
@@ -355,7 +355,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.White;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(604, 93);
+            this.label5.Location = new System.Drawing.Point(750, 93);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(45, 15);
             this.label5.TabIndex = 20;
@@ -370,7 +370,7 @@
             "II",
             "III",
             "IV"});
-            this.comboBox1.Location = new System.Drawing.Point(604, 111);
+            this.comboBox1.Location = new System.Drawing.Point(750, 111);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(115, 21);
             this.comboBox1.TabIndex = 21;

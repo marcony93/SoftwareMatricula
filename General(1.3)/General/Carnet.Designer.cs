@@ -77,7 +77,7 @@
             this.button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.HotTrack;
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(647, 534);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 45);
@@ -95,7 +95,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(120, 15);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Numero de idenidad";
+            this.label1.Text = "Número de idenidad";
             // 
             // reportViewer1
             // 
@@ -104,7 +104,7 @@
             reportDataSource1.Value = this.spcarnetBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "General.Reportcarnet.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(12, 157);
+            this.reportViewer1.Location = new System.Drawing.Point(12, 156);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ShowBackButton = false;
             this.reportViewer1.ShowContextMenu = false;

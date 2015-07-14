@@ -64,7 +64,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(51, 93);
+            this.label1.Location = new System.Drawing.Point(91, 90);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 15);
             this.label1.TabIndex = 0;
@@ -73,7 +73,7 @@
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.textBox1.Location = new System.Drawing.Point(51, 113);
+            this.textBox1.Location = new System.Drawing.Point(91, 110);
             this.textBox1.MaxLength = 13;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(153, 20);
@@ -88,7 +88,7 @@
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "General.Report3.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(12, 173);
             this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(1135, 414);
+            this.reportViewer1.Size = new System.Drawing.Size(1135, 354);
             this.reportViewer1.TabIndex = 2;
             // 
             // button1
@@ -98,7 +98,7 @@
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(1016, 90);
+            this.button1.Location = new System.Drawing.Point(1062, 535);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(85, 52);
             this.button1.TabIndex = 3;
@@ -159,7 +159,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(1159, 599);
+            this.ClientSize = new System.Drawing.Size(1159, 595);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
