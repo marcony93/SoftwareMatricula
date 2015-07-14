@@ -65,11 +65,6 @@
             this.spmostrarplanillaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.spmostrarplanillaTableAdapter = new General.desarrolloDataSetWilmerTableAdapters.spmostrarplanillaTableAdapter();
             this.spmostrarplanillaDataGridView = new System.Windows.Forms.DataGridView();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -78,6 +73,11 @@
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.desarrolloDataSetWilmer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spMaestroBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spModalidadBindingSource)).BeginInit();
@@ -110,7 +110,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(356, 88);
+            this.label2.Location = new System.Drawing.Point(383, 88);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(66, 15);
             this.label2.TabIndex = 1;
@@ -121,7 +121,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(509, 88);
+            this.label3.Location = new System.Drawing.Point(572, 88);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(39, 15);
             this.label3.TabIndex = 2;
@@ -154,7 +154,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.White;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(356, 143);
+            this.label6.Location = new System.Drawing.Point(383, 143);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(34, 15);
             this.label6.TabIndex = 5;
@@ -165,7 +165,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.White;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(509, 143);
+            this.label7.Location = new System.Drawing.Point(572, 143);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(26, 15);
             this.label7.TabIndex = 6;
@@ -269,7 +269,7 @@
             this.spModalidadComboBox.DisplayMember = "Modalidad Nombre";
             this.spModalidadComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.spModalidadComboBox.FormattingEnabled = true;
-            this.spModalidadComboBox.Location = new System.Drawing.Point(356, 108);
+            this.spModalidadComboBox.Location = new System.Drawing.Point(383, 108);
             this.spModalidadComboBox.Name = "spModalidadComboBox";
             this.spModalidadComboBox.Size = new System.Drawing.Size(128, 21);
             this.spModalidadComboBox.TabIndex = 10;
@@ -291,7 +291,7 @@
             this.spCursoComboBox.DisplayMember = "Curso Nombre";
             this.spCursoComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.spCursoComboBox.FormattingEnabled = true;
-            this.spCursoComboBox.Location = new System.Drawing.Point(509, 108);
+            this.spCursoComboBox.Location = new System.Drawing.Point(571, 108);
             this.spCursoComboBox.Name = "spCursoComboBox";
             this.spCursoComboBox.Size = new System.Drawing.Size(128, 21);
             this.spCursoComboBox.TabIndex = 12;
@@ -355,9 +355,9 @@
             this.spHoraComboBox.DisplayMember = "Hora";
             this.spHoraComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.spHoraComboBox.FormattingEnabled = true;
-            this.spHoraComboBox.Location = new System.Drawing.Point(356, 166);
+            this.spHoraComboBox.Location = new System.Drawing.Point(383, 166);
             this.spHoraComboBox.Name = "spHoraComboBox";
-            this.spHoraComboBox.Size = new System.Drawing.Size(106, 21);
+            this.spHoraComboBox.Size = new System.Drawing.Size(128, 21);
             this.spHoraComboBox.TabIndex = 14;
             this.spHoraComboBox.ValueMember = "Hora";
             // 
@@ -376,9 +376,9 @@
             this.spDiaComboBox.DisplayMember = "Dia";
             this.spDiaComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.spDiaComboBox.FormattingEnabled = true;
-            this.spDiaComboBox.Location = new System.Drawing.Point(509, 166);
+            this.spDiaComboBox.Location = new System.Drawing.Point(572, 166);
             this.spDiaComboBox.Name = "spDiaComboBox";
-            this.spDiaComboBox.Size = new System.Drawing.Size(106, 21);
+            this.spDiaComboBox.Size = new System.Drawing.Size(128, 21);
             this.spDiaComboBox.TabIndex = 15;
             this.spDiaComboBox.ValueMember = "Dia";
             // 
@@ -411,60 +411,6 @@
             this.spmostrarplanillaDataGridView.ReadOnly = true;
             this.spmostrarplanillaDataGridView.Size = new System.Drawing.Size(684, 258);
             this.spmostrarplanillaDataGridView.TabIndex = 16;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::General.Properties.Resources.Screenshot_2015_04_09_13_46_13;
-            this.pictureBox3.Location = new System.Drawing.Point(663, 12);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(60, 50);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 20;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.DodgerBlue;
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(653, 50);
-            this.pictureBox2.TabIndex = 19;
-            this.pictureBox2.TabStop = false;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.DodgerBlue;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(224, 26);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(228, 22);
-            this.label8.TabIndex = 21;
-            this.label8.Text = "Instituto Francisco Morazán";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(9, 69);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(713, 153);
-            this.pictureBox1.TabIndex = 22;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.White;
-            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox4.Location = new System.Drawing.Point(9, 230);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(713, 287);
-            this.pictureBox4.TabIndex = 23;
-            this.pictureBox4.TabStop = false;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -523,6 +469,60 @@
             this.dataGridViewTextBoxColumn8.HeaderText = "Día";
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::General.Properties.Resources.Screenshot_2015_04_09_13_46_13;
+            this.pictureBox3.Location = new System.Drawing.Point(663, 12);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(60, 50);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 20;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.DodgerBlue;
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox2.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(653, 50);
+            this.pictureBox2.TabIndex = 19;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.DodgerBlue;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(224, 26);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(228, 22);
+            this.label8.TabIndex = 21;
+            this.label8.Text = "Instituto Francisco Morazán";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Location = new System.Drawing.Point(9, 69);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(713, 153);
+            this.pictureBox1.TabIndex = 22;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.White;
+            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox4.Location = new System.Drawing.Point(9, 230);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(713, 287);
+            this.pictureBox4.TabIndex = 23;
+            this.pictureBox4.TabStop = false;
             // 
             // AsignacionesClases
             // 

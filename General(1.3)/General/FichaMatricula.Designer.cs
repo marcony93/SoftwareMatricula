@@ -292,7 +292,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(105, 13);
             this.label1.TabIndex = 46;
-            this.label1.Text = "Numero de identidad";
+            this.label1.Text = "Número de identidad";
             // 
             // label33
             // 
@@ -1040,7 +1040,7 @@
             "B"});
             this.comboBox2.Location = new System.Drawing.Point(7, 368);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(124, 21);
+            this.comboBox2.Size = new System.Drawing.Size(173, 21);
             this.comboBox2.TabIndex = 41;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
@@ -1061,7 +1061,7 @@
             this.spCursoModalidad2ComboBox.FormattingEnabled = true;
             this.spCursoModalidad2ComboBox.Location = new System.Drawing.Point(7, 282);
             this.spCursoModalidad2ComboBox.Name = "spCursoModalidad2ComboBox";
-            this.spCursoModalidad2ComboBox.Size = new System.Drawing.Size(124, 21);
+            this.spCursoModalidad2ComboBox.Size = new System.Drawing.Size(173, 21);
             this.spCursoModalidad2ComboBox.TabIndex = 39;
             this.spCursoModalidad2ComboBox.ValueMember = "CursoId";
             this.spCursoModalidad2ComboBox.SelectedIndexChanged += new System.EventHandler(this.spCursoModalidad2ComboBox_SelectedIndexChanged);
@@ -1080,7 +1080,7 @@
             this.spModalidadesComboBox.FormattingEnabled = true;
             this.spModalidadesComboBox.Location = new System.Drawing.Point(11, 196);
             this.spModalidadesComboBox.Name = "spModalidadesComboBox";
-            this.spModalidadesComboBox.Size = new System.Drawing.Size(124, 21);
+            this.spModalidadesComboBox.Size = new System.Drawing.Size(169, 21);
             this.spModalidadesComboBox.TabIndex = 39;
             this.spModalidadesComboBox.ValueMember = "ModId";
             this.spModalidadesComboBox.SelectedIndexChanged += new System.EventHandler(this.spModalidadesComboBox_SelectedIndexChanged);
@@ -1098,7 +1098,7 @@
             this.spEstadoMatriculaComboBox.FormattingEnabled = true;
             this.spEstadoMatriculaComboBox.Location = new System.Drawing.Point(7, 56);
             this.spEstadoMatriculaComboBox.Name = "spEstadoMatriculaComboBox";
-            this.spEstadoMatriculaComboBox.Size = new System.Drawing.Size(121, 21);
+            this.spEstadoMatriculaComboBox.Size = new System.Drawing.Size(173, 21);
             this.spEstadoMatriculaComboBox.TabIndex = 39;
             this.spEstadoMatriculaComboBox.ValueMember = "EstdoMatriId";
             this.spEstadoMatriculaComboBox.SelectedIndexChanged += new System.EventHandler(this.spEstadoMatriculaComboBox_SelectedIndexChanged);
@@ -1116,7 +1116,7 @@
             this.spMostrarInstitutoComboBox.FormattingEnabled = true;
             this.spMostrarInstitutoComboBox.Location = new System.Drawing.Point(9, 128);
             this.spMostrarInstitutoComboBox.Name = "spMostrarInstitutoComboBox";
-            this.spMostrarInstitutoComboBox.Size = new System.Drawing.Size(121, 21);
+            this.spMostrarInstitutoComboBox.Size = new System.Drawing.Size(171, 21);
             this.spMostrarInstitutoComboBox.TabIndex = 39;
             this.spMostrarInstitutoComboBox.ValueMember = "InstoId";
             this.spMostrarInstitutoComboBox.SelectedIndexChanged += new System.EventHandler(this.spMostrarInstitutoComboBox_SelectedIndexChanged);
@@ -1147,7 +1147,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(136, 128);
+            this.button6.Location = new System.Drawing.Point(186, 128);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(31, 22);
             this.button6.TabIndex = 35;
@@ -1249,7 +1249,7 @@
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(75, 45);
             this.button7.TabIndex = 19;
-            this.button7.Text = "Guardar";
+            this.button7.Text = "Guardar Documento";
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
@@ -1263,9 +1263,9 @@
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewCheckBoxColumn1});
             this.spDocumentosDataGridView.DataSource = this.spDocumentosBindingSource;
-            this.spDocumentosDataGridView.Location = new System.Drawing.Point(159, 358);
+            this.spDocumentosDataGridView.Location = new System.Drawing.Point(206, 282);
             this.spDocumentosDataGridView.Name = "spDocumentosDataGridView";
-            this.spDocumentosDataGridView.Size = new System.Drawing.Size(344, 38);
+            this.spDocumentosDataGridView.Size = new System.Drawing.Size(280, 38);
             this.spDocumentosDataGridView.TabIndex = 21;
             this.spDocumentosDataGridView.Visible = false;
             this.spDocumentosDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.spDocumentosDataGridView_CellContentClick);
@@ -1516,14 +1516,16 @@
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.DataPropertyName = "DocId";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Numero";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Número";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 60;
             // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.DataPropertyName = "DocDescripcion";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Descripcion";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Descripción";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 140;
             // 
             // dataGridViewCheckBoxColumn2
             // 

@@ -101,7 +101,7 @@ namespace General
             comboBox1.Visible = false;
             tabControl1.TabPages[0].Text = "Datos Personales";
             tabControl1.TabPages[1].Text = "Datos Encargado";
-            tabControl1.TabPages[2].Text = "Datos Academicos";
+            tabControl1.TabPages[2].Text = "Datos Académicos";
             tabControl1.TabPages[3].Text = "Documentos";
             button4.Enabled = true;
 

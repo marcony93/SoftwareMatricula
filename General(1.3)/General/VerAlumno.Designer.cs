@@ -36,12 +36,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.spVerAlumnoDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AlumFechaNac = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.spVerAlumnoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.desarrolloDataSet1 = new General.desarrolloDataSet1();
             this.button1 = new System.Windows.Forms.Button();
@@ -55,6 +49,12 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AlumFechaNac = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.spVerAlumnoDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spVerAlumnoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.desarrolloDataSet1)).BeginInit();
@@ -104,7 +104,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(123, 15);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Numero de identidad";
+            this.label2.Text = "Número de identidad";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // comboBox1
@@ -142,53 +142,6 @@
             this.spVerAlumnoDataGridView.TabIndex = 7;
             this.spVerAlumnoDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.spVerAlumnoDataGridView_CellContentClick);
             this.spVerAlumnoDataGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.spVerAlumnoDataGridView_CellDoubleClick);
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "AlumId";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Indentidad";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "AlumNombre1";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Primer Nombre";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Width = 140;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "AlumNombre2";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Segundo Nombre";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            this.dataGridViewTextBoxColumn3.Width = 140;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "AlumApellido1";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Primer Apellido";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            this.dataGridViewTextBoxColumn4.Width = 140;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "AlumApellido2";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Segundo Apellido";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            this.dataGridViewTextBoxColumn5.Width = 140;
-            // 
-            // AlumFechaNac
-            // 
-            this.AlumFechaNac.DataPropertyName = "AlumFechaNac";
-            this.AlumFechaNac.HeaderText = "Fecha de nacimiento";
-            this.AlumFechaNac.Name = "AlumFechaNac";
-            this.AlumFechaNac.ReadOnly = true;
-            this.AlumFechaNac.Width = 110;
             // 
             // spVerAlumnoBindingSource
             // 
@@ -322,6 +275,53 @@
             // errorProvider2
             // 
             this.errorProvider2.ContainerControl = this;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "AlumId";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Numero de Identidad";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "AlumNombre1";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Primer Nombre";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 140;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "AlumNombre2";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Segundo Nombre";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.Width = 140;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "AlumApellido1";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Primer Apellido";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            this.dataGridViewTextBoxColumn4.Width = 140;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "AlumApellido2";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Segundo Apellido";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            this.dataGridViewTextBoxColumn5.Width = 140;
+            // 
+            // AlumFechaNac
+            // 
+            this.AlumFechaNac.DataPropertyName = "AlumFechaNac";
+            this.AlumFechaNac.HeaderText = "Fecha de nacimiento";
+            this.AlumFechaNac.Name = "AlumFechaNac";
+            this.AlumFechaNac.ReadOnly = true;
+            this.AlumFechaNac.Width = 110;
             // 
             // VerAlumno
             // 
