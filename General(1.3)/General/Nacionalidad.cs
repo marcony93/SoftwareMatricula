@@ -41,13 +41,13 @@ namespace General
                     agregar.spNacionalidad_agregar(textBox1.Text);
                     this.spNacionalidadTableAdapter1.Fill(this.desarrolloDataSet1.spNacionalidad);
                     this.spNacionalidadTableAdapter.Fill(this.desarrolloDataSet.spNacionalidad);
-                    
-
                 }
+                else
+                    MessageBox.Show("Tiene que Ingresar una nacionalidad");
             }
             catch (SqlException)
             {
-                
+
                 
             }
             this.spNacionalidadTableAdapter1.Fill(this.desarrolloDataSet1.spNacionalidad);
@@ -81,7 +81,11 @@ namespace General
                     try
                     {
                         nom = spNacionalidadDataGridView.Rows[e.RowIndex].Cells[1].Value.ToString();
-                        eliminar.spNacionalidad_eliminar(nom);
+                        if (MessageBox.Show("Estas seguro de eliminar este registro?", "Eliminar registro", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                        {
+                            eliminar.spNacionalidad_eliminar(nom);
+                            MessageBox.Show("Registro eliminado");
+                        }
                         this.spNacionalidadTableAdapter1.Fill(this.desarrolloDataSet1.spNacionalidad);
                     }
                     catch (SqlException)

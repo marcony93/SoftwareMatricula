@@ -62,6 +62,7 @@ namespace General
         public static string idtelefono;
         private void FichaMatricula_Load(object sender, EventArgs e)
         {
+            
             // TODO: esta línea de código carga datos en la tabla 'desarrolloDataSet1.Documentos' Puede moverla o quitarla según sea necesario.
             this.documentosTableAdapter.Fill(this.desarrolloDataSet1.Documentos);
             // TODO: esta línea de código carga datos en la tabla 'desarrolloDataSet1.spModalidades' Puede moverla o quitarla según sea necesario.
@@ -202,40 +203,7 @@ namespace General
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
-             actual = 0;
-             ingresado = 0;
-
-            ingresado = Convert.ToInt32(dateTimePicker1.Value.Year) + Convert.ToInt32(dateTimePicker1.Value.Month) + Convert.ToInt32(dateTimePicker1.Value.Day);
-            actual = Convert.ToInt32(DateTime.Today.Year) + Convert.ToInt32(DateTime.Today.Month) + Convert.ToInt32(DateTime.Today.Day);
-            if (ingresado > actual)
-            {
-                MessageBox.Show("Ingrese una fecha Valida");
-                dateTimePicker1.Value = DateTime.Today;
-            }
-
-            int a;
-
-
-
-            try
-            {
-                a = (DateTime.Today.AddTicks(-dateTimePicker1.Value.Ticks).Year - 1);
-
-
-                if (a < 18)
-                {
-                    MessageBox.Show("es menor de edad");
-                    dateTimePicker1.ResetText();
-                }
-
-
-
-            }
-            catch (Exception)
-            {
-
-            }
-
+            
 
             //label12.Text = (Convert.ToInt32(DateTime.Today.Year) - Convert.ToInt32(dateTimePicker1.Value.Year)).ToString();
             FechaNacimiento = dateTimePicker1.Value;
@@ -436,28 +404,60 @@ namespace General
 
         private void button4_Click(object sender, EventArgs e)
         {
-            try
-            {
-                Agregar.SpInsertarEncargado(encaId, encaNombre1, encaNombre2, encaNombre3, encaNombre4, encaFechaNacimiento, EncaOcupacion, Encasexo);
-            }
-            catch (SqlException)
-            {
-                MessageBox.Show("Datos de Encargado incompletos");
-                a++;
-
-            }
-            try
-            {
-                Agregar.SpInsertarAlumnoSinValidar(alumnoid, Nombre1, Nombre2, Nombre3, Nombre4, FechaNacimiento, direccion, estadotrabajo,
-                               lugarTrabajo, horariotrabajo, sexo, estadocivil, nacionalidad, tiposangre, encargado,relacion,departamento);
-            }
-            catch (SqlException)
-            {
-                MessageBox.Show("Datos de Alumno incompletos");
-
-                a++;
-            }
+             int dias2 = DateTime.Now.Date.Subtract(dateTimePicker2.Value.Date).Days;
           
+
+            if (dias2 < 0)
+            {
+                MessageBox.Show("la fecha seleccionada es igual o mayor al dia actual");
+            }
+
+            int años2 = dias2 / 365;
+
+
+            if (años2 < 18)
+            {
+                MessageBox.Show("El Encargado debe ser mayor a 18 años");
+            }
+            else
+            {
+
+                try
+                {
+                    Agregar.SpInsertarEncargado(encaId, encaNombre1, encaNombre2, encaNombre3, encaNombre4, encaFechaNacimiento, EncaOcupacion, Encasexo);
+                }
+                catch (SqlException)
+                {
+                    MessageBox.Show("Datos de Encargado incompletos");
+                    a++;
+
+                }
+            }
+                int dias = DateTime.Now.Date.Subtract(dateTimePicker1.Value.Date).Days;
+
+            
+            if (dias < 0)
+            {
+                MessageBox.Show("la fecha seleccionada es igual o mayor al dia actual");
+            }
+            else
+            {
+                try
+                {
+                    Agregar.SpInsertarAlumnoSinValidar(alumnoid, Nombre1, Nombre2, Nombre3, Nombre4, FechaNacimiento, direccion, estadotrabajo,
+                                   lugarTrabajo, horariotrabajo, sexo, estadocivil, nacionalidad, tiposangre, encargado, relacion, departamento);
+                }
+                catch (SqlException)
+                {
+                    MessageBox.Show("Datos de Alumno incompletos");
+
+                    a++;
+                }
+          
+            }
+
+
+              
             try
             {
                 Agregar.spInsertartelefonoAlumno(textBox7.Text, textBox5.Text);
@@ -465,13 +465,12 @@ namespace General
             catch (Exception)
             {
 
-                
-
             }
            
             try
             {
                 Agregar.spDatosAcademicos2(alumnoid, estatadoMatricula, instituto, modaliad, curso.ToString(), seccion);
+                MessageBox.Show("Se inserto el Alumno con exito");
             }
             catch (SqlException)
             {
@@ -573,36 +572,7 @@ namespace General
 
         private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
         {
-            ingresado = Convert.ToInt32(dateTimePicker2.Value.Year) + Convert.ToInt32(dateTimePicker2.Value.Month) + Convert.ToInt32(dateTimePicker2.Value.Day);
-            actual = Convert.ToInt32(DateTime.Today.Year) + Convert.ToInt32(DateTime.Today.Month) + Convert.ToInt32(DateTime.Today.Day);
-            if (ingresado > actual)
-            {
-                MessageBox.Show("Ingrese una fecha Valida");
-                dateTimePicker2.Value = DateTime.Today;
-            }
-
-            int a;
-
-
-
-            try
-            {
-                a = (DateTime.Today.AddTicks(-dateTimePicker2.Value.Ticks).Year - 1);
-
-
-                if (a < 18)
-                {
-                    MessageBox.Show("es menor de edad");
-                    dateTimePicker2.ResetText();
-                }
-
-
-
-            }
-            catch (Exception)
-            {
-
-            }
+         
 
             encaFechaNacimiento = dateTimePicker2.Value;
         }

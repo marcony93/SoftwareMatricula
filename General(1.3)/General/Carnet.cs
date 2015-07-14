@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using General.desarrolloDataSetRobertsonTableAdapters;
+using System.Data.SqlClient;
 
 namespace General
 {
@@ -27,15 +29,37 @@ namespace General
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.spcarnetTableAdapter.Fill(this.desarrolloDataSetRobertson.spcarnet, textBox1.Text);
-            this.reportViewer1.RefreshReport();
-            this.reportViewer1.RefreshReport();
+            if (textBox1.Text != "")
+            {
+                try
+                {
+                    this.spcarnetTableAdapter.Fill(this.desarrolloDataSetRobertson.spcarnet, textBox1.Text);
+                    this.reportViewer1.RefreshReport();
+                    this.reportViewer1.RefreshReport();
 
-        }
+                }
+
+                catch (SqlException)
+                {
+                    
+                     MessageBox.Show("El Alumno No Existe"); 
+                }
+            }
+            else
+                MessageBox.Show("Ingrese Un Número De Identidad"); 
+            }
+       
+        
 
         private void label6_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            LogIn.NumerosConMensaje(textBox1, errorProvider1);
+         
         }
 
       

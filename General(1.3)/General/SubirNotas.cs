@@ -96,7 +96,7 @@ namespace General
             }
             else
             {
-                MessageBox.Show("No se puede infresar las notas, Existen valores incorrectos");
+                MessageBox.Show("No se puede ingresar las notas, Existen valores incorrectos");
                 validar = 0;
             }
         }

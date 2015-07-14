@@ -96,8 +96,12 @@
             this.textBox2.Location = new System.Drawing.Point(290, 105);
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '*';
+            this.textBox2.ShortcutsEnabled = false;
             this.textBox2.Size = new System.Drawing.Size(154, 20);
             this.textBox2.TabIndex = 4;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
+            this.textBox2.Validating += new System.ComponentModel.CancelEventHandler(this.textBox2_Validating);
             // 
             // textBox3
             // 
@@ -105,8 +109,10 @@
             this.textBox3.Location = new System.Drawing.Point(542, 105);
             this.textBox3.Name = "textBox3";
             this.textBox3.PasswordChar = '*';
+            this.textBox3.ShortcutsEnabled = false;
             this.textBox3.Size = new System.Drawing.Size(154, 20);
             this.textBox3.TabIndex = 5;
+            this.textBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox3_KeyPress);
             // 
             // button1
             // 

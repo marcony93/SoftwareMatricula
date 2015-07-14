@@ -45,5 +45,42 @@ namespace General
         {
             LogIn.SoloLetrasConMensaje(textBox1, errorProvider1);
         }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void textBox2_Validating(object sender, CancelEventArgs e)
+        {
+            if (textBox2.Text.Trim() == String.Empty)
+                errorProvider1.SetError(textBox2, "No se permiten campos vacíos");
+            else
+                errorProvider1.SetError(textBox2, "");
+        }
+
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar==32)
+            {
+                textBox2.Text = textBox2.Text.Remove(textBox2.TextLength - 1);
+                textBox2.SelectionStart = textBox2.TextLength;
+                errorProvider1.SetError(textBox2, "No se acepta espacios");
+            }
+                
+            
+        }
+
+        
+
+        private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 32)
+            {
+                textBox3.Text = textBox3.Text.Remove(textBox3.TextLength - 1);
+                textBox3.SelectionStart = textBox3.TextLength;
+                errorProvider1.SetError(textBox3, "No se acepta espacios");
+            }
+        }
     }
 }

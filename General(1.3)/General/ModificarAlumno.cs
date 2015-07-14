@@ -437,40 +437,7 @@ namespace General
 
         private void alumFechaNacDateTimePicker_ValueChanged(object sender, EventArgs e)
         {
-            int actual = 0;
-            int ingresado = 0;
-
-            ingresado = Convert.ToInt32(alumFechaNacDateTimePicker.Value.Year) + Convert.ToInt32(alumFechaNacDateTimePicker.Value.Month) + Convert.ToInt32(alumFechaNacDateTimePicker.Value.Day);
-            actual = Convert.ToInt32(DateTime.Today.Year) + Convert.ToInt32(DateTime.Today.Month) + Convert.ToInt32(DateTime.Today.Day);
-            if (ingresado > actual)
-            {
-                MessageBox.Show("Ingrese una fecha Valida");
-                alumFechaNacDateTimePicker.Value = DateTime.Today;
-            }
-
-            int a;
-
-
-
-            try
-            {
-                a = (DateTime.Today.AddTicks(-alumFechaNacDateTimePicker.Value.Ticks).Year - 1);
-
-
-                if (a < 18)
-                {
-                   // MessageBox.Show("es menor de edad");
-                    alumFechaNacDateTimePicker.ResetText();
-                }
-
-
-
-            }
-            catch (Exception)
-            {
-
-            }
-            alfechanacimiento = encdoFechaNacDateTimePicker.Value;
+            alfechanacimiento = alumFechaNacDateTimePicker.Value;
         }
 
         private void encdoNombre1TextBox_TextChanged(object sender, EventArgs e)
@@ -539,59 +506,44 @@ namespace General
 
         private void encdoFechaNacDateTimePicker_ValueChanged(object sender, EventArgs e)
         {
-            int actual = 0;
-            int ingresado = 0;
-
-            ingresado = Convert.ToInt32(encdoFechaNacDateTimePicker.Value.Year) + Convert.ToInt32(encdoFechaNacDateTimePicker.Value.Month) + Convert.ToInt32(encdoFechaNacDateTimePicker.Value.Day);
-            actual = Convert.ToInt32(DateTime.Today.Year) + Convert.ToInt32(DateTime.Today.Month) + Convert.ToInt32(DateTime.Today.Day);
-            if (ingresado > actual)
-            {
-                MessageBox.Show("Ingrese una fecha Valida");
-                encdoFechaNacDateTimePicker.Value = DateTime.Today;
-            }
-
-            int a;
-
-
-
-            try
-            {
-                a = (DateTime.Today.AddTicks(-encdoFechaNacDateTimePicker.Value.Ticks).Year - 1);
-
-
-                if (a < 18)
-                {
-                   // MessageBox.Show("es menor de edad");
-                    encdoFechaNacDateTimePicker.ResetText();
-                }
-
-
-
-            }
-            catch (Exception)
-            {
-
-            }
             encafechanacimiento = encdoFechaNacDateTimePicker.Value;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            try
+            int dias = DateTime.Now.Date.Subtract(encdoFechaNacDateTimePicker.Value.Date).Days;
+            int dias2 = DateTime.Now.Date.Subtract(alumFechaNacDateTimePicker.Value.Date).Days;
+
+            if (dias < 0 || dias2 < 0)
             {
-               // agregar.spModificarAlumno2(alumNombre1TextBox.Text, alumNombre2TextBox.Text, alumApellido1TextBox.Text, alumApellido2TextBox.Text, alumIdTextBox.Text, Convert.ToInt32(spDepartamentosComboBox.SelectedValue), alumFechaNacDateTimePicker.Value, Convert.ToInt32(spSexoComboBox.SelectedValue), Convert.ToInt32(tipoSangreComboBox.SelectedValue),
-                    //Convert.ToInt32(spEstadoCivilComboBox.SelectedValue), alumDireccionTextBox.Text, alestadotrabajo, textbox1.Text, comboBox1.Text, encdoNombre1TextBox.Text, encdoNombre2TextBox.Text, encdoApellido1TextBox.Text,
-                  //  encdoApellido2TextBox.Text, encdoIdTextBox.Text, encdoFechaNacDateTimePicker.Value, Convert.ToInt32(spSexoComboBox1.SelectedValue), Convert.ToInt32(spOcupacionComboBox.SelectedValue), Convert.ToInt32(spRelacionComboBox.SelectedValue), Convert.ToInt32(spEstadoMatriculaComboBox.SelectedValue),
-                //    Convert.ToInt32(spModalidadesComboBox.SelectedValue), Convert.ToInt32(spMostrarInstituto2ComboBox.SelectedValue), spCursoModalidad2ComboBox.SelectedValue.ToString(),comboBox2.Text);
-                agregar.spModificarAlumno2(alnombre1, alnombre2, alnombre3, alnombre4, alid, aldepartamento, alfechanacimiento, alsexo, altipodesangre, alestadocivil,
-                  alldireccion, alestadotrabajo, allugardetrabajo, alhorariodetrabajo, encanombre1, encanombre2, encanombre3, encanombre4, encaid, encafechanacimiento,
-                    encaSexo, encaOcupacion, encarelacion, alestadomatricula, almodalidad, alinstituto,alcurso.ToString(),alseccion);
-                MessageBox.Show("Modificacion con exito");
+                MessageBox.Show("la fecha seleccionada es igual o mayor al dia actual");
             }
-            catch (SqlException)
+
+            int años = dias / 365;
+            int años2 = dias2 / 365;
+
+            if (años < 18 || años2 < 18)
             {
-                
-                
+                MessageBox.Show("debe ser mayor a 18 años");
+            }
+            else
+            {
+                try
+                {
+                    // agregar.spModificarAlumno2(alumNombre1TextBox.Text, alumNombre2TextBox.Text, alumApellido1TextBox.Text, alumApellido2TextBox.Text, alumIdTextBox.Text, Convert.ToInt32(spDepartamentosComboBox.SelectedValue), alumFechaNacDateTimePicker.Value, Convert.ToInt32(spSexoComboBox.SelectedValue), Convert.ToInt32(tipoSangreComboBox.SelectedValue),
+                    //Convert.ToInt32(spEstadoCivilComboBox.SelectedValue), alumDireccionTextBox.Text, alestadotrabajo, textbox1.Text, comboBox1.Text, encdoNombre1TextBox.Text, encdoNombre2TextBox.Text, encdoApellido1TextBox.Text,
+                    //  encdoApellido2TextBox.Text, encdoIdTextBox.Text, encdoFechaNacDateTimePicker.Value, Convert.ToInt32(spSexoComboBox1.SelectedValue), Convert.ToInt32(spOcupacionComboBox.SelectedValue), Convert.ToInt32(spRelacionComboBox.SelectedValue), Convert.ToInt32(spEstadoMatriculaComboBox.SelectedValue),
+                    //    Convert.ToInt32(spModalidadesComboBox.SelectedValue), Convert.ToInt32(spMostrarInstituto2ComboBox.SelectedValue), spCursoModalidad2ComboBox.SelectedValue.ToString(),comboBox2.Text);
+                    agregar.spModificarAlumno2(alnombre1, alnombre2, alnombre3, alnombre4, alid, aldepartamento, alfechanacimiento, alsexo, altipodesangre, alestadocivil,
+                      alldireccion, alestadotrabajo, allugardetrabajo, alhorariodetrabajo, encanombre1, encanombre2, encanombre3, encanombre4, encaid, encafechanacimiento,
+                        encaSexo, encaOcupacion, encarelacion, alestadomatricula, almodalidad, alinstituto, alcurso.ToString(), alseccion);
+                    MessageBox.Show("Modificacion con exito");
+                }
+                catch (SqlException)
+                {
+
+
+                }
             }
         }
 

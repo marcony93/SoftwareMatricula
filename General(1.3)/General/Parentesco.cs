@@ -39,6 +39,8 @@ namespace General
                     this.spRelacionTableAdapter.Fill(this.desarrolloDataSet1.spRelacion);
                     
                 }
+                else
+                    MessageBox.Show("Tiene que Ingresar un Parentesco");
             }
             catch (SqlException)
             {
@@ -73,7 +75,12 @@ namespace General
                     try
                     {
                         nom = spRelacionDataGridView.Rows[e.RowIndex].Cells[1].Value.ToString();
-                        eliminar.spRelacion_eliminar(nom);
+                        if (MessageBox.Show("Estas seguro de eliminar este registro?", "Eliminar registro", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                        {
+                            eliminar.spRelacion_eliminar(nom);
+                            MessageBox.Show("Registro eliminado");
+                        }
+                        
                         this.spRelacionTableAdapter.Fill(this.desarrolloDataSet1.spRelacion);
                        
 

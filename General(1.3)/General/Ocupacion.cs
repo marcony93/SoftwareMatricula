@@ -63,6 +63,8 @@ namespace General
                     this.spOcupacionTableAdapter.Fill(this.desarrolloDataSet1.SpOcupacion);
                     
                 }
+                else
+                    MessageBox.Show("Tiene que Ingresar una Ocupacion");
             }
             catch (SqlException)
             {
@@ -82,7 +84,11 @@ namespace General
                     try
                     {
                         nom = spOcupacionDataGridView.Rows[e.RowIndex].Cells[1].Value.ToString();
-                        eliminar.spOcupacion_eliminar(nom);
+                        if (MessageBox.Show("Estas seguro de eliminar este registro?", "Eliminar registro", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                        {
+                            eliminar.spOcupacion_eliminar(nom);
+                            MessageBox.Show("Registro eliminado");
+                        }
                         this.spOcupacionTableAdapter.Fill(this.desarrolloDataSet1.SpOcupacion);
 
                     }

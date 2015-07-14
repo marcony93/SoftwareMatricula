@@ -65,12 +65,21 @@ namespace General
                     this.spMostrarInstitutoTableAdapter.Fill(this.desarrolloDataSet1.SpMostrarInstituto);
 
                 }
+                else
+                {
+                    MessageBox.Show("Tiene que Ingresar un instituto de procedencia");
+                }
             }
             catch (SqlException)
             {
 
 
             }
+        }
+
+        private void spMostrarInstitutoDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
