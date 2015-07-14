@@ -151,5 +151,51 @@ namespace General
         {
 
         }
+
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (textBox2.Text.Length == 0)
+                e.KeyChar = e.KeyChar.ToString().ToUpper().ToCharArray()[0];
+            else
+                if (textBox2.Text.Length > 0)
+                    e.KeyChar = e.KeyChar.ToString().ToLower().ToCharArray()[0];
+        }
+
+        private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (textBox3.Text.Length == 0)
+                e.KeyChar = e.KeyChar.ToString().ToUpper().ToCharArray()[0];
+            else
+                if (textBox3.Text.Length > 0)
+                    e.KeyChar = e.KeyChar.ToString().ToLower().ToCharArray()[0];
+        }
+
+        private void textBox4_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (textBox4.Text.Length == 0)
+                e.KeyChar = e.KeyChar.ToString().ToUpper().ToCharArray()[0];
+            else
+                if (textBox4.Text.Length > 0)
+                    e.KeyChar = e.KeyChar.ToString().ToLower().ToCharArray()[0];
+        }
+
+        private void textBox5_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (textBox5.Text.Length == 0)
+                e.KeyChar = e.KeyChar.ToString().ToUpper().ToCharArray()[0];
+            else
+                if (textBox5.Text.Length > 0)
+                    e.KeyChar = e.KeyChar.ToString().ToLower().ToCharArray()[0];
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+          
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
