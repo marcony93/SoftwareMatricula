@@ -479,6 +479,16 @@ namespace General
                 a++;
             }
 
+            try
+            {
+                Agregar.SpInsertarTelefonoEncargado(textBox13.Text, textBox12.Text);
+            }
+            catch (SqlException)
+            {
+                
+                throw;
+            }
+
 
             if (a== 0)
             {

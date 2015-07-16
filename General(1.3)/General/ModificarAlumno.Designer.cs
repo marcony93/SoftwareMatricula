@@ -834,7 +834,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(19, 462);
+            this.label11.Location = new System.Drawing.Point(19, 459);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(55, 15);
             this.label11.TabIndex = 46;
@@ -842,7 +842,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(127, 486);
+            this.button5.Location = new System.Drawing.Point(127, 480);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(31, 21);
             this.button5.TabIndex = 47;
@@ -918,7 +918,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 68);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(600, 521);
+            this.groupBox1.Size = new System.Drawing.Size(600, 507);
             this.groupBox1.TabIndex = 50;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos personales";
@@ -926,7 +926,7 @@
             // telNumeroTextBox
             // 
             this.telNumeroTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spMostrarTelefonoAlumnosBindingSource, "TelNumero", true));
-            this.telNumeroTextBox.Location = new System.Drawing.Point(21, 486);
+            this.telNumeroTextBox.Location = new System.Drawing.Point(21, 480);
             this.telNumeroTextBox.Name = "telNumeroTextBox";
             this.telNumeroTextBox.Size = new System.Drawing.Size(100, 21);
             this.telNumeroTextBox.TabIndex = 55;
