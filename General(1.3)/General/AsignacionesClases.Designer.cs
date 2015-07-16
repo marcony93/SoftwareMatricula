@@ -253,6 +253,7 @@
             this.spMaestroComboBox.Size = new System.Drawing.Size(300, 21);
             this.spMaestroComboBox.TabIndex = 10;
             this.spMaestroComboBox.ValueMember = "MstroId";
+            this.spMaestroComboBox.SelectedIndexChanged += new System.EventHandler(this.spMaestroComboBox_SelectedIndexChanged);
             // 
             // spModalidadBindingSource
             // 
@@ -318,6 +319,7 @@
             this.spSeccionesComboBox.Size = new System.Drawing.Size(128, 21);
             this.spSeccionesComboBox.TabIndex = 13;
             this.spSeccionesComboBox.ValueMember = "SecNombre";
+            this.spSeccionesComboBox.SelectedIndexChanged += new System.EventHandler(this.spSeccionesComboBox_SelectedIndexChanged);
             // 
             // spMateriaBindingSource
             // 
@@ -339,6 +341,7 @@
             this.spMateriaComboBox.Size = new System.Drawing.Size(128, 21);
             this.spMateriaComboBox.TabIndex = 14;
             this.spMateriaComboBox.ValueMember = "NombreMateria";
+            this.spMateriaComboBox.SelectedIndexChanged += new System.EventHandler(this.spMateriaComboBox_SelectedIndexChanged);
             // 
             // spHoraBindingSource
             // 
@@ -360,6 +363,7 @@
             this.spHoraComboBox.Size = new System.Drawing.Size(128, 21);
             this.spHoraComboBox.TabIndex = 14;
             this.spHoraComboBox.ValueMember = "Hora";
+            this.spHoraComboBox.SelectedIndexChanged += new System.EventHandler(this.spHoraComboBox_SelectedIndexChanged);
             // 
             // spDiaBindingSource
             // 
@@ -381,6 +385,7 @@
             this.spDiaComboBox.Size = new System.Drawing.Size(128, 21);
             this.spDiaComboBox.TabIndex = 15;
             this.spDiaComboBox.ValueMember = "Dia";
+            this.spDiaComboBox.SelectedIndexChanged += new System.EventHandler(this.spDiaComboBox_SelectedIndexChanged);
             // 
             // spmostrarplanillaBindingSource
             // 

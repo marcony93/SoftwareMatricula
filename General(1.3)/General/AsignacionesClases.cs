@@ -43,13 +43,28 @@ namespace General
  
        private void spModalidadComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            this.spCursoTableAdapter.Fill(this.desarrolloDataSetWilmer.spCurso, new System.Nullable<int>(((int)(System.Convert.ChangeType(spModalidadComboBox.SelectedValue.ToString(), typeof(int))))));
+            try
+            {
+                this.spCursoTableAdapter.Fill(this.desarrolloDataSetWilmer.spCurso, new System.Nullable<int>(((int)(System.Convert.ChangeType(spModalidadComboBox.SelectedValue.ToString(), typeof(int))))));
+            }
+            catch (SqlException)
+            {
+                MessageBox.Show("Error");
+            }
+         
         }
 
         private void spCursoComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            this.spSeccionesTableAdapter.Fill(this.desarrolloDataSetWilmer.spSecciones, new System.Nullable<int>(((int)(System.Convert.ChangeType(spCursoComboBox.SelectedValue.ToString(), typeof(int))))), DateTime.Today.Year.ToString());
-            this.spMateriaTableAdapter.Fill(this.desarrolloDataSetWilmer.spMateria, new System.Nullable<int>(((int)(System.Convert.ChangeType(spModalidadComboBox.SelectedValue.ToString(), typeof(int))))), spCursoComboBox.SelectedValue.ToString());
+           try
+           {
+               this.spSeccionesTableAdapter.Fill(this.desarrolloDataSetWilmer.spSecciones, new System.Nullable<int>(((int)(System.Convert.ChangeType(spCursoComboBox.SelectedValue.ToString(), typeof(int))))), DateTime.Today.Year.ToString());
+               this.spMateriaTableAdapter.Fill(this.desarrolloDataSetWilmer.spMateria, new System.Nullable<int>(((int)(System.Convert.ChangeType(spModalidadComboBox.SelectedValue.ToString(), typeof(int))))), spCursoComboBox.SelectedValue.ToString());
+           }
+           catch (SqlException)
+           {
+               MessageBox.Show("Error");
+           }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -72,6 +87,31 @@ namespace General
         {
             //ReporteHorarioMaestro rep = new ReporteHorarioMaestro();
             //rep.Show();
+        }
+
+        private void spMaestroComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void spSeccionesComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void spMateriaComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void spHoraComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void spDiaComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
