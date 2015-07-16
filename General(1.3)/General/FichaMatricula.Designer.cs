@@ -288,7 +288,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(536, 29);
+            this.label1.Location = new System.Drawing.Point(532, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(105, 13);
             this.label1.TabIndex = 46;
@@ -297,7 +297,7 @@
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(257, 29);
+            this.label33.Location = new System.Drawing.Point(273, 29);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(75, 13);
             this.label33.TabIndex = 45;
@@ -306,7 +306,7 @@
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(378, 29);
+            this.label28.Location = new System.Drawing.Point(402, 29);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(89, 13);
             this.label28.TabIndex = 44;
@@ -324,7 +324,7 @@
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(136, 29);
+            this.label26.Location = new System.Drawing.Point(144, 29);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(88, 13);
             this.label26.TabIndex = 42;
@@ -336,7 +336,7 @@
             this.tipoSangreComboBox.DisplayMember = "TipSangreNombre";
             this.tipoSangreComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.tipoSangreComboBox.FormattingEnabled = true;
-            this.tipoSangreComboBox.Location = new System.Drawing.Point(257, 195);
+            this.tipoSangreComboBox.Location = new System.Drawing.Point(273, 195);
             this.tipoSangreComboBox.Name = "tipoSangreComboBox";
             this.tipoSangreComboBox.Size = new System.Drawing.Size(100, 21);
             this.tipoSangreComboBox.TabIndex = 41;
@@ -356,7 +356,7 @@
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(257, 171);
+            this.label24.Location = new System.Drawing.Point(273, 171);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(78, 13);
             this.label24.TabIndex = 41;
@@ -365,7 +365,7 @@
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(613, 198);
+            this.label23.Location = new System.Drawing.Point(609, 198);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(21, 13);
             this.label23.TabIndex = 40;
@@ -374,7 +374,7 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(552, 198);
+            this.label22.Location = new System.Drawing.Point(548, 198);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(16, 13);
             this.label22.TabIndex = 39;
@@ -383,7 +383,7 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(598, 196);
+            this.radioButton2.Location = new System.Drawing.Point(594, 196);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(31, 17);
             this.radioButton2.TabIndex = 19;
@@ -396,7 +396,7 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(537, 196);
+            this.radioButton1.Location = new System.Drawing.Point(531, 196);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(31, 17);
             this.radioButton1.TabIndex = 18;
@@ -413,7 +413,7 @@
             this.comboBox1.Items.AddRange(new object[] {
             "8-12",
             "1-6"});
-            this.comboBox1.Location = new System.Drawing.Point(536, 332);
+            this.comboBox1.Location = new System.Drawing.Point(531, 332);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(100, 21);
             this.comboBox1.TabIndex = 37;
@@ -422,7 +422,7 @@
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(536, 310);
+            this.label30.Location = new System.Drawing.Point(531, 310);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(91, 13);
             this.label30.TabIndex = 36;
@@ -431,7 +431,7 @@
             // textBox14
             // 
             this.textBox14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox14.Location = new System.Drawing.Point(536, 272);
+            this.textBox14.Location = new System.Drawing.Point(531, 272);
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(100, 20);
             this.textBox14.TabIndex = 35;
@@ -440,7 +440,7 @@
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(536, 249);
+            this.label29.Location = new System.Drawing.Point(531, 249);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(84, 13);
             this.label29.TabIndex = 34;
@@ -448,7 +448,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(645, 119);
+            this.button1.Location = new System.Drawing.Point(641, 119);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(31, 21);
             this.button1.TabIndex = 26;
@@ -462,7 +462,7 @@
             this.spNacionalidadComboBox.DisplayMember = "NacNombre";
             this.spNacionalidadComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.spNacionalidadComboBox.FormattingEnabled = true;
-            this.spNacionalidadComboBox.Location = new System.Drawing.Point(536, 119);
+            this.spNacionalidadComboBox.Location = new System.Drawing.Point(531, 119);
             this.spNacionalidadComboBox.Name = "spNacionalidadComboBox";
             this.spNacionalidadComboBox.Size = new System.Drawing.Size(106, 21);
             this.spNacionalidadComboBox.TabIndex = 25;
@@ -504,7 +504,7 @@
             this.sexoComboBox.DisplayMember = "SexNombre";
             this.sexoComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.sexoComboBox.FormattingEnabled = true;
-            this.sexoComboBox.Location = new System.Drawing.Point(136, 195);
+            this.sexoComboBox.Location = new System.Drawing.Point(144, 195);
             this.sexoComboBox.Name = "sexoComboBox";
             this.sexoComboBox.Size = new System.Drawing.Size(100, 21);
             this.sexoComboBox.TabIndex = 23;
@@ -518,9 +518,9 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(136, 120);
+            this.dateTimePicker1.Location = new System.Drawing.Point(144, 120);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(221, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(229, 20);
             this.dateTimePicker1.TabIndex = 22;
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
@@ -573,7 +573,7 @@
             // textBox5
             // 
             this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox5.Location = new System.Drawing.Point(536, 53);
+            this.textBox5.Location = new System.Drawing.Point(531, 53);
             this.textBox5.Name = "textBox5";
             this.textBox5.ShortcutsEnabled = false;
             this.textBox5.Size = new System.Drawing.Size(137, 20);
@@ -584,7 +584,7 @@
             // textBox4
             // 
             this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox4.Location = new System.Drawing.Point(378, 53);
+            this.textBox4.Location = new System.Drawing.Point(402, 53);
             this.textBox4.Name = "textBox4";
             this.textBox4.ShortcutsEnabled = false;
             this.textBox4.Size = new System.Drawing.Size(100, 20);
@@ -595,7 +595,7 @@
             // textBox3
             // 
             this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox3.Location = new System.Drawing.Point(257, 53);
+            this.textBox3.Location = new System.Drawing.Point(273, 53);
             this.textBox3.Name = "textBox3";
             this.textBox3.ShortcutsEnabled = false;
             this.textBox3.Size = new System.Drawing.Size(100, 20);
@@ -606,7 +606,7 @@
             // textBox2
             // 
             this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox2.Location = new System.Drawing.Point(136, 53);
+            this.textBox2.Location = new System.Drawing.Point(144, 53);
             this.textBox2.Name = "textBox2";
             this.textBox2.ShortcutsEnabled = false;
             this.textBox2.Size = new System.Drawing.Size(100, 20);
@@ -637,7 +637,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(536, 171);
+            this.label10.Location = new System.Drawing.Point(531, 171);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(43, 13);
             this.label10.TabIndex = 9;
@@ -655,7 +655,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(536, 99);
+            this.label8.Location = new System.Drawing.Point(531, 99);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(69, 13);
             this.label8.TabIndex = 7;
@@ -673,7 +673,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(136, 171);
+            this.label6.Location = new System.Drawing.Point(144, 171);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(31, 13);
             this.label6.TabIndex = 5;
@@ -691,7 +691,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(136, 97);
+            this.label4.Location = new System.Drawing.Point(144, 97);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(106, 13);
             this.label4.TabIndex = 3;
@@ -762,7 +762,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(263, 29);
+            this.label13.Location = new System.Drawing.Point(275, 29);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(75, 13);
             this.label13.TabIndex = 49;
@@ -771,7 +771,7 @@
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(378, 29);
+            this.label34.Location = new System.Drawing.Point(405, 29);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(89, 13);
             this.label34.TabIndex = 48;
@@ -789,7 +789,7 @@
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(142, 29);
+            this.label38.Location = new System.Drawing.Point(145, 29);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(88, 13);
             this.label38.TabIndex = 46;
@@ -801,7 +801,7 @@
             this.spOcupacionComboBox.DisplayMember = "OcupNombre";
             this.spOcupacionComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.spOcupacionComboBox.FormattingEnabled = true;
-            this.spOcupacionComboBox.Location = new System.Drawing.Point(387, 144);
+            this.spOcupacionComboBox.Location = new System.Drawing.Point(405, 144);
             this.spOcupacionComboBox.Name = "spOcupacionComboBox";
             this.spOcupacionComboBox.Size = new System.Drawing.Size(100, 21);
             this.spOcupacionComboBox.TabIndex = 18;
@@ -820,7 +820,7 @@
             this.spSexoComboBox.DisplayMember = "SexNombre";
             this.spSexoComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.spSexoComboBox.FormattingEnabled = true;
-            this.spSexoComboBox.Location = new System.Drawing.Point(266, 144);
+            this.spSexoComboBox.Location = new System.Drawing.Point(275, 144);
             this.spSexoComboBox.Name = "spSexoComboBox";
             this.spSexoComboBox.Size = new System.Drawing.Size(100, 21);
             this.spSexoComboBox.TabIndex = 18;
@@ -864,7 +864,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(263, 120);
+            this.label20.Location = new System.Drawing.Point(275, 120);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(31, 13);
             this.label20.TabIndex = 16;
@@ -900,7 +900,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(493, 144);
+            this.button2.Location = new System.Drawing.Point(516, 144);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(28, 21);
             this.button2.TabIndex = 10;
@@ -911,7 +911,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(384, 120);
+            this.label16.Location = new System.Drawing.Point(405, 120);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(59, 13);
             this.label16.TabIndex = 9;
@@ -929,7 +929,7 @@
             // textBox12
             // 
             this.textBox12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox12.Location = new System.Drawing.Point(536, 53);
+            this.textBox12.Location = new System.Drawing.Point(535, 53);
             this.textBox12.Name = "textBox12";
             this.textBox12.ShortcutsEnabled = false;
             this.textBox12.Size = new System.Drawing.Size(137, 20);
@@ -948,7 +948,7 @@
             // textBox11
             // 
             this.textBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox11.Location = new System.Drawing.Point(378, 53);
+            this.textBox11.Location = new System.Drawing.Point(405, 53);
             this.textBox11.Name = "textBox11";
             this.textBox11.ShortcutsEnabled = false;
             this.textBox11.Size = new System.Drawing.Size(100, 20);
@@ -959,7 +959,7 @@
             // textBox10
             // 
             this.textBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox10.Location = new System.Drawing.Point(263, 53);
+            this.textBox10.Location = new System.Drawing.Point(275, 53);
             this.textBox10.Name = "textBox10";
             this.textBox10.ShortcutsEnabled = false;
             this.textBox10.Size = new System.Drawing.Size(100, 20);
@@ -970,7 +970,7 @@
             // textBox9
             // 
             this.textBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox9.Location = new System.Drawing.Point(142, 53);
+            this.textBox9.Location = new System.Drawing.Point(145, 53);
             this.textBox9.Name = "textBox9";
             this.textBox9.ShortcutsEnabled = false;
             this.textBox9.Size = new System.Drawing.Size(100, 20);
@@ -982,7 +982,7 @@
             // 
             this.dateTimePicker2.Location = new System.Drawing.Point(18, 145);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(224, 20);
+            this.dateTimePicker2.Size = new System.Drawing.Size(227, 20);
             this.dateTimePicker2.TabIndex = 2;
             this.dateTimePicker2.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
             // 
@@ -1525,7 +1525,7 @@
             this.dataGridViewTextBoxColumn3.DataPropertyName = "DocDescripcion";
             this.dataGridViewTextBoxColumn3.HeaderText = "Descripción";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 140;
+            this.dataGridViewTextBoxColumn3.Width = 200;
             // 
             // dataGridViewCheckBoxColumn2
             // 

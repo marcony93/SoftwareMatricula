@@ -185,7 +185,7 @@
             this.uspSeccionxCursoComboBox.DisplayMember = "SecNombre";
             this.uspSeccionxCursoComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.uspSeccionxCursoComboBox.FormattingEnabled = true;
-            this.uspSeccionxCursoComboBox.Location = new System.Drawing.Point(804, 110);
+            this.uspSeccionxCursoComboBox.Location = new System.Drawing.Point(805, 110);
             this.uspSeccionxCursoComboBox.Name = "uspSeccionxCursoComboBox";
             this.uspSeccionxCursoComboBox.Size = new System.Drawing.Size(115, 21);
             this.uspSeccionxCursoComboBox.TabIndex = 6;
@@ -239,10 +239,10 @@
             // 
             // reportViewer1
             // 
-            reportDataSource1.Name = "desarrolloDataSetBaque";
+            reportDataSource1.Name = "DataSet1";
             reportDataSource1.Value = this.uspAlumnosxCursoBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "General.Report1.rdlc";
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "General.Report9.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(12, 173);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.Size = new System.Drawing.Size(1135, 346);

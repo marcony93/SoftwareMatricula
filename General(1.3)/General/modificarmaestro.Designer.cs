@@ -316,6 +316,7 @@
             this.mstroEmailTextBox.Name = "mstroEmailTextBox";
             this.mstroEmailTextBox.Size = new System.Drawing.Size(356, 20);
             this.mstroEmailTextBox.TabIndex = 29;
+            this.mstroEmailTextBox.TextChanged += new System.EventHandler(this.mstroEmailTextBox_TextChanged);
             // 
             // mstroDireccionTextBox
             // 

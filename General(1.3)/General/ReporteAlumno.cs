@@ -19,13 +19,11 @@ namespace General
 
         private void ReporteAlumno_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'desarrolloDataSetBaque.uspAlumnosxCurso' Puede moverla o quitarla según sea necesario.
-
-            // TODO: esta línea de código carga datos en la tabla 'desarrolloDataSetBaque.uspAlumnosxCurso' Puede moverla o quitarla según sea necesario.
-
+            Int32 ordenar = 1;
             this.uspSelectModalidadTableAdapter.Fill(this.desarrolloDataSetBaque.uspSelectModalidad);
             this.uspModalidadTableAdapter.Fill(this.desarrolloDataSetBaque.uspModalidad, Convert.ToInt32(uspSelectModalidadComboBox.SelectedValue));
             this.uspSeccionxCursoTableAdapter.Fill(this.desarrolloDataSetBaque.uspSeccionxCurso, Convert.ToInt32(uspModalidadComboBox.SelectedValue), DateTime.Today.Year.ToString());
+            this.uspAlumnosxCursoTableAdapter.Fill(this.desarrolloDataSetBaque.uspAlumnosxCurso,Convert.ToInt32(uspModalidadComboBox.SelectedValue),secNombreTextBox.Text,ordenar);
             this.reportViewer1.RefreshReport();
         }
 

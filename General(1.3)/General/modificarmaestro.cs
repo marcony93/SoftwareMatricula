@@ -12,16 +12,16 @@ using General.desarrolloDataSetmchaTableAdapters;
 
 
 namespace General
-{ 
-    
+{
+
     public partial class modificarmaestro : Form
     {
-        
+
         QueriesTableAdapter QTA = new QueriesTableAdapter();
         public static int a = 0;
         public modificarmaestro()
         {
-           
+
             InitializeComponent();
         }
 
@@ -29,7 +29,7 @@ namespace General
         {
             try
             {
-                
+
             }
             catch (System.Exception ex)
             {
@@ -48,7 +48,7 @@ namespace General
             a++;
             if (a == 1)
             {
-                
+
                 mstroEmailTextBox.Enabled = true;
                 mstroDireccionTextBox.Enabled = true;
                 mstroUsuTextBox.Enabled = true;
@@ -69,10 +69,11 @@ namespace General
 
                     MessageBox.Show("Los Datos no fueron modificados , el usuario no existe ");
                 }
-                
-               
+
+
             }
-            else if (a == 0){
+            else if (a == 0)
+            {
 
             }
         }
@@ -103,5 +104,11 @@ namespace General
             buscarmaestro.WindowState = FormWindowState.Maximized;
             buscarmaestro.BringToFront();
         }
+
+        private void mstroEmailTextBox_TextChanged(object sender, EventArgs e)
+        {
+            InsertarMaestro.ValidarEspacios(mstroEmailTextBox, errorProvider1);
+        }
+
     }
 }

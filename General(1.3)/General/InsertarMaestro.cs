@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Text.RegularExpressions;
 
 using General.desarrolloDataSetmchaTableAdapters;
 
@@ -91,17 +92,26 @@ namespace General
 
         private void button1_Click(object sender, EventArgs e)
         {
-            try
+            if(CorreoValido(textBox7.Text)==false)
             {
-
-                QTA.insertarnuevomaestro(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text, dateTimePicker1.Value, textBox7.Text, textBox6.Text, spSexoComboBox.SelectedIndex + 1, label12.Text, label13.Text, 2, "0");
-                MessageBox.Show("Se ha Guardado con Exito");
+                MessageBox.Show("Ingrese un correo valido");
+                errorProvider1.SetError(textBox7, "Ingrese un correo valido");
             }
-            catch (SqlException)
+            else
             {
+                try
+                {
 
-                MessageBox.Show("El Maestro no ha sido guardado");
+                    QTA.insertarnuevomaestro(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text, dateTimePicker1.Value, textBox7.Text, textBox6.Text, spSexoComboBox.SelectedIndex + 1, label12.Text, label13.Text, 2, "0");
+                    MessageBox.Show("Se ha Guardado con Exito");
+                }
+                catch (SqlException)
+                {
+
+                    MessageBox.Show("El Maestro no ha sido guardado");
+                }
             }
+          
                   
 	        
             
@@ -197,5 +207,41 @@ namespace General
         {
 
         }
+        private Boolean CorreoValido(String correo)
+        {
+            String expresion;
+            expresion = "\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
+            if (Regex.IsMatch(correo, expresion))
+            {
+                if (Regex.Replace(correo, expresion, String.Empty).Length == 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                return false;
+            }
+        }
+       public static void ValidarEspacios(TextBox Cajatexto, ErrorProvider error)
+        {
+            if (Cajatexto.Text.Trim() != Cajatexto.Text)
+            {
+                error.SetError(Cajatexto, "No se aceptan espacios");
+                Cajatexto.Text = Cajatexto.Text.Remove(Cajatexto.TextLength - 1);
+                Cajatexto.SelectionStart = Cajatexto.TextLength;
+            }
+        }
+
+       private void textBox7_TextChanged(object sender, EventArgs e)
+       {
+           ValidarEspacios(textBox7, errorProvider1);
+       }
+       
+     
     }
 }

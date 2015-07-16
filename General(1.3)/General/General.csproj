@@ -336,6 +336,7 @@
     <EmbeddedResource Include="Report6.rdlc" />
     <EmbeddedResource Include="Report7.rdlc" />
     <EmbeddedResource Include="Report8.rdlc" />
+    <EmbeddedResource Include="Report9.rdlc" />
     <EmbeddedResource Include="Reportcarnet.rdlc" />
     <EmbeddedResource Include="ReporteAlumno.resx">
       <DependentUpon>ReporteAlumno.cs</DependentUpon>
