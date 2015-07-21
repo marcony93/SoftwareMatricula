@@ -233,7 +233,6 @@
             this.button1.TabIndex = 10;
             this.button1.Text = "Buscar";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Visible = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // sPAlumnosXClaseBBindingSource
@@ -262,7 +261,7 @@
             this.sPAlumnosXClaseBDataGridView.Size = new System.Drawing.Size(803, 344);
             this.sPAlumnosXClaseBDataGridView.TabIndex = 11;
             this.sPAlumnosXClaseBDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.sPAlumnosXClaseBDataGridView_CellContentClick);
-            this.sPAlumnosXClaseBDataGridView.Leave += new System.EventHandler(this.sPAlumnosXClaseBDataGridView_Leave);
+      
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -405,13 +404,13 @@
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(848, 630);
             this.ControlBox = false;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.sPCursoBComboBox);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.sPAlumnosXClaseBDataGridView);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.sPMateriaBComboBox);
             this.Controls.Add(this.sPSeccionBComboBox);
             this.Controls.Add(this.comboBox1);

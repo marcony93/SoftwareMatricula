@@ -34,8 +34,6 @@ namespace General
             
             //this.sPCursoBTableAdapter.Fill(this.desarrolloDataSetElia.SPCursoB);
             button1.Enabled = false;
-
-
         }
 
         private void fillToolStripButton_Click(object sender, EventArgs e)
@@ -68,19 +66,12 @@ namespace General
             foreach (DataGridViewRow row in sPAlumnosXClaseBDataGridView.Rows)
             {
                 double esNumero;
-                if ((row.Cells[2].Value == null || row.Cells[3].Value == null) || (((Convert.ToInt32(row.Cells[2].Value)) + Convert.ToInt32(row.Cells[3].Value))>100))
+                if ((!double.TryParse(row.Cells[2].Value.ToString(), out esNumero) || !double.TryParse(row.Cells[3].Value.ToString(), out esNumero)) || (row.Cells[2].Value == null || row.Cells[3].Value == null) || (((Convert.ToInt32(row.Cells[2].Value)) + Convert.ToInt32(row.Cells[3].Value)) > 100))
                 {
                     validar++;
-                    row.Cells[2].Value=' ';
-                    row.Cells[3].Value=' ';
+                    row.Cells[2].Value = ' ';
+                    row.Cells[3].Value = ' ';
                 }
-                else
-
-                    if (!double.TryParse(row.Cells[2].Value.ToString(), out esNumero) || !double.TryParse(row.Cells[3].Value.ToString(), out esNumero))
-                    {
-                        validar++;
-                    }
-
 
             }
 
@@ -128,11 +119,6 @@ namespace General
         private void sPAlumnosXClaseBDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             
-        }
-
-        private void sPAlumnosXClaseBDataGridView_Leave(object sender, EventArgs e)
-        {
-           
         }
 
         private void sPCursoBComboBox_SelectedIndexChanged(object sender, EventArgs e)

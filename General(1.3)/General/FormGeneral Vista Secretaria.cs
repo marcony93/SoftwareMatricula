@@ -70,7 +70,7 @@ namespace General
         {
            // Form ventana = new AsignacionesClases();
            // ventana.Show();
-            Form AsignacionesClases = new AsignacionesClases();
+            Form AsignacionesClases = new AsignarClases();
             AsignacionesClases.Show();
             AsignacionesClases.MdiParent = this;
             AsignacionesClases.WindowState = FormWindowState.Maximized;

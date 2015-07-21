@@ -49,9 +49,9 @@ namespace General
             if (a == 1)
             {
 
-                mstroEmailTextBox.Enabled = true;
-                mstroDireccionTextBox.Enabled = true;
-                mstroUsuTextBox.Enabled = true;
+               mstroEmailTextBox.Enabled = true;
+               mstroDireccionTextBox.Enabled = true;
+              mstroUsuTextBox.Enabled = true;
                 button1.Text = "guardar";
             }
             else if (a == 2)
@@ -60,9 +60,12 @@ namespace General
                 {
                     QTA.psmodificarmaestro(mstroIdTextBox.Text, mstroEmailTextBox.Text, mstroDireccionTextBox.Text, mstroUsuTextBox.Text);
                     mstroEmailTextBox.Enabled = false;
-                    mstroDireccionTextBox.Enabled = false;
-                    mstroUsuTextBox.Enabled = false;
+                   mstroDireccionTextBox.Enabled = false;
+                   mstroUsuTextBox.Enabled = false;
+                   button1.Text = "modificar";
                     MessageBox.Show("se actualizo con exito");
+                    a = 0;
+                    
                 }
                 catch (SqlException)
                 {
@@ -86,6 +89,7 @@ namespace General
         private void modificarmaestro_Load(object sender, EventArgs e)
         {
             this.selectProfesorTableAdapter.Fill(this.desarrolloDataSetmcha.SelectProfesor, buscarmaestro.Idmaestro.ToString());
+
         }
 
         private void mstroUsuTextBox_TextChanged(object sender, EventArgs e)
@@ -107,7 +111,33 @@ namespace General
 
         private void mstroEmailTextBox_TextChanged(object sender, EventArgs e)
         {
-            InsertarMaestro.ValidarEspacios(mstroEmailTextBox, errorProvider1);
+           // InsertarMaestro.ValidarEspacios(mstroEmailTextBox, errorProvider1);
+        }
+
+        private void fillToolStripButton_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void fillToolStripButton_Click_2(object sender, EventArgs e)
+        {
+            try
+            {
+                
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
         }
 
     }
