@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using General.desarrolloDataSetWilmerTableAdapters;
+using System.Data.SqlClient;
 namespace General
 {
     public partial class AsignarClases : Form
     {
+        QueriesTableAdapter asignar = new QueriesTableAdapter();
         public AsignarClases()
         {
             InitializeComponent();
@@ -62,6 +64,21 @@ namespace General
                 this.spMateriaTableAdapter.Fill(this.desarrolloDataSetWilmer.spMateria, new System.Nullable<int>(((int)(System.Convert.ChangeType(spModalidadComboBox.SelectedValue.ToString(), typeof(int))))), new System.Nullable<int>(((int)(System.Convert.ChangeType(spCursoComboBox.SelectedValue.ToString(), typeof(int))))));
             }
             
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                asignar.spinsertarplanilla2(spHoraComboBox.SelectedValue.ToString(), DateTime.Today.Year.ToString(), spMaestroComboBox.SelectedValue.ToString(), spCursoComboBox.SelectedValue.ToString(), Convert.ToInt32(spModalidadComboBox.SelectedValue.ToString()), spMateriaComboBox.SelectedValue.ToString(), spSeccionesComboBox.SelectedValue.ToString(), spDiaComboBox.SelectedValue.ToString());
+                MessageBox.Show("Asignacion guardada con exito");
+                this.spmostrarplanillaTableAdapter.Fill(this.desarrolloDataSetWilmer.spmostrarplanilla, spMaestroComboBox.SelectedValue.ToString());
+            }
+            catch (SqlException)
+            {
+
+                MessageBox.Show("Esta asignacion ya exite.... Por favor agregue otra");
+            }
         }
 
        

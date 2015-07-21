@@ -260,7 +260,7 @@
             this.sPAlumnosXClaseBDataGridView.Name = "sPAlumnosXClaseBDataGridView";
             this.sPAlumnosXClaseBDataGridView.Size = new System.Drawing.Size(803, 344);
             this.sPAlumnosXClaseBDataGridView.TabIndex = 11;
-            this.sPAlumnosXClaseBDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.sPAlumnosXClaseBDataGridView_CellContentClick);
+
       
             // 
             // dataGridViewTextBoxColumn1
@@ -331,7 +331,7 @@
             this.sPCursoBComboBox.Size = new System.Drawing.Size(143, 23);
             this.sPCursoBComboBox.TabIndex = 13;
             this.sPCursoBComboBox.ValueMember = "CursoId";
-            this.sPCursoBComboBox.SelectedIndexChanged += new System.EventHandler(this.sPCursoBComboBox_SelectedIndexChanged);
+
             // 
             // cursoIdTextBox
             // 

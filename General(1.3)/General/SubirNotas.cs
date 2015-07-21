@@ -30,36 +30,13 @@ namespace General
             //TODO: esta línea de código carga datos en la tabla 'desarrolloDataSetElia.SPCursoB' Puede moverla o quitarla según sea necesario.
             this.sPSeccionBTableAdapter.Fill(this.desarrolloDataSetElia.SPSeccionB, Convert.ToInt32(cursoIdTextBox.Text));
             this.sPMateriaBTableAdapter.Fill(this.desarrolloDataSetElia.SPMateriaB, Convert.ToInt32(cursoIdTextBox.Text));
-           // this.sPAlumnosXClaseBTableAdapter.Fill(this.desarrolloDataSetElia.SPAlumnosXClaseB, Convert.ToInt32(cursoIdTextBox.Text));
+           
             
-            //this.sPCursoBTableAdapter.Fill(this.desarrolloDataSetElia.SPCursoB);
+            
             button1.Enabled = false;
         }
 
-        private void fillToolStripButton_Click(object sender, EventArgs e)
-        {
-           
-
-        }
-
-        private void fillToolStripButton_Click_1(object sender, EventArgs e)
-        {
-            
-
-        }
-
-        private void fillToolStripButton_Click_2(object sender, EventArgs e)
-        {
-          
-
-        }
-
-        private void fillToolStripButton_Click_3(object sender, EventArgs e)
-        {
-            
-
-        }
-
+  
         private void button2_Click(object sender, EventArgs e)
         {
 
@@ -104,27 +81,12 @@ namespace General
 
         }
 
-
-
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             button1.Enabled = true;
         }
 
-        private void cursoIdTextBox_TextChanged(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void sPAlumnosXClaseBDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            
-        }
-
-        private void sPCursoBComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
+   
 
         private void cursoIdTextBox_TextChanged_1(object sender, EventArgs e)
         {
