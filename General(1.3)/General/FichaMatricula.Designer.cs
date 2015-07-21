@@ -123,16 +123,7 @@
             this.button6 = new System.Windows.Forms.Button();
             this.label32 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.documentosDataGridView = new System.Windows.Forms.DataGridView();
             this.documentosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.button7 = new System.Windows.Forms.Button();
-            this.spDocumentosDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.spDocumentosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.button4 = new System.Windows.Forms.Button();
             this.spLugarInstitutoBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -167,9 +158,16 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label21 = new System.Windows.Forms.Label();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.spDocumentosDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button7 = new System.Windows.Forms.Button();
+            this.label19 = new System.Windows.Forms.Label();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.documentosDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewCheckBoxColumn2 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -191,11 +189,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.spModalidadesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spEstadoMatriculaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spMostrarInstitutoBindingSource)).BeginInit();
-            this.tabPage4.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.documentosDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.documentosBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spDocumentosDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spDocumentosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spLugarInstitutoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spDepartamentosBindingSource1)).BeginInit();
@@ -209,6 +203,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.spCursoModalidad2BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spDocumentosDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.documentosDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -216,7 +212,6 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Location = new System.Drawing.Point(12, 68);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -283,7 +278,7 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos personales del Alumno";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+        
             // 
             // label1
             // 
@@ -579,7 +574,7 @@
             this.textBox5.Size = new System.Drawing.Size(137, 20);
             this.textBox5.TabIndex = 15;
             this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
-            this.textBox5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox5_KeyPress);
+          
             // 
             // textBox4
             // 
@@ -1065,7 +1060,7 @@
             this.spCursoModalidad2ComboBox.TabIndex = 39;
             this.spCursoModalidad2ComboBox.ValueMember = "CursoId";
             this.spCursoModalidad2ComboBox.SelectedIndexChanged += new System.EventHandler(this.spCursoModalidad2ComboBox_SelectedIndexChanged);
-            this.spCursoModalidad2ComboBox.Click += new System.EventHandler(this.spCursoModalidad2ComboBox_Click);
+         
             // 
             // spCursoModalidad2BindingSource1
             // 
@@ -1173,115 +1168,10 @@
             this.label31.TabIndex = 0;
             this.label31.Text = "Condición de ingreso";
             // 
-            // tabPage4
-            // 
-            this.tabPage4.AutoScroll = true;
-            this.tabPage4.Controls.Add(this.groupBox3);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(703, 437);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "tabPage4";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.BackColor = System.Drawing.Color.White;
-            this.groupBox3.Controls.Add(this.documentosDataGridView);
-            this.groupBox3.Controls.Add(this.textBox15);
-            this.groupBox3.Controls.Add(this.label19);
-            this.groupBox3.Controls.Add(this.button7);
-            this.groupBox3.Controls.Add(this.spDocumentosDataGridView);
-            this.groupBox3.Location = new System.Drawing.Point(6, 6);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(686, 426);
-            this.groupBox3.TabIndex = 5;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Documentos";
-            // 
-            // documentosDataGridView
-            // 
-            this.documentosDataGridView.AutoGenerateColumns = false;
-            this.documentosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.documentosDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewCheckBoxColumn2});
-            this.documentosDataGridView.DataSource = this.documentosBindingSource;
-            this.documentosDataGridView.Location = new System.Drawing.Point(159, 115);
-            this.documentosDataGridView.Name = "documentosDataGridView";
-            this.documentosDataGridView.Size = new System.Drawing.Size(344, 220);
-            this.documentosDataGridView.TabIndex = 21;
-            this.documentosDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.documentosDataGridView_CellContentClick);
-            // 
             // documentosBindingSource
             // 
             this.documentosBindingSource.DataMember = "Documentos";
             this.documentosBindingSource.DataSource = this.desarrolloDataSet1;
-            // 
-            // textBox15
-            // 
-            this.textBox15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox15.Location = new System.Drawing.Point(159, 89);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(150, 20);
-            this.textBox15.TabIndex = 21;
-            this.textBox15.TextChanged += new System.EventHandler(this.textBox15_TextChanged);
-            this.textBox15.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox15_KeyPress);
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(156, 67);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(95, 13);
-            this.label19.TabIndex = 20;
-            this.label19.Text = "Nuevo documento";
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.Azure;
-            this.button7.FlatAppearance.BorderColor = System.Drawing.SystemColors.HotTrack;
-            this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Location = new System.Drawing.Point(428, 64);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 45);
-            this.button7.TabIndex = 19;
-            this.button7.Text = "Guardar Documento";
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // spDocumentosDataGridView
-            // 
-            this.spDocumentosDataGridView.AllowUserToAddRows = false;
-            this.spDocumentosDataGridView.AllowUserToDeleteRows = false;
-            this.spDocumentosDataGridView.AutoGenerateColumns = false;
-            this.spDocumentosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.spDocumentosDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewCheckBoxColumn1});
-            this.spDocumentosDataGridView.DataSource = this.spDocumentosBindingSource;
-            this.spDocumentosDataGridView.Location = new System.Drawing.Point(206, 282);
-            this.spDocumentosDataGridView.Name = "spDocumentosDataGridView";
-            this.spDocumentosDataGridView.Size = new System.Drawing.Size(280, 38);
-            this.spDocumentosDataGridView.TabIndex = 21;
-            this.spDocumentosDataGridView.Visible = false;
-            this.spDocumentosDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.spDocumentosDataGridView_CellContentClick);
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "DocDescripcion";
-            this.dataGridViewTextBoxColumn1.HeaderText = "DocumentoDescripcion";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewCheckBoxColumn1
-            // 
-            this.dataGridViewCheckBoxColumn1.DataPropertyName = "DocEstado";
-            this.dataGridViewCheckBoxColumn1.HeaderText = "DocumentoEstado";
-            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
-            this.dataGridViewCheckBoxColumn1.Width = 200;
             // 
             // spDocumentosBindingSource
             // 
@@ -1513,12 +1403,81 @@
             this.label21.TabIndex = 36;
             this.label21.Text = "Instituto Francisco Morazán";
             // 
-            // dataGridViewTextBoxColumn2
+            // spDocumentosDataGridView
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "DocId";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Número";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 60;
+            this.spDocumentosDataGridView.AllowUserToAddRows = false;
+            this.spDocumentosDataGridView.AllowUserToDeleteRows = false;
+            this.spDocumentosDataGridView.AutoGenerateColumns = false;
+            this.spDocumentosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.spDocumentosDataGridView.DataSource = this.spDocumentosBindingSource;
+            this.spDocumentosDataGridView.Location = new System.Drawing.Point(206, 282);
+            this.spDocumentosDataGridView.Name = "spDocumentosDataGridView";
+            this.spDocumentosDataGridView.Size = new System.Drawing.Size(280, 38);
+            this.spDocumentosDataGridView.TabIndex = 21;
+            this.spDocumentosDataGridView.Visible = false;
+           
+            // 
+            // dataGridViewCheckBoxColumn1
+            // 
+            this.dataGridViewCheckBoxColumn1.DataPropertyName = "DocEstado";
+            this.dataGridViewCheckBoxColumn1.HeaderText = "DocumentoEstado";
+            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
+            this.dataGridViewCheckBoxColumn1.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "DocDescripcion";
+            this.dataGridViewTextBoxColumn1.HeaderText = "DocumentoDescripcion";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.Azure;
+            this.button7.FlatAppearance.BorderColor = System.Drawing.SystemColors.HotTrack;
+            this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Location = new System.Drawing.Point(428, 64);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(75, 45);
+            this.button7.TabIndex = 19;
+            this.button7.Text = "Guardar Documento";
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(156, 67);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(95, 13);
+            this.label19.TabIndex = 20;
+            // 
+            // textBox15
+            // 
+            this.textBox15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.textBox15.Location = new System.Drawing.Point(159, 89);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(150, 20);
+            this.textBox15.TabIndex = 21;
+        
+            this.textBox15.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox15_KeyPress);
+            // 
+            // documentosDataGridView
+            // 
+            this.documentosDataGridView.AutoGenerateColumns = false;
+            this.documentosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.documentosDataGridView.DataSource = this.documentosBindingSource;
+            this.documentosDataGridView.Location = new System.Drawing.Point(159, 115);
+            this.documentosDataGridView.Name = "documentosDataGridView";
+            this.documentosDataGridView.Size = new System.Drawing.Size(344, 220);
+            this.documentosDataGridView.TabIndex = 21;
+            this.documentosDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.documentosDataGridView_CellContentClick);
+            // 
+            // dataGridViewCheckBoxColumn2
+            // 
+            this.dataGridViewCheckBoxColumn2.DataPropertyName = "DocEstado";
+            this.dataGridViewCheckBoxColumn2.HeaderText = "Estado";
+            this.dataGridViewCheckBoxColumn2.Name = "dataGridViewCheckBoxColumn2";
             // 
             // dataGridViewTextBoxColumn3
             // 
@@ -1527,11 +1486,12 @@
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.Width = 200;
             // 
-            // dataGridViewCheckBoxColumn2
+            // dataGridViewTextBoxColumn2
             // 
-            this.dataGridViewCheckBoxColumn2.DataPropertyName = "DocEstado";
-            this.dataGridViewCheckBoxColumn2.HeaderText = "Estado";
-            this.dataGridViewCheckBoxColumn2.Name = "dataGridViewCheckBoxColumn2";
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "DocId";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Número";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 60;
             // 
             // FichaMatricula
             // 
@@ -1576,12 +1536,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.spModalidadesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spEstadoMatriculaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spMostrarInstitutoBindingSource)).EndInit();
-            this.tabPage4.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.documentosDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.documentosBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spDocumentosDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spDocumentosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spLugarInstitutoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spDepartamentosBindingSource1)).EndInit();
@@ -1595,6 +1550,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.spCursoModalidad2BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spDocumentosDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.documentosDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1642,12 +1599,10 @@
         private System.Windows.Forms.ComboBox spNacionalidadComboBox;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.BindingSource spOcupacionBindingSource;
         private desarrolloDataSetTableAdapters.SpOcupacionTableAdapter spOcupacionTableAdapter;
         private System.Windows.Forms.BindingSource spRelacionBindingSource;
         private desarrolloDataSetTableAdapters.spRelacionTableAdapter spRelacionTableAdapter;
-        private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.TextBox textBox14;
@@ -1691,9 +1646,6 @@
         // private desarrolloDataSet1TableAdapters.SCursoxModalidadTableAdapter sCursoxModalidadTableAdapter;
         private System.Windows.Forms.BindingSource spDepartamentosBindingSource1;
         private desarrolloDataSet1TableAdapters.spDepartamentosTableAdapter spDepartamentosTableAdapter1;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Button button7;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Label label23;
@@ -1708,7 +1660,6 @@
         private System.Windows.Forms.BindingSource spSexoBindingSource1;
         private System.Windows.Forms.ComboBox spOcupacionComboBox;
         private System.Windows.Forms.BindingSource spOcupacionBindingSource2;
-        private System.Windows.Forms.DataGridView spDocumentosDataGridView;
         private System.Windows.Forms.BindingSource spEstadoMatriculaBindingSource;
         private desarrolloDataSet1TableAdapters.SpEstadoMatriculaTableAdapter spEstadoMatriculaTableAdapter;
         private System.Windows.Forms.ComboBox spEstadoMatriculaComboBox;
@@ -1726,7 +1677,6 @@
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.BindingSource documentosBindingSource;
         private desarrolloDataSet1TableAdapters.DocumentosTableAdapter documentosTableAdapter;
-        private System.Windows.Forms.DataGridView documentosDataGridView;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label28;
@@ -1736,14 +1686,19 @@
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridView spDocumentosDataGridView;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.DataGridView documentosDataGridView;
         private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
 
     }
 }

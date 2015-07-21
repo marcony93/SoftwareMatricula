@@ -62,10 +62,7 @@ namespace General
             this.spTelefonosTableAdapter.Fill(this.desarrolloDataSet1.spTelefonos, label2.Text);
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void spTelefonosDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {

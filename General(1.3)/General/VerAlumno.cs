@@ -57,11 +57,7 @@ namespace General
             textBox2.Clear();
         }
 
-        private void spVerAlumnoDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-         
-            
-        }
+   
 
         private void spVerAlumnoDataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -83,14 +79,8 @@ namespace General
             LogIn.solo13Numeros(textBox2);
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
+     
 
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
+     
     }
 }

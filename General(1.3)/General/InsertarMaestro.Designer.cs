@@ -201,7 +201,7 @@
             this.textBox1.Size = new System.Drawing.Size(120, 20);
             this.textBox1.TabIndex = 11;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+            
             // 
             // textBox2
             // 
@@ -369,7 +369,7 @@
             this.spSexoComboBox.Size = new System.Drawing.Size(100, 21);
             this.spSexoComboBox.TabIndex = 23;
             this.spSexoComboBox.ValueMember = "SexNombre";
-            this.spSexoComboBox.SelectedIndexChanged += new System.EventHandler(this.spSexoComboBox_SelectedIndexChanged);
+            
             // 
             // label14
             // 

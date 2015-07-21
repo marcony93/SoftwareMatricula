@@ -204,22 +204,6 @@ namespace General
         }
 
      
-        private void fillToolStripButton_Click(object sender, EventArgs e)
-        {
-         
-        }
-
-        private void nacionalidad_NacIdComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-      
-
-        private void fillToolStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
@@ -233,11 +217,6 @@ namespace General
             }
         }
 
-        private void alumLugarTrabajoLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
             if (radioButton1.Checked)
@@ -248,16 +227,6 @@ namespace General
                 label2.Visible = true;
                 alestadotrabajo = radioButton1.Text;
             }
-        }
-
-        private void tabPage2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void encdoIdLabel_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void encdoIdTextBox_TextChanged(object sender, EventArgs e)
@@ -530,10 +499,7 @@ namespace General
             {
                 try
                 {
-                    // agregar.spModificarAlumno2(alumNombre1TextBox.Text, alumNombre2TextBox.Text, alumApellido1TextBox.Text, alumApellido2TextBox.Text, alumIdTextBox.Text, Convert.ToInt32(spDepartamentosComboBox.SelectedValue), alumFechaNacDateTimePicker.Value, Convert.ToInt32(spSexoComboBox.SelectedValue), Convert.ToInt32(tipoSangreComboBox.SelectedValue),
-                    //Convert.ToInt32(spEstadoCivilComboBox.SelectedValue), alumDireccionTextBox.Text, alestadotrabajo, textbox1.Text, comboBox1.Text, encdoNombre1TextBox.Text, encdoNombre2TextBox.Text, encdoApellido1TextBox.Text,
-                    //  encdoApellido2TextBox.Text, encdoIdTextBox.Text, encdoFechaNacDateTimePicker.Value, Convert.ToInt32(spSexoComboBox1.SelectedValue), Convert.ToInt32(spOcupacionComboBox.SelectedValue), Convert.ToInt32(spRelacionComboBox.SelectedValue), Convert.ToInt32(spEstadoMatriculaComboBox.SelectedValue),
-                    //    Convert.ToInt32(spModalidadesComboBox.SelectedValue), Convert.ToInt32(spMostrarInstituto2ComboBox.SelectedValue), spCursoModalidad2ComboBox.SelectedValue.ToString(),comboBox2.Text);
+                   
                     agregar.spModificarAlumno2(alnombre1, alnombre2, alnombre3, alnombre4, alid, aldepartamento, alfechanacimiento, alsexo, altipodesangre, alestadocivil,
                       alldireccion, alestadotrabajo, allugardetrabajo, alhorariodetrabajo, encanombre1, encanombre2, encanombre3, encanombre4, encaid, encafechanacimiento,
                         encaSexo, encaOcupacion, encarelacion, alestadomatricula, almodalidad, alinstituto, alcurso.ToString(), alseccion);
@@ -617,35 +583,12 @@ namespace General
             alseccion = comboBox1.Text;
         }
 
-        private void label22_Click(object sender, EventArgs e)
-        {
-
-        }
+     
 
         private void button5_Click(object sender, EventArgs e)
         {
             Form Telefono = new Telefono();
             Telefono.Show();
-        }
-
-        private void alumFechaNacLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void nacionalidad_NacIdLabel2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cursoLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void fillToolStripButton_Click_1(object sender, EventArgs e)

@@ -157,10 +157,7 @@ namespace General
 
         }
 
-        private void spSexoComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -198,11 +195,7 @@ namespace General
                     e.KeyChar = e.KeyChar.ToString().ToLower().ToCharArray()[0];
         }
 
-        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
-        {
-          
-        }
-
+      
         private void label1_Click(object sender, EventArgs e)
         {
 

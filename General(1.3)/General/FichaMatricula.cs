@@ -30,7 +30,6 @@ namespace General
         string direccion;
         string lugarTrabajo;
         string estadotrabajo;
-        string lugartrabajo;
         string horariotrabajo;
         int sexo;
         int estadocivil;
@@ -53,7 +52,7 @@ namespace General
         int curso;
         string seccion;
       
-        string TelefonoEnca;
+       // string TelefonoEnca;
         
         public FichaMatricula()
         {
@@ -196,16 +195,11 @@ namespace General
             Nacionalidad.Show();
         }
 
-        private void label19_Click(object sender, EventArgs e)
-        {
-
-        }
-
+       
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
             
 
-            //label12.Text = (Convert.ToInt32(DateTime.Today.Year) - Convert.ToInt32(dateTimePicker1.Value.Year)).ToString();
             FechaNacimiento = dateTimePicker1.Value;
             
         }
@@ -320,23 +314,9 @@ namespace General
            Telefono.Show();
         }
 
-        private void fillToolStripButton_Click(object sender, EventArgs e)
-        {
-            try
-            {
-               // this.sCursoxModalidadTableAdapter.Fill(this.desarrolloDataSet1.SCursoxModalidad, parametroToolStripTextBox.Text);
-            }
-            catch (System.Exception ex)
-            {
-                System.Windows.Forms.MessageBox.Show(ex.Message);
-            }
+     
 
-        }
-
-        private void spModalidadComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-           // this.sCursoxModalidadTableAdapter.Fill(desarrolloDataSet1.SCursoxModalidad, spModalidadComboBox.Text);
-        }
+     
 
         private void spNacionalidadComboBox_Click(object sender, EventArgs e)
         {
@@ -388,10 +368,7 @@ namespace General
             }
         }
 
-        private void textBox15_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+   
 
         private void textBox15_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -486,7 +463,6 @@ namespace General
             catch (SqlException)
             {
                 
-                throw;
             }
 
 
@@ -518,24 +494,7 @@ namespace General
                 }
               
             }
-            //int i=0;
-            //for (i = 0; i < documentosDataGridView.Rows.Count; i++)
-            //    {
-
-            //        z = documentosDataGridView.Rows[i].Cells[0].Value.ToString();
-            //        y = Convert.ToInt32(comboBox1.SelectedValue);
-            //        if (this.documentosDataGridView.Rows[i].Cells[2].Value ==  check.TrueValue)
-            //        {
-            //            QTA.actporalum(y, z);
-            //            x = 1;
-            //        }
-
-           // foreach (DataGridViewRow row in documentosDataGridView.Rows)
-           // {
-                //this.voluntariosDataGridView.Rows[i].Cells[8].Value ==  check.TrueValue
-               // if(row.Cells[2].se == check )
-               // Agregar.IngresarDocumentos(DateTime.Today.Year.ToString(),alumnoid.ToString(), row.Cells[1]));
-           // }
+         
            
         }
 
@@ -546,7 +505,7 @@ namespace General
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            horariotrabajo=comboBox1.Text;
+            horariotrabajo = comboBox1.Text;
             
         }
 
@@ -622,10 +581,7 @@ namespace General
             
         }
 
-        private void spDocumentosDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            
-        }
+        
 
         private void spRelacionComboBox_Click_1(object sender, EventArgs e)
         {
@@ -657,10 +613,7 @@ namespace General
             curso = Convert.ToInt32(spCursoModalidad2ComboBox.SelectedValue);
         }
 
-        private void spCursoModalidad2ComboBox_Click(object sender, EventArgs e)
-        {
-       
-        }
+     
 
         private void spEstadoMatriculaComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -672,10 +625,7 @@ namespace General
             instituto = Convert.ToInt32(spMostrarInstitutoComboBox.SelectedValue);
         }
 
-        private void spLugarInstitutoComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-           
-        }
+     
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -692,16 +642,9 @@ namespace General
             departamento = Convert.ToInt32(spDepartamentosComboBox.SelectedValue);
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            
+      
 
-        }
-
-        private void textBox5_KeyPress(object sender, KeyPressEventArgs e)
-        {
-
-        }
+  
 
         private void documentosDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -711,18 +654,6 @@ namespace General
                 if (documentosDataGridView.Rows[e.RowIndex].Cells[1].Selected)
                     documentosDataGridView.ReadOnly = false;
         }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lax_Click(object sender, EventArgs e)
-        {
-
-        }
-
-       
 
       
       

@@ -241,7 +241,7 @@
             alumFechaNacLabel.Size = new System.Drawing.Size(122, 15);
             alumFechaNacLabel.TabIndex = 12;
             alumFechaNacLabel.Text = "Fecha de nacimiento";
-            alumFechaNacLabel.Click += new System.EventHandler(this.alumFechaNacLabel_Click);
+         
             // 
             // nacionalidad_NacIdLabel
             // 
@@ -321,7 +321,7 @@
             encdoIdLabel.Size = new System.Drawing.Size(123, 15);
             encdoIdLabel.TabIndex = 5;
             encdoIdLabel.Text = "Numero de identidad";
-            encdoIdLabel.Click += new System.EventHandler(this.encdoIdLabel_Click);
+          
             // 
             // encdoFechaNacLabel
             // 
@@ -770,7 +770,7 @@
             this.nacionalidad_NacIdLabel2.Size = new System.Drawing.Size(100, 23);
             this.nacionalidad_NacIdLabel2.TabIndex = 32;
             this.nacionalidad_NacIdLabel2.Text = "label1";
-            this.nacionalidad_NacIdLabel2.Click += new System.EventHandler(this.nacionalidad_NacIdLabel2_Click);
+       
             // 
             // label23
             // 
@@ -791,7 +791,7 @@
             this.label22.Size = new System.Drawing.Size(18, 15);
             this.label22.TabIndex = 44;
             this.label22.Text = "Si";
-            this.label22.Click += new System.EventHandler(this.label22_Click);
+       
             // 
             // radioButton2
             // 
@@ -828,7 +828,7 @@
             this.label10.Size = new System.Drawing.Size(49, 15);
             this.label10.TabIndex = 41;
             this.label10.Text = "Trabaja";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
+           
             // 
             // label11
             // 
@@ -1052,7 +1052,7 @@
             this.cursoLabel1.Size = new System.Drawing.Size(100, 23);
             this.cursoLabel1.TabIndex = 7;
             this.cursoLabel1.Text = "label4";
-            this.cursoLabel1.Click += new System.EventHandler(this.cursoLabel1_Click);
+            
             // 
             // modalidad_ModIdLabel1
             // 
@@ -1465,7 +1465,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.spNacionalidadBindingSource)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.spMostrarTelefonoAlumnosBindingSource)).EndInit();
+           // ((System.ComponentModel.ISupportInitialize)(this.spMostrarTelefonoAlumnosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCursoModalidad2BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spModalidadesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spMostrarInstituto2BindingSource)).EndInit();

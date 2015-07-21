@@ -77,9 +77,6 @@ namespace General
             }
         }
 
-        private void spMostrarInstitutoDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+      
     }
 }
