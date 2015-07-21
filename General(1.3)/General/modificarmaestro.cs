@@ -38,10 +38,7 @@ namespace General
 
         }
 
-        private void column1Label_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -81,11 +78,6 @@ namespace General
             }
         }
 
-        private void column2TextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void modificarmaestro_Load(object sender, EventArgs e)
         {
             this.selectProfesorTableAdapter.Fill(this.desarrolloDataSetmcha.SelectProfesor, buscarmaestro.Idmaestro.ToString());
@@ -99,9 +91,7 @@ namespace General
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //Form general = new VentanaGeneralVistaSecretaria();
-            //new buscarmaestro().Show();
-            //this.Hide();
+         
             Form buscarmaestro = new buscarmaestro();
             buscarmaestro.Show();
             buscarmaestro.MdiParent = VentanaGeneralVistaSecretaria.VentanaSecretaria;
@@ -109,10 +99,7 @@ namespace General
             buscarmaestro.BringToFront();
         }
 
-        private void mstroEmailTextBox_TextChanged(object sender, EventArgs e)
-        {
-           // InsertarMaestro.ValidarEspacios(mstroEmailTextBox, errorProvider1);
-        }
+       
 
         private void fillToolStripButton_Click_1(object sender, EventArgs e)
         {

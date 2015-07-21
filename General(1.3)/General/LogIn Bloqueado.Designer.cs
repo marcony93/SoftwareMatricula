@@ -65,7 +65,7 @@
             this.label1.Size = new System.Drawing.Size(161, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "Se ha bloqueado el usuario.";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+          
             // 
             // textBox1
             // 

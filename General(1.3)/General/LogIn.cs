@@ -19,7 +19,7 @@ namespace General
         public static string usuarioprofesor="";
         QueriesTableAdapter QTA = new QueriesTableAdapter();
         public static int intentos;
-        //QueriesTableAdapter QTA = new QueriesTableAdapter();
+        
         public LogIn()
         {
 

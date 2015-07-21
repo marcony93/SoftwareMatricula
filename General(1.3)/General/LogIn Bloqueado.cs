@@ -20,10 +20,6 @@ namespace General
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -81,14 +77,7 @@ namespace General
 
         }
 
-      /*  private void fillToolStripButton_Click(object sender, EventArgs e)
-        {
-try {
-    this.autentificacionTableAdapter.Fill(this.desarrolloDataSet.autentificacion, param1ToolStripTextBox.Text, param2ToolStripTextBox.Text);
-}
-catch (System.Exception ex) {
-    System.Windows.Forms.MessageBox.Show(ex.Message);
-}*/
+   
         
         }
 }

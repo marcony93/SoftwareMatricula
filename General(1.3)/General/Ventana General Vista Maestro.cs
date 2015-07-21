@@ -23,10 +23,7 @@ namespace General
             
         }
 
-        private void nuevoMaestroToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-          
-        }
+     
 
         private void subirNotasToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -39,8 +36,7 @@ namespace General
 
         private void cambiarMiContraseñaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //Form vent = new modificarcontrasena();
-           // vent.Show();
+          
             Form modificarcontrasena = new modificarcontrasena();
             modificarcontrasena.Show();
             modificarcontrasena.MdiParent = this;
@@ -63,5 +59,7 @@ namespace General
         {
             new ReporteHorarioMaestro().Show();
         }
+
+     
     }
 }

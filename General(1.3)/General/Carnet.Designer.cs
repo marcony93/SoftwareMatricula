@@ -134,7 +134,7 @@
             this.label6.Size = new System.Drawing.Size(228, 22);
             this.label6.TabIndex = 30;
             this.label6.Text = "Instituto Francisco Morazán";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+            
             // 
             // pictureBox3
             // 
