@@ -632,10 +632,7 @@ namespace General
             seccion = comboBox2.Text;
         }
 
-        private void groupBox4_Enter(object sender, EventArgs e)
-        {
-
-        }
+   
 
         private void spDepartamentosComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {

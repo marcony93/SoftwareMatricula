@@ -1024,7 +1024,7 @@
             this.groupBox4.TabIndex = 1;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Datos Académicos";
-            this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
+            
             // 
             // comboBox2
             // 
