@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using General.desarrolloDataSetEliaTableAdapters;
-
 namespace General
 {
     public partial class SubirNotas : Form
@@ -20,26 +19,18 @@ namespace General
         {
             InitializeComponent();
         }
-
         private void SubirNotas_Load(object sender, EventArgs e)
         {
             // TODO: esta línea de código carga datos en la tabla 'desarrolloDataSetElia.SPCursoB' Puede moverla o quitarla según sea necesario.
             this.sPCursoBTableAdapter.Fill(this.desarrolloDataSetElia.SPCursoB);
             cursoIdTextBox.Text = "1";
-         
             //TODO: esta línea de código carga datos en la tabla 'desarrolloDataSetElia.SPCursoB' Puede moverla o quitarla según sea necesario.
             this.sPSeccionBTableAdapter.Fill(this.desarrolloDataSetElia.SPSeccionB, Convert.ToInt32(cursoIdTextBox.Text));
-            this.sPMateriaBTableAdapter.Fill(this.desarrolloDataSetElia.SPMateriaB, Convert.ToInt32(cursoIdTextBox.Text));
-           
-            
-            
+            this.sPMateriaBTableAdapter.Fill(this.desarrolloDataSetElia.SPMateriaB, Convert.ToInt32(cursoIdTextBox.Text)); 
             button1.Enabled = false;
         }
-
-  
         private void button2_Click(object sender, EventArgs e)
         {
-
             foreach (DataGridViewRow row in sPAlumnosXClaseBDataGridView.Rows)
             {
                 double esNumero;
@@ -49,11 +40,7 @@ namespace General
                     row.Cells[2].Value = ' ';
                     row.Cells[3].Value = ' ';
                 }
-
             }
-
-
-
             if (validar == 0)
             {
                 foreach (DataGridViewRow row in sPAlumnosXClaseBDataGridView.Rows)
@@ -68,7 +55,6 @@ namespace General
                 validar = 0;
             }
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             this.sPAlumnosXClaseBTableAdapter.Fill(this.desarrolloDataSetElia.SPAlumnosXClaseB, Convert.ToInt32(sPCursoBComboBox.SelectedValue.ToString()));
@@ -78,24 +64,16 @@ namespace General
                 row.Cells[3].Value = var.SPExamenPorPArcialB(row.Cells[0].Value.ToString(), sPMateriaBComboBox.SelectedValue.ToString(), comboBox1.Text.ToString(), sPSeccionBComboBox.SelectedValue.ToString());
             }
             button1.Enabled = false;
-
         }
-
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             button1.Enabled = true;
         }
-
-   
-
         private void cursoIdTextBox_TextChanged_1(object sender, EventArgs e)
         {
             this.sPSeccionBTableAdapter.Fill(this.desarrolloDataSetElia.SPSeccionB, Convert.ToInt32(cursoIdTextBox.Text));
             this.sPMateriaBTableAdapter.Fill(this.desarrolloDataSetElia.SPMateriaB, Convert.ToInt32(cursoIdTextBox.Text));
             this.sPAlumnosXClaseBTableAdapter.Fill(this.desarrolloDataSetElia.SPAlumnosXClaseB, Convert.ToInt32(cursoIdTextBox.Text));
-
         }
-
-
     }
 }

@@ -10,10 +10,8 @@ using System.Windows.Forms;
 using System.Text.RegularExpressions;
 using System.Data.SqlClient;
 using General.desarrolloDataSetTableAdapters;
-
 namespace General
 {
-    
     public partial class LogIn : Form
     {
         public static string usuarioprofesor="";
@@ -22,27 +20,20 @@ namespace General
         
         public LogIn()
         {
-
             InitializeComponent();
-
         }
-
         //FUNCIONES NECESARIAS
         public static int solo13Numeros(TextBox parametro)
         {
             int valor = 0;
-
             double esNumero;
             if (!string.IsNullOrEmpty(parametro.Text))
             {
                 if (!double.TryParse(parametro.Text, out esNumero))
                 {
-
                     valor = 1;
                     parametro.Text = parametro.Text.Remove(parametro.TextLength - 1);
                     parametro.SelectionStart = parametro.TextLength;
-
-
                 }
                 else if (Convert.ToInt32(parametro.TextLength) > 13)
                 {
@@ -50,21 +41,14 @@ namespace General
                     parametro.Text = parametro.Text.Remove(parametro.TextLength - 1);
                     parametro.SelectionStart = parametro.TextLength;
                 }
-
-
-
-                else if (!IsAlphaNumeric(parametro.Text))
+               else if (!IsAlphaNumeric(parametro.Text))
                 {
                     valor = 3;
                     parametro.Text = parametro.Text.Remove(parametro.TextLength - 1);
                     parametro.SelectionStart = parametro.TextLength;
                 }
-
-
-
                 else if (Convert.ToInt32(parametro.TextLength) == 13)
                     parametro.BackColor = Color.White;
-
                 else if (Convert.ToInt32(parametro.TextLength) < 13)
                     valor = 2;
             }
@@ -112,11 +96,9 @@ namespace General
                     error.SetError(valor, "Solo se aceptan letras");
                     break;
                 }
-
             }
             else
                 error.SetError(valor, "");
-
         }
         public static void SololetrasyNumerosConMensaje(TextBox valor, ErrorProvider error)
         {
@@ -130,7 +112,6 @@ namespace General
                     error.SetError(valor, "No se aceptan caracteres especiales en este campo ");
                     break;
                 }
-
             }
             else
                 error.SetError(valor, "");
@@ -151,9 +132,6 @@ namespace General
                 retorno = 1;
 
             return retorno;
-
-
-
         }
         public static void ValorMaximoDeCaja(TextBox caja, int maximo, ErrorProvider mensaje)
         {
@@ -163,17 +141,8 @@ namespace General
                 caja.SelectionStart = caja.TextLength;
                 mensaje.SetError(caja, "Acepta un maximo de " + maximo + " valores");
             }
-           
-
         }
-
-            
-        
-
-
-
-        //FINALIZACION DE FUNCIONES
-
+       //FINALIZACION DE FUNCIONES
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             SoloLetrasConMensaje(textBox1, errorProvider1);
@@ -184,7 +153,6 @@ namespace General
             SololetrasyNumerosConMensaje(textBox2, errorProvider1);
             ValorMaximoDeCaja(textBox2, 25, errorProvider1);
         }
-
         private void button1_Click_1(object sender, EventArgs e)
         {
             usuarioprofesor = textBox1.Text;
@@ -196,15 +164,10 @@ namespace General
                 
                 this.Hide();
             }
-                 
-           
-
            else if (validarboton(textBox1, textBox2, errorProvider1) == 1)
-            {
-
-                try
+            {   
+               try
                 {
-
                     this.autentificacionTableAdapter.Fill(this.desarrolloDataSet.autentificacion, textBox1.Text, textBox2.Text);
                     switch (mstroTipoLabel1.Text)
                     {
@@ -223,57 +186,35 @@ namespace General
                     }
                  }
                 catch (SqlException)
-                {
-
-                    
-                }
+                {}
                 if (intentos == 5)
                 {
                     QTA.cambiarbloqueopositivo(usuarioprofesor);
-
-                }
-                    
+                }     
             }
-
-
         }
-
         private void LogIn_Load(object sender, EventArgs e)
         {
             // TODO: esta línea de código carga datos en la tabla 'desarrolloDataSet.Alumno' Puede moverla o quitarla según sea necesario.
-           // this.alumnoTableAdapter.Fill(this.desarrolloDataSet.Alumno);
              intentos = 0;
         }
-
         private void fillToolStripButton_Click(object sender, EventArgs e)
         {
             try
-            {
-                
-            }
+            { }
             catch (System.Exception ex)
             {
                 System.Windows.Forms.MessageBox.Show(ex.Message);
             }
-
         }
-
         private void fillToolStripButton_Click_1(object sender, EventArgs e)
         {
             try
-            {
-                
-            }
+            { }
             catch (System.Exception ex)
             {
                 System.Windows.Forms.MessageBox.Show(ex.Message);
             }
-
         }
-
-      
-
-
     }
-
 }

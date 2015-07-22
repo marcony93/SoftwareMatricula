@@ -187,8 +187,6 @@
             this.Name = "VentanaGeneralVistaSecretaria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ventana general de administración";
-            this.Load += new System.EventHandler(this.FormGeneral_Load);
-            this.Click += new System.EventHandler(this.VentanaGeneralVistaSecretaria_Click);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

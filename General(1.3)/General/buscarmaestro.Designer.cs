@@ -360,7 +360,7 @@
             this.MinimizeBox = false;
             this.Name = "buscarmaestro";
             this.Text = "Buscar Maestro";
-            this.Load += new System.EventHandler(this.buscarmaestro_Load);
+
             ((System.ComponentModel.ISupportInitialize)(this.desarrolloDataSetmcha)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.buscarmaestroBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.buscarmaestroDataGridView)).EndInit();

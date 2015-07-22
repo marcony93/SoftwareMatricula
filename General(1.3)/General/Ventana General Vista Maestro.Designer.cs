@@ -127,7 +127,6 @@
             this.Name = "Ventana_General_Vista_Maestro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ventana general del maestro";
-            this.Load += new System.EventHandler(this.Ventana_General_Vista_Maestro_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

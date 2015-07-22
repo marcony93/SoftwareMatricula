@@ -19,7 +19,6 @@ namespace General
             InitializeComponent();
         }
         public int curso;
-
         private void AsignarClases_Load(object sender, EventArgs e)
         {
             // TODO: esta línea de código carga datos en la tabla 'desarrolloDataSetWilmer.SpDia' Puede moverla o quitarla según sea necesario.
@@ -32,30 +31,22 @@ namespace General
             this.spModalidadTableAdapter.Fill(this.desarrolloDataSetWilmer.spModalidad);
             // TODO: esta línea de código carga datos en la tabla 'desarrolloDataSetWilmer.spMaestro' Puede moverla o quitarla según sea necesario.
             this.spMaestroTableAdapter.Fill(this.desarrolloDataSetWilmer.spMaestro);
-
             this.spCursoTableAdapter.Fill(this.desarrolloDataSetWilmer.spCurso, new System.Nullable<int>(((int)(System.Convert.ChangeType(spModalidadComboBox.SelectedValue, typeof(int))))));
-
-           this.spSeccionesTableAdapter.Fill(this.desarrolloDataSetWilmer.spSecciones, new System.Nullable<int>(((int)(System.Convert.ChangeType(spCursoComboBox.SelectedValue, typeof(int))))), DateTime.Today.Year.ToString());
-
+            this.spSeccionesTableAdapter.Fill(this.desarrolloDataSetWilmer.spSecciones, new System.Nullable<int>(((int)(System.Convert.ChangeType(spCursoComboBox.SelectedValue, typeof(int))))), DateTime.Today.Year.ToString());
             this.spMateriaTableAdapter.Fill(this.desarrolloDataSetWilmer.spMateria, new System.Nullable<int>(((int)(System.Convert.ChangeType(spModalidadComboBox.SelectedValue.ToString(), typeof(int))))), new System.Nullable<int>(((int)(System.Convert.ChangeType(spCursoComboBox.SelectedValue.ToString(), typeof(int))))));
             this.spmostrarplanillaTableAdapter.Fill(this.desarrolloDataSetWilmer.spmostrarplanilla, spMaestroComboBox.SelectedValue.ToString());
-
         }
-
         private void spMaestroComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             this.spmostrarplanillaTableAdapter.Fill(this.desarrolloDataSetWilmer.spmostrarplanilla, spMaestroComboBox.SelectedValue.ToString());
 
         }
-
         private void spModalidadComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             this.spCursoTableAdapter.Fill(this.desarrolloDataSetWilmer.spCurso, new System.Nullable<int>(((int)(System.Convert.ChangeType(spModalidadComboBox.SelectedValue, typeof(int))))));
             this.spSeccionesTableAdapter.Fill(this.desarrolloDataSetWilmer.spSecciones, new System.Nullable<int>(((int)(System.Convert.ChangeType(spCursoComboBox.SelectedValue, typeof(int))))), DateTime.Today.Year.ToString());
             this.spMateriaTableAdapter.Fill(this.desarrolloDataSetWilmer.spMateria, new System.Nullable<int>(((int)(System.Convert.ChangeType(spModalidadComboBox.SelectedValue.ToString(), typeof(int))))), new System.Nullable<int>(((int)(System.Convert.ChangeType(spCursoComboBox.SelectedValue.ToString(), typeof(int))))));
-            
         }
-
         private void spCursoComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (spCursoComboBox.SelectedValue != null)
@@ -63,9 +54,7 @@ namespace General
                 this.spSeccionesTableAdapter.Fill(this.desarrolloDataSetWilmer.spSecciones, new System.Nullable<int>(((int)(System.Convert.ChangeType(spCursoComboBox.SelectedValue, typeof(int))))), DateTime.Today.Year.ToString());
                 this.spMateriaTableAdapter.Fill(this.desarrolloDataSetWilmer.spMateria, new System.Nullable<int>(((int)(System.Convert.ChangeType(spModalidadComboBox.SelectedValue.ToString(), typeof(int))))), new System.Nullable<int>(((int)(System.Convert.ChangeType(spCursoComboBox.SelectedValue.ToString(), typeof(int))))));
             }
-            
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             try
@@ -76,14 +65,9 @@ namespace General
             }
             catch (SqlException)
             {
-
                 MessageBox.Show("Esta asignacion ya exite.... Por favor agregue otra");
             }
         }
-
-       
-        }
-
-              
      }
+}
 

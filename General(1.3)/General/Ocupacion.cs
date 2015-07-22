@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using General.desarrolloDataSet1TableAdapters;
-
 namespace General
 {
     public partial class Ocupacion : Form
@@ -20,7 +19,6 @@ namespace General
         {
             InitializeComponent();
         }
-
         private void ocupacionBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             this.Validate();
@@ -28,22 +26,17 @@ namespace General
             this.tableAdapterManager.UpdateAll(this.desarrolloDataSet);
 
         }
-
         private void Ocupacion_Load(object sender, EventArgs e)
         {
             // TODO: esta línea de código carga datos en la tabla 'desarrolloDataSet1.SpOcupacion' Puede moverla o quitarla según sea necesario.
-            this.spOcupacionTableAdapter.Fill(this.desarrolloDataSet1.SpOcupacion);
-            
+            this.spOcupacionTableAdapter.Fill(this.desarrolloDataSet1.SpOcupacion); 
             // TODO: esta línea de código carga datos en la tabla 'desarrolloDataSet.Ocupacion' Puede moverla o quitarla según sea necesario.
             this.ocupacionTableAdapter.Fill(this.desarrolloDataSet.Ocupacion);
-
         }
-
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             LogIn.SoloLetrasConMensaje(textBox1, errorProvider1);
         }
-
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (textBox1.Text.Length == 0)
@@ -52,7 +45,6 @@ namespace General
                 if (textBox1.Text.Length > 0)
                     e.KeyChar = e.KeyChar.ToString().ToLower().ToCharArray()[0];
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             try
@@ -60,21 +52,15 @@ namespace General
                 if (!string.IsNullOrWhiteSpace(textBox1.Text))
                 {
                     Agregar.spOcupacion_agregar(textBox1.Text);
-                    this.spOcupacionTableAdapter.Fill(this.desarrolloDataSet1.SpOcupacion);
-                    
+                    this.spOcupacionTableAdapter.Fill(this.desarrolloDataSet1.SpOcupacion); 
                 }
                 else
                     MessageBox.Show("Tiene que Ingresar una Ocupacion");
             }
             catch (SqlException)
-            {
-
-
-            }
+            {}
             this.spOcupacionTableAdapter.Fill(this.desarrolloDataSet1.SpOcupacion);
         }
-
-  
         private void spOcupacionDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             string nom;
@@ -90,15 +76,10 @@ namespace General
                             MessageBox.Show("Registro eliminado");
                         }
                         this.spOcupacionTableAdapter.Fill(this.desarrolloDataSet1.SpOcupacion);
-
                     }
                     catch (SqlException)
-                    {
-
-                       
-                    }
+                    {  }
                 }
-
             }
         }
     }

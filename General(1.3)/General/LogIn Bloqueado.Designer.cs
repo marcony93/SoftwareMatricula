@@ -254,7 +254,6 @@
             this.Name = "LogIn_Bloqueado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Usuario bloqueado";
-            this.Load += new System.EventHandler(this.LogIn_Bloqueado_Load);
             ((System.ComponentModel.ISupportInitialize)(this.desarrolloDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.autentificacionBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();

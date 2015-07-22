@@ -9,46 +9,25 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using General.desarrolloDataSetmchaTableAdapters;
-
-
 namespace General
 {
 
     public partial class modificarmaestro : Form
     {
-
         QueriesTableAdapter QTA = new QueriesTableAdapter();
         public static int a = 0;
         public modificarmaestro()
         {
-
             InitializeComponent();
         }
-
-        private void fillToolStripButton_Click(object sender, EventArgs e)
-        {
-            try
-            {
-
-            }
-            catch (System.Exception ex)
-            {
-                System.Windows.Forms.MessageBox.Show(ex.Message);
-            }
-
-        }
-
-       
-
         private void button1_Click(object sender, EventArgs e)
         {
             a++;
             if (a == 1)
             {
-
                mstroEmailTextBox.Enabled = true;
                mstroDireccionTextBox.Enabled = true;
-              mstroUsuTextBox.Enabled = true;
+               mstroUsuTextBox.Enabled = true;
                 button1.Text = "guardar";
             }
             else if (a == 2)
@@ -62,70 +41,48 @@ namespace General
                    button1.Text = "modificar";
                     MessageBox.Show("se actualizo con exito");
                     a = 0;
-                    
                 }
                 catch (SqlException)
                 {
-
                     MessageBox.Show("Los Datos no fueron modificados , el usuario no existe ");
                 }
-
-
             }
             else if (a == 0)
-            {
-
-            }
+            { }
         }
-
         private void modificarmaestro_Load(object sender, EventArgs e)
         {
             this.selectProfesorTableAdapter.Fill(this.desarrolloDataSetmcha.SelectProfesor, buscarmaestro.Idmaestro.ToString());
-
         }
-
         private void mstroUsuTextBox_TextChanged(object sender, EventArgs e)
         {
             LogIn.SoloLetrasConMensaje(mstroUsuTextBox, errorProvider1);
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
-         
             Form buscarmaestro = new buscarmaestro();
             buscarmaestro.Show();
             buscarmaestro.MdiParent = VentanaGeneralVistaSecretaria.VentanaSecretaria;
             buscarmaestro.WindowState = FormWindowState.Maximized;
             buscarmaestro.BringToFront();
         }
-
-       
-
         private void fillToolStripButton_Click_1(object sender, EventArgs e)
         {
             try
-            {
-                
-            }
+            {  }
             catch (System.Exception ex)
             {
                 System.Windows.Forms.MessageBox.Show(ex.Message);
             }
-
         }
-
         private void fillToolStripButton_Click_2(object sender, EventArgs e)
         {
             try
-            {
-                
-            }
+            {  }
             catch (System.Exception ex)
             {
                 System.Windows.Forms.MessageBox.Show(ex.Message);
             }
-
         }
-
     }
 }

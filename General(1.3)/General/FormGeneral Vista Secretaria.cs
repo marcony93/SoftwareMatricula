@@ -7,24 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace General
 {
     public partial class VentanaGeneralVistaSecretaria : Form
-    {
-        
+    { 
         public static VentanaGeneralVistaSecretaria VentanaSecretaria = new VentanaGeneralVistaSecretaria();
-        
         public VentanaGeneralVistaSecretaria()
         {
             InitializeComponent();
         }
-
-        private void FormGeneral_Load(object sender, EventArgs e)
-        {
-              
-        }
-
         private void crearCuentaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             InsertarMaestro.VentanaNuevoMaestro.Show();
@@ -32,7 +23,6 @@ namespace General
             InsertarMaestro.VentanaNuevoMaestro.WindowState = FormWindowState.Maximized;
             InsertarMaestro.VentanaNuevoMaestro.BringToFront();                
         }
-
         private void fichaMatriculaToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             Form FichaMatricula = new FichaMatricula();
@@ -40,71 +30,41 @@ namespace General
             FichaMatricula.MdiParent = this;
             FichaMatricula.WindowState = FormWindowState.Maximized;
             FichaMatricula.BringToFront();
-       
         }
-
-        private void verNotasToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void VentanaGeneralVistaSecretaria_Click(object sender, EventArgs e)
-        {
-
-                
-
-        }
-
-        private void horatrioToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-           
-        }
-
         private void alumnosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form reporte = new ReporteAlumno();
            reporte.Show();
         }
-
         private void asignacionesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           // Form ventana = new AsignacionesClases();
-           // ventana.Show();
             Form AsignacionesClases = new AsignarClases();
             AsignacionesClases.Show();
             AsignacionesClases.MdiParent = this;
             AsignacionesClases.WindowState = FormWindowState.Maximized;
             AsignacionesClases.BringToFront();
         }
-
         private void notasToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             Form vent = new ReporteNotas();
             vent.Show();
         }
-
         private void verAlumnoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //Form vent = new VerAlumno();
-           // vent.Show();
             Form FichaMatricula = new VerAlumno();
             FichaMatricula.Show();
             FichaMatricula.MdiParent = this;
             FichaMatricula.WindowState = FormWindowState.Maximized;
             FichaMatricula.BringToFront();
         }
-
         private void modificarCarnetToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //Form vent = new Carnet();
-           // vent.Show();
             Form Carnet = new Carnet();
             Carnet.Show();
             Carnet.MdiParent = this;
             Carnet.WindowState = FormWindowState.Maximized;
             Carnet.BringToFront();
         }
-
         private void actualizarMaestroToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form modificarmaestro = new modificarmaestro();
@@ -113,12 +73,10 @@ namespace General
             modificarmaestro.WindowState = FormWindowState.Maximized;
             modificarmaestro.BringToFront();
         }
-
         private void reporteClasesPorCursoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new ReporteClasesXCurso().Show();
         }
-
         private void comprobanteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new ReporteComprobante().Show();

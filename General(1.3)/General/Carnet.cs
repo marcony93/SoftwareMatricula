@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using General.desarrolloDataSetRobertsonTableAdapters;
 using System.Data.SqlClient;
-
 namespace General
 {
     public partial class Carnet : Form
@@ -18,7 +17,6 @@ namespace General
         {
             InitializeComponent();
         }
-
         private void Carnet_Load(object sender, EventArgs e)
         {
             // TODO: esta línea de código carga datos en la tabla 'desarrolloDataSetRobertson.spcarnet' Puede moverla o quitarla según sea necesario.
@@ -26,7 +24,6 @@ namespace General
             this.reportViewer1.RefreshReport();
             this.reportViewer1.RefreshReport();
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             if (textBox1.Text != "")
@@ -36,28 +33,18 @@ namespace General
                     this.spcarnetTableAdapter.Fill(this.desarrolloDataSetRobertson.spcarnet, textBox1.Text);
                     this.reportViewer1.RefreshReport();
                     this.reportViewer1.RefreshReport();
-
                 }
-
                 catch (SqlException)
                 {
-                    
-                     MessageBox.Show("El Alumno No Existe"); 
+                    MessageBox.Show("El Alumno No Existe");
                 }
             }
             else
                 MessageBox.Show("Ingrese Un Número De Identidad"); 
-            }
-       
-        
-
-
+       }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             LogIn.NumerosConMensaje(textBox1, errorProvider1);
-         
         }
-
-      
     }
 }

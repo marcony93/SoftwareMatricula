@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace General
 {
     public partial class VerAlumno : Form
@@ -17,23 +16,17 @@ namespace General
         {
             InitializeComponent();
         }
-
-       
-
         private void VerAlumno_Load(object sender, EventArgs e)
         {
-            
             textBox1.Enabled = false;
             textBox2.Enabled = false;
             comboBox1.SelectedIndex = 0;
             this.spVerAlumnoTableAdapter.Fill(this.desarrolloDataSet1.SpVerAlumno, textBox1.Text, textBox2.Text, new System.Nullable<int>(((int)(System.Convert.ChangeType(comboBox1.SelectedIndex, typeof(int))))));
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             this.spVerAlumnoTableAdapter.Fill(this.desarrolloDataSet1.SpVerAlumno, textBox1.Text, textBox2.Text, new System.Nullable<int>(((int)(System.Convert.ChangeType(comboBox1.SelectedIndex, typeof(int))))));
         }
-
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (comboBox1.SelectedIndex == 0)
@@ -45,7 +38,6 @@ namespace General
             {
                 textBox1.Enabled = true;
                 textBox2.Enabled = false;
-
             }
             else
                 if (comboBox1.SelectedIndex == 2)
@@ -56,9 +48,6 @@ namespace General
             textBox1.Clear();
             textBox2.Clear();
         }
-
-   
-
         private void spVerAlumnoDataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             if (spVerAlumnoDataGridView.Rows[e.RowIndex].Cells[0].Selected)
@@ -68,19 +57,13 @@ namespace General
                 ModificarAlumno.Show();
             }
         }
-
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             LogIn.SoloLetrasConMensaje(textBox1, errorProvider1);
         }
-
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
             LogIn.solo13Numeros(textBox2);
         }
-
-     
-
-     
     }
 }
