@@ -20,7 +20,7 @@ namespace General
         private void Carnet_Load(object sender, EventArgs e)
         {
             // TODO: esta línea de código carga datos en la tabla 'desarrolloDataSetRobertson.spcarnet' Puede moverla o quitarla según sea necesario.
-            this.spcarnetTableAdapter.Fill(this.desarrolloDataSetRobertson.spcarnet,textBox1.Text);
+            this.spcarnetTableAdapter.Fill(this.desarrolloDataSetRobertson.spcarnet, textBox1.Text);
             this.reportViewer1.RefreshReport();
             this.reportViewer1.RefreshReport();
         }
@@ -40,11 +40,12 @@ namespace General
                 }
             }
             else
-                MessageBox.Show("Ingrese Un Número De Identidad"); 
-       }
+                MessageBox.Show("Ingrese Un Número De Identidad");
+        }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             LogIn.NumerosConMensaje(textBox1, errorProvider1);
         }
     }
 }
+

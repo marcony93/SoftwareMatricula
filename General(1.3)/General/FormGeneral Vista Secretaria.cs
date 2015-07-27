@@ -10,7 +10,7 @@ using System.Windows.Forms;
 namespace General
 {
     public partial class VentanaGeneralVistaSecretaria : Form
-    { 
+    {
         public static VentanaGeneralVistaSecretaria VentanaSecretaria = new VentanaGeneralVistaSecretaria();
         public VentanaGeneralVistaSecretaria()
         {
@@ -21,7 +21,7 @@ namespace General
             InsertarMaestro.VentanaNuevoMaestro.Show();
             InsertarMaestro.VentanaNuevoMaestro.MdiParent = this;
             InsertarMaestro.VentanaNuevoMaestro.WindowState = FormWindowState.Maximized;
-            InsertarMaestro.VentanaNuevoMaestro.BringToFront();                
+            InsertarMaestro.VentanaNuevoMaestro.BringToFront();
         }
         private void fichaMatriculaToolStripMenuItem1_Click(object sender, EventArgs e)
         {
@@ -34,7 +34,7 @@ namespace General
         private void alumnosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form reporte = new ReporteAlumno();
-           reporte.Show();
+            reporte.Show();
         }
         private void asignacionesToolStripMenuItem_Click(object sender, EventArgs e)
         {

@@ -39,7 +39,6 @@ namespace General
         private void spMaestroComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             this.spmostrarplanillaTableAdapter.Fill(this.desarrolloDataSetWilmer.spmostrarplanilla, spMaestroComboBox.SelectedValue.ToString());
-
         }
         private void spModalidadComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -68,6 +67,7 @@ namespace General
                 MessageBox.Show("Esta asignacion ya exite.... Por favor agregue otra");
             }
         }
-     }
+    }
 }
+
 

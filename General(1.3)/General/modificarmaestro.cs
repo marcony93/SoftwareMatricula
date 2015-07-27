@@ -14,40 +14,40 @@ namespace General
 
     public partial class modificarmaestro : Form
     {
-        QueriesTableAdapter QTA = new QueriesTableAdapter();
-        public static int a = 0;
+        QueriesTableAdapter actualizar = new QueriesTableAdapter();
+        public static int contador = 0;
         public modificarmaestro()
         {
             InitializeComponent();
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            a++;
-            if (a == 1)
+            contador++;
+            if (contador == 1)
             {
-               mstroEmailTextBox.Enabled = true;
-               mstroDireccionTextBox.Enabled = true;
-               mstroUsuTextBox.Enabled = true;
+                mstroEmailTextBox.Enabled = true;
+                mstroDireccionTextBox.Enabled = true;
+                mstroUsuTextBox.Enabled = true;
                 button1.Text = "guardar";
             }
-            else if (a == 2)
+            else if (contador == 2)
             {
                 try
                 {
-                    QTA.psmodificarmaestro(mstroIdTextBox.Text, mstroEmailTextBox.Text, mstroDireccionTextBox.Text, mstroUsuTextBox.Text);
+                    actualizar.psmodificarmaestro(mstroIdTextBox.Text, mstroEmailTextBox.Text, mstroDireccionTextBox.Text, mstroUsuTextBox.Text);
                     mstroEmailTextBox.Enabled = false;
-                   mstroDireccionTextBox.Enabled = false;
-                   mstroUsuTextBox.Enabled = false;
-                   button1.Text = "modificar";
+                    mstroDireccionTextBox.Enabled = false;
+                    mstroUsuTextBox.Enabled = false;
+                    button1.Text = "modificar";
                     MessageBox.Show("se actualizo con exito");
-                    a = 0;
+                    contador = 0;
                 }
                 catch (SqlException)
                 {
                     MessageBox.Show("Los Datos no fueron modificados , el usuario no existe ");
                 }
             }
-            else if (a == 0)
+            else if (contador == 0)
             { }
         }
         private void modificarmaestro_Load(object sender, EventArgs e)
@@ -69,7 +69,7 @@ namespace General
         private void fillToolStripButton_Click_1(object sender, EventArgs e)
         {
             try
-            {  }
+            { }
             catch (System.Exception ex)
             {
                 System.Windows.Forms.MessageBox.Show(ex.Message);
@@ -78,7 +78,7 @@ namespace General
         private void fillToolStripButton_Click_2(object sender, EventArgs e)
         {
             try
-            {  }
+            { }
             catch (System.Exception ex)
             {
                 System.Windows.Forms.MessageBox.Show(ex.Message);

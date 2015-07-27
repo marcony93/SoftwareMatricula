@@ -30,7 +30,7 @@ namespace General
         {
             try
             {
-                if(!string.IsNullOrWhiteSpace(textBox1.Text))
+                if (!string.IsNullOrWhiteSpace(textBox1.Text))
                 {
                     agregar.spNacionalidad_agregar(textBox1.Text);
                     this.spNacionalidadTableAdapter1.Fill(this.desarrolloDataSet1.spNacionalidad);
@@ -40,7 +40,7 @@ namespace General
                     MessageBox.Show("Tiene que Ingresar una nacionalidad");
             }
             catch (SqlException)
-            {}
+            { }
             this.spNacionalidadTableAdapter1.Fill(this.desarrolloDataSet1.spNacionalidad);
             this.spNacionalidadTableAdapter.Fill(this.desarrolloDataSet.spNacionalidad);
         }
@@ -59,22 +59,22 @@ namespace General
         }
         private void spNacionalidadDataGridView_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
-            string nom;
+            string nombre;
             {
                 if (spNacionalidadDataGridView.Rows[e.RowIndex].Cells[2].Selected)
                 {
                     try
                     {
-                        nom = spNacionalidadDataGridView.Rows[e.RowIndex].Cells[1].Value.ToString();
+                        nombre = spNacionalidadDataGridView.Rows[e.RowIndex].Cells[1].Value.ToString();
                         if (MessageBox.Show("Estas seguro de eliminar este registro?", "Eliminar registro", MessageBoxButtons.YesNo) == DialogResult.Yes)
                         {
-                            eliminar.spNacionalidad_eliminar(nom);
+                            eliminar.spNacionalidad_eliminar(nombre);
                             MessageBox.Show("Registro eliminado");
                         }
                         this.spNacionalidadTableAdapter1.Fill(this.desarrolloDataSet1.spNacionalidad);
                     }
                     catch (SqlException)
-                    {}
+                    { }
                 }
             }
         }

@@ -62,7 +62,8 @@ namespace General
                 }
             }
             catch (SqlException)
-            {}
+            { }
         }
     }
 }
+

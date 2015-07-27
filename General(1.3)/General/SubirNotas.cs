@@ -14,7 +14,7 @@ namespace General
     public partial class SubirNotas : Form
     {
         public static int validar = 0;
-        QueriesTableAdapter var = new QueriesTableAdapter();
+        QueriesTableAdapter ingresar = new QueriesTableAdapter();
         public SubirNotas()
         {
             InitializeComponent();
@@ -26,7 +26,7 @@ namespace General
             cursoIdTextBox.Text = "1";
             //TODO: esta línea de código carga datos en la tabla 'desarrolloDataSetElia.SPCursoB' Puede moverla o quitarla según sea necesario.
             this.sPSeccionBTableAdapter.Fill(this.desarrolloDataSetElia.SPSeccionB, Convert.ToInt32(cursoIdTextBox.Text));
-            this.sPMateriaBTableAdapter.Fill(this.desarrolloDataSetElia.SPMateriaB, Convert.ToInt32(cursoIdTextBox.Text)); 
+            this.sPMateriaBTableAdapter.Fill(this.desarrolloDataSetElia.SPMateriaB, Convert.ToInt32(cursoIdTextBox.Text));
             button1.Enabled = false;
         }
         private void button2_Click(object sender, EventArgs e)
@@ -45,7 +45,7 @@ namespace General
             {
                 foreach (DataGridViewRow row in sPAlumnosXClaseBDataGridView.Rows)
                 {
-                    var.IngresarNotasB(row.Cells[0].Value.ToString(), Convert.ToInt32(row.Cells[2].Value), Convert.ToInt32(row.Cells[3].Value), comboBox1.Text.ToString(), sPMateriaBComboBox.SelectedValue.ToString());
+                    ingresar.IngresarNotasB(row.Cells[0].Value.ToString(), Convert.ToInt32(row.Cells[2].Value), Convert.ToInt32(row.Cells[3].Value), comboBox1.Text.ToString(), sPMateriaBComboBox.SelectedValue.ToString());
                 }
                 MessageBox.Show("Datos ingresados con exito");
             }
@@ -60,8 +60,8 @@ namespace General
             this.sPAlumnosXClaseBTableAdapter.Fill(this.desarrolloDataSetElia.SPAlumnosXClaseB, Convert.ToInt32(sPCursoBComboBox.SelectedValue.ToString()));
             foreach (DataGridViewRow row in sPAlumnosXClaseBDataGridView.Rows)
             {
-                row.Cells[2].Value = var.SPAcumulativoPorPArcialB(row.Cells[0].Value.ToString(), sPMateriaBComboBox.SelectedValue.ToString(), comboBox1.Text.ToString(), sPSeccionBComboBox.SelectedValue.ToString());
-                row.Cells[3].Value = var.SPExamenPorPArcialB(row.Cells[0].Value.ToString(), sPMateriaBComboBox.SelectedValue.ToString(), comboBox1.Text.ToString(), sPSeccionBComboBox.SelectedValue.ToString());
+                row.Cells[2].Value = ingresar.SPAcumulativoPorPArcialB(row.Cells[0].Value.ToString(), sPMateriaBComboBox.SelectedValue.ToString(), comboBox1.Text.ToString(), sPSeccionBComboBox.SelectedValue.ToString());
+                row.Cells[3].Value = ingresar.SPExamenPorPArcialB(row.Cells[0].Value.ToString(), sPMateriaBComboBox.SelectedValue.ToString(), comboBox1.Text.ToString(), sPSeccionBComboBox.SelectedValue.ToString());
             }
             button1.Enabled = false;
         }

@@ -34,7 +34,7 @@ namespace General
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             LogIn.SoloLetrasConMensaje(textBox1, errorProvider1);
-            this.buscarmaestroTableAdapter.Fill(this.desarrolloDataSetmcha.buscarmaestro, "1", textBox1.Text,"");
+            this.buscarmaestroTableAdapter.Fill(this.desarrolloDataSetmcha.buscarmaestro, "1", textBox1.Text, "");
         }
         private void textBox2_TextChanged(object sender, EventArgs e)
         {

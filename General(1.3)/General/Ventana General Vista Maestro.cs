@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 namespace General
 {
     public partial class Ventana_General_Vista_Maestro : Form

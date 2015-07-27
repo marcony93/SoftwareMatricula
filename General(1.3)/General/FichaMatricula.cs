@@ -9,14 +9,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using General.desarrolloDataSet1TableAdapters;
-
 namespace General
 {
     public partial class FichaMatricula : Form
     {
-       public static int actual = 0;
+        public static int actual = 0;
         public static int ingresado = 0;
-
         public static int a = 0;
         QueriesTableAdapter Agregar = new QueriesTableAdapter();
         QueriesTableAdapter eliminar = new QueriesTableAdapter();
@@ -36,24 +34,20 @@ namespace General
         int nacionalidad;
         int tiposangre;
         string encargado;
-        string encaNombre1;
-        string encaNombre2;
-        string encaNombre3;
-        string encaNombre4;
-        string encaId;
-        DateTime encaFechaNacimiento;
-        int Encasexo;
-        int EncaOcupacion;
+        string encargadoNombre1;
+        string encargadoNombre2;
+        string encargadoNombre3;
+        string encargadoNombre4;
+        string encargadoId;
+        DateTime encargadoFechaNacimiento;
+        int Encargadosexo;
+        int EncargadoOcupacion;
         int relacion;
         int estatadoMatricula;
         int instituto;
-        
         int modaliad;
         int curso;
         string seccion;
-      
-       // string TelefonoEnca;
-        
         public FichaMatricula()
         {
             InitializeComponent();
@@ -61,7 +55,7 @@ namespace General
         public static string idtelefono;
         private void FichaMatricula_Load(object sender, EventArgs e)
         {
-            
+
             // TODO: esta línea de código carga datos en la tabla 'desarrolloDataSet1.Documentos' Puede moverla o quitarla según sea necesario.
             this.documentosTableAdapter.Fill(this.desarrolloDataSet1.Documentos);
             // TODO: esta línea de código carga datos en la tabla 'desarrolloDataSet1.spModalidades' Puede moverla o quitarla según sea necesario.
@@ -73,7 +67,7 @@ namespace General
             // TODO: esta línea de código carga datos en la tabla 'desarrolloDataSet1.spDepartamentos' Puede moverla o quitarla según sea necesario.
             this.spDepartamentosTableAdapter1.Fill(this.desarrolloDataSet1.spDepartamentos);
             // TODO: esta línea de código carga datos en la tabla 'desarrolloDataSet1.spModalidad' Puede moverla o quitarla según sea necesario.
-          //  this.spModalidadTableAdapter.Fill(this.desarrolloDataSet1.spModalidad);
+            //  this.spModalidadTableAdapter.Fill(this.desarrolloDataSet1.spModalidad);
             // TODO: esta línea de código carga datos en la tabla 'desarrolloDataSet1.spDocumentos' Puede moverla o quitarla según sea necesario.
             this.spDocumentosTableAdapter.Fill(this.desarrolloDataSet1.spDocumentos);
             // TODO: esta línea de código carga datos en la tabla 'desarrolloDataSet1.spLugarInstituto' Puede moverla o quitarla según sea necesario.
@@ -101,24 +95,14 @@ namespace General
             tabControl1.TabPages[0].Text = "Datos Personales";
             tabControl1.TabPages[1].Text = "Datos Encargado";
             tabControl1.TabPages[2].Text = "Datos Académicos";
-            tabControl1.TabPages[3].Text = "Documentos";
             button4.Enabled = true;
-
-            
-
         }
-
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-         
-            
             LogIn.ValorMaximoDeCaja(textBox1, 15, errorProvider1);
             LogIn.SoloLetrasConMensaje(textBox1, errorProvider1);
-
             Nombre1 = textBox1.Text;
         }
-
-
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
             LogIn.ValorMaximoDeCaja(textBox2, 15, errorProvider1);
@@ -126,16 +110,13 @@ namespace General
             label19.Text = textBox1.Text + " " + textBox2.Text + " " + textBox3.Text + " " + textBox4.Text;
             Nombre2 = textBox2.Text;
         }
-
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-          
             LogIn.ValorMaximoDeCaja(textBox3, 15, errorProvider1);
             LogIn.SoloLetrasConMensaje(textBox3, errorProvider1);
             label19.Text = textBox1.Text + " " + textBox2.Text + " " + textBox3.Text + " " + textBox4.Text;
             Nombre3 = textBox3.Text;
         }
-
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
             LogIn.ValorMaximoDeCaja(textBox4, 15, errorProvider1);
@@ -143,16 +124,13 @@ namespace General
             label19.Text = textBox1.Text + " " + textBox2.Text + " " + textBox3.Text + " " + textBox4.Text;
             Nombre4 = textBox4.Text;
         }
-
         private void textBox5_TextChanged(object sender, EventArgs e)
         {
-           
             LogIn.ValorMaximoDeCaja(textBox5, 13, errorProvider1);
             LogIn.NumerosConMensaje(textBox5, errorProvider1);
             idtelefono = textBox5.Text;
             alumnoid = textBox5.Text;
         }
-
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (textBox1.Text.Length == 0)
@@ -161,7 +139,6 @@ namespace General
                 if (textBox1.Text.Length > 0)
                     e.KeyChar = e.KeyChar.ToString().ToLower().ToCharArray()[0];
         }
-
         private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (textBox2.Text.Length == 0)
@@ -170,7 +147,6 @@ namespace General
                 if (textBox2.Text.Length > 0)
                     e.KeyChar = e.KeyChar.ToString().ToLower().ToCharArray()[0];
         }
-
         private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (textBox3.Text.Length == 0)
@@ -179,7 +155,6 @@ namespace General
                 if (textBox3.Text.Length > 0)
                     e.KeyChar = e.KeyChar.ToString().ToLower().ToCharArray()[0];
         }
-
         private void textBox4_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (textBox4.Text.Length == 0)
@@ -188,22 +163,15 @@ namespace General
                 if (textBox4.Text.Length > 0)
                     e.KeyChar = e.KeyChar.ToString().ToLower().ToCharArray()[0];
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             Form Nacionalidad = new Nacionalidad();
             Nacionalidad.Show();
         }
-
-       
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
-            
-
             FechaNacimiento = dateTimePicker1.Value;
-            
         }
-
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
             if (radioButton1.Checked)
@@ -213,10 +181,8 @@ namespace General
                 textBox14.Visible = true;
                 comboBox1.Visible = true;
                 estadotrabajo = radioButton1.Text;
-
             }
         }
-
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
             label29.Visible = false;
@@ -225,53 +191,42 @@ namespace General
             comboBox1.Visible = false;
             estadotrabajo = radioButton2.Text;
         }
-
         private void textBox8_TextChanged(object sender, EventArgs e)
         {
-           
             LogIn.ValorMaximoDeCaja(textBox8, 15, errorProvider1);
             LogIn.SoloLetrasConMensaje(textBox8, errorProvider1);
-            encaNombre1 = textBox8.Text;
+            encargadoNombre1 = textBox8.Text;
         }
-
         private void textBox9_TextChanged(object sender, EventArgs e)
         {
             LogIn.ValorMaximoDeCaja(textBox9, 15, errorProvider1);
             LogIn.SoloLetrasConMensaje(textBox9, errorProvider1);
-            encaNombre2 = textBox9.Text;
+            encargadoNombre2 = textBox9.Text;
         }
-
         private void textBox10_TextChanged(object sender, EventArgs e)
         {
-           
             LogIn.ValorMaximoDeCaja(textBox10, 15, errorProvider1);
             LogIn.SoloLetrasConMensaje(textBox10, errorProvider1);
-            encaNombre3 = textBox10.Text;
+            encargadoNombre3 = textBox10.Text;
         }
-
         private void textBox11_TextChanged(object sender, EventArgs e)
         {
             LogIn.ValorMaximoDeCaja(textBox11, 15, errorProvider1);
             LogIn.SoloLetrasConMensaje(textBox11, errorProvider1);
-            encaNombre4 = textBox11.Text;
+            encargadoNombre4 = textBox11.Text;
         }
-
         private void textBox12_TextChanged(object sender, EventArgs e)
         {
-           
             LogIn.ValorMaximoDeCaja(textBox12, 13, errorProvider1);
             LogIn.NumerosConMensaje(textBox12, errorProvider1);
             encargado = textBox12.Text;
-            encaId = textBox12.Text;
-            
+            encargadoId = textBox12.Text;
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
             Form Ocupacion = new Ocupacion();
             Ocupacion.Show();
         }
-
         private void textBox8_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (textBox8.Text.Length == 0)
@@ -280,7 +235,6 @@ namespace General
                 if (textBox8.Text.Length > 0)
                     e.KeyChar = e.KeyChar.ToString().ToLower().ToCharArray()[0];
         }
-
         private void textBox9_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (textBox9.Text.Length == 0)
@@ -289,7 +243,6 @@ namespace General
                 if (textBox9.Text.Length > 0)
                     e.KeyChar = e.KeyChar.ToString().ToLower().ToCharArray()[0];
         }
-
         private void textBox10_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (textBox10.Text.Length == 0)
@@ -298,7 +251,6 @@ namespace General
                 if (textBox10.Text.Length > 0)
                     e.KeyChar = e.KeyChar.ToString().ToLower().ToCharArray()[0];
         }
-
         private void textBox11_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (textBox11.Text.Length == 0)
@@ -307,69 +259,50 @@ namespace General
                 if (textBox11.Text.Length > 0)
                     e.KeyChar = e.KeyChar.ToString().ToLower().ToCharArray()[0];
         }
-
         private void button5_Click(object sender, EventArgs e)
         {
-           Form Telefono = new Telefono();
-           Telefono.Show();
+            Form Telefono = new Telefono();
+            Telefono.Show();
         }
-
-     
-
-     
-
         private void spNacionalidadComboBox_Click(object sender, EventArgs e)
         {
             this.spNacionalidadTableAdapter.Fill(this.desarrolloDataSet.spNacionalidad);
         }
-
         private void button8_Click(object sender, EventArgs e)
         {
             Form Parentesco = new Parentesco();
             Parentesco.Show();
         }
-
         private void spOcupacionComboBox_Click(object sender, EventArgs e)
         {
             this.spOcupacionTableAdapter.Fill(this.desarrolloDataSet.SpOcupacion);
         }
-
         private void button6_Click(object sender, EventArgs e)
         {
             Form Instituto_Prodencia = new Instituto_Procedencia();
             Instituto_Prodencia.Show();
         }
-
         private void spRelacionComboBox_Click(object sender, EventArgs e)
         {
             this.spRelacionTableAdapter.Fill(this.desarrolloDataSet.spRelacion);
         }
-
         private void spMostrarInstitutoComboBox_Click(object sender, EventArgs e)
         {
             this.spMostrarInstitutoTableAdapter.Fill(this.desarrolloDataSet1.SpMostrarInstituto);
         }
-
         private void button7_Click(object sender, EventArgs e)
         {
-             try
+            try
             {
                 if (!string.IsNullOrWhiteSpace(textBox15.Text))
                 {
                     Agregar.spDocumento_agregar(textBox15.Text);
                     this.spDocumentosTableAdapter.Fill(this.desarrolloDataSet1.spDocumentos);
-                    
-                }
+                 }
             }
             catch (SqlException)
-            {
-                
-               
-            }
+            {  }
         }
-
-   
-
         private void textBox15_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (textBox15.Text.Length == 0)
@@ -378,41 +311,33 @@ namespace General
                 if (textBox15.Text.Length > 0)
                     e.KeyChar = e.KeyChar.ToString().ToLower().ToCharArray()[0];
         }
-
         private void button4_Click(object sender, EventArgs e)
         {
-             int dias2 = DateTime.Now.Date.Subtract(dateTimePicker2.Value.Date).Days;
-          
-
+            int dias2 = DateTime.Now.Date.Subtract(dateTimePicker2.Value.Date).Days;
             if (dias2 < 0)
             {
                 MessageBox.Show("la fecha seleccionada es igual o mayor al dia actual");
             }
-
             int años2 = dias2 / 365;
-
-
             if (años2 < 18)
             {
                 MessageBox.Show("El Encargado debe ser mayor a 18 años");
             }
             else
             {
-
                 try
                 {
-                    Agregar.SpInsertarEncargado(encaId, encaNombre1, encaNombre2, encaNombre3, encaNombre4, encaFechaNacimiento, EncaOcupacion, Encasexo);
+                    Agregar.SpInsertarEncargado(encargadoId, encargadoNombre1, encargadoNombre2, encargadoNombre3, encargadoNombre4, encargadoFechaNacimiento, EncargadoOcupacion, Encargadosexo);
                 }
                 catch (SqlException)
                 {
                     MessageBox.Show("Datos de Encargado incompletos");
                     a++;
-
                 }
             }
-                int dias = DateTime.Now.Date.Subtract(dateTimePicker1.Value.Date).Days;
+            int dias = DateTime.Now.Date.Subtract(dateTimePicker1.Value.Date).Days;
 
-            
+
             if (dias < 0)
             {
                 MessageBox.Show("la fecha seleccionada es igual o mayor al dia actual");
@@ -427,23 +352,16 @@ namespace General
                 catch (SqlException)
                 {
                     MessageBox.Show("Datos de Alumno incompletos");
-
-                    a++;
+                 a++;
                 }
-          
+
             }
-
-
-              
             try
             {
                 Agregar.spInsertartelefonoAlumno(textBox7.Text, textBox5.Text);
             }
             catch (Exception)
-            {
-
-            }
-           
+            {  }
             try
             {
                 Agregar.spDatosAcademicos2(alumnoid, estatadoMatricula, instituto, modaliad, curso.ToString(), seccion);
@@ -451,22 +369,16 @@ namespace General
             }
             catch (SqlException)
             {
-
                 MessageBox.Show("Datos Academicos incompletos");
                 a++;
             }
-
             try
             {
                 Agregar.SpInsertarTelefonoEncargado(textBox13.Text, textBox12.Text);
             }
             catch (SqlException)
-            {
-                
-            }
-
-
-            if (a== 0)
+            { }
+            if (a == 0)
             {
                 foreach (Control ctrl in groupBox1.Controls)
                 {
@@ -492,103 +404,75 @@ namespace General
                         text.Clear();
                     }
                 }
-              
             }
-         
-           
         }
-
         private void textBox14_TextChanged(object sender, EventArgs e)
         {
             lugarTrabajo = textBox14.Text;
         }
-
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             horariotrabajo = comboBox1.Text;
-            
-        }
 
+        }
         private void sexoComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             sexo = Convert.ToInt32(sexoComboBox.SelectedValue);
         }
-
         private void spEstadoCivilComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             estadocivil = Convert.ToInt32(spEstadoCivilComboBox.SelectedValue);
         }
-
         private void spNacionalidadComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             nacionalidad = Convert.ToInt32(spNacionalidadComboBox.SelectedValue);
         }
-
         private void textBox6_TextChanged(object sender, EventArgs e)
         {
             direccion = textBox6.Text;
         }
-
         private void tipoSangreComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             tiposangre = Convert.ToInt32(tipoSangreComboBox.SelectedValue);
         }
-
         private void spRelacionComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-           relacion = Convert.ToInt32(spRelacionComboBox.SelectedValue);
+            relacion = Convert.ToInt32(spRelacionComboBox.SelectedValue);
         }
-
         private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
         {
-         
-
-            encaFechaNacimiento = dateTimePicker2.Value;
+            encargadoFechaNacimiento = dateTimePicker2.Value;
         }
-
-
-
         private void spRelacionComboBox_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             relacion = Convert.ToInt32(spRelacionComboBox.SelectedValue);
         }
-
         private void spSexoComboBox_SelectedIndexChanged_1(object sender, EventArgs e)
         {
-            Encasexo = Convert.ToInt32(spSexoComboBox.SelectedValue);
+            Encargadosexo = Convert.ToInt32(spSexoComboBox.SelectedValue);
         }
-
         private void spOcupacionComboBox_SelectedIndexChanged_1(object sender, EventArgs e)
         {
-            EncaOcupacion = Convert.ToInt32(spOcupacionComboBox.SelectedValue);
+            EncargadoOcupacion = Convert.ToInt32(spOcupacionComboBox.SelectedValue);
         }
-
         private void spOcupacionComboBox_Click_1(object sender, EventArgs e)
         {
             this.spOcupacionTableAdapter.Fill(this.desarrolloDataSet.SpOcupacion);
         }
-
         private void textBox13_TextChanged(object sender, EventArgs e)
         {
             LogIn.ValorMaximoDeCaja(textBox13, 8, errorProvider1);
             LogIn.NumerosConMensaje(textBox13, errorProvider1);
         }
-
         private void textBox7_TextChanged(object sender, EventArgs e)
         {
             LogIn.ValorMaximoDeCaja(textBox7, 8, errorProvider1);
             LogIn.NumerosConMensaje(textBox7, errorProvider1);
-            
         }
-
-        
-
         private void spRelacionComboBox_Click_1(object sender, EventArgs e)
         {
             this.spRelacionTableAdapter.Fill(this.desarrolloDataSet.spRelacion);
         }
-
-       
         private void fillToolStripButton1_Click(object sender, EventArgs e)
         {
             try
@@ -599,53 +483,32 @@ namespace General
             {
                 System.Windows.Forms.MessageBox.Show(ex.Message);
             }
-
         }
-
         private void spModalidadesComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             this.spCursoModalidad2TableAdapter.Fill(this.desarrolloDataSet1.spCursoModalidad2, spModalidadesComboBox.Text);
             modaliad = Convert.ToInt32(spModalidadesComboBox.SelectedValue);
         }
-
         private void spCursoModalidad2ComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             curso = Convert.ToInt32(spCursoModalidad2ComboBox.SelectedValue);
         }
-
-     
-
         private void spEstadoMatriculaComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             estatadoMatricula = Convert.ToInt32(spEstadoMatriculaComboBox.SelectedValue);
         }
-
         private void spMostrarInstitutoComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             instituto = Convert.ToInt32(spMostrarInstitutoComboBox.SelectedValue);
         }
-
-     
-
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
             seccion = comboBox2.Text;
         }
-
-        private void groupBox4_Enter(object sender, EventArgs e)
-        {
-
-        }
-
         private void spDepartamentosComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             departamento = Convert.ToInt32(spDepartamentosComboBox.SelectedValue);
         }
-
-      
-
-  
-
         private void documentosDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (documentosDataGridView.Rows[e.RowIndex].Cells[0].Selected)
@@ -654,10 +517,6 @@ namespace General
                 if (documentosDataGridView.Rows[e.RowIndex].Cells[1].Selected)
                     documentosDataGridView.ReadOnly = false;
         }
-
-      
-      
-
-      
     }
 }
+

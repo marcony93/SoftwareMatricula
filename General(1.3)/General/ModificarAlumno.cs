@@ -14,35 +14,35 @@ namespace General
     public partial class ModificarAlumno : Form
     {
         QueriesTableAdapter agregar = new QueriesTableAdapter();
-        string alnombre1;
-        string alnombre2;
-        string alnombre3;
-        string alnombre4;
-       public static string alid;
-        int aldepartamento;
-        DateTime alfechanacimiento;
-        int alsexo;
-        int alestadocivil;
-        int alnacionalidad;
-        int altipodesangre;
-        string alldireccion;
-        string alestadotrabajo;
-        string allugardetrabajo;
-        string alhorariodetrabajo;
-        string encanombre1;
-        string encanombre2;
-        string encanombre3;
-        string encanombre4;
-        string encaid;
-        DateTime encafechanacimiento;
-        int encaSexo;
-        int encaOcupacion;
-        int encarelacion;
-        int alestadomatricula;
-        int almodalidad;
-        int alinstituto;
-        int alcurso;
-        string alseccion;
+        string alumnonombre1;
+        string alumnonombre2;
+        string alumnonombre3;
+        string alumnonombre4;
+        public static string alumnoid;
+        int alumnodepartamento;
+        DateTime alumnofechanacimiento;
+        int alumnosexo;
+        int alumnoestadocivil;
+        int alumnonacionalidad;
+        int alumnotipodesangre;
+        string alumnodireccion;
+        string alumnoestadotrabajo;
+        string alumnolugardetrabajo;
+        string alumnohorariodetrabajo;
+        string encargadonombre1;
+        string encargadonombre2;
+        string encargadonombre3;
+        string encargadonombre4;
+        string encargadoid;
+        DateTime encargadofechanacimiento;
+        int encargadoSexo;
+        int encargadoOcupacion;
+        int encargadorelacion;
+        int alumnoestadomatricula;
+        int alumnomodalidad;
+        int alumnoinstituto;
+        int alumnocurso;
+        string alumnoseccion;
         public ModificarAlumno()
         {
             InitializeComponent();
@@ -97,7 +97,7 @@ namespace General
                 comboBox1.Text = seccionLabel1.Text;
             }
             catch (Exception)
-            {}
+            { }
             foreach (Control ctrl in groupBox1.Controls)
             {
                 if (ctrl is TextBox)
@@ -155,34 +155,34 @@ namespace General
                 }
             }
             errorProvider1.Clear();
-            alnombre1 = alumNombre1TextBox.Text;
-            alnombre2 = alumNombre2TextBox.Text;
-            alnombre3 = alumApellido1TextBox.Text;
-            alnombre4 = alumApellido2TextBox.Text;
-            alid = alumIdTextBox.Text;
-            aldepartamento = Convert.ToInt32(spDepartamentosComboBox.SelectedValue);
-            encaSexo = Convert.ToInt32(spSexoComboBox1.SelectedValue);
-            encaOcupacion = Convert.ToInt32(spOcupacionComboBox.SelectedValue);
-            encarelacion = Convert.ToInt32(spRelacionComboBox.SelectedValue);
-            alsexo = Convert.ToInt32(spSexoComboBox.SelectedValue);
-            altipodesangre = Convert.ToInt32(tipoSangreComboBox.SelectedValue);
-            alestadocivil = Convert.ToInt32(spEstadoCivilComboBox.SelectedValue);
-            alnacionalidad = Convert.ToInt32(spNacionalidadComboBox.SelectedValue);
-            alldireccion = alumDireccionTextBox.Text;
-            alestadotrabajo = radioButton1.Text;
-            allugardetrabajo = textbox1.Text;
-            alhorariodetrabajo = comboBox2.Text;
-            encanombre1 = encdoNombre1TextBox.Text;
-            encanombre2 = encdoNombre2TextBox.Text;
-            encanombre3 = encdoApellido1TextBox.Text;
-            encanombre4 = encdoApellido2TextBox.Text;
-            encaid = encdoIdTextBox.Text;
-            alestadomatricula = Convert.ToInt32(spEstadoMatriculaComboBox.SelectedValue);
-            alinstituto = Convert.ToInt32(spMostrarInstituto2ComboBox.SelectedValue);
+            alumnonombre1 = alumNombre1TextBox.Text;
+            alumnonombre2 = alumNombre2TextBox.Text;
+            alumnonombre3 = alumApellido1TextBox.Text;
+            alumnonombre4 = alumApellido2TextBox.Text;
+            alumnoid = alumIdTextBox.Text;
+            alumnodepartamento = Convert.ToInt32(spDepartamentosComboBox.SelectedValue);
+            encargadoSexo = Convert.ToInt32(spSexoComboBox1.SelectedValue);
+            encargadoOcupacion = Convert.ToInt32(spOcupacionComboBox.SelectedValue);
+            encargadorelacion = Convert.ToInt32(spRelacionComboBox.SelectedValue);
+            alumnosexo = Convert.ToInt32(spSexoComboBox.SelectedValue);
+            alumnotipodesangre = Convert.ToInt32(tipoSangreComboBox.SelectedValue);
+            alumnoestadocivil = Convert.ToInt32(spEstadoCivilComboBox.SelectedValue);
+            alumnonacionalidad = Convert.ToInt32(spNacionalidadComboBox.SelectedValue);
+            alumnodireccion = alumDireccionTextBox.Text;
+            alumnoestadotrabajo = radioButton1.Text;
+            alumnolugardetrabajo = textbox1.Text;
+            alumnohorariodetrabajo = comboBox2.Text;
+            encargadonombre1 = encdoNombre1TextBox.Text;
+            encargadonombre2 = encdoNombre2TextBox.Text;
+            encargadonombre3 = encdoApellido1TextBox.Text;
+            encargadonombre4 = encdoApellido2TextBox.Text;
+            encargadoid = encdoIdTextBox.Text;
+            alumnoestadomatricula = Convert.ToInt32(spEstadoMatriculaComboBox.SelectedValue);
+            alumnoinstituto = Convert.ToInt32(spMostrarInstituto2ComboBox.SelectedValue);
             this.spCursoModalidad2TableAdapter.Fill(this.desarrolloDataSet1.spCursoModalidad2, spModalidadesComboBox.Text);
-            almodalidad = Convert.ToInt32(spModalidadesComboBox.SelectedValue);
-            alcurso = Convert.ToInt32(spCursoModalidad2ComboBox.SelectedValue);
-            alseccion = comboBox1.Text;
+            alumnomodalidad = Convert.ToInt32(spModalidadesComboBox.SelectedValue);
+            alumnocurso = Convert.ToInt32(spCursoModalidad2ComboBox.SelectedValue);
+            alumnoseccion = comboBox1.Text;
             comboBox1.SelectedIndex = 0;
         }
         private void button1_Click(object sender, EventArgs e)
@@ -197,7 +197,7 @@ namespace General
                 comboBox2.Visible = false;
                 label1.Visible = false;
                 label2.Visible = false;
-                alestadotrabajo = radioButton1.Text;
+                alumnoestadotrabajo = radioButton1.Text;
             }
         }
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
@@ -208,25 +208,25 @@ namespace General
                 comboBox2.Visible = true;
                 label1.Visible = true;
                 label2.Visible = true;
-                alestadotrabajo = radioButton1.Text;
+                alumnoestadotrabajo = radioButton1.Text;
             }
         }
         private void encdoIdTextBox_TextChanged(object sender, EventArgs e)
         {
             LogIn.ValorMaximoDeCaja(alumIdTextBox, 13, errorProvider1);
             LogIn.NumerosConMensaje(alumIdTextBox, errorProvider1);
-            encaid = encdoIdTextBox.Text;
+            encargadoid = encdoIdTextBox.Text;
         }
         private void spModalidadesComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             this.spCursoModalidad2TableAdapter.Fill(this.desarrolloDataSet1.spCursoModalidad2, spModalidadesComboBox.Text);
-            almodalidad = Convert.ToInt32(spModalidadesComboBox.SelectedValue);
+            alumnomodalidad = Convert.ToInt32(spModalidadesComboBox.SelectedValue);
         }
         private void fillToolStripButton1_Click(object sender, EventArgs e)
         {
             try
             {
-                this.spCursoModalidad2TableAdapter.Fill(this.desarrolloDataSet1.spCursoModalidad2,spModalidadesComboBox.Text);
+                this.spCursoModalidad2TableAdapter.Fill(this.desarrolloDataSet1.spCursoModalidad2, spModalidadesComboBox.Text);
             }
             catch (System.Exception ex)
             {
@@ -235,7 +235,7 @@ namespace General
         }
         private void spCursoModalidad2ComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            alcurso = Convert.ToInt32(spCursoModalidad2ComboBox.SelectedValue);
+            alumnocurso = Convert.ToInt32(spCursoModalidad2ComboBox.SelectedValue);
         }
         private void button1_Click_1(object sender, EventArgs e)
         {
@@ -298,13 +298,13 @@ namespace General
             alumIdTextBox.Enabled = false;
             encdoIdTextBox.Enabled = false;
             spNacionalidadComboBox.Enabled = false;
-            encarelacion = Convert.ToInt32(spRelacionComboBox.SelectedValue);
+            encargadorelacion = Convert.ToInt32(spRelacionComboBox.SelectedValue);
         }
         private void alumNombre1TextBox_TextChanged(object sender, EventArgs e)
         {
             LogIn.ValorMaximoDeCaja(alumNombre1TextBox, 15, errorProvider1);
             LogIn.SoloLetrasConMensaje(alumNombre1TextBox, errorProvider1);
-            alnombre1 = alumNombre1TextBox.Text;
+            alumnonombre1 = alumNombre1TextBox.Text;
         }
         private void alumNombre1TextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -318,7 +318,7 @@ namespace General
         {
             LogIn.ValorMaximoDeCaja(alumNombre2TextBox, 15, errorProvider1);
             LogIn.SoloLetrasConMensaje(alumNombre2TextBox, errorProvider1);
-            alnombre2 = alumNombre2TextBox.Text;
+            alumnonombre2 = alumNombre2TextBox.Text;
         }
         private void alumNombre2TextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -332,7 +332,7 @@ namespace General
         {
             LogIn.ValorMaximoDeCaja(alumApellido1TextBox, 15, errorProvider1);
             LogIn.SoloLetrasConMensaje(alumApellido1TextBox, errorProvider1);
-            alnombre3 = alumApellido1TextBox.Text;
+            alumnonombre3 = alumApellido1TextBox.Text;
         }
         private void alumApellido1TextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -346,7 +346,7 @@ namespace General
         {
             LogIn.ValorMaximoDeCaja(alumApellido2TextBox, 15, errorProvider1);
             LogIn.SoloLetrasConMensaje(alumApellido2TextBox, errorProvider1);
-            alnombre4 = alumApellido2TextBox.Text;
+            alumnonombre4 = alumApellido2TextBox.Text;
         }
         private void alumApellido2TextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -360,35 +360,35 @@ namespace General
         {
             LogIn.ValorMaximoDeCaja(alumIdTextBox, 13, errorProvider1);
             LogIn.NumerosConMensaje(alumIdTextBox, errorProvider1);
-            alid = alumIdTextBox.Text;
+            alumnoid = alumIdTextBox.Text;
         }
         private void alumFechaNacDateTimePicker_ValueChanged(object sender, EventArgs e)
         {
-            alfechanacimiento = alumFechaNacDateTimePicker.Value;
+            alumnofechanacimiento = alumFechaNacDateTimePicker.Value;
         }
         private void encdoNombre1TextBox_TextChanged(object sender, EventArgs e)
         {
             LogIn.ValorMaximoDeCaja(encdoNombre1TextBox, 15, errorProvider1);
             LogIn.SoloLetrasConMensaje(encdoNombre1TextBox, errorProvider1);
-            encanombre1 = encdoNombre1TextBox.Text;
+            encargadonombre1 = encdoNombre1TextBox.Text;
         }
         private void encdoNombre2TextBox_TextChanged(object sender, EventArgs e)
         {
             LogIn.ValorMaximoDeCaja(encdoNombre2TextBox, 15, errorProvider1);
             LogIn.SoloLetrasConMensaje(encdoNombre2TextBox, errorProvider1);
-            encanombre2 = encdoNombre2TextBox.Text;
+            encargadonombre2 = encdoNombre2TextBox.Text;
         }
         private void encdoApellido1TextBox_TextChanged(object sender, EventArgs e)
         {
             LogIn.ValorMaximoDeCaja(encdoApellido1TextBox, 15, errorProvider1);
             LogIn.SoloLetrasConMensaje(encdoApellido1TextBox, errorProvider1);
-            encanombre3 = encdoApellido1TextBox.Text;
+            encargadonombre3 = encdoApellido1TextBox.Text;
         }
         private void encdoApellido2TextBox_TextChanged(object sender, EventArgs e)
         {
             LogIn.ValorMaximoDeCaja(encdoApellido2TextBox, 15, errorProvider1);
             LogIn.SoloLetrasConMensaje(encdoApellido2TextBox, errorProvider1);
-            encanombre4 = encdoApellido2TextBox.Text;
+            encargadonombre4 = encdoApellido2TextBox.Text;
         }
         private void encdoNombre1TextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -424,7 +424,7 @@ namespace General
         }
         private void encdoFechaNacDateTimePicker_ValueChanged(object sender, EventArgs e)
         {
-            encafechanacimiento = encdoFechaNacDateTimePicker.Value;
+            encargadofechanacimiento = encdoFechaNacDateTimePicker.Value;
         }
         private void button2_Click(object sender, EventArgs e)
         {
@@ -444,9 +444,9 @@ namespace General
             {
                 try
                 {
-                    agregar.spModificarAlumno2(alnombre1, alnombre2, alnombre3, alnombre4, alid, aldepartamento, alfechanacimiento, alsexo, altipodesangre, alestadocivil,
-                      alldireccion, alestadotrabajo, allugardetrabajo, alhorariodetrabajo, encanombre1, encanombre2, encanombre3, encanombre4, encaid, encafechanacimiento,
-                        encaSexo, encaOcupacion, encarelacion, alestadomatricula, almodalidad, alinstituto, alcurso.ToString(), alseccion);
+                    agregar.spModificarAlumno2(alumnonombre1, alumnonombre2, alumnonombre3, alumnonombre4, alumnoid, alumnodepartamento, alumnofechanacimiento, alumnosexo, alumnotipodesangre, alumnoestadocivil,
+                      alumnodireccion, alumnoestadotrabajo, alumnolugardetrabajo, alumnohorariodetrabajo, encargadonombre1, encargadonombre2, encargadonombre3, encargadonombre4, encargadoid, encargadofechanacimiento,
+                        encargadoSexo, encargadoOcupacion, encargadorelacion, alumnoestadomatricula, alumnomodalidad, alumnoinstituto, alumnocurso.ToString(), alumnoseccion);
                     MessageBox.Show("Modificacion con exito");
                 }
                 catch (SqlException)
@@ -455,59 +455,59 @@ namespace General
         }
         private void spDepartamentosComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            aldepartamento = Convert.ToInt32(spDepartamentosComboBox.SelectedValue);
+            alumnodepartamento = Convert.ToInt32(spDepartamentosComboBox.SelectedValue);
         }
         private void spSexoComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            alsexo = Convert.ToInt32(spSexoComboBox.SelectedValue);
+            alumnosexo = Convert.ToInt32(spSexoComboBox.SelectedValue);
         }
         private void tipoSangreComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            altipodesangre = Convert.ToInt32(tipoSangreComboBox.SelectedValue);
+            alumnotipodesangre = Convert.ToInt32(tipoSangreComboBox.SelectedValue);
         }
         private void spEstadoCivilComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            alestadocivil = Convert.ToInt32(spEstadoCivilComboBox.SelectedValue);
+            alumnoestadocivil = Convert.ToInt32(spEstadoCivilComboBox.SelectedValue);
         }
         private void spNacionalidadComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            alnacionalidad = Convert.ToInt32(spNacionalidadComboBox.SelectedValue);
+            alumnonacionalidad = Convert.ToInt32(spNacionalidadComboBox.SelectedValue);
         }
         private void alumDireccionTextBox_TextChanged(object sender, EventArgs e)
         {
-            alldireccion = alumDireccionTextBox.Text;
+            alumnodireccion = alumDireccionTextBox.Text;
         }
         private void textbox1_TextChanged(object sender, EventArgs e)
         {
-            allugardetrabajo = textbox1.Text;
+            alumnolugardetrabajo = textbox1.Text;
         }
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            alhorariodetrabajo = comboBox2.Text;
+            alumnohorariodetrabajo = comboBox2.Text;
         }
         private void spSexoComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            encaSexo = Convert.ToInt32(spSexoComboBox1.SelectedValue);
+            encargadoSexo = Convert.ToInt32(spSexoComboBox1.SelectedValue);
         }
         private void spOcupacionComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            encaOcupacion = Convert.ToInt32(spOcupacionComboBox.SelectedValue);
+            encargadoOcupacion = Convert.ToInt32(spOcupacionComboBox.SelectedValue);
         }
         private void spRelacionComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            encarelacion = Convert.ToInt32(spRelacionComboBox.SelectedValue);
+            encargadorelacion = Convert.ToInt32(spRelacionComboBox.SelectedValue);
         }
         private void spEstadoMatriculaComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            alestadomatricula = Convert.ToInt32(spEstadoMatriculaComboBox.SelectedValue);
+            alumnoestadomatricula = Convert.ToInt32(spEstadoMatriculaComboBox.SelectedValue);
         }
         private void spMostrarInstituto2ComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            alinstituto = Convert.ToInt32(spMostrarInstituto2ComboBox.SelectedValue);
+            alumnoinstituto = Convert.ToInt32(spMostrarInstituto2ComboBox.SelectedValue);
         }
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            alseccion = comboBox1.Text;
+            alumnoseccion = comboBox1.Text;
         }
         private void button5_Click(object sender, EventArgs e)
         {
@@ -524,6 +524,7 @@ namespace General
             {
                 System.Windows.Forms.MessageBox.Show(ex.Message);
             }
-        } 
+        }
     }
 }
+

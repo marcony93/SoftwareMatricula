@@ -13,17 +13,17 @@ namespace General
 {
     public partial class LogIn_Bloqueado : Form
     {
-        QueriesTableAdapter QTA = new QueriesTableAdapter();
+        QueriesTableAdapter ejecutar = new QueriesTableAdapter();
         public LogIn_Bloqueado()
         {
             InitializeComponent();
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text=="sa" && textBox2.Text=="root" )
+            if (textBox1.Text == "sa" && textBox2.Text == "root")
             {
                 LogIn Ventana = new LogIn();
-                QTA.cambiarbloqueo(LogIn.usuarioprofesor);
+                ejecutar.cambiarbloqueo(LogIn.usuarioprofesor);
                 Ventana.Show();
                 this.Close();
             }
@@ -35,20 +35,20 @@ namespace General
                     switch (mstroTipoLabel1.Text)
                     {
                         case "1":
-                            LogIn Ventana = new LogIn(); 
-                            QTA.cambiarbloqueo(LogIn.usuarioprofesor);
+                            LogIn Ventana = new LogIn();
+                            ejecutar.cambiarbloqueo(LogIn.usuarioprofesor);
                             Ventana.Show();
                             this.Close();
                             break;
                         default:
                             MessageBox.Show("Ingrese una cuenta correcta");
-                           break;
+                            break;
                     }
-                 }
+                }
                 catch (SqlException)
-                {}
+                { }
+            }
         }
-    }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             LogIn.SoloLetrasConMensaje(textBox1, errorProvider1);
@@ -61,3 +61,4 @@ namespace General
         }
     }
 }
+

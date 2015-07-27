@@ -31,13 +31,13 @@ namespace General
                 if (!string.IsNullOrWhiteSpace(textBox1.Text))
                 {
                     Agregar.spParentesco_agregar(textBox1.Text);
-                    this.spRelacionTableAdapter.Fill(this.desarrolloDataSet1.spRelacion);  
+                    this.spRelacionTableAdapter.Fill(this.desarrolloDataSet1.spRelacion);
                 }
                 else
-                    MessageBox.Show("Tiene que Ingresar un Parentesco");
+                    MessageBox.Show("Tiene que ingresar un parentesco");
             }
             catch (SqlException)
-            {}
+            { }
             this.spRelacionTableAdapter.Fill(this.desarrolloDataSet1.spRelacion);
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -55,16 +55,16 @@ namespace General
         }
         private void spRelacionDataGridView_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
-            string nom;
+            string nombre;
             {
                 if (spRelacionDataGridView.Rows[e.RowIndex].Cells[2].Selected)
                 {
                     try
                     {
-                        nom = spRelacionDataGridView.Rows[e.RowIndex].Cells[1].Value.ToString();
+                        nombre = spRelacionDataGridView.Rows[e.RowIndex].Cells[1].Value.ToString();
                         if (MessageBox.Show("Estas seguro de eliminar este registro?", "Eliminar registro", MessageBoxButtons.YesNo) == DialogResult.Yes)
                         {
-                            eliminar.spRelacion_eliminar(nom);
+                            eliminar.spRelacion_eliminar(nombre);
                             MessageBox.Show("Registro eliminado");
                         }
                         this.spRelacionTableAdapter.Fill(this.desarrolloDataSet1.spRelacion);
@@ -76,3 +76,4 @@ namespace General
         }
     }
 }
+

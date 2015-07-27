@@ -14,10 +14,10 @@ namespace General
 {
     public partial class LogIn : Form
     {
-        public static string usuarioprofesor="";
-        QueriesTableAdapter QTA = new QueriesTableAdapter();
+        public static string usuarioprofesor = "";
+        QueriesTableAdapter cambio = new QueriesTableAdapter();
         public static int intentos;
-        
+
         public LogIn()
         {
             InitializeComponent();
@@ -41,7 +41,7 @@ namespace General
                     parametro.Text = parametro.Text.Remove(parametro.TextLength - 1);
                     parametro.SelectionStart = parametro.TextLength;
                 }
-               else if (!IsAlphaNumeric(parametro.Text))
+                else if (!IsAlphaNumeric(parametro.Text))
                 {
                     valor = 3;
                     parametro.Text = parametro.Text.Remove(parametro.TextLength - 1);
@@ -102,10 +102,10 @@ namespace General
         }
         public static void SololetrasyNumerosConMensaje(TextBox valor, ErrorProvider error)
         {
-            int x = 0;
+            int caracter = 0;
             if (!IsAlphaNumeric(valor.Text))
             {
-                while (x == 0)
+                while (caracter == 0)
                 {
                     valor.Text = valor.Text.Remove(valor.TextLength - 1);
                     valor.SelectionStart = valor.TextLength;
@@ -142,7 +142,7 @@ namespace General
                 mensaje.SetError(caja, "Acepta un maximo de " + maximo + " valores");
             }
         }
-       //FINALIZACION DE FUNCIONES
+        //FINALIZACION DE FUNCIONES
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             SoloLetrasConMensaje(textBox1, errorProvider1);
@@ -157,16 +157,16 @@ namespace General
         {
             usuarioprofesor = textBox1.Text;
             this.usuarioBloqueadoTableAdapter.Fill(this.desarrolloDataSet.UsuarioBloqueado, textBox1.Text);
-            if( mstroBlocLabel1.Text =="1")
+            if (mstroBlocLabel1.Text == "1")
             {
                 LogIn_Bloqueado ventana = new LogIn_Bloqueado();
                 ventana.Show();
-                
+
                 this.Hide();
             }
-           else if (validarboton(textBox1, textBox2, errorProvider1) == 1)
-            {   
-               try
+            else if (validarboton(textBox1, textBox2, errorProvider1) == 1)
+            {
+                try
                 {
                     this.autentificacionTableAdapter.Fill(this.desarrolloDataSet.autentificacion, textBox1.Text, textBox2.Text);
                     switch (mstroTipoLabel1.Text)
@@ -184,19 +184,19 @@ namespace General
                             intentos++;
                             break;
                     }
-                 }
+                }
                 catch (SqlException)
-                {}
+                { }
                 if (intentos == 5)
                 {
-                    QTA.cambiarbloqueopositivo(usuarioprofesor);
-                }     
+                    cambio.cambiarbloqueopositivo(usuarioprofesor);
+                }
             }
         }
         private void LogIn_Load(object sender, EventArgs e)
         {
             // TODO: esta línea de código carga datos en la tabla 'desarrolloDataSet.Alumno' Puede moverla o quitarla según sea necesario.
-             intentos = 0;
+            intentos = 0;
         }
         private void fillToolStripButton_Click(object sender, EventArgs e)
         {
