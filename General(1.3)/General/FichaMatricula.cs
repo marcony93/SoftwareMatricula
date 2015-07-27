@@ -505,6 +505,12 @@ namespace General
         {
             seccion = comboBox2.Text;
         }
+<<<<<<< HEAD
+=======
+
+   
+
+>>>>>>> origin/master
         private void spDepartamentosComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             departamento = Convert.ToInt32(spDepartamentosComboBox.SelectedValue);

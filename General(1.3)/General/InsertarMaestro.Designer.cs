@@ -80,6 +80,10 @@
             this.label1.Size = new System.Drawing.Size(123, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "Número de Identidad";
+<<<<<<< HEAD
+=======
+           
+>>>>>>> origin/master
             // 
             // label2
             // 

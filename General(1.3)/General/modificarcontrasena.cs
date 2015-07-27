@@ -13,7 +13,12 @@ namespace General
 {
     public partial class modificarcontrasena : Form
     {
+<<<<<<< HEAD
         QueriesTableAdapter agregar = new QueriesTableAdapter();
+=======
+        //Variable para llamar los procedimientos que alteran la base de datos (modificar, eliminar, etc)
+        QueriesTableAdapter QTA = new QueriesTableAdapter();
+>>>>>>> origin/master
         public modificarcontrasena()
         {
             InitializeComponent();
@@ -22,7 +27,12 @@ namespace General
         {
             try
             {
+<<<<<<< HEAD
                 agregar.PScontra(textBox1.Text, textBox2.Text, textBox3.Text);
+=======
+                //ejecuta el procedemiento almacenado para modificar la contrasena
+                QTA.PScontra(textBox1.Text, textBox2.Text, textBox3.Text);
+>>>>>>> origin/master
                 MessageBox.Show("se modifico con exito");
             }
             catch (SqlException)
@@ -32,10 +42,17 @@ namespace General
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+            //llama la funcion sololetras para validar el textbox
             LogIn.SoloLetrasConMensaje(textBox1, errorProvider1);
         }
+<<<<<<< HEAD
+=======
+
+   
+>>>>>>> origin/master
         private void textBox2_Validating(object sender, CancelEventArgs e)
         {
+            //validacion que no permita campos vacios
             if (textBox2.Text.Trim() == String.Empty)
                 errorProvider1.SetError(textBox2, "No se permiten campos vacíos");
             else
@@ -43,7 +60,12 @@ namespace General
         }
         private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
         {
+<<<<<<< HEAD
             if (e.KeyChar == 32)
+=======
+            //validacion que no permita campos vacios
+            if (e.KeyChar==32)
+>>>>>>> origin/master
             {
                 textBox2.Text = textBox2.Text.Remove(textBox2.TextLength - 1);
                 textBox2.SelectionStart = textBox2.TextLength;
@@ -51,13 +73,19 @@ namespace General
             }
         }
         private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
-        {
+        { 
+            //validacion que no permita campos vacios
             if (e.KeyChar == 32)
             {
                 textBox3.Text = textBox3.Text.Remove(textBox3.TextLength - 1);
                 textBox3.SelectionStart = textBox3.TextLength;
                 errorProvider1.SetError(textBox3, "No se acepta espacios");
             }
+        }
+
+        private void modificarcontrasena_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
