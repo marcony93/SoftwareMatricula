@@ -13,6 +13,7 @@ namespace General
 {
     public partial class AsignarClases : Form
     {
+        //CREA UNA INSTANCIA PARA UTILIZAR LOS PROCEDIMIENTOS ALMACENADOS QUE ESTAN EN EL DATASET
         QueriesTableAdapter asignar = new QueriesTableAdapter();
         public AsignarClases()
         {
@@ -38,26 +39,47 @@ namespace General
         }
         private void spMaestroComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //PROCEDIMEITNO QUE ACTUALIZA LA PLANILLA TOMANDO EL PARAMETRO MAESTRO
             this.spmostrarplanillaTableAdapter.Fill(this.desarrolloDataSetWilmer.spmostrarplanilla, spMaestroComboBox.SelectedValue.ToString());
         }
         private void spModalidadComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            this.spCursoTableAdapter.Fill(this.desarrolloDataSetWilmer.spCurso, new System.Nullable<int>(((int)(System.Convert.ChangeType(spModalidadComboBox.SelectedValue, typeof(int))))));
-            this.spSeccionesTableAdapter.Fill(this.desarrolloDataSetWilmer.spSecciones, new System.Nullable<int>(((int)(System.Convert.ChangeType(spCursoComboBox.SelectedValue, typeof(int))))), DateTime.Today.Year.ToString());
-            this.spMateriaTableAdapter.Fill(this.desarrolloDataSetWilmer.spMateria, new System.Nullable<int>(((int)(System.Convert.ChangeType(spModalidadComboBox.SelectedValue.ToString(), typeof(int))))), new System.Nullable<int>(((int)(System.Convert.ChangeType(spCursoComboBox.SelectedValue.ToString(), typeof(int))))));
+            //PROCEDIMEITNO QUE ACTUALIZA EL CURSO TOMANDO EL PARAMETRO MODALIDAD   
+            this.spCursoTableAdapter.Fill(this.desarrolloDataSetWilmer.spCurso, 
+            new System.Nullable<int>(((int)(System.Convert.ChangeType(spModalidadComboBox.SelectedValue, 
+            typeof(int))))));
+            //PROCEDIMEITNO QUE ACTALIZA LA SECCION TOMANDO EL PARAMETRO CURSO
+            this.spSeccionesTableAdapter.Fill(this.desarrolloDataSetWilmer.spSecciones, 
+            new System.Nullable<int>(((int)(System.Convert.ChangeType(spCursoComboBox.SelectedValue, 
+            typeof(int))))), DateTime.Today.Year.ToString());
+            //PROCEDIMEITNO QUE ACTALIZA LA MATERIA TOMANDO EL PARAMETRO MODALIDAD
+            this.spMateriaTableAdapter.Fill(this.desarrolloDataSetWilmer.spMateria, 
+            new System.Nullable<int>(((int)(System.Convert.ChangeType(spModalidadComboBox.SelectedValue.ToString(), 
+            typeof(int))))), new System.Nullable<int>(((int)(System.Convert.ChangeType(spCursoComboBox.SelectedValue.ToString(), 
+            typeof(int))))));
         }
         private void spCursoComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //VALIDACION QUE PERMITE SABER SI EL CURSO ESTA NULO
             if (spCursoComboBox.SelectedValue != null)
             {
-                this.spSeccionesTableAdapter.Fill(this.desarrolloDataSetWilmer.spSecciones, new System.Nullable<int>(((int)(System.Convert.ChangeType(spCursoComboBox.SelectedValue, typeof(int))))), DateTime.Today.Year.ToString());
-                this.spMateriaTableAdapter.Fill(this.desarrolloDataSetWilmer.spMateria, new System.Nullable<int>(((int)(System.Convert.ChangeType(spModalidadComboBox.SelectedValue.ToString(), typeof(int))))), new System.Nullable<int>(((int)(System.Convert.ChangeType(spCursoComboBox.SelectedValue.ToString(), typeof(int))))));
+                //PROCEDIMEITNO QUE ACTUALIZA LA SECCION TOMANDO EL PARAMETRO CURSO
+                this.spSeccionesTableAdapter.Fill(this.desarrolloDataSetWilmer.spSecciones,
+                new System.Nullable<int>(((int)(System.Convert.ChangeType(spCursoComboBox.SelectedValue, 
+                typeof(int))))), DateTime.Today.Year.ToString());
+                //PROCEDIMEITNO QUE ACTUALIZA LA MATERIA TOMANDO EL PARAMETRO MODALIDAD
+                this.spMateriaTableAdapter.Fill(this.desarrolloDataSetWilmer.spMateria,
+                new System.Nullable<int>(((int)(System.Convert.ChangeType(spModalidadComboBox.SelectedValue.ToString(),
+                typeof(int))))), new System.Nullable<int>(((int)(System.Convert.ChangeType(spCursoComboBox.SelectedValue.ToString(),
+                typeof(int))))));
             }
         }
         private void button1_Click(object sender, EventArgs e)
         {
             try
             {
+                //PROCEDIMIENTO QUE GUARDA LA PLANILLA DEL MAESTRO CON LOS PARAMETROS DE 
+                //LOS COMBOBOX
                 asignar.spinsertarplanilla2(spHoraComboBox.SelectedValue.ToString(), DateTime.Today.Year.ToString(), spMaestroComboBox.SelectedValue.ToString(), spCursoComboBox.SelectedValue.ToString(), Convert.ToInt32(spModalidadComboBox.SelectedValue.ToString()), spMateriaComboBox.SelectedValue.ToString(), spSeccionesComboBox.SelectedValue.ToString(), spDiaComboBox.SelectedValue.ToString());
                 MessageBox.Show("Asignacion guardada con exito");
                 this.spmostrarplanillaTableAdapter.Fill(this.desarrolloDataSetWilmer.spmostrarplanilla, spMaestroComboBox.SelectedValue.ToString());

@@ -175,7 +175,6 @@
             this.spMostrarInstitutoDataGridView.ReadOnly = true;
             this.spMostrarInstitutoDataGridView.Size = new System.Drawing.Size(412, 220);
             this.spMostrarInstitutoDataGridView.TabIndex = 12;
-           
             // 
             // dataGridViewTextBoxColumn1
             // 
