@@ -14,6 +14,7 @@ namespace General
 
     public partial class modificarmaestro : Form
     {
+        //iniciamos la variable para acceder a los procedimientos almacenados
         QueriesTableAdapter actualizar = new QueriesTableAdapter();
         public static int contador = 0;
         public modificarmaestro()
@@ -22,7 +23,9 @@ namespace General
         }
         private void button1_Click(object sender, EventArgs e)
         {
+            //contador que sirve para validar el boton de guardar
             contador++;
+            //si el contador es 1 habilita los campos que se pueden modificar
             if (contador == 1)
             {
                 mstroEmailTextBox.Enabled = true;
@@ -30,6 +33,8 @@ namespace General
                 mstroUsuTextBox.Enabled = true;
                 button1.Text = "guardar";
             }
+                //si el contador es 2 ejecuta el procedimiento almacenado
+                //que guardara los cambios y deshabilita las cajas de texto
             else if (contador == 2)
             {
                     try
@@ -79,31 +84,13 @@ namespace General
         }
         private void button2_Click(object sender, EventArgs e)
         {
+            //crea una instancia de la ventana buscar maestro
+            //muestra la ventana para buscar un profesor
             Form buscarmaestro = new buscarmaestro();
             buscarmaestro.Show();
             buscarmaestro.MdiParent = VentanaGeneralVistaSecretaria.VentanaSecretaria;
             buscarmaestro.WindowState = FormWindowState.Maximized;
             buscarmaestro.BringToFront();
         }
-        private void fillToolStripButton_Click_1(object sender, EventArgs e)
-        {
-            try
-            { }
-            catch (System.Exception ex)
-            {
-                System.Windows.Forms.MessageBox.Show(ex.Message);
-            }
-        }
-        private void fillToolStripButton_Click_2(object sender, EventArgs e)
-        {
-            try
-            { }
-            catch (System.Exception ex)
-            {
-                System.Windows.Forms.MessageBox.Show(ex.Message);
-            }
-        }
-
-     
     }
 }

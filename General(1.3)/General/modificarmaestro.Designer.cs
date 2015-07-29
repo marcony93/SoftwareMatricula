@@ -333,7 +333,6 @@
             this.mstroFechaNacDateTimePicker.Name = "mstroFechaNacDateTimePicker";
             this.mstroFechaNacDateTimePicker.Size = new System.Drawing.Size(232, 20);
             this.mstroFechaNacDateTimePicker.TabIndex = 71;
-           
             // 
             // mstroUsuTextBox
             // 

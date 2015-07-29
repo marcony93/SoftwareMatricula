@@ -33,12 +33,15 @@ namespace General
         {
             if (comboBox1.SelectedItem== null)
             {
+                //muestra mensaje de verificacion
                 MessageBox.Show("Debe seleccionar todos los datos, verifique sección");
             }
             else
             {
+                //recorre la grilla en busca de datos
                 foreach (DataGridViewRow row in sPAlumnosXClaseBDataGridView.Rows)
                 {
+                    // validacion que permite saber si los datos ingresados son validos
                     double esNumero;
                     if ((row.Cells[2].Value == null || row.Cells[3].Value == null))
                     {
@@ -46,13 +49,14 @@ namespace General
                     }
                     else
                     {
+                        // validacion que permite saber si los datos ingresados no son numeros
                         if ((!double.TryParse(row.Cells[2].Value.ToString(), out esNumero) || !double.TryParse(row.Cells[3].Value.ToString(), out esNumero)))
                         {
                             validar++;
                             row.Cells[2].Value = ' ';
                             row.Cells[3].Value = ' ';
                         }
-
+                        // validacion que permite saber si los datos ingresados son mayores a 0 y menores a 100
                         if ((((Convert.ToInt32(row.Cells[2].Value)) + Convert.ToInt32(row.Cells[3].Value)) > 100))
                         {
                             validar++;
@@ -61,7 +65,7 @@ namespace General
                 }
                 if (validar == 0)
                 {
-
+                    // procedimeinto almacenado que se ejecutara en todas las filas de la grilla
                     foreach (DataGridViewRow row in sPAlumnosXClaseBDataGridView.Rows)
                     {
                         ingresar.IngresarNotasB(row.Cells[0].Value.ToString(), Convert.ToInt32(row.Cells[2].Value), Convert.ToInt32(row.Cells[3].Value), comboBox1.Text.ToString(), sPMateriaBComboBox.SelectedValue.ToString());
@@ -81,6 +85,7 @@ namespace General
             this.sPAlumnosXClaseBTableAdapter.Fill(this.desarrolloDataSetElia.SPAlumnosXClaseB, Convert.ToInt32(sPCursoBComboBox.SelectedValue.ToString()));
             foreach (DataGridViewRow row in sPAlumnosXClaseBDataGridView.Rows)
             {
+                //ingresa el valor del procedimiento almacenado en la variable
                 row.Cells[2].Value = ingresar.SPAcumulativoPorPArcialB(row.Cells[0].Value.ToString(), sPMateriaBComboBox.SelectedValue.ToString(), comboBox1.Text.ToString(), sPSeccionBComboBox.SelectedValue.ToString());
                 row.Cells[3].Value = ingresar.SPExamenPorPArcialB(row.Cells[0].Value.ToString(), sPMateriaBComboBox.SelectedValue.ToString(), comboBox1.Text.ToString(), sPSeccionBComboBox.SelectedValue.ToString());
             }
@@ -88,19 +93,17 @@ namespace General
         }
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //el boton guardar pasa a habilitado
             button1.Enabled = true;
            
         }
         private void cursoIdTextBox_TextChanged_1(object sender, EventArgs e)
         {
+            //procedimientos que muestran la seccion, materia,alumnos
             this.sPSeccionBTableAdapter.Fill(this.desarrolloDataSetElia.SPSeccionB, Convert.ToInt32(cursoIdTextBox.Text));
             this.sPMateriaBTableAdapter.Fill(this.desarrolloDataSetElia.SPMateriaB, Convert.ToInt32(cursoIdTextBox.Text));
             this.sPAlumnosXClaseBTableAdapter.Fill(this.desarrolloDataSetElia.SPAlumnosXClaseB, Convert.ToInt32(cursoIdTextBox.Text));
         }
 
-        private void sPSeccionBComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

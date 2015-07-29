@@ -195,7 +195,6 @@
             this.sPSeccionBComboBox.Size = new System.Drawing.Size(143, 23);
             this.sPSeccionBComboBox.TabIndex = 8;
             this.sPSeccionBComboBox.ValueMember = "SecNombre";
-            this.sPSeccionBComboBox.SelectedIndexChanged += new System.EventHandler(this.sPSeccionBComboBox_SelectedIndexChanged);
             // 
             // sPMateriaBBindingSource
             // 

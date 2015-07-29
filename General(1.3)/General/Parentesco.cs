@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,7 +21,7 @@ namespace General
         }
         private void Parentesco_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'desarrolloDataSet1.spRelacion' Puede moverla o quitarla según sea necesario.
+            //  esta línea de código carga datos en la tabla 'desarrolloDataSet1.spRelacion'
             this.spRelacionTableAdapter.Fill(this.desarrolloDataSet1.spRelacion);
         }
         private void button1_Click(object sender, EventArgs e)
@@ -30,6 +30,7 @@ namespace General
             {
                 if (!string.IsNullOrWhiteSpace(textBox1.Text))
                 {
+                    // esta linea de codigo agrega el nombre del parentesco
                     Agregar.spParentesco_agregar(textBox1.Text);
                     this.spRelacionTableAdapter.Fill(this.desarrolloDataSet1.spRelacion);
                 }
@@ -43,10 +44,13 @@ namespace General
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             LogIn.ValorMaximoDeCaja(textBox1, 15, errorProvider1);
+
+            //esta linea de codigo llama la funcion sololetras para validar el textbox
             LogIn.SoloLetrasConMensaje(textBox1, errorProvider1);
         }
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
+
             if (textBox1.Text.Length == 0)
                 e.KeyChar = e.KeyChar.ToString().ToUpper().ToCharArray()[0];
             else
@@ -64,6 +68,7 @@ namespace General
                         nombre = spRelacionDataGridView.Rows[e.RowIndex].Cells[1].Value.ToString();
                         if (MessageBox.Show("Estas seguro de eliminar este registro?", "Eliminar registro", MessageBoxButtons.YesNo) == DialogResult.Yes)
                         {
+                            // en esta linea de codigo se elimina un parentesco ya registrado
                             eliminar.spRelacion_eliminar(nombre);
                             MessageBox.Show("Registro eliminado");
                         }
@@ -71,9 +76,4 @@ namespace General
                     }
                     catch (SqlException)
                     { }
-                }
-            }
-        }
-    }
-}
-
+                } } } }}

@@ -13,6 +13,7 @@ namespace General
 {
     public partial class Nacionalidad : Form
     {
+        //Variable para llamar los procedimientos que alteran la base de datos (modificar, eliminar, etc)
         QueriesTableAdapter eliminar = new QueriesTableAdapter();
         QueriesTableAdapter agregar = new QueriesTableAdapter();
         public Nacionalidad()
@@ -21,9 +22,10 @@ namespace General
         }
         private void Nacionalidad_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'desarrolloDataSet1.spNacionalidad' Puede moverla o quitarla según sea necesario.
+            // esta línea de código carga datos en la tabla 'desarrolloDataSet1.spNacionalidad'
             this.spNacionalidadTableAdapter1.Fill(this.desarrolloDataSet1.spNacionalidad);
-            // TODO: esta línea de código carga datos en la tabla 'desarrolloDataSet.spNacionalidad' Puede moverla o quitarla según sea necesario.
+
+            //  esta línea de código carga datos en la tabla 'desarrolloDataSet.spNacionalidad'
             this.spNacionalidadTableAdapter.Fill(this.desarrolloDataSet.spNacionalidad);
         }
         private void button1_Click(object sender, EventArgs e)
@@ -32,6 +34,7 @@ namespace General
             {
                 if (!string.IsNullOrWhiteSpace(textBox1.Text))
                 {
+                    // esta linea de codigo agrega una nacionalidad
                     agregar.spNacionalidad_agregar(textBox1.Text);
                     this.spNacionalidadTableAdapter1.Fill(this.desarrolloDataSet1.spNacionalidad);
                     this.spNacionalidadTableAdapter.Fill(this.desarrolloDataSet.spNacionalidad);
