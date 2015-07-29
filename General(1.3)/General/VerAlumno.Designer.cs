@@ -105,7 +105,6 @@
             this.label2.Size = new System.Drawing.Size(123, 15);
             this.label2.TabIndex = 3;
             this.label2.Text = "Número de identidad";
-          
             // 
             // comboBox1
             // 
@@ -140,7 +139,6 @@
             this.spVerAlumnoDataGridView.ReadOnly = true;
             this.spVerAlumnoDataGridView.Size = new System.Drawing.Size(686, 344);
             this.spVerAlumnoDataGridView.TabIndex = 7;
- 
             this.spVerAlumnoDataGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.spVerAlumnoDataGridView_CellDoubleClick);
             // 
             // spVerAlumnoBindingSource
@@ -212,7 +210,6 @@
             this.label3.Size = new System.Drawing.Size(66, 15);
             this.label3.TabIndex = 9;
             this.label3.Text = "Buscar por";
-           
             // 
             // label5
             // 
