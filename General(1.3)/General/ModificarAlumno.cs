@@ -448,6 +448,7 @@ namespace General
                       alumnodireccion, alumnoestadotrabajo, alumnolugardetrabajo, alumnohorariodetrabajo, encargadonombre1, encargadonombre2, encargadonombre3, encargadonombre4, encargadoid, encargadofechanacimiento,
                         encargadoSexo, encargadoOcupacion, encargadorelacion, alumnoestadomatricula, alumnomodalidad, alumnoinstituto, alumnocurso.ToString(), alumnoseccion);
                     MessageBox.Show("Modificacion con exito");
+                    this.Close();
                 }
                 catch (SqlException)
                 { }

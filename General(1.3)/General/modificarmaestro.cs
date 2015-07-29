@@ -32,27 +32,46 @@ namespace General
             }
             else if (contador == 2)
             {
-                try
-                {
-                    actualizar.psmodificarmaestro(mstroIdTextBox.Text, mstroEmailTextBox.Text, mstroDireccionTextBox.Text, mstroUsuTextBox.Text);
-                    mstroEmailTextBox.Enabled = false;
-                    mstroDireccionTextBox.Enabled = false;
-                    mstroUsuTextBox.Enabled = false;
-                    button1.Text = "modificar";
-                    MessageBox.Show("se actualizo con exito");
-                    contador = 0;
+                    try
+                    {
+                        actualizar.psmodificarmaestro(mstroIdTextBox.Text, mstroEmailTextBox.Text, mstroDireccionTextBox.Text, mstroUsuTextBox.Text);
+                        mstroEmailTextBox.Enabled = false;
+                        mstroDireccionTextBox.Enabled = false;
+                        mstroUsuTextBox.Enabled = false;
+                        textBox1.Enabled = false;
+                        mstroApellido2TextBox1.Enabled = false;
+                        button1.Text = "modificar";
+                        MessageBox.Show("se actualizo con exito");
+                        contador = 0;
+                    }
+                    catch (SqlException)
+                    {
+                        MessageBox.Show("Los Datos no fueron modificados , el usuario no existe ");
+                    }
                 }
-                catch (SqlException)
-                {
-                    MessageBox.Show("Los Datos no fueron modificados , el usuario no existe ");
-                }
-            }
             else if (contador == 0)
             { }
         }
         private void modificarmaestro_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'desarrolloDataSetmcha.Maestro' Puede moverla o quitarla según sea necesario.
+            //this.maestroTableAdapter.Fill(this.desarrolloDataSetmcha.Maestro);
+            // TODO: esta línea de código carga datos en la tabla 'dataSetmoises.Sexo' Puede moverla o quitarla según sea necesario.
+            this.sexoTableAdapter.Fill(this.dataSetmoises.Sexo);
             this.selectProfesorTableAdapter.Fill(this.desarrolloDataSetmcha.SelectProfesor, buscarmaestro.Idmaestro.ToString());
+            //muestra en la caja de texto del sexo que tipo de sexo es.
+            if(sexo_SexIdLabel1.Text == "1")
+            {
+                textBox1.Text = "Masculino";
+            }
+            else
+            {
+                textBox1.Text = "Femenino";
+            }
+
+            textBox1.Enabled = false;
+            mstroApellido2TextBox1.Enabled = false;
+            
         }
         private void mstroUsuTextBox_TextChanged(object sender, EventArgs e)
         {
@@ -84,5 +103,7 @@ namespace General
                 System.Windows.Forms.MessageBox.Show(ex.Message);
             }
         }
+
+     
     }
 }

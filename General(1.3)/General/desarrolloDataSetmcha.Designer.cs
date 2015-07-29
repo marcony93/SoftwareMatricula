@@ -9250,7 +9250,7 @@ namespace General {
             
             private global::System.Data.DataColumn columnMstroNombre1;
             
-            private global::System.Data.DataColumn columnMstroNombre11;
+            private global::System.Data.DataColumn columnMstroNombre2;
             
             private global::System.Data.DataColumn columnMstroApellido1;
             
@@ -9323,9 +9323,9 @@ namespace General {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn MstroNombre11Column {
+            public global::System.Data.DataColumn MstroNombre2Column {
                 get {
-                    return this.columnMstroNombre11;
+                    return this.columnMstroNombre2;
                 }
             }
             
@@ -9446,12 +9446,12 @@ namespace General {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public SelectProfesorRow AddSelectProfesorRow(string MstroId, string MstroNombre1, string MstroNombre11, string MstroApellido1, string MstroApellido2, System.DateTime MstroFechaNac, string MstroEmail, string MstroDireccion, int Sexo_SexId, string MstroUsu, int MstroTipo, string MstroBloc, byte[] MstroContra) {
+            public SelectProfesorRow AddSelectProfesorRow(string MstroId, string MstroNombre1, string MstroNombre2, string MstroApellido1, string MstroApellido2, System.DateTime MstroFechaNac, string MstroEmail, string MstroDireccion, int Sexo_SexId, string MstroUsu, int MstroTipo, string MstroBloc, byte[] MstroContra) {
                 SelectProfesorRow rowSelectProfesorRow = ((SelectProfesorRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         MstroId,
                         MstroNombre1,
-                        MstroNombre11,
+                        MstroNombre2,
                         MstroApellido1,
                         MstroApellido2,
                         MstroFechaNac,
@@ -9493,7 +9493,7 @@ namespace General {
             internal void InitVars() {
                 this.columnMstroId = base.Columns["MstroId"];
                 this.columnMstroNombre1 = base.Columns["MstroNombre1"];
-                this.columnMstroNombre11 = base.Columns["MstroNombre11"];
+                this.columnMstroNombre2 = base.Columns["MstroNombre2"];
                 this.columnMstroApellido1 = base.Columns["MstroApellido1"];
                 this.columnMstroApellido2 = base.Columns["MstroApellido2"];
                 this.columnMstroFechaNac = base.Columns["MstroFechaNac"];
@@ -9513,8 +9513,8 @@ namespace General {
                 base.Columns.Add(this.columnMstroId);
                 this.columnMstroNombre1 = new global::System.Data.DataColumn("MstroNombre1", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnMstroNombre1);
-                this.columnMstroNombre11 = new global::System.Data.DataColumn("MstroNombre11", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnMstroNombre11);
+                this.columnMstroNombre2 = new global::System.Data.DataColumn("MstroNombre2", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMstroNombre2);
                 this.columnMstroApellido1 = new global::System.Data.DataColumn("MstroApellido1", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnMstroApellido1);
                 this.columnMstroApellido2 = new global::System.Data.DataColumn("MstroApellido2", typeof(string), null, global::System.Data.MappingType.Element);
@@ -9542,8 +9542,7 @@ namespace General {
                 this.columnMstroId.MaxLength = 13;
                 this.columnMstroNombre1.AllowDBNull = false;
                 this.columnMstroNombre1.MaxLength = 15;
-                this.columnMstroNombre11.AllowDBNull = false;
-                this.columnMstroNombre11.MaxLength = 15;
+                this.columnMstroNombre2.MaxLength = 15;
                 this.columnMstroApellido1.AllowDBNull = false;
                 this.columnMstroApellido1.MaxLength = 15;
                 this.columnMstroApellido2.MaxLength = 15;
@@ -12558,12 +12557,17 @@ namespace General {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string MstroNombre11 {
+            public string MstroNombre2 {
                 get {
-                    return ((string)(this[this.tableSelectProfesor.MstroNombre11Column]));
+                    try {
+                        return ((string)(this[this.tableSelectProfesor.MstroNombre2Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'MstroNombre2\' de la tabla \'SelectProfesor\' es DBNull.", e);
+                    }
                 }
                 set {
-                    this[this.tableSelectProfesor.MstroNombre11Column] = value;
+                    this[this.tableSelectProfesor.MstroNombre2Column] = value;
                 }
             }
             
@@ -12715,6 +12719,18 @@ namespace General {
                 set {
                     this[this.tableSelectProfesor.MstroContraColumn] = value;
                 }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsMstroNombre2Null() {
+                return this.IsNull(this.tableSelectProfesor.MstroNombre2Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetMstroNombre2Null() {
+                this[this.tableSelectProfesor.MstroNombre2Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -13920,12 +13936,12 @@ SELECT AlumId, AlumNombre1, AlumNombre2, AlumApellido1, AlumApellido2, AlumFecha
                 "ipoSangre_TipSangreId] = @Original_TipoSangre_TipSangreId) AND ([Encargado_Encdo" +
                 "Id] = @Original_Encargado_EncdoId) AND ([Parentesco_ParenId] = @Original_Parente" +
                 "sco_ParenId) AND ([Departamento_DeptoId] = @Original_Departamento_DeptoId) AND (" +
-                "[Municipio_McipioId] = @Original_Municipio_McipioId));\nSELECT AlumId, AlumNombre" +
-                "1, AlumNombre2, AlumApellido1, AlumApellido2, AlumFechaNac, AlumDireccion, AlumE" +
-                "stadoTrabajo, AlumLugarTrabajo, AlumHorarioTrabajo, Sexo_SexId, EstadoCivil_EdoC" +
-                "ivilId, Nacionalidad_NacId, TipoSangre_TipSangreId, Encargado_EncdoId, Parentesc" +
-                "o_ParenId, Departamento_DeptoId, Municipio_McipioId FROM Alumno WHERE (AlumId = " +
-                "@AlumId)";
+                "[Municipio_McipioId] = @Original_Municipio_McipioId));\r\nSELECT AlumId, AlumNombr" +
+                "e1, AlumNombre2, AlumApellido1, AlumApellido2, AlumFechaNac, AlumDireccion, Alum" +
+                "EstadoTrabajo, AlumLugarTrabajo, AlumHorarioTrabajo, Sexo_SexId, EstadoCivil_Edo" +
+                "CivilId, Nacionalidad_NacId, TipoSangre_TipSangreId, Encargado_EncdoId, Parentes" +
+                "co_ParenId, Departamento_DeptoId, Municipio_McipioId FROM Alumno WHERE (AlumId =" +
+                " @AlumId)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AlumId", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AlumId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AlumNombre1", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AlumNombre1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -14654,8 +14670,8 @@ SELECT AlumId, AlumNombre1, AlumNombre2, AlumApellido1, AlumApellido2, AlumFecha
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Curso] ([CursoId], [Curso Nombre], [Modalidad_ModId]) VALUES (" +
-                "@CursoId, @Curso_Nombre, @Modalidad_ModId);\nSELECT CursoId, [Curso Nombre], Moda" +
-                "lidad_ModId FROM Curso WHERE (CursoId = @CursoId)";
+                "@CursoId, @Curso_Nombre, @Modalidad_ModId);\r\nSELECT CursoId, [Curso Nombre], Mod" +
+                "alidad_ModId FROM Curso WHERE (CursoId = @CursoId)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CursoId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CursoId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Curso_Nombre", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Curso Nombre", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -14986,8 +15002,8 @@ SELECT CursoId, [Curso Nombre], Modalidad_ModId FROM Curso WHERE (CursoId = @Cur
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Departamento] ([DeptoId], [DeptoNombre]) VALUES (@DeptoId, @De" +
-                "ptoNombre);\nSELECT DeptoId, DeptoNombre FROM Departamento WHERE (DeptoId = @Dept" +
-                "oId)";
+                "ptoNombre);\r\nSELECT DeptoId, DeptoNombre FROM Departamento WHERE (DeptoId = @Dep" +
+                "toId)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DeptoId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DeptoId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DeptoNombre", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DeptoNombre", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -14995,7 +15011,8 @@ SELECT CursoId, [Curso Nombre], Modalidad_ModId FROM Curso WHERE (CursoId = @Cur
             this._adapter.UpdateCommand.Connection = this.Connection;
             this._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[Departamento] SET [DeptoId] = @DeptoId, [DeptoNombre] = @DeptoNombr" +
                 "e WHERE (([DeptoId] = @Original_DeptoId) AND ([DeptoNombre] = @Original_DeptoNom" +
-                "bre));\nSELECT DeptoId, DeptoNombre FROM Departamento WHERE (DeptoId = @DeptoId)";
+                "bre));\r\nSELECT DeptoId, DeptoNombre FROM Departamento WHERE (DeptoId = @DeptoId)" +
+                "";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DeptoId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DeptoId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DeptoNombre", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DeptoNombre", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -15303,14 +15320,14 @@ SELECT CursoId, [Curso Nombre], Modalidad_ModId FROM Curso WHERE (CursoId = @Cur
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Dia", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Dia", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Dia] ([Dia]) VALUES (@Dia);\nSELECT Dia FROM Dia WHERE (Dia = @" +
-                "Dia)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Dia] ([Dia]) VALUES (@Dia);\r\nSELECT Dia FROM Dia WHERE (Dia = " +
+                "@Dia)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Dia", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Dia", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[Dia] SET [Dia] = @Dia WHERE (([Dia] = @Original_Dia));\nSELECT Dia F" +
-                "ROM Dia WHERE (Dia = @Dia)";
+            this._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[Dia] SET [Dia] = @Dia WHERE (([Dia] = @Original_Dia));\r\nSELECT Dia " +
+                "FROM Dia WHERE (Dia = @Dia)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Dia", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Dia", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Dia", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Dia", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -15969,8 +15986,8 @@ SELECT DocMatriAnio, Alumno_AlumId, Documentos_DocId FROM DocumentoMatricula WHE
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Documentos] ([DocId], [DocDescripcion], [DocEstado]) VALUES (@" +
-                "DocId, @DocDescripcion, @DocEstado);\nSELECT DocId, DocDescripcion, DocEstado FRO" +
-                "M Documentos WHERE (DocId = @DocId)";
+                "DocId, @DocDescripcion, @DocEstado);\r\nSELECT DocId, DocDescripcion, DocEstado FR" +
+                "OM Documentos WHERE (DocId = @DocId)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DocId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DocId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DocDescripcion", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DocDescripcion", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -16828,8 +16845,8 @@ SELECT EncdoId, EncdoNombre1, EncdoNombre2, EncdoApellido1, EncdoApellido2, Encd
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[EstadoCivil] ([EdoCivilId], [EdoCivilNombre]) VALUES (@EdoCivi" +
-                "lId, @EdoCivilNombre);\nSELECT EdoCivilId, EdoCivilNombre FROM EstadoCivil WHERE " +
-                "(EdoCivilId = @EdoCivilId)";
+                "lId, @EdoCivilNombre);\r\nSELECT EdoCivilId, EdoCivilNombre FROM EstadoCivil WHERE" +
+                " (EdoCivilId = @EdoCivilId)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@EdoCivilId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "EdoCivilId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@EdoCivilNombre", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "EdoCivilNombre", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -17148,8 +17165,8 @@ SELECT EdoCivilId, EdoCivilNombre FROM EstadoCivil WHERE (EdoCivilId = @EdoCivil
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[EstadoMatricula] ([EstdoMatriId], [EstdoMatriDescripcion]) VAL" +
-                "UES (@EstdoMatriId, @EstdoMatriDescripcion);\nSELECT EstdoMatriId, EstdoMatriDesc" +
-                "ripcion FROM EstadoMatricula WHERE (EstdoMatriId = @EstdoMatriId)";
+                "UES (@EstdoMatriId, @EstdoMatriDescripcion);\r\nSELECT EstdoMatriId, EstdoMatriDes" +
+                "cripcion FROM EstadoMatricula WHERE (EstdoMatriId = @EstdoMatriId)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@EstdoMatriId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "EstdoMatriId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@EstdoMatriDescripcion", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "EstdoMatriDescripcion", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -17865,14 +17882,14 @@ SELECT FichaMatriAnio, Alumno_AlumId, EstadoMatricula_EstdoMatriId, Instituto_In
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Hora", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Hora", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Hora] ([Hora]) VALUES (@Hora);\nSELECT Hora FROM Hora WHERE (Ho" +
-                "ra = @Hora)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Hora] ([Hora]) VALUES (@Hora);\r\nSELECT Hora FROM Hora WHERE (H" +
+                "ora = @Hora)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Hora", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Hora", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[Hora] SET [Hora] = @Hora WHERE (([Hora] = @Original_Hora));\nSELECT " +
-                "Hora FROM Hora WHERE (Hora = @Hora)";
+            this._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[Hora] SET [Hora] = @Hora WHERE (([Hora] = @Original_Hora));\r\nSELECT" +
+                " Hora FROM Hora WHERE (Hora = @Hora)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Hora", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Hora", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Hora", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Hora", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -18182,8 +18199,8 @@ SELECT FichaMatriAnio, Alumno_AlumId, EstadoMatricula_EstdoMatriId, Instituto_In
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Instituto] ([InstoId], [InstoNombre], [InstoLugar]) VALUES (@I" +
-                "nstoId, @InstoNombre, @InstoLugar);\nSELECT InstoId, InstoNombre, InstoLugar FROM" +
-                " Instituto WHERE (InstoId = @InstoId)";
+                "nstoId, @InstoNombre, @InstoLugar);\r\nSELECT InstoId, InstoNombre, InstoLugar FRO" +
+                "M Instituto WHERE (InstoId = @InstoId)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@InstoId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "InstoId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@InstoNombre", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "InstoNombre", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -18599,10 +18616,10 @@ SELECT MstroId, MstroNombre1, MstroNombre2, MstroApellido1, MstroApellido2, Mstr
                 "iginal_MstroUsu)) AND ((@IsNull_MstroContra = 1 AND [MstroContra] IS NULL) OR ([" +
                 "MstroContra] = @Original_MstroContra)) AND ((@IsNull_MstroTipo = 1 AND [MstroTip" +
                 "o] IS NULL) OR ([MstroTipo] = @Original_MstroTipo)) AND ((@IsNull_MstroBloc = 1 " +
-                "AND [MstroBloc] IS NULL) OR ([MstroBloc] = @Original_MstroBloc)));\nSELECT MstroI" +
-                "d, MstroNombre1, MstroNombre2, MstroApellido1, MstroApellido2, MstroFechaNac, Ms" +
-                "troEmail, MstroDireccion, Sexo_SexId, MstroUsu, MstroContra, MstroTipo, MstroBlo" +
-                "c FROM Maestro WHERE (MstroId = @MstroId)";
+                "AND [MstroBloc] IS NULL) OR ([MstroBloc] = @Original_MstroBloc)));\r\nSELECT Mstro" +
+                "Id, MstroNombre1, MstroNombre2, MstroApellido1, MstroApellido2, MstroFechaNac, M" +
+                "stroEmail, MstroDireccion, Sexo_SexId, MstroUsu, MstroContra, MstroTipo, MstroBl" +
+                "oc FROM Maestro WHERE (MstroId = @MstroId)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@MstroId", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "MstroId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@MstroNombre1", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "MstroNombre1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -19655,8 +19672,8 @@ SELECT NombreMateria, Modalidad_ModId, Curso FROM Materia WHERE (Modalidad_ModId
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Modalidad] ([ModId], [Modalidad Nombre]) VALUES (@ModId, @Moda" +
-                "lidad_Nombre);\nSELECT ModId, [Modalidad Nombre] FROM Modalidad WHERE (ModId = @M" +
-                "odId)";
+                "lidad_Nombre);\r\nSELECT ModId, [Modalidad Nombre] FROM Modalidad WHERE (ModId = @" +
+                "ModId)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ModId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ModId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Modalidad_Nombre", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Modalidad Nombre", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -19980,15 +19997,15 @@ SELECT ModId, [Modalidad Nombre] FROM Modalidad WHERE (ModId = @ModId)";
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Nacionalidad] ([NacId], [NacNombre]) VALUES (@NacId, @NacNombr" +
-                "e);\nSELECT NacId, NacNombre FROM Nacionalidad WHERE (NacId = @NacId)";
+                "e);\r\nSELECT NacId, NacNombre FROM Nacionalidad WHERE (NacId = @NacId)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NacId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NacId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NacNombre", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NacNombre", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
             this._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[Nacionalidad] SET [NacId] = @NacId, [NacNombre] = @NacNombre WHERE " +
-                "(([NacId] = @Original_NacId) AND ([NacNombre] = @Original_NacNombre));\nSELECT Na" +
-                "cId, NacNombre FROM Nacionalidad WHERE (NacId = @NacId)";
+                "(([NacId] = @Original_NacId) AND ([NacNombre] = @Original_NacNombre));\r\nSELECT N" +
+                "acId, NacNombre FROM Nacionalidad WHERE (NacId = @NacId)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NacId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NacId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NacNombre", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NacNombre", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -20574,15 +20591,15 @@ SELECT ModId, [Modalidad Nombre] FROM Modalidad WHERE (ModId = @ModId)";
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Ocupacion] ([OcupId], [OcupNombre]) VALUES (@OcupId, @OcupNomb" +
-                "re);\nSELECT OcupId, OcupNombre FROM Ocupacion WHERE (OcupId = @OcupId)";
+                "re);\r\nSELECT OcupId, OcupNombre FROM Ocupacion WHERE (OcupId = @OcupId)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OcupId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OcupId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OcupNombre", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OcupNombre", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
             this._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[Ocupacion] SET [OcupId] = @OcupId, [OcupNombre] = @OcupNombre WHERE" +
-                " (([OcupId] = @Original_OcupId) AND ([OcupNombre] = @Original_OcupNombre));\nSELE" +
-                "CT OcupId, OcupNombre FROM Ocupacion WHERE (OcupId = @OcupId)";
+                " (([OcupId] = @Original_OcupId) AND ([OcupNombre] = @Original_OcupNombre));\r\nSEL" +
+                "ECT OcupId, OcupNombre FROM Ocupacion WHERE (OcupId = @OcupId)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OcupId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OcupId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OcupNombre", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OcupNombre", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -20894,8 +20911,8 @@ SELECT ModId, [Modalidad Nombre] FROM Modalidad WHERE (ModId = @ModId)";
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Parentesco] ([ParenId], [ParenNombre]) VALUES (@ParenId, @Pare" +
-                "nNombre);\nSELECT ParenId, ParenNombre FROM Parentesco WHERE (ParenId = @ParenId)" +
-                "";
+                "nNombre);\r\nSELECT ParenId, ParenNombre FROM Parentesco WHERE (ParenId = @ParenId" +
+                ")";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ParenId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ParenId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ParenNombre", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ParenNombre", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -20903,7 +20920,7 @@ SELECT ModId, [Modalidad Nombre] FROM Modalidad WHERE (ModId = @ModId)";
             this._adapter.UpdateCommand.Connection = this.Connection;
             this._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[Parentesco] SET [ParenId] = @ParenId, [ParenNombre] = @ParenNombre " +
                 "WHERE (([ParenId] = @Original_ParenId) AND ([ParenNombre] = @Original_ParenNombr" +
-                "e));\nSELECT ParenId, ParenNombre FROM Parentesco WHERE (ParenId = @ParenId)";
+                "e));\r\nSELECT ParenId, ParenNombre FROM Parentesco WHERE (ParenId = @ParenId)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ParenId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ParenId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ParenNombre", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ParenNombre", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -22111,16 +22128,16 @@ SELECT SecAnio, [SecCantidad ], SecNombre, Curso_CursoId FROM Seccion WHERE (Cur
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_SexNombre", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SexNombre", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Sexo] ([SexId], [SexNombre]) VALUES (@SexId, @SexNombre);\nSELE" +
-                "CT SexId, SexNombre FROM Sexo WHERE (SexId = @SexId)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Sexo] ([SexId], [SexNombre]) VALUES (@SexId, @SexNombre);\r\nSEL" +
+                "ECT SexId, SexNombre FROM Sexo WHERE (SexId = @SexId)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SexId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SexId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SexNombre", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SexNombre", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
             this._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[Sexo] SET [SexId] = @SexId, [SexNombre] = @SexNombre WHERE (([SexId" +
-                "] = @Original_SexId) AND ([SexNombre] = @Original_SexNombre));\nSELECT SexId, Sex" +
-                "Nombre FROM Sexo WHERE (SexId = @SexId)";
+                "] = @Original_SexId) AND ([SexNombre] = @Original_SexNombre));\r\nSELECT SexId, Se" +
+                "xNombre FROM Sexo WHERE (SexId = @SexId)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SexId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SexId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SexNombre", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SexNombre", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -22432,8 +22449,8 @@ SELECT SecAnio, [SecCantidad ], SecNombre, Curso_CursoId FROM Seccion WHERE (Cur
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[TelefonoAlumno] ([TelNumero], [Alumno_AlumId]) VALUES (@TelNum" +
-                "ero, @Alumno_AlumId);\nSELECT TelNumero, Alumno_AlumId FROM TelefonoAlumno WHERE " +
-                "(TelNumero = @TelNumero)";
+                "ero, @Alumno_AlumId);\r\nSELECT TelNumero, Alumno_AlumId FROM TelefonoAlumno WHERE" +
+                " (TelNumero = @TelNumero)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TelNumero", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TelNumero", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Alumno_AlumId", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Alumno_AlumId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -22772,8 +22789,8 @@ SELECT TelNumero, Alumno_AlumId FROM TelefonoAlumno WHERE (TelNumero = @TelNumer
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[TipoSangre] ([TipSangreId], [TipSangreNombre]) VALUES (@TipSan" +
-                "greId, @TipSangreNombre);\nSELECT TipSangreId, TipSangreNombre FROM TipoSangre WH" +
-                "ERE (TipSangreId = @TipSangreId)";
+                "greId, @TipSangreNombre);\r\nSELECT TipSangreId, TipSangreNombre FROM TipoSangre W" +
+                "HERE (TipSangreId = @TipSangreId)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TipSangreId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TipSangreId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TipSangreNombre", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TipSangreNombre", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -23300,7 +23317,7 @@ SELECT TipSangreId, TipSangreNombre FROM TipoSangre WHERE (TipSangreId = @TipSan
             tableMapping.DataSetTable = "SelectProfesor";
             tableMapping.ColumnMappings.Add("MstroId", "MstroId");
             tableMapping.ColumnMappings.Add("MstroNombre1", "MstroNombre1");
-            tableMapping.ColumnMappings.Add("MstroNombre11", "MstroNombre11");
+            tableMapping.ColumnMappings.Add("MstroNombre2", "MstroNombre2");
             tableMapping.ColumnMappings.Add("MstroApellido1", "MstroApellido1");
             tableMapping.ColumnMappings.Add("MstroApellido2", "MstroApellido2");
             tableMapping.ColumnMappings.Add("MstroFechaNac", "MstroFechaNac");

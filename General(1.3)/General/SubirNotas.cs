@@ -31,30 +31,51 @@ namespace General
         }
         private void button2_Click(object sender, EventArgs e)
         {
-            foreach (DataGridViewRow row in sPAlumnosXClaseBDataGridView.Rows)
+            if (comboBox1.SelectedItem== null)
             {
-                double esNumero;
-                if ((!double.TryParse(row.Cells[2].Value.ToString(), out esNumero) || !double.TryParse(row.Cells[3].Value.ToString(), out esNumero)) || (row.Cells[2].Value == null || row.Cells[3].Value == null) || (((Convert.ToInt32(row.Cells[2].Value)) + Convert.ToInt32(row.Cells[3].Value)) > 100))
-                {
-                    validar++;
-                    row.Cells[2].Value = ' ';
-                    row.Cells[3].Value = ' ';
-                }
-            }
-            if (validar == 0)
-            {
-                foreach (DataGridViewRow row in sPAlumnosXClaseBDataGridView.Rows)
-                {
-                    ingresar.IngresarNotasB(row.Cells[0].Value.ToString(), Convert.ToInt32(row.Cells[2].Value), Convert.ToInt32(row.Cells[3].Value), comboBox1.Text.ToString(), sPMateriaBComboBox.SelectedValue.ToString());
-                }
-                MessageBox.Show("Datos ingresados con exito");
+                MessageBox.Show("Debe seleccionar todos los datos, verifique sección");
             }
             else
             {
-                MessageBox.Show("No se puede ingresar las notas, Existen valores incorrectos");
-                validar = 0;
+                foreach (DataGridViewRow row in sPAlumnosXClaseBDataGridView.Rows)
+                {
+                    double esNumero;
+                    if ((row.Cells[2].Value == null || row.Cells[3].Value == null))
+                    {
+                        validar++;
+                    }
+                    else
+                    {
+                        if ((!double.TryParse(row.Cells[2].Value.ToString(), out esNumero) || !double.TryParse(row.Cells[3].Value.ToString(), out esNumero)))
+                        {
+                            validar++;
+                            row.Cells[2].Value = ' ';
+                            row.Cells[3].Value = ' ';
+                        }
+
+                        if ((((Convert.ToInt32(row.Cells[2].Value)) + Convert.ToInt32(row.Cells[3].Value)) > 100))
+                        {
+                            validar++;
+                        }
+                    }
+                }
+                if (validar == 0)
+                {
+
+                    foreach (DataGridViewRow row in sPAlumnosXClaseBDataGridView.Rows)
+                    {
+                        ingresar.IngresarNotasB(row.Cells[0].Value.ToString(), Convert.ToInt32(row.Cells[2].Value), Convert.ToInt32(row.Cells[3].Value), comboBox1.Text.ToString(), sPMateriaBComboBox.SelectedValue.ToString());
+                    }
+                    MessageBox.Show("Datos ingresados con exito");
+                }
+                else
+                {
+                    MessageBox.Show("No se puede ingresar las notas, Existen valores incorrectos");
+                    validar = 0;
+                }
             }
         }
+        
         private void button1_Click(object sender, EventArgs e)
         {
             this.sPAlumnosXClaseBTableAdapter.Fill(this.desarrolloDataSetElia.SPAlumnosXClaseB, Convert.ToInt32(sPCursoBComboBox.SelectedValue.ToString()));
@@ -68,12 +89,18 @@ namespace General
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             button1.Enabled = true;
+           
         }
         private void cursoIdTextBox_TextChanged_1(object sender, EventArgs e)
         {
             this.sPSeccionBTableAdapter.Fill(this.desarrolloDataSetElia.SPSeccionB, Convert.ToInt32(cursoIdTextBox.Text));
             this.sPMateriaBTableAdapter.Fill(this.desarrolloDataSetElia.SPMateriaB, Convert.ToInt32(cursoIdTextBox.Text));
             this.sPAlumnosXClaseBTableAdapter.Fill(this.desarrolloDataSetElia.SPAlumnosXClaseB, Convert.ToInt32(cursoIdTextBox.Text));
+        }
+
+        private void sPSeccionBComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -98,7 +98,7 @@ namespace General
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //esta decicion me me permite saber si la caja de texto en valida
+            //esta desicion me me permite saber si la caja de texto en valida
             if (CorreoValido(textBox7.Text) == false)
             {
                 //muestra un mensaje para decirle al ususario que el correo no es valido
@@ -107,44 +107,34 @@ namespace General
             }
             else
             {
-                try
+                int dias = DateTime.Now.Date.Subtract(dateTimePicker1.Value.Date).Days;
+                if (dias < 0)
                 {
-                    //disparador de un prcedimiento almacenado que inserta un nuevo maestro
-                    QTA.insertarnuevomaestro(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text, dateTimePicker1.Value, textBox7.Text, textBox6.Text, spSexoComboBox.SelectedIndex + 1, label12.Text, label13.Text, 2, "0");
-                    MessageBox.Show("Se ha Guardado con Exito");
+                    MessageBox.Show("la fecha seleccionada es igual o mayor al dia actual");
                 }
-                catch (SqlException)
+                int años = dias / 365;
+                if (años < 18)
                 {
-                    MessageBox.Show("El Maestro no ha sido guardado");
+                    MessageBox.Show("debe ser mayor a 18 años");
+                }
+                else
+                {
+                    try
+                    {
+                        //disparador de un prcedimiento almacenado que inserta un nuevo maestro
+                        QTA.insertarnuevomaestro(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text, dateTimePicker1.Value, textBox7.Text, textBox6.Text, spSexoComboBox.SelectedIndex + 1, label12.Text, label13.Text, 2, "0");
+                        MessageBox.Show("Se ha Guardado con Exito");
+                    }
+                    catch (SqlException)
+                    {
+                        MessageBox.Show("El Maestro no ha sido guardado");
+                    }
                 }
             }
         }
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
-            //decicion de las fechas futuras
-            int actual = 0;
-            int ingresado = 0;
-            ingresado = Convert.ToInt32(dateTimePicker1.Value.Year) + Convert.ToInt32(dateTimePicker1.Value.Month) + Convert.ToInt32(dateTimePicker1.Value.Day);
-            actual = Convert.ToInt32(DateTime.Today.Year) + Convert.ToInt32(DateTime.Today.Month) + Convert.ToInt32(DateTime.Today.Day);
-            if (ingresado > actual)
-            {
-                MessageBox.Show("Ingrese una fecha Valida");
-                dateTimePicker1.Value = DateTime.Today;
-            }
-            int a;
-            try
-            {
-                a = (DateTime.Today.AddTicks(-dateTimePicker1.Value.Ticks).Year - 1);
-                if (a < 18)
-                {
-                    MessageBox.Show("es menor de edad");
-                    dateTimePicker1.ResetText();
-                }
-            }
-            catch (Exception)
-            {
-
-            }
+            
         }
 
         private void textBox2_KeyPress(object sender, KeyPressEventArgs e)

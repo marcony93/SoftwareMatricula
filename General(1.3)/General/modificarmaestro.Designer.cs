@@ -47,20 +47,25 @@
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.selectProfesorBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.desarrolloDataSetmcha = new General.desarrolloDataSetmcha();
             this.tableAdapterManager = new General.desarrolloDataSetmchaTableAdapters.TableAdapterManager();
-            this.selectProfesorBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.selectProfesorTableAdapter = new General.desarrolloDataSetmchaTableAdapters.SelectProfesorTableAdapter();
             this.mstroIdTextBox = new System.Windows.Forms.TextBox();
-            this.sexo_SexIdComboBox = new System.Windows.Forms.ComboBox();
-            this.mstroNombre1TextBox = new System.Windows.Forms.TextBox();
-            this.mstroNombre11TextBox = new System.Windows.Forms.TextBox();
-            this.mstroApellido1TextBox = new System.Windows.Forms.TextBox();
-            this.mstroApellido2TextBox = new System.Windows.Forms.TextBox();
             this.mstroFechaNacDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.mstroEmailTextBox = new System.Windows.Forms.TextBox();
             this.mstroUsuTextBox = new System.Windows.Forms.TextBox();
             this.mstroDireccionTextBox = new System.Windows.Forms.TextBox();
+            this.mstroNombre1TextBox1 = new System.Windows.Forms.TextBox();
+            this.mstroNombre2TextBox = new System.Windows.Forms.TextBox();
+            this.mstroApellido1TextBox1 = new System.Windows.Forms.TextBox();
+            this.mstroApellido2TextBox1 = new System.Windows.Forms.TextBox();
+            this.mstroEmailTextBox = new System.Windows.Forms.TextBox();
+            this.dataSetmoises = new General.DataSetmoises();
+            this.sexoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sexoTableAdapter = new General.DataSetmoisesTableAdapters.SexoTableAdapter();
+            this.tableAdapterManager1 = new General.DataSetmoisesTableAdapters.TableAdapterManager();
+            this.sexo_SexIdLabel1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             mstroIdLabel = new System.Windows.Forms.Label();
             mstroNombre1Label = new System.Windows.Forms.Label();
             mstroNombre2Label = new System.Windows.Forms.Label();
@@ -75,8 +80,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.desarrolloDataSetmcha)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.selectProfesorBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.desarrolloDataSetmcha)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetmoises)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sexoBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // mstroIdLabel
@@ -259,12 +266,16 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.selectProfesorBindingSource, "MstroDireccion", true));
             this.pictureBox1.Location = new System.Drawing.Point(12, 68);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(713, 298);
             this.pictureBox1.TabIndex = 62;
             this.pictureBox1.TabStop = false;
+            // 
+            // selectProfesorBindingSource
+            // 
+            this.selectProfesorBindingSource.DataMember = "SelectProfesor";
+            this.selectProfesorBindingSource.DataSource = this.desarrolloDataSetmcha;
             // 
             // desarrolloDataSetmcha
             // 
@@ -301,11 +312,6 @@
             this.tableAdapterManager.TipoSangreTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = General.desarrolloDataSetmchaTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // selectProfesorBindingSource
-            // 
-            this.selectProfesorBindingSource.DataMember = "SelectProfesor";
-            this.selectProfesorBindingSource.DataSource = this.desarrolloDataSetmcha;
-            // 
             // selectProfesorTableAdapter
             // 
             this.selectProfesorTableAdapter.ClearBeforeFill = true;
@@ -319,51 +325,6 @@
             this.mstroIdTextBox.Size = new System.Drawing.Size(100, 20);
             this.mstroIdTextBox.TabIndex = 68;
             // 
-            // sexo_SexIdComboBox
-            // 
-            this.sexo_SexIdComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.selectProfesorBindingSource, "Sexo_SexId", true));
-            this.sexo_SexIdComboBox.FormattingEnabled = true;
-            this.sexo_SexIdComboBox.Location = new System.Drawing.Point(311, 172);
-            this.sexo_SexIdComboBox.Name = "sexo_SexIdComboBox";
-            this.sexo_SexIdComboBox.Size = new System.Drawing.Size(100, 21);
-            this.sexo_SexIdComboBox.TabIndex = 66;
-            // 
-            // mstroNombre1TextBox
-            // 
-            this.mstroNombre1TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.selectProfesorBindingSource, "MstroNombre1", true));
-            this.mstroNombre1TextBox.Enabled = false;
-            this.mstroNombre1TextBox.Location = new System.Drawing.Point(47, 119);
-            this.mstroNombre1TextBox.Name = "mstroNombre1TextBox";
-            this.mstroNombre1TextBox.Size = new System.Drawing.Size(100, 20);
-            this.mstroNombre1TextBox.TabIndex = 68;
-            // 
-            // mstroNombre11TextBox
-            // 
-            this.mstroNombre11TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.selectProfesorBindingSource, "MstroNombre11", true));
-            this.mstroNombre11TextBox.Enabled = false;
-            this.mstroNombre11TextBox.Location = new System.Drawing.Point(179, 119);
-            this.mstroNombre11TextBox.Name = "mstroNombre11TextBox";
-            this.mstroNombre11TextBox.Size = new System.Drawing.Size(100, 20);
-            this.mstroNombre11TextBox.TabIndex = 68;
-            // 
-            // mstroApellido1TextBox
-            // 
-            this.mstroApellido1TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.selectProfesorBindingSource, "MstroApellido1", true));
-            this.mstroApellido1TextBox.Enabled = false;
-            this.mstroApellido1TextBox.Location = new System.Drawing.Point(311, 119);
-            this.mstroApellido1TextBox.Name = "mstroApellido1TextBox";
-            this.mstroApellido1TextBox.Size = new System.Drawing.Size(100, 20);
-            this.mstroApellido1TextBox.TabIndex = 68;
-            // 
-            // mstroApellido2TextBox
-            // 
-            this.mstroApellido2TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.selectProfesorBindingSource, "MstroApellido2", true));
-            this.mstroApellido2TextBox.Enabled = false;
-            this.mstroApellido2TextBox.Location = new System.Drawing.Point(443, 119);
-            this.mstroApellido2TextBox.Name = "mstroApellido2TextBox";
-            this.mstroApellido2TextBox.Size = new System.Drawing.Size(100, 20);
-            this.mstroApellido2TextBox.TabIndex = 68;
-            // 
             // mstroFechaNacDateTimePicker
             // 
             this.mstroFechaNacDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.selectProfesorBindingSource, "MstroFechaNac", true));
@@ -372,15 +333,7 @@
             this.mstroFechaNacDateTimePicker.Name = "mstroFechaNacDateTimePicker";
             this.mstroFechaNacDateTimePicker.Size = new System.Drawing.Size(232, 20);
             this.mstroFechaNacDateTimePicker.TabIndex = 71;
-            // 
-            // mstroEmailTextBox
-            // 
-            this.mstroEmailTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.selectProfesorBindingSource, "MstroEmail", true));
-            this.mstroEmailTextBox.Enabled = false;
-            this.mstroEmailTextBox.Location = new System.Drawing.Point(47, 172);
-            this.mstroEmailTextBox.Name = "mstroEmailTextBox";
-            this.mstroEmailTextBox.Size = new System.Drawing.Size(226, 20);
-            this.mstroEmailTextBox.TabIndex = 72;
+           
             // 
             // mstroUsuTextBox
             // 
@@ -401,6 +354,109 @@
             this.mstroDireccionTextBox.Size = new System.Drawing.Size(226, 69);
             this.mstroDireccionTextBox.TabIndex = 74;
             // 
+            // mstroNombre1TextBox1
+            // 
+            this.mstroNombre1TextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.selectProfesorBindingSource, "MstroNombre1", true));
+            this.mstroNombre1TextBox1.Enabled = false;
+            this.mstroNombre1TextBox1.Location = new System.Drawing.Point(50, 119);
+            this.mstroNombre1TextBox1.Name = "mstroNombre1TextBox1";
+            this.mstroNombre1TextBox1.Size = new System.Drawing.Size(100, 20);
+            this.mstroNombre1TextBox1.TabIndex = 75;
+            // 
+            // mstroNombre2TextBox
+            // 
+            this.mstroNombre2TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.selectProfesorBindingSource, "MstroNombre2", true));
+            this.mstroNombre2TextBox.Enabled = false;
+            this.mstroNombre2TextBox.Location = new System.Drawing.Point(182, 119);
+            this.mstroNombre2TextBox.Name = "mstroNombre2TextBox";
+            this.mstroNombre2TextBox.Size = new System.Drawing.Size(100, 20);
+            this.mstroNombre2TextBox.TabIndex = 76;
+            // 
+            // mstroApellido1TextBox1
+            // 
+            this.mstroApellido1TextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.selectProfesorBindingSource, "MstroApellido1", true));
+            this.mstroApellido1TextBox1.Enabled = false;
+            this.mstroApellido1TextBox1.Location = new System.Drawing.Point(314, 119);
+            this.mstroApellido1TextBox1.Name = "mstroApellido1TextBox1";
+            this.mstroApellido1TextBox1.Size = new System.Drawing.Size(100, 20);
+            this.mstroApellido1TextBox1.TabIndex = 77;
+            // 
+            // mstroApellido2TextBox1
+            // 
+            this.mstroApellido2TextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.selectProfesorBindingSource, "MstroApellido2", true));
+            this.mstroApellido2TextBox1.Location = new System.Drawing.Point(446, 119);
+            this.mstroApellido2TextBox1.Name = "mstroApellido2TextBox1";
+            this.mstroApellido2TextBox1.Size = new System.Drawing.Size(100, 20);
+            this.mstroApellido2TextBox1.TabIndex = 78;
+            // 
+            // mstroEmailTextBox
+            // 
+            this.mstroEmailTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.selectProfesorBindingSource, "MstroEmail", true));
+            this.mstroEmailTextBox.Enabled = false;
+            this.mstroEmailTextBox.Location = new System.Drawing.Point(50, 174);
+            this.mstroEmailTextBox.Name = "mstroEmailTextBox";
+            this.mstroEmailTextBox.Size = new System.Drawing.Size(232, 20);
+            this.mstroEmailTextBox.TabIndex = 79;
+            // 
+            // dataSetmoises
+            // 
+            this.dataSetmoises.DataSetName = "DataSetmoises";
+            this.dataSetmoises.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // sexoBindingSource
+            // 
+            this.sexoBindingSource.DataMember = "Sexo";
+            this.sexoBindingSource.DataSource = this.dataSetmoises;
+            // 
+            // sexoTableAdapter
+            // 
+            this.sexoTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager1
+            // 
+            this.tableAdapterManager1.AlumnoTableAdapter = null;
+            this.tableAdapterManager1.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager1.CursoTableAdapter = null;
+            this.tableAdapterManager1.DepartamentoTableAdapter = null;
+            this.tableAdapterManager1.DiaTableAdapter = null;
+            this.tableAdapterManager1.DocumentoMatriculaTableAdapter = null;
+            this.tableAdapterManager1.DocumentosTableAdapter = null;
+            this.tableAdapterManager1.EncargadoTableAdapter = null;
+            this.tableAdapterManager1.EstadoCivilTableAdapter = null;
+            this.tableAdapterManager1.EstadoMatriculaTableAdapter = null;
+            this.tableAdapterManager1.FichaMatriculaTableAdapter = null;
+            this.tableAdapterManager1.HoraTableAdapter = null;
+            this.tableAdapterManager1.InstitutoTableAdapter = null;
+            this.tableAdapterManager1.MaestroTableAdapter = null;
+            this.tableAdapterManager1.MateriaTableAdapter = null;
+            this.tableAdapterManager1.ModalidadTableAdapter = null;
+            this.tableAdapterManager1.NacionalidadTableAdapter = null;
+            this.tableAdapterManager1.NotasTableAdapter = null;
+            this.tableAdapterManager1.OcupacionTableAdapter = null;
+            this.tableAdapterManager1.ParentescoTableAdapter = null;
+            this.tableAdapterManager1.Planilla_ClaseTableAdapter = null;
+            this.tableAdapterManager1.SeccionTableAdapter = null;
+            this.tableAdapterManager1.SexoTableAdapter = this.sexoTableAdapter;
+            this.tableAdapterManager1.TelefonoAlumnoTableAdapter = null;
+            this.tableAdapterManager1.TipoSangreTableAdapter = null;
+            this.tableAdapterManager1.UpdateOrder = General.DataSetmoisesTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // sexo_SexIdLabel1
+            // 
+            this.sexo_SexIdLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.selectProfesorBindingSource, "Sexo_SexId", true));
+            this.sexo_SexIdLabel1.Location = new System.Drawing.Point(370, 176);
+            this.sexo_SexIdLabel1.Name = "sexo_SexIdLabel1";
+            this.sexo_SexIdLabel1.Size = new System.Drawing.Size(32, 23);
+            this.sexo_SexIdLabel1.TabIndex = 81;
+            this.sexo_SexIdLabel1.Text = "label1";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(314, 173);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 82;
+            // 
             // modificarmaestro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -408,15 +464,15 @@
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(745, 612);
             this.ControlBox = false;
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.mstroEmailTextBox);
+            this.Controls.Add(this.mstroApellido2TextBox1);
+            this.Controls.Add(this.mstroApellido1TextBox1);
+            this.Controls.Add(this.mstroNombre2TextBox);
+            this.Controls.Add(this.mstroNombre1TextBox1);
             this.Controls.Add(this.mstroDireccionTextBox);
             this.Controls.Add(this.mstroUsuTextBox);
-            this.Controls.Add(this.mstroEmailTextBox);
             this.Controls.Add(this.mstroFechaNacDateTimePicker);
-            this.Controls.Add(this.mstroApellido2TextBox);
-            this.Controls.Add(this.mstroApellido1TextBox);
-            this.Controls.Add(this.mstroNombre11TextBox);
-            this.Controls.Add(this.mstroNombre1TextBox);
-            this.Controls.Add(this.sexo_SexIdComboBox);
             this.Controls.Add(this.mstroIdTextBox);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label5);
@@ -434,6 +490,7 @@
             this.Controls.Add(mstroIdLabel);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.sexo_SexIdLabel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -444,8 +501,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.desarrolloDataSetmcha)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.selectProfesorBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.desarrolloDataSetmcha)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetmoises)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sexoBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -465,14 +524,19 @@
         private System.Windows.Forms.BindingSource selectProfesorBindingSource;
         private desarrolloDataSetmchaTableAdapters.SelectProfesorTableAdapter selectProfesorTableAdapter;
         private System.Windows.Forms.TextBox mstroIdTextBox;
-        private System.Windows.Forms.ComboBox sexo_SexIdComboBox;
         private System.Windows.Forms.TextBox mstroDireccionTextBox;
         private System.Windows.Forms.TextBox mstroUsuTextBox;
-        private System.Windows.Forms.TextBox mstroEmailTextBox;
         private System.Windows.Forms.DateTimePicker mstroFechaNacDateTimePicker;
-        private System.Windows.Forms.TextBox mstroApellido2TextBox;
-        private System.Windows.Forms.TextBox mstroApellido1TextBox;
-        private System.Windows.Forms.TextBox mstroNombre11TextBox;
-        private System.Windows.Forms.TextBox mstroNombre1TextBox;
+        private System.Windows.Forms.TextBox mstroNombre1TextBox1;
+        private System.Windows.Forms.TextBox mstroEmailTextBox;
+        private System.Windows.Forms.TextBox mstroApellido2TextBox1;
+        private System.Windows.Forms.TextBox mstroApellido1TextBox1;
+        private System.Windows.Forms.TextBox mstroNombre2TextBox;
+        private DataSetmoises dataSetmoises;
+        private System.Windows.Forms.BindingSource sexoBindingSource;
+        private DataSetmoisesTableAdapters.SexoTableAdapter sexoTableAdapter;
+        private DataSetmoisesTableAdapters.TableAdapterManager tableAdapterManager1;
+        private System.Windows.Forms.Label sexo_SexIdLabel1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

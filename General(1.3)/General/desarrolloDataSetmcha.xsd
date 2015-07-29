@@ -1489,7 +1489,7 @@ SELECT TipSangreId, TipSangreNombre FROM TipoSangre WHERE (TipSangreId = @TipSan
             <Mappings>
               <Mapping SourceColumn="MstroId" DataSetColumn="MstroId" />
               <Mapping SourceColumn="MstroNombre1" DataSetColumn="MstroNombre1" />
-              <Mapping SourceColumn="MstroNombre11" DataSetColumn="MstroNombre11" />
+              <Mapping SourceColumn="MstroNombre2" DataSetColumn="MstroNombre2" />
               <Mapping SourceColumn="MstroApellido1" DataSetColumn="MstroApellido1" />
               <Mapping SourceColumn="MstroApellido2" DataSetColumn="MstroApellido2" />
               <Mapping SourceColumn="MstroFechaNac" DataSetColumn="MstroFechaNac" />
@@ -2250,7 +2250,7 @@ SELECT TipSangreId, TipSangreNombre FROM TipoSangre WHERE (TipSangreId = @TipSan
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="MstroNombre11" msprop:Generator_ColumnVarNameInTable="columnMstroNombre11" msprop:Generator_ColumnPropNameInRow="MstroNombre11" msprop:Generator_ColumnPropNameInTable="MstroNombre11Column" msprop:Generator_UserColumnName="MstroNombre11">
+              <xs:element name="MstroNombre2" msprop:Generator_ColumnVarNameInTable="columnMstroNombre2" msprop:Generator_ColumnPropNameInRow="MstroNombre2" msprop:Generator_ColumnPropNameInTable="MstroNombre2Column" msprop:Generator_UserColumnName="MstroNombre2" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="15" />

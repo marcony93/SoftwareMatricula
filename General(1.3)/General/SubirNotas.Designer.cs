@@ -195,6 +195,7 @@
             this.sPSeccionBComboBox.Size = new System.Drawing.Size(143, 23);
             this.sPSeccionBComboBox.TabIndex = 8;
             this.sPSeccionBComboBox.ValueMember = "SecNombre";
+            this.sPSeccionBComboBox.SelectedIndexChanged += new System.EventHandler(this.sPSeccionBComboBox_SelectedIndexChanged);
             // 
             // sPMateriaBBindingSource
             // 
@@ -260,8 +261,6 @@
             this.sPAlumnosXClaseBDataGridView.Name = "sPAlumnosXClaseBDataGridView";
             this.sPAlumnosXClaseBDataGridView.Size = new System.Drawing.Size(803, 344);
             this.sPAlumnosXClaseBDataGridView.TabIndex = 11;
-
-      
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -331,7 +330,6 @@
             this.sPCursoBComboBox.Size = new System.Drawing.Size(143, 23);
             this.sPCursoBComboBox.TabIndex = 13;
             this.sPCursoBComboBox.ValueMember = "CursoId";
-
             // 
             // cursoIdTextBox
             // 

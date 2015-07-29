@@ -30,9 +30,9 @@
     <Shape ID="DesignTable:Sexo" ZOrder="31" X="330" Y="554" Height="115" Width="172" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="64" />
     <Shape ID="DesignTable:TelefonoAlumno" ZOrder="30" X="330" Y="2746" Height="115" Width="242" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="64" />
     <Shape ID="DesignTable:TipoSangre" ZOrder="29" X="330" Y="2357" Height="115" Width="211" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="64" />
-    <Shape ID="DesignTable:SelectProfesor" ZOrder="3" X="2031" Y="70" Height="267" Width="228" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="216" />
-    <Shape ID="DesignSources:QueriesTableAdapter" ZOrder="2" X="1263" Y="113" Height="67" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="45" />
-    <Shape ID="DesignTable:buscarmaestro" ZOrder="1" X="2329" Y="70" Height="305" Width="230" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="254" />
+    <Shape ID="DesignTable:buscarmaestro" ZOrder="2" X="2329" Y="70" Height="305" Width="230" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="254" />
+    <Shape ID="DesignSources:QueriesTableAdapter" ZOrder="3" X="1263" Y="113" Height="67" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="45" />
+    <Shape ID="DesignTable:SelectProfesor" ZOrder="1" X="2629" Y="70" Height="305" Width="228" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="254" />
   </Shapes>
   <Connectors>
     <Connector ID="DesignRelation:Alumno_Departamento_FK" ZOrder="28" LineWidth="11">
