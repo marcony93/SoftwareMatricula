@@ -114,6 +114,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>desarrolloDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="desarrolloDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>desarrolloDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="desarrolloDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>desarrolloDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="desarrolloDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>desarrolloDataSet4.xsd</DependentUpon>
+    </Compile>
     <Compile Include="desarrolloDataSetBaque.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -148,6 +163,12 @@
     </Compile>
     <Compile Include="FichaMatricula.Designer.cs">
       <DependentUpon>FichaMatricula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteNotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteNotas.Designer.cs">
+      <DependentUpon>ReporteNotas.cs</DependentUpon>
     </Compile>
     <Compile Include="FormGeneral Vista Secretaria.cs">
       <SubType>Form</SubType>
@@ -241,12 +262,6 @@
     <Compile Include="ReporteHorarioMaestro.Designer.cs">
       <DependentUpon>ReporteHorarioMaestro.cs</DependentUpon>
     </Compile>
-    <Compile Include="ReporteNotas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ReporteNotas.Designer.cs">
-      <DependentUpon>ReporteNotas.cs</DependentUpon>
-    </Compile>
     <Compile Include="ReporteReprobados.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -299,6 +314,10 @@
     <EmbeddedResource Include="FichaMatricula.resx">
       <DependentUpon>FichaMatricula.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report11.rdlc" />
+    <EmbeddedResource Include="ReporteNotas.resx">
+      <DependentUpon>ReporteNotas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormGeneral Vista Secretaria.resx">
       <DependentUpon>FormGeneral Vista Secretaria.cs</DependentUpon>
     </EmbeddedResource>
@@ -349,7 +368,6 @@
     <EmbeddedResource Include="Report6.rdlc" />
     <EmbeddedResource Include="Report7.rdlc" />
     <EmbeddedResource Include="Report8.rdlc" />
-    <EmbeddedResource Include="Report9.rdlc" />
     <EmbeddedResource Include="Reportcarnet.rdlc" />
     <EmbeddedResource Include="ReporteAlumno.resx">
       <DependentUpon>ReporteAlumno.cs</DependentUpon>
@@ -362,9 +380,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ReporteHorarioMaestro.resx">
       <DependentUpon>ReporteHorarioMaestro.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ReporteNotas.resx">
-      <DependentUpon>ReporteNotas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReporteReprobados.resx">
       <DependentUpon>ReporteReprobados.cs</DependentUpon>
@@ -417,13 +432,46 @@
     <None Include="desarrolloDataSet1.xss">
       <DependentUpon>desarrolloDataSet1.xsd</DependentUpon>
     </None>
+    <None Include="desarrolloDataSet2.xsc">
+      <DependentUpon>desarrolloDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="desarrolloDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>desarrolloDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="desarrolloDataSet2.xss">
+      <DependentUpon>desarrolloDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="desarrolloDataSet3.xsc">
+      <DependentUpon>desarrolloDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="desarrolloDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>desarrolloDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="desarrolloDataSet3.xss">
+      <DependentUpon>desarrolloDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="desarrolloDataSet4.xsc">
+      <DependentUpon>desarrolloDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="desarrolloDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>desarrolloDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="desarrolloDataSet4.xss">
+      <DependentUpon>desarrolloDataSet4.xsd</DependentUpon>
+    </None>
     <None Include="desarrolloDataSetBaque.xsc">
       <DependentUpon>desarrolloDataSetBaque.xsd</DependentUpon>
     </None>
     <None Include="desarrolloDataSetBaque.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>desarrolloDataSetBaque.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>desarrolloDataSetBaque1.Designer.cs</LastGenOutput>
     </None>
     <None Include="desarrolloDataSetBaque.xss">
       <DependentUpon>desarrolloDataSetBaque.xsd</DependentUpon>

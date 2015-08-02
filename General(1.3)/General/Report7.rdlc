@@ -682,7 +682,13 @@
       </Textbox>
     </ReportItems>
     <Height>2in</Height>
-    <Style />
+    <Style>
+      <Border>
+        <Color>DimGray</Color>
+        <Style>Double</Style>
+        <Width>1.5pt</Width>
+      </Border>
+    </Style>
   </Body>
   <Width>9.66568in</Width>
   <Page>
@@ -796,7 +802,7 @@
             <PaddingBottom>2pt</PaddingBottom>
           </Style>
         </Textbox>
-        <Textbox Name="Textbox20">
+        <Textbox Name="Textbox4">
           <CanGrow>true</CanGrow>
           <KeepTogether>true</KeepTogether>
           <Paragraphs>
@@ -809,18 +815,18 @@
                   </Style>
                 </TextRun>
                 <TextRun>
-                  <Value>=First(Fields!Fecha.Value, "DataSet1")</Value>
+                  <Value>=Globals!ExecutionTime</Value>
                   <Style />
                 </TextRun>
               </TextRuns>
               <Style />
             </Paragraph>
           </Paragraphs>
-          <rd:DefaultName>Textbox20</rd:DefaultName>
+          <rd:DefaultName>Textbox4</rd:DefaultName>
           <Top>1.16099cm</Top>
-          <Left>10.11056cm</Left>
+          <Left>11.29453cm</Left>
           <Height>0.6cm</Height>
-          <Width>3.55833cm</Width>
+          <Width>5.88667cm</Width>
           <ZIndex>3</ZIndex>
           <Style>
             <Border>
@@ -835,10 +841,58 @@
       </ReportItems>
       <Style>
         <Border>
-          <Style>None</Style>
+          <Color>DimGray</Color>
+          <Style>Double</Style>
+          <Width>1.5pt</Width>
         </Border>
       </Style>
     </PageHeader>
+    <PageFooter>
+      <Height>2.54cm</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Textbox Name="Textbox6">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>=Globals!PageNumber</Value>
+                  <Style>
+                    <FontSize>12pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox6</rd:DefaultName>
+          <Top>0.88167cm</Top>
+          <Left>6.02933cm</Left>
+          <Height>0.6cm</Height>
+          <Width>2.5cm</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+      </ReportItems>
+      <Style>
+        <Border>
+          <Color>DimGray</Color>
+          <Style>Double</Style>
+          <Width>1.5pt</Width>
+        </Border>
+      </Style>
+    </PageFooter>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>
     <LeftMargin>2cm</LeftMargin>

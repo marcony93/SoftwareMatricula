@@ -58,6 +58,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.desarrolloDataSet4 = new General.desarrolloDataSet4();
             ((System.ComponentModel.ISupportInitialize)(this.uspAlumnosxCursoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.desarrolloDataSetBaque)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uspSelectModalidadBindingSource)).BeginInit();
@@ -67,6 +68,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.desarrolloDataSet4)).BeginInit();
             this.SuspendLayout();
             // 
             // uspAlumnosxCursoBindingSource
@@ -242,7 +244,7 @@
             reportDataSource1.Name = "DataSet1";
             reportDataSource1.Value = this.uspAlumnosxCursoBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "General.Report9.rdlc";
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "General.Report11.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(12, 173);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.Size = new System.Drawing.Size(1135, 346);
@@ -327,7 +329,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::General.Properties.Resources.Screenshot_2015_04_09_13_46_13;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(1086, 12);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox3.Name = "pictureBox3";
@@ -335,6 +337,11 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 32;
             this.pictureBox3.TabStop = false;
+            // 
+            // desarrolloDataSet4
+            // 
+            this.desarrolloDataSet4.DataSetName = "desarrolloDataSet4";
+            this.desarrolloDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // ReporteAlumno
             // 
@@ -375,6 +382,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.desarrolloDataSet4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -409,5 +417,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private desarrolloDataSet4 desarrolloDataSet4;
     }
 }

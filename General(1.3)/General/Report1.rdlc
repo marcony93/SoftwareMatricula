@@ -485,7 +485,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox12</rd:DefaultName>
-          <Top>1.00224cm</Top>
+          <Top>1.22301cm</Top>
           <Left>1.18745cm</Left>
           <Height>0.6cm</Height>
           <Width>4.27936cm</Width>
@@ -562,6 +562,36 @@
           <Height>0.6cm</Height>
           <Width>4.77542cm</Width>
           <ZIndex>3</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox1">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>=Globals!ExecutionTime</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox1</rd:DefaultName>
+          <Top>1.94592cm</Top>
+          <Left>1.18745cm</Left>
+          <Height>0.6cm</Height>
+          <Width>4.27936cm</Width>
+          <ZIndex>4</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>

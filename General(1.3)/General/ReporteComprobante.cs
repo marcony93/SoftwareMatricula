@@ -26,12 +26,12 @@ namespace General
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            LogIn.solo13Numeros(textBox1);
+            LogIn.NumerosConMensaje(textBox1, errorProvider1);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.uspComprobanteMatriculaTableAdapter.Fill(this.desarrolloDataSetBaque.uspComprobanteMatricula, 0000000000003);
+            this.uspComprobanteMatriculaTableAdapter.Fill(this.desarrolloDataSetBaque.uspComprobanteMatricula,textBox1.Text);
             this.reportViewer1.RefreshReport();
         }
     }
