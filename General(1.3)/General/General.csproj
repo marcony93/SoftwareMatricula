@@ -114,16 +114,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>desarrolloDataSet1.xsd</DependentUpon>
     </Compile>
-    <Compile Include="desarrolloDataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>desarrolloDataSet2.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="desarrolloDataSet3.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>desarrolloDataSet3.xsd</DependentUpon>
-    </Compile>
     <Compile Include="desarrolloDataSet4.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -431,28 +421,6 @@
     </None>
     <None Include="desarrolloDataSet1.xss">
       <DependentUpon>desarrolloDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="desarrolloDataSet2.xsc">
-      <DependentUpon>desarrolloDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="desarrolloDataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>desarrolloDataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="desarrolloDataSet2.xss">
-      <DependentUpon>desarrolloDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="desarrolloDataSet3.xsc">
-      <DependentUpon>desarrolloDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="desarrolloDataSet3.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>desarrolloDataSet3.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="desarrolloDataSet3.xss">
-      <DependentUpon>desarrolloDataSet3.xsd</DependentUpon>
     </None>
     <None Include="desarrolloDataSet4.xsc">
       <DependentUpon>desarrolloDataSet4.xsd</DependentUpon>
