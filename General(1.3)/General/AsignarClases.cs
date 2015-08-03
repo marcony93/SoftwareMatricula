@@ -32,9 +32,9 @@ namespace General
             this.spModalidadTableAdapter.Fill(this.desarrolloDataSetWilmer.spModalidad);
             // TODO: esta línea de código carga datos en la tabla 'desarrolloDataSetWilmer.spMaestro' Puede moverla o quitarla según sea necesario.
             this.spMaestroTableAdapter.Fill(this.desarrolloDataSetWilmer.spMaestro);
-            this.spCursoTableAdapter.Fill(this.desarrolloDataSetWilmer.spCurso, new System.Nullable<int>(((int)(System.Convert.ChangeType(spModalidadComboBox.SelectedValue, typeof(int))))));
-            this.spSeccionesTableAdapter.Fill(this.desarrolloDataSetWilmer.spSecciones, new System.Nullable<int>(((int)(System.Convert.ChangeType(spCursoComboBox.SelectedValue, typeof(int))))), DateTime.Today.Year.ToString());
-            this.spMateriaTableAdapter.Fill(this.desarrolloDataSetWilmer.spMateria, new System.Nullable<int>(((int)(System.Convert.ChangeType(spModalidadComboBox.SelectedValue.ToString(), typeof(int))))), new System.Nullable<int>(((int)(System.Convert.ChangeType(spCursoComboBox.SelectedValue.ToString(), typeof(int))))));
+            this.spCursoTableAdapter.Fill(this.desarrolloDataSetWilmer.spCurso,Convert.ToInt32(spModalidadComboBox.SelectedValue));
+            this.spSeccionesTableAdapter.Fill(this.desarrolloDataSetWilmer.spSecciones, Convert.ToInt32(spCursoComboBox.SelectedValue), DateTime.Today.Year.ToString());
+            this.spMateriaTableAdapter.Fill(this.desarrolloDataSetWilmer.spMateria, Convert.ToInt32(spModalidadComboBox.SelectedValue.ToString()), Convert.ToInt32(spCursoComboBox.SelectedValue.ToString()));
             this.spmostrarplanillaTableAdapter.Fill(this.desarrolloDataSetWilmer.spmostrarplanilla, spMaestroComboBox.SelectedValue.ToString());
         }
         private void spMaestroComboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -46,17 +46,13 @@ namespace General
         {
             //PROCEDIMEITNO QUE ACTUALIZA EL CURSO TOMANDO EL PARAMETRO MODALIDAD   
             this.spCursoTableAdapter.Fill(this.desarrolloDataSetWilmer.spCurso, 
-            new System.Nullable<int>(((int)(System.Convert.ChangeType(spModalidadComboBox.SelectedValue, 
-            typeof(int))))));
+          Convert.ToInt32(spModalidadComboBox.SelectedValue));
             //PROCEDIMEITNO QUE ACTALIZA LA SECCION TOMANDO EL PARAMETRO CURSO
             this.spSeccionesTableAdapter.Fill(this.desarrolloDataSetWilmer.spSecciones, 
-            new System.Nullable<int>(((int)(System.Convert.ChangeType(spCursoComboBox.SelectedValue, 
-            typeof(int))))), DateTime.Today.Year.ToString());
+            Convert.ToInt32(spCursoComboBox.SelectedValue), DateTime.Today.Year.ToString());
             //PROCEDIMEITNO QUE ACTALIZA LA MATERIA TOMANDO EL PARAMETRO MODALIDAD
             this.spMateriaTableAdapter.Fill(this.desarrolloDataSetWilmer.spMateria, 
-            new System.Nullable<int>(((int)(System.Convert.ChangeType(spModalidadComboBox.SelectedValue.ToString(), 
-            typeof(int))))), new System.Nullable<int>(((int)(System.Convert.ChangeType(spCursoComboBox.SelectedValue.ToString(), 
-            typeof(int))))));
+            Convert.ToInt32(spModalidadComboBox.SelectedValue.ToString()), Convert.ToInt32(spCursoComboBox.SelectedValue.ToString()));
         }
         private void spCursoComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -65,13 +61,10 @@ namespace General
             {
                 //PROCEDIMEITNO QUE ACTUALIZA LA SECCION TOMANDO EL PARAMETRO CURSO
                 this.spSeccionesTableAdapter.Fill(this.desarrolloDataSetWilmer.spSecciones,
-                new System.Nullable<int>(((int)(System.Convert.ChangeType(spCursoComboBox.SelectedValue, 
-                typeof(int))))), DateTime.Today.Year.ToString());
+                Convert.ToInt32(spCursoComboBox.SelectedValue), DateTime.Today.Year.ToString());
                 //PROCEDIMEITNO QUE ACTUALIZA LA MATERIA TOMANDO EL PARAMETRO MODALIDAD
                 this.spMateriaTableAdapter.Fill(this.desarrolloDataSetWilmer.spMateria,
-                new System.Nullable<int>(((int)(System.Convert.ChangeType(spModalidadComboBox.SelectedValue.ToString(),
-                typeof(int))))), new System.Nullable<int>(((int)(System.Convert.ChangeType(spCursoComboBox.SelectedValue.ToString(),
-                typeof(int))))));
+                Convert.ToInt32(spModalidadComboBox.SelectedValue.ToString()), Convert.ToInt32(spCursoComboBox.SelectedValue.ToString()));
             }
         }
         private void button1_Click(object sender, EventArgs e)
@@ -88,6 +81,11 @@ namespace General
             {
                 MessageBox.Show("Esta asignacion ya exite.... Por favor agregue otra");
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

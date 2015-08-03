@@ -12,8 +12,10 @@ using General.DataSetmoisesTableAdapters;
 
 namespace General
 {
+    
     public partial class modificarcontrasena : Form
     {
+        public static int espacios = 0; 
         //Variable para llamar los procedimientos que alteran la base de datos (modificar, eliminar, etc)
         QueriesTableAdapter QTA = new QueriesTableAdapter();
         public modificarcontrasena()
@@ -54,9 +56,15 @@ namespace General
             //validacion que no permita campos vacios
             if (e.KeyChar == 32)
             {
-                textBox2.Text = textBox2.Text.Remove(textBox2.TextLength - 1);
-                textBox2.SelectionStart = textBox2.TextLength;
-                errorProvider1.SetError(textBox2, "No se acepta espacios");
+                if (textBox2.Text == "")
+                    espacios = 1;
+                else
+                {
+                    textBox2.Text = textBox2.Text.Remove(textBox2.TextLength - 1);
+                    textBox2.SelectionStart = textBox2.TextLength;
+                    errorProvider1.SetError(textBox2, "No se acepta espacios");
+                }
+
             }
         }
         private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
@@ -64,9 +72,32 @@ namespace General
             //validacion que no permita campos vacios
             if (e.KeyChar == 32)
             {
-                textBox3.Text = textBox3.Text.Remove(textBox3.TextLength - 1);
-                textBox3.SelectionStart = textBox3.TextLength;
-                errorProvider1.SetError(textBox3, "No se acepta espacios");
+                if (textBox3.Text == "")
+                    espacios = 1;
+                else
+                {
+                    textBox3.Text = textBox3.Text.Remove(textBox3.TextLength - 1);
+                    textBox3.SelectionStart = textBox3.TextLength;
+                    errorProvider1.SetError(textBox3, "No se acepta espacios");
+                }
+            }
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            if (espacios == 1)
+            {
+                textBox2.Text = "";
+                espacios = 0;
+            }
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            if (espacios == 1)
+            {
+                textBox3.Text = "";
+                espacios = 0;
             }
         }
     }
