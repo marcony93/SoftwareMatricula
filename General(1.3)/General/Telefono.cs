@@ -60,9 +60,11 @@ namespace General
         }
         private void spTelefonosDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            foreach(DataGridViewRow grilla in spTelefonosDataGridView.Rows)
+            { 
             string nombre;
-            {
-                if (spTelefonosDataGridView.Rows[e.RowIndex].Cells[2].Selected)
+
+            if (grilla.Cells[2].Selected)
                 {
                     try
                     {
@@ -73,7 +75,8 @@ namespace General
                     }
                     catch (SqlException)
                     { }
-                }
+                
+            }
             }
         }
     }

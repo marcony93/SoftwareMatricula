@@ -65,24 +65,31 @@ namespace General
         }
         private void spOcupacionDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            string nombre;
-            {
-                if (spOcupacionDataGridView.Rows[e.RowIndex].Cells[2].Selected)
-                {
-                    try
-                    {
-                        nombre = spOcupacionDataGridView.Rows[e.RowIndex].Cells[1].Value.ToString();
-                        if (MessageBox.Show("Estas seguro de eliminar este registro?", "Eliminar registro", MessageBoxButtons.YesNo) == DialogResult.Yes)
-                        {
-                            eliminar.spOcupacion_eliminar(nombre);
-                            MessageBox.Show("Registro eliminado");
-                        }
-                        this.spOcupacionTableAdapter.Fill(this.desarrolloDataSet1.SpOcupacion);
-                    }
-                    catch (SqlException)
-                    { }
-                }
-            }
+           foreach (DataGridViewRow grilla in spOcupacionDataGridView.Rows)
+           {
+               string nombre;
+
+               if (grilla.Cells[2].Selected)
+               {
+                   try
+                   {
+                       nombre = grilla.Cells[1].Value.ToString();
+                       if (MessageBox.Show("Estas seguro de eliminar este registro?", "Eliminar registro", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                       {
+                           eliminar.spOcupacion_eliminar(nombre);
+                           MessageBox.Show("Registro eliminado");
+                       }
+                       this.spOcupacionTableAdapter.Fill(this.desarrolloDataSet1.SpOcupacion);
+                   }
+                   catch (SqlException)
+                   { }
+
+               }
+
+           } 
+         
+                
         }
     }
+        
 }

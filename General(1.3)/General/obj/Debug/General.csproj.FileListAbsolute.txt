@@ -278,17 +278,16 @@ C:\Users\Brigith Zaldivar\Desktop\SoftwareMatricula-master COMP\SoftwareMatricul
 C:\Users\Brigith Zaldivar\Desktop\SoftwareMatricula-master COMP\SoftwareMatricula-master\General(1.3)\General\obj\Debug\General.exe.manifest
 C:\Users\Brigith Zaldivar\Desktop\SoftwareMatricula-master COMP\SoftwareMatricula-master\General(1.3)\General\obj\Debug\General.application
 C:\Users\Meza\Documents\GitHub\SoftwareMatricula\General(1.3)\General\bin\Debug\General.exe.config
-C:\Users\Meza\Documents\GitHub\SoftwareMatricula\General(1.3)\General\obj\Debug\General.exe
-C:\Users\Meza\Documents\GitHub\SoftwareMatricula\General(1.3)\General\obj\Debug\General.pdb
 C:\Users\Meza\Documents\GitHub\SoftwareMatricula\General(1.3)\General\bin\Debug\General.exe.manifest
 C:\Users\Meza\Documents\GitHub\SoftwareMatricula\General(1.3)\General\bin\Debug\General.application
 C:\Users\Meza\Documents\GitHub\SoftwareMatricula\General(1.3)\General\bin\Debug\General.exe
 C:\Users\Meza\Documents\GitHub\SoftwareMatricula\General(1.3)\General\bin\Debug\General.pdb
-C:\Users\Meza\Documents\GitHub\SoftwareMatricula\General(1.3)\General\obj\Debug\General.csprojResolveAssemblyReference.cache
 C:\Users\Meza\Documents\GitHub\SoftwareMatricula\General(1.3)\General\obj\Debug\General.AsignacionesClases.resources
+C:\Users\Meza\Documents\GitHub\SoftwareMatricula\General(1.3)\General\obj\Debug\General.AsignarClases.resources
 C:\Users\Meza\Documents\GitHub\SoftwareMatricula\General(1.3)\General\obj\Debug\General.buscarmaestro.resources
 C:\Users\Meza\Documents\GitHub\SoftwareMatricula\General(1.3)\General\obj\Debug\General.Carnet.resources
 C:\Users\Meza\Documents\GitHub\SoftwareMatricula\General(1.3)\General\obj\Debug\General.FichaMatricula.resources
+C:\Users\Meza\Documents\GitHub\SoftwareMatricula\General(1.3)\General\obj\Debug\General.ReporteNotas.resources
 C:\Users\Meza\Documents\GitHub\SoftwareMatricula\General(1.3)\General\obj\Debug\General.VentanaGeneralVistaSecretaria.resources
 C:\Users\Meza\Documents\GitHub\SoftwareMatricula\General(1.3)\General\obj\Debug\General.InsertarMaestro.resources
 C:\Users\Meza\Documents\GitHub\SoftwareMatricula\General(1.3)\General\obj\Debug\General.Instituto_Procedencia.resources
@@ -305,7 +304,6 @@ C:\Users\Meza\Documents\GitHub\SoftwareMatricula\General(1.3)\General\obj\Debug\
 C:\Users\Meza\Documents\GitHub\SoftwareMatricula\General(1.3)\General\obj\Debug\General.ReporteClasesXCurso.resources
 C:\Users\Meza\Documents\GitHub\SoftwareMatricula\General(1.3)\General\obj\Debug\General.ReporteComprobante.resources
 C:\Users\Meza\Documents\GitHub\SoftwareMatricula\General(1.3)\General\obj\Debug\General.ReporteHorarioMaestro.resources
-C:\Users\Meza\Documents\GitHub\SoftwareMatricula\General(1.3)\General\obj\Debug\General.ReporteNotas.resources
 C:\Users\Meza\Documents\GitHub\SoftwareMatricula\General(1.3)\General\obj\Debug\General.ReporteReprobados.resources
 C:\Users\Meza\Documents\GitHub\SoftwareMatricula\General(1.3)\General\obj\Debug\General.ReprobadosParcial.resources
 C:\Users\Meza\Documents\GitHub\SoftwareMatricula\General(1.3)\General\obj\Debug\General.SubirNotas.resources
@@ -317,3 +315,5 @@ C:\Users\Meza\Documents\GitHub\SoftwareMatricula\General(1.3)\General\obj\Debug\
 C:\Users\Meza\Documents\GitHub\SoftwareMatricula\General(1.3)\General\obj\Debug\RdlCompile.compiled
 C:\Users\Meza\Documents\GitHub\SoftwareMatricula\General(1.3)\General\obj\Debug\General.exe.manifest
 C:\Users\Meza\Documents\GitHub\SoftwareMatricula\General(1.3)\General\obj\Debug\General.application
+C:\Users\Meza\Documents\GitHub\SoftwareMatricula\General(1.3)\General\obj\Debug\General.exe
+C:\Users\Meza\Documents\GitHub\SoftwareMatricula\General(1.3)\General\obj\Debug\General.pdb

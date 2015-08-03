@@ -62,13 +62,15 @@ namespace General
         }
         private void spNacionalidadDataGridView_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
-            string nombre;
+          foreach(DataGridViewRow grilla in spNacionalidadDataGridView.Rows)
+          {
+               string nombre;
             {
-                if (spNacionalidadDataGridView.Rows[e.RowIndex].Cells[2].Selected)
+                if (grilla.Cells[2].Selected)
                 {
                     try
                     {
-                        nombre = spNacionalidadDataGridView.Rows[e.RowIndex].Cells[1].Value.ToString();
+                        nombre = grilla.Cells[1].Value.ToString();
                         if (MessageBox.Show("Estas seguro de eliminar este registro?", "Eliminar registro", MessageBoxButtons.YesNo) == DialogResult.Yes)
                         {
                             eliminar.spNacionalidad_eliminar(nombre);
@@ -76,10 +78,18 @@ namespace General
                         }
                         this.spNacionalidadTableAdapter1.Fill(this.desarrolloDataSet1.spNacionalidad);
                     }
+                        
                     catch (SqlException)
                     { }
+                
                 }
+                
             }
+        
+
+          }
+
+
         }
     }
 }

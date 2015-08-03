@@ -58,18 +58,15 @@ namespace General
         }
         private void spVerAlumnoDataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (spVerAlumnoDataGridView.Rows.Count == 1)
-            {
-               
-            }
-            else
-                if (spVerAlumnoDataGridView.Rows[e.RowIndex].Cells[0].Selected)
+            foreach(DataGridViewRow grilla in spVerAlumnoDataGridView.Rows)
+            { 
+                if (grilla.Cells[0].Selected)
                 {
-                    iddelalumno = spVerAlumnoDataGridView.Rows[e.RowIndex].Cells[0].Value.ToString();
+                    iddelalumno = grilla.Cells[0].Value.ToString();
                     Form ModificarAlumno = new ModificarAlumno();
                     ModificarAlumno.Show();
                 }
-                
+            }  
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
         { 

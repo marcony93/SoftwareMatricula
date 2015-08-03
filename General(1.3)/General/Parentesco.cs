@@ -59,13 +59,15 @@ namespace General
         }
         private void spRelacionDataGridView_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
-            string nombre;
+            foreach(DataGridViewRow grilla in spRelacionDataGridView.Rows)
             {
-                if (spRelacionDataGridView.Rows[e.RowIndex].Cells[2].Selected)
+                string nombre;
+
+                if (grilla.Cells[2].Selected)
                 {
                     try
                     {
-                        nombre = spRelacionDataGridView.Rows[e.RowIndex].Cells[1].Value.ToString();
+                        nombre = grilla.Cells[1].Value.ToString();
                         if (MessageBox.Show("Estas seguro de eliminar este registro?", "Eliminar registro", MessageBoxButtons.YesNo) == DialogResult.Yes)
                         {
                             // en esta linea de codigo se elimina un parentesco ya registrado
@@ -76,4 +78,6 @@ namespace General
                     }
                     catch (SqlException)
                     { }
-                } } } }}
+
+            }
+                } } } }

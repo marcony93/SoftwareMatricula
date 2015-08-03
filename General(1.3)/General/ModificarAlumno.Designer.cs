@@ -99,7 +99,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.telNumeroTextBox = new System.Windows.Forms.TextBox();
             this.spMostrarTelefonoAlumnosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -241,7 +240,6 @@
             alumFechaNacLabel.Size = new System.Drawing.Size(122, 15);
             alumFechaNacLabel.TabIndex = 12;
             alumFechaNacLabel.Text = "Fecha de nacimiento";
-         
             // 
             // nacionalidad_NacIdLabel
             // 
@@ -321,7 +319,6 @@
             encdoIdLabel.Size = new System.Drawing.Size(123, 15);
             encdoIdLabel.TabIndex = 5;
             encdoIdLabel.Text = "Numero de identidad";
-          
             // 
             // encdoFechaNacLabel
             // 
@@ -770,7 +767,6 @@
             this.nacionalidad_NacIdLabel2.Size = new System.Drawing.Size(100, 23);
             this.nacionalidad_NacIdLabel2.TabIndex = 32;
             this.nacionalidad_NacIdLabel2.Text = "label1";
-       
             // 
             // label23
             // 
@@ -791,7 +787,6 @@
             this.label22.Size = new System.Drawing.Size(18, 15);
             this.label22.TabIndex = 44;
             this.label22.Text = "Si";
-       
             // 
             // radioButton2
             // 
@@ -828,7 +823,6 @@
             this.label10.Size = new System.Drawing.Size(49, 15);
             this.label10.TabIndex = 41;
             this.label10.Text = "Trabaja";
-           
             // 
             // label11
             // 
@@ -842,7 +836,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(127, 480);
+            this.button5.Location = new System.Drawing.Point(22, 480);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(31, 21);
             this.button5.TabIndex = 47;
@@ -873,7 +867,6 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
-            this.groupBox1.Controls.Add(this.telNumeroTextBox);
             this.groupBox1.Controls.Add(label7);
             this.groupBox1.Controls.Add(label6);
             this.groupBox1.Controls.Add(label4);
@@ -922,14 +915,6 @@
             this.groupBox1.TabIndex = 50;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos personales";
-            // 
-            // telNumeroTextBox
-            // 
-            this.telNumeroTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spMostrarTelefonoAlumnosBindingSource, "TelNumero", true));
-            this.telNumeroTextBox.Location = new System.Drawing.Point(21, 480);
-            this.telNumeroTextBox.Name = "telNumeroTextBox";
-            this.telNumeroTextBox.Size = new System.Drawing.Size(100, 21);
-            this.telNumeroTextBox.TabIndex = 55;
             // 
             // spMostrarTelefonoAlumnosBindingSource
             // 
@@ -1052,7 +1037,6 @@
             this.cursoLabel1.Size = new System.Drawing.Size(100, 23);
             this.cursoLabel1.TabIndex = 7;
             this.cursoLabel1.Text = "label4";
-            
             // 
             // modalidad_ModIdLabel1
             // 
@@ -1465,7 +1449,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.spNacionalidadBindingSource)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-           // ((System.ComponentModel.ISupportInitialize)(this.spMostrarTelefonoAlumnosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spMostrarTelefonoAlumnosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCursoModalidad2BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spModalidadesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spMostrarInstituto2BindingSource)).EndInit();
@@ -1591,7 +1575,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.BindingSource spMostrarTelefonoAlumnosBindingSource;
         private desarrolloDataSet1TableAdapters.SpMostrarTelefonoAlumnosTableAdapter spMostrarTelefonoAlumnosTableAdapter;
-        private System.Windows.Forms.TextBox telNumeroTextBox;
 
 
     }
