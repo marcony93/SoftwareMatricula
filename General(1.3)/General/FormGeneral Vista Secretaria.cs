@@ -53,15 +53,15 @@ namespace General
         private void asignacionesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //CREA UNA NUEVA INSTANCIA DE LA VENTANA ASIGNACIONCLASES
-            Form AsignacionesClases = new AsignarClases();
+            Form prueba = new prueba();
             //SE MUESTRA LA VANTANA DE ASIGNACIONCLASES
-            AsignacionesClases.Show();
+            prueba.Show();
             //SE ASIGNA COMO FORMULARIO PARIENTE DE ESTE
-            AsignacionesClases.MdiParent = this;
+            prueba.MdiParent = this;
             //SE MAXIMIZA LA VENTANA DENTRO DEL CONTENEDOR
-            AsignacionesClases.WindowState = FormWindowState.Maximized;
+            prueba.WindowState = FormWindowState.Maximized;
             //SE TRAE AL FRENTE LA VENTANA QUE SE MANDO A LLAMAR
-            AsignacionesClases.BringToFront();
+            prueba.BringToFront();
         }
         private void notasToolStripMenuItem1_Click(object sender, EventArgs e)
         {

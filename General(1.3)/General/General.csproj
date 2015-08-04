@@ -75,12 +75,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AsignacionesClases.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AsignacionesClases.Designer.cs">
-      <DependentUpon>AsignacionesClases.cs</DependentUpon>
-    </Compile>
     <Compile Include="AsignarClases.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +147,12 @@
     </Compile>
     <Compile Include="FichaMatricula.Designer.cs">
       <DependentUpon>FichaMatricula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="prueba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="prueba.Designer.cs">
+      <DependentUpon>prueba.cs</DependentUpon>
     </Compile>
     <Compile Include="ReporteNotas.cs">
       <SubType>Form</SubType>
@@ -289,9 +289,6 @@
     <Compile Include="VerAlumno.Designer.cs">
       <DependentUpon>VerAlumno.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AsignacionesClases.resx">
-      <DependentUpon>AsignacionesClases.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="AsignarClases.resx">
       <DependentUpon>AsignarClases.cs</DependentUpon>
     </EmbeddedResource>
@@ -303,6 +300,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FichaMatricula.resx">
       <DependentUpon>FichaMatricula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="prueba.resx">
+      <DependentUpon>prueba.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Report11.rdlc" />
     <EmbeddedResource Include="ReporteNotas.resx">
